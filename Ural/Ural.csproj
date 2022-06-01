@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
+    <ProjectGuid>{DF7C089C-F9B9-45BD-8585-391A51E35CB6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Ural</RootNamespace>
+    <AssemblyName>Ural</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|anycpu' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ural_translator_compliler\Tokens.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidCharacterError.cs" />
+    <Compile Include="Ural_translator_compliler\Lexer.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\Error.cs" />
+    <Compile Include="Ural_translator_compliler\Operations\Binary_operation.cs" />
+    <Compile Include="Ural_translator_compliler\Operations\Arithmetic_operation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ural_translator_compliler\" />
+    <Folder Include="Ural_translator_compliler\Errors\" />
+    <Folder Include="Ural_translator_compliler\Operations\" />
+    <Folder Include="Ural_translator_compliler\Operations\Regex_py_txt\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ural_translator_compliler\Operations\Regex_py_txt\regex_for_blocks.json" />
+    <None Include="Ural_translator_compliler\Operations\Regex_py_txt\regex_to_txt.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
