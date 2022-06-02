@@ -1,10 +1,12 @@
 ﻿using System;
 namespace Ural.Ural_translator_compliler.Datatypes.Numbers
 {
-    public class natch16
+    public class celch16 : celch32
     {
-        public natch16()
+        public celch16(short _value = 0) : base(_value)
         {
+            short new_value = Convert.ToInt16(_value);
+            this.value = new_value;
         }
     }
 }
