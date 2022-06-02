@@ -8,18 +8,18 @@ namespace Ural.Ural_translator_compliler.Datatypes
 
         public VOID(object _value)
         {
-            this.value = null;
+            this.value = _value;
         }
 
-        public VOID() : this(null) { }
+        public VOID() : this("ВОИД") { }
 
-        /*
+        
         public override string ToString()
         {
             this.value = "ВОИД";
             return ("ВОИД");
         }
 
-        */
+        
     }
 }

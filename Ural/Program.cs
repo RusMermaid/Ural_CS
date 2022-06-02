@@ -16,7 +16,7 @@ namespace Ural
             Token test = new Token("INT", "5");
             Error test_error = new SyntaxInvalidCharacterError(6, 9);
 
-            drobch16 val = new drobch16(9);
+            natch16 val = new natch16();
 
             //onsole.WriteLine(test.value, Token.digit_const_str);
             Console.WriteLine($"{val.value}, {val.value.GetType()}");
