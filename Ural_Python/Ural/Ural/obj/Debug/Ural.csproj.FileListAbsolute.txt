@@ -1,0 +1,6 @@
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/UralNeo/Ural/Ural/bin/Debug/Ural.exe
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/UralNeo/Ural/Ural/bin/Debug/Ural.pdb
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/UralNeo/Ural/Ural/obj/Debug/Ural.csproj.AssemblyReference.cache
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/UralNeo/Ural/Ural/obj/Debug/Ural.csproj.CoreCompileInputs.cache
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/UralNeo/Ural/Ural/obj/Debug/Ural.exe
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/UralNeo/Ural/Ural/obj/Debug/Ural.pdb
