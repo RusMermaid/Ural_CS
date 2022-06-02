@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{DF7C089C-F9B9-45BD-8585-391A51E35CB6}|Default">
+  <MonoDevelop.Ide.ItemProperties.Ural PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="28" Column="1" />
+      <File FileName="executed_ural_code/shell.cs" />
+      <File FileName="Ural_translator_compliler/Lexer.cs" />
+      <File FileName="Ural_translator_compliler/Datatypes/Void.cs" />
+      <File FileName="Ural_translator_compliler/Tokens.cs" />
+      <File FileName="Ural_translator_compliler/Errors/SyntaxInvalidCharacterError.cs" />
+      <File FileName="Ural_translator_compliler/Errors/Error.cs" />
+      <File FileName="Ural_translator_compliler/Datatypes/Numbers/natch16.cs" />
+      <File FileName="Ural_translator_compliler/Datatypes/Numbers/natch64.cs" />
+      <File FileName="Ural_translator_compliler/Datatypes/Numbers/natch32.cs" />
+      <File FileName="Ural_translator_compliler/Datatypes/Numbers/drobch32.cs" />
+      <File FileName="Ural_translator_compliler/Datatypes/Numbers/drobch16.cs" />
+      <File FileName="Ural_translator_compliler/Datatypes/Numbers/drobch64.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ural" expanded="True">
+            <Node name="Ural" expanded="True">
+              <Node name="executed_ural_code" expanded="True" />
+              <Node name="Ural_translator_compliler" expanded="True">
+                <Node name="Datatypes" expanded="True">
+                  <Node name="Numbers" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
