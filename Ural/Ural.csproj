@@ -38,12 +38,25 @@
     <Compile Include="Ural_translator_compliler\Errors\Error.cs" />
     <Compile Include="Ural_translator_compliler\Operations\Binary_operation.cs" />
     <Compile Include="Ural_translator_compliler\Operations\Arithmetic_operation.cs" />
+    <Compile Include="executed_ural_code\shell.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\VOID.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\celch32.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\celch16.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\celch64.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\natch32.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\natch16.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\natch64.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\drobch32.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\drobch16.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\drobch64.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ural_translator_compliler\" />
     <Folder Include="Ural_translator_compliler\Errors\" />
     <Folder Include="Ural_translator_compliler\Operations\" />
     <Folder Include="Ural_translator_compliler\Operations\Regex_py_txt\" />
+    <Folder Include="Ural_translator_compliler\Datatypes\" />
+    <Folder Include="Ural_translator_compliler\Datatypes\Numbers\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Ural_translator_compliler\Operations\Regex_py_txt\regex_for_blocks.json" />
