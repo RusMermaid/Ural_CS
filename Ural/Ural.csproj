@@ -49,6 +49,9 @@
     <Compile Include="Ural_translator_compliler\Datatypes\Numbers\drobch32.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Numbers\drobch16.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Numbers\drobch64.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Strings\str10.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Strings\str0.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Strings\str16.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ural_translator_compliler\" />

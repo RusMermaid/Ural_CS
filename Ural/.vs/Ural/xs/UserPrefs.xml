@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{DF7C089C-F9B9-45BD-8585-391A51E35CB6}|Default">
   <MonoDevelop.Ide.ItemProperties.Ural PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ural_translator_compliler/Datatypes/Strings/str0.cs">
     <Files>
-      <File FileName="Program.cs" Line="28" Column="1" />
+      <File FileName="Program.cs" Line="27" Column="6" />
       <File FileName="executed_ural_code/shell.cs" />
       <File FileName="Ural_translator_compliler/Lexer.cs" />
       <File FileName="Ural_translator_compliler/Datatypes/Void.cs" />
@@ -15,6 +15,10 @@
       <File FileName="Ural_translator_compliler/Datatypes/Numbers/drobch32.cs" />
       <File FileName="Ural_translator_compliler/Datatypes/Numbers/drobch16.cs" />
       <File FileName="Ural_translator_compliler/Datatypes/Numbers/drobch64.cs" />
+      <File FileName="Ural_translator_compliler/Datatypes/Strings/str16.cs" Line="32" Column="1" />
+      <File FileName="Ural_translator_compliler/Datatypes/Numbers/celch16.cs" Line="1" Column="1" />
+      <File FileName="Ural_translator_compliler/Datatypes/Strings/str10.cs" Line="1" Column="1" />
+      <File FileName="Ural_translator_compliler/Datatypes/Strings/str0.cs" Line="5" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,9 +29,11 @@
               <Node name="Ural_translator_compliler" expanded="True">
                 <Node name="Datatypes" expanded="True">
                   <Node name="Numbers" expanded="True" />
+                  <Node name="Strings" expanded="True">
+                    <Node name="str0.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

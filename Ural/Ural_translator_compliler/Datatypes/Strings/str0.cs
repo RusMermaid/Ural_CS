@@ -1,34 +1,34 @@
 using System;
 using Ural.Ural_translator_compliler.Datatypes.Strings;
-namespace Ural.Ural_translator_compliler.Datatypes.Strings;
+namespace Ural.Ural_translator_compliler.Datatypes.Strings
 {
-    class str0 : str16
+    public class str0 : str16
     {
-        public str0(char? _value = "") : base(_value)) 
+        public str0(string _value = "") : base(_value)
         {
-            char new_value;
-            switch (Type.GetTypeCode(_value.GetType()))
+            if (_value == "" )
             {
-                  case TypeCode.String:
-                        if (_value = "") or (_value = null)
-                        {
-                            this.value = "A";
-                        }
-                        else
-                        {
-                            new_value = _value[0];
-                            this.value = new_value;
-                        }
-
-                        break;
-                
-                    default:
-                        new_value = Convert.ToChar(_value);
-                        this.value = new_value;
-                        break;
+                this.value = 'A';
             }
+            else if (_value.Length == 1)
+            {
+                this.value = _value[0];
+            }
+            else
+            {
+                this.value = _value[0];
+            }
+            
         }
-           
+
+        public str0(char _value) : base(_value)
+        {
+            
+                this.value = _value;
+            
+
+        }
+
     }
 }
 

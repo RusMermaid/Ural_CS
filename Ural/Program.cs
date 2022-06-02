@@ -13,12 +13,11 @@ namespace Ural
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hi!");
 
             Token test = new Token("INT", "5");
             Error test_error = new SyntaxInvalidCharacterError(6, 9);
 
-            str16 val = new str16("Меня держат в заложниках и пытают Python помогите");
+            str0 val = new str0('G');
 
             //Console.WriteLine(test.value, Token.digit_const_str);
             Console.WriteLine($"{val.value}, {val.value.GetType()}");
