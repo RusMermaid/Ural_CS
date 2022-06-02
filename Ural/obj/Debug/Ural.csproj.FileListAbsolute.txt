@@ -16,3 +16,10 @@
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural/obj/Debug/Ural.csproj.CoreCompileInputs.cache
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural/obj/Debug/Ural.exe
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural/obj/Debug/Ural.pdb
+C:\Users\ivanr\Documents\GitHub\Ural_CS\Ural\bin\Debug\Ural.exe
+C:\Users\ivanr\Documents\GitHub\Ural_CS\Ural\bin\Debug\Ural.pdb
+C:\Users\ivanr\Documents\GitHub\Ural_CS\Ural\obj\Debug\Ural.csproj.AssemblyReference.cache
+C:\Users\ivanr\Documents\GitHub\Ural_CS\Ural\obj\Debug\Ural.csproj.SuggestedBindingRedirects.cache
+C:\Users\ivanr\Documents\GitHub\Ural_CS\Ural\obj\Debug\Ural.csproj.CoreCompileInputs.cache
+C:\Users\ivanr\Documents\GitHub\Ural_CS\Ural\obj\Debug\Ural.exe
+C:\Users\ivanr\Documents\GitHub\Ural_CS\Ural\obj\Debug\Ural.pdb

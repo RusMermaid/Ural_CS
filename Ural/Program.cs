@@ -1,5 +1,6 @@
 ﻿using System;
 using Ural.Ural_translator_compliler.Datatypes.Numbers;
+using Ural.Ural_translator_compliler.Datatypes.Strings;
 using Ural.Ural_translator_compliler.Datatypes;
 
 using Ural.Ural_translator_compliler.Errors;
@@ -16,10 +17,11 @@ namespace Ural
             Token test = new Token("INT", "5");
             Error test_error = new SyntaxInvalidCharacterError(6, 9);
 
-            natch16 val = new natch16();
+            str16 val = new str16("Меня держат в заложниках и пытают Python помогите");
 
-            //onsole.WriteLine(test.value, Token.digit_const_str);
+            //Console.WriteLine(test.value, Token.digit_const_str);
             Console.WriteLine($"{val.value}, {val.value.GetType()}");
+            ConsoleKeyInfo info = Console.ReadKey();
         }
     }
 }
