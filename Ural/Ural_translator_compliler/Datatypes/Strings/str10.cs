@@ -2,7 +2,7 @@ using System;
 using Ural.Ural_translator_compliler.Datatypes.Strings;
 namespace Ural.Ural_translator_compliler.Datatypes.Strings
 {
-    public class str10 : str16
+    public class str10 : str32
     {
     public str10(string _value = "") : base(_value)
         {

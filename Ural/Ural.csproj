@@ -52,6 +52,7 @@
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str10.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str0.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str16.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Strings\str32.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ural_translator_compliler\" />

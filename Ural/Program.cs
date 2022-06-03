@@ -17,11 +17,11 @@ namespace Ural
             Token test = new Token("INT", "5");
             Error test_error = new SyntaxInvalidCharacterError(6, 9);
 
-            str0 val = new str0('G');
+            str32 val = new str32('G');
 
             //Console.WriteLine(test.value, Token.digit_const_str);
             Console.WriteLine($"{val.value}, {val.value.GetType()}");
-            ConsoleKeyInfo info = Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }

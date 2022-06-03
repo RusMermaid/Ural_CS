@@ -1,31 +1,17 @@
 using System;
-using Ural.Ural_translator_compliler.Datatypes;
 namespace Ural.Ural_translator_compliler.Datatypes.Strings
 {
-    public class str16 : VOID
+    public class str16 : str32
     {
-        public str16(object _value = null) : base(_value) 
-            {
-            string new_value;
-            switch (Type.GetTypeCode(_value.GetType()))
-            {
+        public str16(string _value = "") : base(_value)
+        {
+            string new_value = Convert.ToString(_value);
+            this.value = new_value;
 
-                case TypeCode.Boolean:
-                    if ((bool)_value)
-                    {
-                        this.value = "??????";
-                    }
-                    else
-                    {
-                        this.value = "????";
-                    }
-                    break;
+        }
 
-                default:
-                    new_value = Convert.ToString(_value);
-                    this.value = new_value;
-                    break;
-            }
+        public str16(object _value = null) : base(_value)
+        {
         }
     }
 }

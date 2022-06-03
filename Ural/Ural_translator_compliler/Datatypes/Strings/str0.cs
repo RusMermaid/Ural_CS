@@ -1,8 +1,8 @@
 using System;
-using Ural.Ural_translator_compliler.Datatypes.Strings;
+using Ural.Ural_translator_compliler.Datatypes;
 namespace Ural.Ural_translator_compliler.Datatypes.Strings
 {
-    public class str0 : str16
+    public class str0 : VOID
     {
         public str0(string _value = "") : base(_value)
         {
