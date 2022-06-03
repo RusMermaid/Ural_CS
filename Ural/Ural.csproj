@@ -53,6 +53,7 @@
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str0.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str16.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str32.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Booleans\RCI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ural_translator_compliler\" />
@@ -61,6 +62,7 @@
     <Folder Include="Ural_translator_compliler\Operations\Regex_py_txt\" />
     <Folder Include="Ural_translator_compliler\Datatypes\" />
     <Folder Include="Ural_translator_compliler\Datatypes\Numbers\" />
+    <Folder Include="Ural_translator_compliler\Datatypes\Booleans\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Ural_translator_compliler\Operations\Regex_py_txt\regex_for_blocks.json" />
