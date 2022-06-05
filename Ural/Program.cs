@@ -14,6 +14,10 @@ namespace Ural
     {
         public static void Main(string[] args)
         {
+            celch32 num1 = new celch32(8);
+            celch32 num2 = new celch32(3);
+
+            Console.WriteLine(num1.divide(num2).value);
 
             Token test = new Token("INT", "5");
             Error test_error = new SyntaxInvalidCharacterError(6, 9);
@@ -25,8 +29,8 @@ namespace Ural
 
 
             //Console.WriteLine(test.value, Token.digit_const_str);
-            Console.WriteLine($"{val3.value}, {val3.value.GetType()}");
-            //Console.ReadKey();
+            //Console.WriteLine($"{val3.value}, {val3.value.GetType()}");
+            Console.ReadKey();
         }
     }
 
