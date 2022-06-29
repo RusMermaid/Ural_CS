@@ -56,6 +56,14 @@
     <Compile Include="Ural_translator_compliler\Datatypes\Booleans\RCI.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Booleans\ISTINA.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Booleans\LOZH.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidCelchDatatypeError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidDrobchDatatypeError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidISTINADatatypeError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidLOZHDatatypeError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidNatchDatatypeError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidRCIDatatypeError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidStr0DatatypeError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidStringDatatypeError.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ural_translator_compliler\" />
