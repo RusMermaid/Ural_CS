@@ -34,8 +34,9 @@ namespace Ural
             Console.WriteLine(num3.divide(num4).value);
             */
             drobch64 num5 = new drobch64(8.0D);
-
+            int? x = (int?)6.9D;
             Console.WriteLine(num5);
+            Console.WriteLine(x);
             Console.WriteLine(num5.GetType());
             Console.WriteLine(num5.value.GetType());
             Console.WriteLine(num5.value);

@@ -54,6 +54,8 @@
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str16.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str32.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Booleans\RCI.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Booleans\ISTINA.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Booleans\LOZH.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ural_translator_compliler\" />
