@@ -14,8 +14,11 @@ namespace Ural
     {
         public static void Main(string[] args)
         {
-            drobch16 num1 = new drobch16(65537);
-            Console.ReadKey();
+
+            drobch16 num1 = new drobch16(655);
+            drobch64 num2 = new drobch64(num1);
+            Console.WriteLine(num2.value);
+            Console.WriteLine(num2.value.GetType());
         }
     }
 
