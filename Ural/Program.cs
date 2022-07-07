@@ -10,14 +10,14 @@ using Ural.Ural_translator_compliler;
 namespace Ural
 {
     class MainClass
-        //Testing Ivan
     {
         public static void Main(string[] args)
         {
 
             drobch64 num1 = new drobch64(-655);
+
             Console.WriteLine(num1.abs(num1.value).value);
-            Console.ReadKey();
+            Console.WriteLine(num1.abs(num1).value);
         }
     }
 
