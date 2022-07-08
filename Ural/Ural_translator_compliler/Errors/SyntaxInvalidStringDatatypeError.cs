@@ -9,6 +9,5 @@ namespace Ural.Ural_translator_compliler.Errors
             // Inherited Constructor
         }
 
-
     }
 }
