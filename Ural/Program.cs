@@ -14,18 +14,15 @@ namespace Ural
         public static void Main(string[] args)
         {
 
-<<<<<<< Updated upstream
             drobch16 num = new drobch16(4294967296L);
 
             Console.ReadKey();
-=======
             drobch64 num1 = new drobch64(-655);
             dynamic x = 0;
             x = true;
             Console.WriteLine(x);
             Console.WriteLine(num1.abs(num1.value).value);
             Console.WriteLine(num1.abs(num1).value);
->>>>>>> Stashed changes
         }
     }
 
