@@ -13,7 +13,6 @@ namespace Ural
     {
         public static void Main(string[] args)
         {
-
             drobch16 num = new drobch16(4294967296L);
 
             Console.ReadKey();
