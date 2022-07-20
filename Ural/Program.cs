@@ -10,13 +10,12 @@ using Ural.Ural_translator_compliler.Operations;
 using Ural.Ural_translator_compliler;
 namespace Ural
 {
-
     class MainClass
     {
         public static void Main(string[] args)
         {
             drobch64 num1 = new drobch64(500);
-            drobch16 num2 = new drobch16(30);
+            drobch16 num2 = new drobch16(31);
             Console.WriteLine(num1.add(num2).value);
 
             drobch16 num = new drobch16(4294967296L);
