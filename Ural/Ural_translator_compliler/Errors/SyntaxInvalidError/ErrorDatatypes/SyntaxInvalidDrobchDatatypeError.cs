@@ -1,5 +1,6 @@
 ﻿using System;
-namespace Ural.Ural_translator_compliler.Errors
+using Ural.Ural_translator_compliler.Errors;
+namespace Ural.Ural_translator_compliler.Errors.SyntaxInvalidError.ErrorDatatypes
 
 {
     public class SyntaxInvalidDrobchDatatypeError : Error

@@ -23,7 +23,7 @@ namespace Ural.Ural_translator_compliler.Datatypes.Booleans
             }
             else if (! _value)
             {
-                this.value = "ЛОЖЬ"; //FALSE
+                this.value = "ИСТИНА"; //FALSE
             }
             else
             {

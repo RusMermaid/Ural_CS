@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{DF7C089C-F9B9-45BD-8585-391A51E35CB6}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.ItemProperties.Ural PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ural_translator_compliler/Errors/SyntaxInvalidError/ErrorDatatypes/SyntaxInvalidStringDatatypeError.cs">
+    <Files>
+      <File FileName="Program.cs" Line="26" Column="2" />
+      <File FileName="Ural_translator_compliler/Errors/Error.cs" Line="1" Column="1" />
+      <File FileName="Ural_translator_compliler/Datatypes/Booleans/RCI.cs" Line="16" Column="22" />
+      <File FileName="Ural_translator_compliler/Datatypes/Booleans/ISTINA.cs" Line="29" Column="14" />
+      <File FileName="Ural_translator_compliler/Datatypes/Booleans/LOZH.cs" Line="15" Column="17" />
+      <File FileName="Ural_translator_compliler/Datatypes/Numbers/drobch32.cs" Line="14" Column="10" />
+      <File FileName="Ural_translator_compliler/Errors/SyntaxInvalidError/ErrorDatatypes/SyntaxInvalidCelchDatatypeError.cs" Line="1" Column="1" />
+      <File FileName="Ural_translator_compliler/Errors/SyntaxInvalidError/ErrorDatatypes/SyntaxInvalidCharacterError.cs" Line="1" Column="1" />
+      <File FileName="Ural_translator_compliler/Errors/SyntaxInvalidError/ErrorDatatypes/SyntaxInvalidStringDatatypeError.cs" Line="1" Column="1" />
+      <File FileName="Ural_translator_compliler/Datatypes/Numbers/drobch64.cs" Line="1" Column="1" />
+      <File FileName="Ural_translator_compliler/Errors/SyntaxInvalidError/ErrorDatatypes/SyntaxInvalidDrobchDatatypeError.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ural" expanded="True">
+            <Node name="Ural" expanded="True">
+              <Node name="Ural_translator_compliler" expanded="True">
+                <Node name="Datatypes" expanded="True">
+                  <Node name="Booleans" expanded="True" />
+                  <Node name="Numbers" expanded="True" />
+                </Node>
+                <Node name="Errors" expanded="True">
+                  <Node name="SyntaxInvalidError" expanded="True">
+                    <Node name="ErrorDatatypes" expanded="True">
+                      <Node name="SyntaxInvalidStringDatatypeError.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
