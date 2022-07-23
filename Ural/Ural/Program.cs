@@ -22,6 +22,4 @@ namespace Ural
             Console.ReadKey();
         }
     }
-
-
 }
