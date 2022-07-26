@@ -55,7 +55,6 @@
     <Reference Include="System.IO.Compression.FileSystem" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ural_translator_compliler\Tokens.cs" />
     <Compile Include="Ural_translator_compliler\Lexer.cs" />
@@ -92,6 +91,7 @@
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidStringDatatypeError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\CelchOutOfRange.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\DrobchOutOfRange.cs" />
+    <Compile Include="Main.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ural_translator_compliler\" />

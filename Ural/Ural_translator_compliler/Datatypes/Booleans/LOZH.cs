@@ -32,5 +32,19 @@ namespace Ural.Ural_translator_compliler.Datatypes.Booleans
             }
         }
 
+        public LOZH(RCI _value) : base(_value)
+        {
+            this.value = _value.value;
+        }
+
+        public LOZH(ISTINA _value) : base(_value)
+        {
+            this.value = _value.value;
+        }
+
+        public LOZH(LOZH _value) : base(_value)
+        {
+            this.value = _value.value;
+        }
     }
 }
