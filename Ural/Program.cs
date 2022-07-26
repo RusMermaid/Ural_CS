@@ -16,8 +16,9 @@ namespace Ural
         {
             drobch64 num1 = new drobch64(500);
             drobch16 num2 = new drobch16(31);
+            RCI bool1 = new RCI(true);
             Console.WriteLine(num1.add(num2).value);
-
+            Console.WriteLine(bool1);
             drobch16 num = new drobch16(4294967296L);
             Console.ReadKey();
         }
