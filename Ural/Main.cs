@@ -17,8 +17,12 @@ namespace Ural
         {
             RCI bool1 = new RCI(true);
             RCI bool2 = new RCI(false);
+            VOID void1 = new VOID();
+
             Console.WriteLine(bool1.NOR(bool2).value);
             Console.WriteLine(bool1.NE().NE().value);
+            Console.WriteLine(void1.value);
+            Console.WriteLine(void1.subvalue);
             Console.ReadKey();
         }
     }
