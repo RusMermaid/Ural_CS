@@ -4,7 +4,6 @@ using Ural.Ural_translator_compliler.Datatypes.Booleans;
 using Ural.Ural_translator_compliler.Datatypes.Strings;
 using Ural.Ural_translator_compliler.Datatypes;
 
-using Ural.Ural_translator_compliler.Datatypes.Booleans;
 
 using Ural.Ural_translator_compliler.Errors;
 using Ural.Ural_translator_compliler.Errors.SyntaxInvalidError;
@@ -17,8 +16,8 @@ namespace Ural
         public static void Main(string[] args)
         {
             RCI bool1 = new RCI(true);
-            RCI bool2 = new RCI(false);
-            Console.WriteLine(bool1.I(bool2).value);
+            RCI bool2 = new RCI(true);
+            Console.WriteLine(bool1.ILI(bool2).value);
             Console.ReadKey();
         }
     }
