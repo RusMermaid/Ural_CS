@@ -16,8 +16,8 @@ namespace Ural
         public static void Main(string[] args)
         {
             RCI bool1 = new RCI(true);
-            RCI bool2 = new RCI(true);
-            Console.WriteLine(bool1.ILI(bool2).value);
+            RCI bool2 = new RCI(false);
+            Console.WriteLine(bool1.NOR(bool2).value);
             Console.ReadKey();
         }
     }
