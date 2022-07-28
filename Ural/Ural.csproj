@@ -90,7 +90,6 @@
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\CelchOutOfRange.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\DrobchOutOfRange.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="Ural_translator_compliler\Datatypes\Booleans\LogicGate.cs" />
     <Compile Include="Ural_translator_compliler\Errors\ErrorValue.cs" />
   </ItemGroup>
   <ItemGroup>
