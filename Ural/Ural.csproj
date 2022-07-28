@@ -77,8 +77,6 @@
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str16.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str32.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Booleans\RCI.cs" />
-    <Compile Include="Ural_translator_compliler\Datatypes\Booleans\ISTINA.cs" />
-    <Compile Include="Ural_translator_compliler\Datatypes\Booleans\LOZH.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\NatchOutOfRange.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidCelchDatatypeError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidCharacterError.cs" />
@@ -92,6 +90,7 @@
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\CelchOutOfRange.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\DrobchOutOfRange.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Booleans\LogicGate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ural_translator_compliler\" />
