@@ -15,14 +15,9 @@ namespace Ural
     {
         public static void Main(string[] args)
         {
-            RCI bool1 = new RCI(true);
-            RCI bool2 = new RCI(false);
-            VOID void1 = new VOID();
-
-            Console.WriteLine(bool1.NOR(bool2).value);
-            Console.WriteLine(bool1.NE().NE().value);
-            Console.WriteLine(void1.value);
-            Console.WriteLine(void1.subvalue);
+            celch64 num1 = new celch64(8);
+            celch64 num2 = new celch64(4);
+            Console.WriteLine(num1.divide(num2));
             Console.ReadKey();
         }
     }
