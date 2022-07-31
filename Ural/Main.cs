@@ -18,7 +18,7 @@ namespace Ural
         public static void Main(string[] args)
         {
             celch64 num1 = new celch64(8);
-            celch64 num2 = new celch64(4);
+            celch64 num2 = new celch64(4.0);
             NatchOutOfRangeOtricError er1 = new NatchOutOfRangeOtricError(0, 0);
             Console.WriteLine(er1.error_name + er1.discription);
             Console.WriteLine(num1.divide(num2).value);
