@@ -77,20 +77,31 @@
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str16.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Strings\str32.cs" />
     <Compile Include="Ural_translator_compliler\Datatypes\Booleans\RCI.cs" />
-    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\NatchOutOfRange.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Natch16OutOfRangeMaxError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidCelchDatatypeError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidCharacterError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidDrobchDatatypeError.cs" />
-    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidISTINADatatypeError.cs" />
-    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidLOZHDatatypeError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidNatchDatatypeError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidRCIDatatypeError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidStr0DatatypeError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\SyntaxInvalidStringDatatypeError.cs" />
-    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\CelchOutOfRange.cs" />
-    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\DrobchOutOfRange.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Celch16OutOfRangeMaxError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Drobch16OutOfRangeMaxError.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Ural_translator_compliler\Errors\ErrorValue.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Celch32OutOfRangeMaxError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Celch64OutOfRangeMaxError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Celch16OutOfRangeMinError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Celch32OutOfRangeMinError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Celch64OutOfRangeMinError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Drobch16OutOfRangeMinError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Drobch32OutOfRangeMaxError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Drobch32OutOfRangeMinError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Drobch64OutOfRangeMaxError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Drobch64OutOfRangeMinError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Natch32OutOfRangeMaxError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Natch64OutOfRangeMaxError.cs" />
+    <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\NatchOutOfRangeOtricError.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ural_translator_compliler\" />
