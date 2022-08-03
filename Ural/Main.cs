@@ -21,9 +21,9 @@ namespace Ural
             celch64 num3 = new celch64(celch64.MaxValue-1);
             num3.add(7);
 
-            //Console.WriteLine(num1.add(num3));
+            Console.WriteLine(num1.add(num3));
             Console.WriteLine(num3.add(num3));
-            //Console.WriteLine(celch32.MaxValue);
+            Console.WriteLine(celch32.MaxValue);
             Console.ReadKey();
         }
     }
