@@ -94,6 +94,10 @@
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Natch32OutOfRangeMaxError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\Natch64OutOfRangeMaxError.cs" />
     <Compile Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\NatchOutOfRangeOtricError.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\OtherNumbers\Binary\binch.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\OtherNumbers\Hexadecimal\shesch6.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\OtherNumbers\vosch.cs" />
+    <Compile Include="Ural_translator_compliler\Datatypes\Numbers\OtherNumbers\Hexadecimal\shesch16.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ural_translator_compliler\" />
@@ -106,6 +110,9 @@
     <Folder Include="Ural_translator_compliler\Errors\SyntaxInvalidError\" />
     <Folder Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\" />
     <Folder Include="Ural_translator_compliler\Errors\SyntaxInvalidError\ErrorDatatypes\ErrorOutOfRange\" />
+    <Folder Include="Ural_translator_compliler\Datatypes\Numbers\OtherNumbers\" />
+    <Folder Include="Ural_translator_compliler\Datatypes\Numbers\OtherNumbers\Binary\" />
+    <Folder Include="Ural_translator_compliler\Datatypes\Numbers\OtherNumbers\Hexadecimal\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Ural_translator_compliler\Operations\Regex_py_txt\regex_for_blocks.json" />

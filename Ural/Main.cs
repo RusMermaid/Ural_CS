@@ -1,5 +1,8 @@
 ﻿using System;
 using Ural.Ural_translator_compliler.Datatypes.Numbers;
+using Ural.Ural_translator_compliler.Datatypes.Numbers.OtherNumbers;
+using Ural.Ural_translator_compliler.Datatypes.Numbers.OtherNumbers.Binary;
+using Ural.Ural_translator_compliler.Datatypes.Numbers.OtherNumbers.Hexadecimal;
 using Ural.Ural_translator_compliler.Datatypes.Booleans;
 using Ural.Ural_translator_compliler.Datatypes.Strings;
 using Ural.Ural_translator_compliler.Datatypes;
