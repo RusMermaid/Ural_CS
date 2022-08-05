@@ -5,7 +5,7 @@ namespace Ural.Ural_translator_compliler.Errors.SyntaxInvalidError.ErrorDatatype
 {
     public class SyntaxInvalidRCIDatatypeError : Error
     {
-        public SyntaxInvalidRCIDatatypeError(int _position_start, int _position_end, string _error_name = "�������������� ������: �������� '���'.", string _discription = "�������������� ������ ��� ������������ ������������� ���� ������ '���'.") : base(_position_start, _position_end, _error_name, _discription)
+        public SyntaxInvalidRCIDatatypeError(int _position_start, int _position_end, string _error_name = "Синтаксическая ошибка: неверное 'РЦЫ'.", string _discription = " 'РЦЫ' принимает только два значения: 'ИСТИНА' и 'ЛОЖЬ'.") : base(_position_start, _position_end, _error_name, _discription)
         {
             // Inherited Constructor
         }
