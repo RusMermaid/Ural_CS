@@ -118,6 +118,7 @@
     <None Include="Ural_translator_compliler\Operations\Regex_py_txt\regex_for_blocks.json" />
     <None Include="Ural_translator_compliler\Operations\Regex_py_txt\regex_to_txt.py" />
     <None Include="packages.config" />
+    <None Include=".editorconfig" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
