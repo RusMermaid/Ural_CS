@@ -20,13 +20,9 @@ namespace Ural
     {
         public static void Main(string[] args)
         {
-            celch32 num1 = new celch32(2);
-            celch64 num3 = new celch64(celch64.MaxValue-1);
-            num3.add(7);
-
-            Console.WriteLine(num1.add(num3));
-            Console.WriteLine(num3.add(num3));
-            Console.WriteLine(celch32.MaxValue);
+            celch64 num1 = new celch64(5);
+            drobch64 num2 = new drobch64(1.1);
+            Console.WriteLine(num2.power(5).value);
             Console.ReadKey();
         }
     }
