@@ -20,10 +20,7 @@ namespace Ural
     {
         public static void Main(string[] args)
         {
-            drobch64 num1 = new drobch64(celch64.MaxValue - 5);
-            num1.add(1.2F);
-            celch16 num2 = (celch16)(celch64)num1; // num1 is a drobch64
-            Console.WriteLine(num2.value);
+            Console.WriteLine(binch.BinchToDrobch("Бх0.1", "Бх1"));
             Console.ReadKey();
         }
     }
