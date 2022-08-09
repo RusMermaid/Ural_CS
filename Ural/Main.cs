@@ -20,7 +20,7 @@ namespace Ural
     {
         public static void Main(string[] args)
         {
-            binch num1 = new binch(-10);
+            binch num1 = new binch(1);
             Console.WriteLine(num1);
             Console.ReadKey();
             
