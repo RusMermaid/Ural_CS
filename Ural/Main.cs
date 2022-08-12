@@ -26,7 +26,7 @@ namespace Ural
             kvalia num3 = new kvalia(703716U);
             //Console.WriteLine(num1);
             //Console.WriteLine(num2);
-            Console.WriteLine(num3 + " " + kvalia.RusHexToASCII(num3.value) + " " + kvalia.ASCIIToRusHex(num3));
+            Console.WriteLine(num3 + " " + kvalia.ToEngHex(num3.value) + " " + kvalia.ToRusHex(num3));
             Console.ReadKey();
             
         }
