@@ -2,6 +2,7 @@
 using Ural.Ural_translator_compliler.Datatypes.Numbers;
 using Ural.Ural_translator_compliler.Datatypes.Numbers.OtherNumbers;
 using Ural.Ural_translator_compliler.Datatypes.Numbers.OtherNumbers.Binary;
+using Ural.Ural_translator_compliler.Datatypes.Numbers.OtherNumbers.Octal;
 using Ural.Ural_translator_compliler.Datatypes.Numbers.OtherNumbers.Hexadecimal;
 using Ural.Ural_translator_compliler.Datatypes.Booleans;
 using Ural.Ural_translator_compliler.Datatypes.Strings;
@@ -20,8 +21,12 @@ namespace Ural
     {
         public static void Main(string[] args)
         {
-            binch num2 = new binch(-2000000000);
+            binch num1 = new binch(-20000000000);
+            vosch num2 = new vosch(100U);
+            shesch16 num3 = new shesch16(10U);
+            Console.WriteLine(num1);
             Console.WriteLine(num2);
+            Console.WriteLine(num3);
             Console.ReadKey();
             
         }
