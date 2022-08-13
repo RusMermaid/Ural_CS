@@ -23,7 +23,7 @@ namespace Ural
         {
             binch num1 = new binch(-20000000000);
             vosch num2 = new vosch(10U);
-            kvalia num3 = new kvalia(703716U);
+            kvalia num3 = new kvalia(999999999);
             
             //Console.WriteLine(num1);
             //Console.WriteLine(num2);
