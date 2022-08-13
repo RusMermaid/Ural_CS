@@ -22,12 +22,11 @@ namespace Ural
         public static void Main(string[] args)
         {
             binch num1 = new binch(-20000000000);
-            vosch num2 = new vosch(10U);
-            kvalia num3 = new kvalia(999999999);
+            binch num2 = new binch(-3);
             
             //Console.WriteLine(num1);
             //Console.WriteLine(num2);
-            Console.WriteLine(num3 + " " + kvalia.ToEngHex(num3.value) + " " + kvalia.ToRusHex(num3));
+            Console.WriteLine(num1.add(num2).BinchToOtricCelch());
             Console.ReadKey();
             
         }
