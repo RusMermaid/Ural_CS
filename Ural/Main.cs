@@ -21,12 +21,25 @@ namespace Ural
     {
         public static void Main(string[] args)
         {
-            binch num1 = new binch(-20000000000);
-            binch num2 = new binch(-3);
-            
+            binch num1 = new binch(-18);
+            binch num2 = new binch(3);
+            int[] array = { 297, 183, 464, 1112, 0, -9, 127};
             //Console.WriteLine(num1);
             //Console.WriteLine(num2);
-            Console.WriteLine(num1.add(num2).BinchToOtricCelch());
+            foreach (var element in array)
+            {
+                Console.Write(element + " ");
+            }
+            Console.Write("\n");
+
+            VOID.CocktailSort(array);
+
+            foreach (var element in array)
+            {
+                Console.Write(element + " ");
+            }
+            Console.Write("\n");
+            //Console.WriteLine(num1.add(num2) + " " + num1.add(num2).BinchToNatch());
             Console.ReadKey();
             
         }
