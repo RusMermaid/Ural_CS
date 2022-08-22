@@ -19,7 +19,6 @@ using Ural.Ural_translator_compliler.Operations;
 using Ural.Ural_translator_compliler;
 
 using Ural.Ural_translator_compliler.Libraries.MathLib;
-using Ural.Ural_translator_compliler.Libraries.MathLib.SeivePrimes;
 
 namespace Ural
 {
@@ -27,7 +26,21 @@ namespace Ural
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(UralMath.ProstoeChek(5393U));
+            Console.WriteLine(UralMath.Gamma(5.5));
+
+
+
+
+
+
+
+
+            /*
+            static dynamic f(dynamic x)
+            {
+                return 1/Math.Pow(2, (double)x);
+            }
+            */
         }
     }
 }
