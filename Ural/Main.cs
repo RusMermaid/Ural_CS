@@ -26,7 +26,7 @@ namespace Ural
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(UralMath.Gamma(2));
+            Console.WriteLine(UralMath.TaylorFunction(0, 1, f));
 
 
 
@@ -35,12 +35,12 @@ namespace Ural
 
 
 
-            /*
-            static dynamic f(dynamic x)
+            
+            static double f(dynamic x)
             {
-                return 1/Math.Pow(2, (double)x);
+                return (Math.Cos((double)x));
+                // f(x) = x^2/2 + 1
             }
-            */
         }
     }
 }
