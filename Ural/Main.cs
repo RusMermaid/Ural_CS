@@ -26,7 +26,7 @@ namespace Ural
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(UralMath.Gamma(5.5));
+            Console.WriteLine(UralMath.Gamma(2));
 
 
 
