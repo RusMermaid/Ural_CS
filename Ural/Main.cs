@@ -18,7 +18,7 @@ using Ural.Ural_translator_compliler.Errors.SyntaxInvalidError.ErrorDatatypes.Er
 using Ural.Ural_translator_compliler.Operations;
 using Ural.Ural_translator_compliler;
 
-using Ural.Ural_translator_compliler.Libraries.MathLib;
+using Ural.Ural_translator_compliler.Libraries.UralMathLib;
 
 namespace Ural
 {
@@ -42,13 +42,13 @@ namespace Ural
             }
             
             //Console.WriteLine(UralMath.Factorial(17));
-            /*
+            
             static double f(dynamic x)
             {
                 return (Math.Cos((float)x));
             // f(x) = x^2/2 + 1
             }
-            */
+            
             Console.ReadKey();
         }
     }
