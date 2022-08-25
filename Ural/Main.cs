@@ -29,7 +29,7 @@ namespace Ural
             //Console.WriteLine(UralMath.Factorial(7));
             //Console.WriteLine(UralMath.Arcsin(UralMath.sqrt_ot_2_na_2));
             //Console.WriteLine((double)"f");
-            
+            /*
             for (int test = 0; test < 50; test++)
             {
                 Console.Write(test);
@@ -48,7 +48,8 @@ namespace Ural
                 return (Math.Cos((float)x));
             // f(x) = x^2/2 + 1
             }
-            
+            */
+            Console.WriteLine(UralMath.ArcSinh(3).value);
             Console.ReadKey();
         }
     }
