@@ -49,8 +49,7 @@ namespace Ural
             // f(x) = x^2/2 + 1
             }
             */
-            Console.WriteLine(UralMath.ArcSinh(3).value);
-            Console.ReadKey();
+            Console.WriteLine(UralMath.Isqrt(2));
         }
     }
 }
