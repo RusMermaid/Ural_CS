@@ -26,30 +26,10 @@ namespace Ural
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine(UralMath.Factorial(7));
-            //Console.WriteLine(UralMath.Arcsin(UralMath.sqrt_ot_2_na_2));
-            //Console.WriteLine((double)"f");
-            /*
-            for (int test = 0; test < 50; test++)
-            {
-                Console.Write(test);
-                Console.WriteLine(":");
-                Console.Write("Gamma: ");
-                Console.WriteLine(UralMath.Gamma(test+1).value);
-                Console.Write("Factorial: ");
-                Console.WriteLine(UralMath.Factorial(test).value);
-                Console.WriteLine();
-            }
-            
-            //Console.WriteLine(UralMath.Factorial(17));
-            
-            static double f(dynamic x)
-            {
-                return (Math.Cos((float)x));
-            // f(x) = x^2/2 + 1
-            }
-            */
-            Console.WriteLine(UralMath.Isqrt(2));
+            drobch64 num1 = new drobch64(2);
+            drobch64 num2 = new drobch64(2.5);
+            Console.WriteLine(3 - num1);
+            Console.ReadKey();
         }
     }
 }
