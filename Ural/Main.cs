@@ -24,12 +24,22 @@ namespace Ural
 {
     class MainClass
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            drobch64 num1 = new drobch64(2);
-            drobch64 num2 = new drobch64(2.5);
-            Console.WriteLine(3 - num1);
-            Console.ReadKey();
+            // lx and ux are upper and lower limit of x integral
+            // ly and uy are upper and lower limit of y integral
+            // h is the step size for integration wrt x
+            // k is the step size for integration wrt y
+            float h, k, lx, ux, ly, uy;
+
+            Console.WriteLine(UralMath.DvoynoyIntegral(0, 1, 0, 1, f));
+        }
+
+
+        static double f(dynamic x, dynamic y)
+        {
+            return (x*2 + y*2);
+            // f(x) = x^2/2 + 1
         }
     }
 }
