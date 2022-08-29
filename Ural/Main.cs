@@ -30,9 +30,9 @@ namespace Ural
             // ly and uy are upper and lower limit of y integral
             // h is the step size for integration wrt x
             // k is the step size for integration wrt y
-            drobch32 num1 = new drobch32(3);
-            drobch64 num2 = new drobch64(drobch64.MaxValue);
-            Console.WriteLine(num1 - num2);
+            celch32 num = new celch32(9);
+            celch32 num2 = new celch32(4);
+            Console.WriteLine(Math.Pow(3.5, 4.1));
             Console.ReadKey();
         }
 
