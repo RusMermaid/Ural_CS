@@ -32,7 +32,7 @@ namespace Ural
             // k is the step size for integration wrt y
             celch32 num = new celch32(9);
             celch32 num2 = new celch32(4);
-            Console.WriteLine(UralMath.Sinc(1.5));
+            Console.WriteLine(UralMath.Sinc(9));
             Console.ReadKey();
         }
 
@@ -40,7 +40,6 @@ namespace Ural
         static double f(dynamic x, dynamic y)
         {
             return (x*2 + y*2);
-            // f(x) = x^2/2 + 1
         }
     }
 }
