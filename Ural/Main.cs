@@ -26,13 +26,9 @@ namespace Ural
     {
         public static void Main()
         {
-            // lx and ux are upper and lower limit of x integral
-            // ly and uy are upper and lower limit of y integral
-            // h is the step size for integration wrt x
-            // k is the step size for integration wrt y
             celch32 num = new celch32(9);
-            celch32 num2 = new celch32(4);
-            Console.WriteLine(UralMath.Sinc(9 ));
+            natch16 num2 = new natch16(4);
+            Console.WriteLine(num + num2);
             Console.ReadKey();
         }
 
