@@ -32,7 +32,7 @@ namespace Ural
             // k is the step size for integration wrt y
             celch32 num = new celch32(9);
             celch32 num2 = new celch32(4);
-            Console.WriteLine(UralMath.Sinc(9));
+            Console.WriteLine(UralMath.Sinc(9 ));
             Console.ReadKey();
         }
 
