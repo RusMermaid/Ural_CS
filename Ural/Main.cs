@@ -26,9 +26,9 @@ namespace Ural
     {
         public static void Main()
         {
-            celch32 num = new celch32(9);
-            natch16 num2 = new natch16(4);
-            Console.WriteLine(num + num2);
+            RCI num = new RCI(1);
+            RCI num2 = new RCI(0);
+            Console.WriteLine(num / num2);
             Console.ReadKey();
         }
 
