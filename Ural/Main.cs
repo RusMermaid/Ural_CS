@@ -26,9 +26,9 @@ namespace Ural
     {
         public static void Main()
         {
-            RCI num = new RCI(1);
-            RCI num2 = new RCI(0);
-            Console.WriteLine(num / num2);
+            binch num1 = new binch(-12);
+            binch num2 = new binch(-100);
+            Console.WriteLine(binch.Add(VOID.Slice(num1.value, 2), VOID.Slice(num2.value, 2)));
             Console.ReadKey();
         }
 
