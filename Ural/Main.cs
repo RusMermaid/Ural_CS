@@ -24,7 +24,7 @@ namespace Ural
 {
     class MainClass
     {
-        public static void Main()
+        public unsafe static void Main()
         {
             binch num1 = new binch(-12);
             binch num2 = new binch(-100);
