@@ -26,9 +26,9 @@ namespace Ural
     {
         public unsafe static void Main()
         {
-            binch num1 = new binch(-1);
-            binch num2 = new binch(-1);
-            Console.WriteLine(binch.Add(VOID.Slice(num1.value, 2), VOID.Slice(num2.value, 2)));
+            binch num1 = new binch(300);
+            natch16 num2 = new natch16(2);
+            Console.WriteLine(binch.Multiply("1011", "1101"));
             Console.ReadKey();
         }
 
