@@ -26,10 +26,10 @@ namespace Ural
     {
         public unsafe static void Main()
         {
-            binch num1 = new binch(300);
-            natch16 num2 = new natch16(0);
+            binch num1 = new binch(7);
+            binch num2 = new binch(3);
             //Console.WriteLine(binch.Lsh("1011", 0));
-            Console.WriteLine(binch.Multiply("1011", "1101"));
+            Console.WriteLine(binch.MultiplyObj(num1, num2));
             Console.ReadKey();
         }
 
