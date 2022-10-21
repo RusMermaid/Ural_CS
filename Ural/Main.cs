@@ -22,6 +22,8 @@ using Ural.Ural_translator_compliler.Operations;
 using Ural.Ural_translator_compliler;
 using Ural;
 using Ural.Ural_translator_compliler.Libraries;
+using Ural.Ural_translator_compliler.Libraries.UralMathLib;
+
 using static Ural.Ural_translator_compliler.Libraries.UralMathLib.HilbertsCurve.UralMath;
 using static Ural.Ural_translator_compliler.Libraries.UralMathLib.SievePrimes.UralMath;
 
@@ -33,13 +35,13 @@ namespace Ural
         {
             binch num1 = new binch(7);
             binch num2 = new binch(3);
-            List<int> z = new List<int>() {6, 9, 10};
+            List<int> z = new List<int>() {1, 2, 3};
             HilbertsCurve hc = new HilbertsCurve(2, 3);
 
             //Console.WriteLine(new string("HelloThere".Where((ch, index) => index % (2) == (0)).ToArray()));
 
 
-            Console.WriteLine(hc.Distance_from_point(z));
+            Console.WriteLine(hc.Points_from_distance(z));
             //Console.WriteLine(hc.Hilbert_integer_to_transpose_single(6)[1]);
             Console.ReadKey();
         }
