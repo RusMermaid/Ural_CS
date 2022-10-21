@@ -1,6 +1,9 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Newtonsoft.Json.Linq;
+
 
 using Ural.Ural_translator_compliler.Datatypes.Numbers;
 using Ural.Ural_translator_compliler.Datatypes.Numbers.OtherNumbers;
@@ -18,10 +21,9 @@ using Ural.Ural_translator_compliler.Errors.SyntaxInvalidError.ErrorDatatypes.Er
 using Ural.Ural_translator_compliler.Operations;
 using Ural.Ural_translator_compliler;
 using Ural;
-using Ural.Ural_translator_compliler.Libraries.UralMathLib;
-using Ural.Ural_translator_compliler.Libraries.HilbertsCurve;
-using Newtonsoft.Json.Linq;
-using System.Linq;
+using Ural.Ural_translator_compliler.Libraries;
+using static Ural.Ural_translator_compliler.Libraries.UralMathLib.HilbertsCurve.UralMath;
+using static Ural.Ural_translator_compliler.Libraries.UralMathLib.SievePrimes.UralMath;
 
 namespace Ural
 {
