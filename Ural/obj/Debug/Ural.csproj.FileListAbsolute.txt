@@ -55,4 +55,3 @@ C:/Users/ivanr/Documents/GitHub/Ural_CS/Ural/obj/Debug/Ural.csproj.CopyComplete
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural/obj/Debug/Ural.csproj.CopyComplete
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural/obj/Debug/Ural.exe
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural/obj/Debug/Ural.pdb
-/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural/obj/Debug/Ural.csproj.AssemblyReference.cache

@@ -38,9 +38,6 @@ namespace Ural
             List<int> z = new List<int>() {1, 2, 3};
             HilbertsCurve hc = new HilbertsCurve(2, 3);
 
-            //Console.WriteLine(new string("HelloThere".Where((ch, index) => index % (2) == (0)).ToArray()));
-
-
             Console.WriteLine(hc.Points_from_distance(z));
             //Console.WriteLine(hc.Hilbert_integer_to_transpose_single(6)[1]);
             Console.ReadKey();
