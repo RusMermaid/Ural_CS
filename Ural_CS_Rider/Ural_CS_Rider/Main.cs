@@ -16,26 +16,23 @@ using Ural.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes.Err
 using Ural.Ural_translator_compiler.Operations;
 using Ural.Ural_translator_compiler;
 using Ural;
-using Ural.Ural_translator_compiler.Libraries;
-using Ural.Ural_translator_compiler.Libraries.UralMathLib;
-
-using static Ural.Ural_translator_compiler.Libraries.UralMathLib.HilbertsCurve.UralMath;
-using static Ural.Ural_translator_compiler.Libraries.UralMathLib.SievePrimes.UralMath;
+using static Ural_CS_Rider.Ural_translator_compiler.Libraries.UralMathLib.UralMath;
+using static Ural_CS_Rider.Ural_translator_compiler.Libraries.UralMathLib.UralMath;
 using System;
 
 namespace Ural
 {
     class MainClass
     {
-        public static unsafe void Main()
+        public static unsafe void Main(string[] args)
         {
             binch num1 = new binch(7);
             binch num2 = new binch(3);
-            List<int> z = new List<int>() {1, 2, 3};
-            HilbertsCurve hc = new HilbertsCurve(2, 3);
-
-            //Console.WriteLine(num2);
-            Console.WriteLine(hc.Point_from_distance(6)[1]);
+            int[] z = new int[] {0, 255, 0};
+            Console.WriteLine(Cvet.ryb2rgb(z)[0]);
+            Console.WriteLine(Cvet.ryb2rgb(z)[1]);
+            Console.WriteLine(Cvet.ryb2rgb(z)[2]);
+            Console.WriteLine();
             Console.ReadKey();
         }
 
