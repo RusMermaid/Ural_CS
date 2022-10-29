@@ -26,14 +26,8 @@ namespace Ural
     {
         public static unsafe void Main(string[] args)
         {
-            binch num1 = new binch(7);
-            binch num2 = new binch(3);
-            int[] z = new int[] {0, 255, 0};
-            Console.WriteLine(Cvet.ryb2rgb(z)[0]);
-            Console.WriteLine(Cvet.ryb2rgb(z)[1]);
-            Console.WriteLine(Cvet.ryb2rgb(z)[2]);
-            Console.WriteLine();
-            Console.ReadKey();
+            str32 n = new str32("veseloochenspasibozalicensiurider");
+            Console.WriteLine(n.Range(3));
         }
 
         
