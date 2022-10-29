@@ -36,6 +36,7 @@ namespace Ural
             Console.ReadKey();
         }
 
+        
 
         static double f(dynamic x, dynamic y)
         {
