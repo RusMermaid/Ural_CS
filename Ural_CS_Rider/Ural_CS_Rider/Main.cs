@@ -26,7 +26,7 @@ namespace Ural
     {
         public static unsafe void Main(string[] args)
         {
-            str32 n = new str32("veseloochenspasibozalicensiurider");
+            str32 n = new str32("abababab");
             Console.WriteLine(n.Range(3));
         }
 
