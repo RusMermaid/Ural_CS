@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
-
-using Ural.Ural_translator_compiler.Datatypes;
 using Ural.Ural_translator_compiler.Datatypes.Booleans;
+using Ural.Ural_translator_compiler.Datatypes.Strings;
+
 
 namespace Ural.Ural_translator_compiler.Datatypes.Strings
 {
@@ -101,6 +103,45 @@ namespace Ural.Ural_translator_compiler.Datatypes.Strings
                         {
                             continue;
                         }
+                        else
+                        {
+                            switch (this.value[i])
+                            {
+                                case '0' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '1' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '2' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '3' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '4' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '5' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '6' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '7' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '8' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '9' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                default:
+                                    flag *= new RCI(false);
+                                    goto End;
+                            }
+                        }
                     }
                     else
                     {
@@ -170,6 +211,45 @@ namespace Ural.Ural_translator_compiler.Datatypes.Strings
                         if (value[i] == '+' | value[i] == '-')
                         {
                             continue;
+                        }
+                        else
+                        {
+                            switch (value[i])
+                            {
+                                case '0' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '1' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '2' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '3' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '4' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '5' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '6' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '7' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '8' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '9' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                default:
+                                    flag *= new RCI(false);
+                                    goto End;
+                            }
                         }
                     }
                     else
@@ -241,6 +321,45 @@ namespace Ural.Ural_translator_compiler.Datatypes.Strings
                         {
                             continue;
                         }
+                        else
+                        {
+                            switch (value.value[i])
+                            {
+                                case '0' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '1' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '2' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '3' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '4' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '5' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '6' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '7' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '8' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '9' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                default:
+                                    flag *= new RCI(false);
+                                    goto End;
+                            }
+                        }
                     }
                     else
                     {
@@ -310,6 +429,45 @@ namespace Ural.Ural_translator_compiler.Datatypes.Strings
                         if (value.value[i] == '+' | value.value[i] == '-')
                         {
                             continue;
+                        }
+                        else
+                        {
+                            switch (value.value[i])
+                            {
+                                case '0' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '1' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '2' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '3' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '4' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '5' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '6' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '7' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '8' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '9' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                default:
+                                    flag *= new RCI(false);
+                                    goto End;
+                            }
                         }
                     }
                     else
@@ -381,6 +539,45 @@ namespace Ural.Ural_translator_compiler.Datatypes.Strings
                         {
                             continue;
                         }
+                        else
+                        {
+                            switch (value.value[i])
+                            {
+                                case '0' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '1' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '2' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '3' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '4' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '5' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '6' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '7' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '8' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '9' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                default:
+                                    flag *= new RCI(false);
+                                    goto End;
+                            }
+                        }
                     }
                     else
                     {
@@ -451,6 +648,45 @@ namespace Ural.Ural_translator_compiler.Datatypes.Strings
                         {
                             continue;
                         }
+                        else
+                        {
+                            switch (value.value[i])
+                            {
+                                case '0' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '1' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '2' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '3' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '4' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '5' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '6' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '7' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '8' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '9' :
+                                    flag *= new RCI(true);
+                                    goto End;
+                                default:
+                                    flag *= new RCI(false);
+                                    goto End;
+                            }
+                        }
                     }
                     else
                     {
@@ -498,6 +734,300 @@ namespace Ural.Ural_translator_compiler.Datatypes.Strings
             
             End:
                 return flag;
+        }
+
+        public RCI EtoDrob()
+        {
+            string[] value = (Convert.ToString(this.value)).Split(".");
+            if (value.Length == 0)
+            {
+                goto End;
+            }
+            else if (value.Length == 1)
+            {
+                if (str10.EtoCifra(value[0]))
+                {
+                    goto Success;
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            else if (value.Length == 2)
+            {
+                if (str10.EtoCifra((string)value[0]))
+                {
+                    if (str10.EtoCifra((string)value[1]))
+                    {
+                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        {
+                            goto Success;
+                        }
+                        else
+                        {
+                            goto End;
+                        }
+                    }
+                    else
+                    {
+                        goto End;
+                    }
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            End:
+                return new RCI(false);
+            Success:
+                return new RCI(true);
+        }
+        
+        public static RCI EtoDrob(string s)
+        {
+            string[] value = (Convert.ToString(s)).Split(".");
+            if (value.Length == 0)
+            {
+                goto End;
+            }
+            else if (value.Length == 1)
+            {
+                if (str10.EtoCifra(value[0]))
+                {
+                    goto Success;
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            else if (value.Length == 2)
+            {
+                if (str10.EtoCifra((string)value[0]))
+                {
+                    if (str10.EtoCifra((string)value[1]))
+                    {
+                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        {
+                            goto Success;
+                        }
+                        else
+                        {
+                            goto End;
+                        }
+                    }
+                    else
+                    {
+                        goto End;
+                    }
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            End:
+            return new RCI(false);
+            Success:
+            return new RCI(true);
+        }
+        
+        public static RCI EtoDrob(str10 s)
+        {
+            string[] value = (Convert.ToString(s.value)).Split(".");
+            if (value.Length == 0)
+            {
+                goto End;
+            }
+            else if (value.Length == 1)
+            {
+                if (str10.EtoCifra(value[0]))
+                {
+                    goto Success;
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            else if (value.Length == 2)
+            {
+                if (str10.EtoCifra((string)value[0]))
+                {
+                    if (str10.EtoCifra((string)value[1]))
+                    {
+                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        {
+                            goto Success;
+                        }
+                        else
+                        {
+                            goto End;
+                        }
+                    }
+                    else
+                    {
+                        goto End;
+                    }
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            End:
+            return new RCI(false);
+            Success:
+            return new RCI(true);
+        }
+        
+        public static RCI EtoDrob(str16 s)
+        {
+            string[] value = (Convert.ToString(s.value)).Split(".");
+            if (value.Length == 0)
+            {
+                goto End;
+            }
+            else if (value.Length == 1)
+            {
+                if (str10.EtoCifra(value[0]))
+                {
+                    goto Success;
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            else if (value.Length == 2)
+            {
+                if (str10.EtoCifra((string)value[0]))
+                {
+                    if (str10.EtoCifra((string)value[1]))
+                    {
+                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        {
+                            goto Success;
+                        }
+                        else
+                        {
+                            goto End;
+                        }
+                    }
+                    else
+                    {
+                        goto End;
+                    }
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            End:
+            return new RCI(false);
+            Success:
+            return new RCI(true);
+        }
+        
+        public static RCI EtoDrob(str32 s)
+        {
+            string[] value = (Convert.ToString(s.value)).Split(".");
+            if (value.Length == 0)
+            {
+                goto End;
+            }
+            else if (value.Length == 1)
+            {
+                if (str10.EtoCifra(value[0]))
+                {
+                    goto Success;
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            else if (value.Length == 2)
+            {
+                if (str10.EtoCifra((string)value[0]))
+                {
+                    if (str10.EtoCifra((string)value[1]))
+                    {
+                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        {
+                            goto Success;
+                        }
+                        else
+                        {
+                            goto End;
+                        }
+                    }
+                    else
+                    {
+                        goto End;
+                    }
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            End:
+            return new RCI(false);
+            Success:
+            return new RCI(true);
+        }
+        
+        public static RCI EtoDrob(str64 s)
+        {
+            string[] value = (Convert.ToString(s.value)).Split(".");
+            if (value.Length == 0)
+            {
+                goto End;
+            }
+            else if (value.Length == 1)
+            {
+                if (str10.EtoCifra(value[0]))
+                {
+                    goto Success;
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            else if (value.Length == 2)
+            {
+                if (str10.EtoCifra((string)value[0]))
+                {
+                    if (str10.EtoCifra((string)value[1]))
+                    {
+                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        {
+                            goto Success;
+                        }
+                        else
+                        {
+                            goto End;
+                        }
+                    }
+                    else
+                    {
+                        goto End;
+                    }
+                }
+                else
+                {
+                    goto End;
+                }
+            }
+            End:
+            return new RCI(false);
+            Success:
+            return new RCI(true);
         }
     }
 }

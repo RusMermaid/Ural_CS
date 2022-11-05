@@ -26,8 +26,9 @@ namespace Ural
     {
         public static unsafe void Main(string[] args)
         {
-            str64 s = new str64("-79");
-            Console.WriteLine(s.EtoCifra());
+            str32 s = new str32("-8.+8");
+            
+            Console.WriteLine(str10.EtoDrob(s));
         }
 
         
