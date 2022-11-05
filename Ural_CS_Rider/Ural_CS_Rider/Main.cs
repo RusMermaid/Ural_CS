@@ -26,8 +26,19 @@ namespace Ural
     {
         public static unsafe void Main(string[] args)
         {
+            int[] c = new int[3] { 125, 125, 0 };
             str10 s = new str10("-79");
-            Console.WriteLine(s.EtoCifra());
+            Console.WriteLine($"{Cvet.ryb2rgb(c)[0]} {Cvet.ryb2rgb(c)[1]} {Cvet.ryb2rgb(c)[2]}");
+
+
+
+
+            RCI x = new RCI(true);
+            if (x)
+            {
+                Console.WriteLine(x);
+            }
+            
         }
 
         
