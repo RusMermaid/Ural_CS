@@ -26,9 +26,8 @@ namespace Ural
     {
         public static unsafe void Main(string[] args)
         {
-            str10 s = new str10("Hello");
-            s[0] = new str0("8");
-            Console.WriteLine(s);
+            str10 s = new str10("Hello12345678");
+            Console.WriteLine(s[0, 7, 2]);
         }
 
         

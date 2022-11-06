@@ -60,6 +60,296 @@ namespace Ural.Ural_translator_compiler.Datatypes.Strings
             set => this.value = this.value.Remove(index.value, 1).Insert(index.value, value.ToString());
         }
 
+        public str64 this[int start, int stop]
+        {
+            get => new str64(Slice((string)this.value, start, stop));
+        }
+
+        public str64 this[int start, natch16 stop]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value));
+        }
+
+        public str64 this[int start, natch32 stop]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value));
+        }
+
+        public str64 this[int start, natch64 stop]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value));
+        }
+
+        public str64 this[natch16 start, int stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop));
+        }
+
+        public str64 this[natch16 start, natch16 stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
+        }
+
+        public str64 this[natch16 start, natch32 stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
+        }
+
+        public str64 this[natch16 start, natch64 stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
+        }
+
+        public str64 this[natch32 start, int stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop));
+        }
+
+        public str64 this[natch32 start, natch16 stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
+        }
+
+        public str64 this[natch32 start, natch32 stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
+        }
+
+        public str64 this[natch32 start, natch64 stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
+        }
+
+        public str64 this[natch64 start, int stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop));
+        }
+
+        public str64 this[natch64 start, natch16 stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
+        }
+
+        public str64 this[natch64 start, natch32 stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
+        }
+
+        public str64 this[natch64 start, natch64 stop]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
+        }
+
+        public str64 this[int start, int stop, int step]
+        {
+            get => new str64(Slice((string)this.value, start, stop, step));
+        }
+
+        public str64 this[int start, int stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, start, stop, (int)step.value));
+        }
+
+        public str64 this[int start, int stop, natch32 step]
+        {
+            get => new str64(Slice((string)this.value, start, stop, (int)step.value));
+        }
+
+        public str64 this[int start, int stop, natch64 step]
+        {
+            get => new str64(Slice((string)this.value, start, stop, (int)step.value));
+        }
+
+        public str64 this[int start, natch16 stop, int step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, step));
+        }
+
+        public str64 this[int start, natch16 stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[int start, natch16 stop, natch32 step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[int start, natch16 stop, natch64 step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[int start, natch32 stop, int step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, step));
+        }
+
+        public str64 this[int start, natch32 stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[int start, natch32 stop, natch32 step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[int start, natch32 stop, natch64 step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[int start, natch64 stop, int step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, step));
+        }
+
+        public str64 this[int start, natch64 stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[int start, natch64 stop, natch32 step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[int start, natch64 stop, natch64 step]
+        {
+            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch16 start, int stop, int step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop, step));
+        }
+
+        public str64 this[natch16 start, int stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
+        }
+
+        public str64 this[natch16 start, int stop, natch32 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
+        }
+
+        public str64 this[natch16 start, int stop, natch64 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
+        }
+
+        public str64 this[natch16 start, natch16 stop, int step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
+        }
+
+        public str64 this[natch16 start, natch16 stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch16 start, natch16 stop, natch32 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch16 start, natch16 stop, natch64 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch16 start, natch32 stop, int step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
+        }
+
+        public str64 this[natch16 start, natch32 stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch16 start, natch32 stop, natch32 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch16 start, natch32 stop, natch64 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch16 start, natch64 stop, int step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
+        }
+
+        public str64 this[natch16 start, natch64 stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch16 start, natch64 stop, natch32 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch16 start, natch64 stop, natch64 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch32 start, int stop, int step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop, step));
+        }
+
+        public str64 this[natch32 start, int stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
+        }
+
+        public str64 this[natch32 start, int stop, natch32 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
+        }
+
+        public str64 this[natch32 start, int stop, natch64 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
+        }
+
+        public str64 this[natch32 start, natch16 stop, int step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
+        }
+
+        public str64 this[natch32 start, natch16 stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch32 start, natch16 stop, natch32 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch32 start, natch16 stop, natch64 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+
+        public str64 this[natch32 start, natch32 stop, int step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
+        }
+
+        public str64 this[natch32 start, natch32 stop, natch16 step]
+        {
+            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+        
         public str64 Reverse()
         {
             char[] dop = this.value.ToCharArray();
