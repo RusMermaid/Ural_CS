@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Ural.Ural_translator_compiler.Datatypes.Booleans;
+using Ural.Ural_translator_compiler.Datatypes.Numbers;
 using Ural.Ural_translator_compiler.Datatypes.Strings;
 
 
@@ -16,6 +17,49 @@ namespace Ural.Ural_translator_compiler.Datatypes.Strings
         {
             this.value = Convert.ToString(_value);
         }
+
+        public str0 this[int index]
+        {
+            get => new str0(this.value[index]);
+            set => this.value = this.value.Remove(index, 1).Insert(index, value.ToString());
+        }
+
+        public str0 this[ushort index]
+        {
+            get => new str0(this.value[index]);
+            set => this.value = this.value.Remove(index, 1).Insert(index, value.ToString());
+        }
+
+        public str0 this[uint index]
+        {
+            get => new str0(this.value[index]);
+            set => this.value = this.value.Remove(index, 1).Insert(index, value.ToString());
+        }
+
+        public str0 this[ulong index]
+        {
+            get => new str0(this.value[index]);
+            set => this.value = this.value.Remove(index, 1).Insert(index, value.ToString());
+        }
+
+        public str0 this[natch16 index]
+        {
+            get => new str0(this.value[index.value]);
+            set => this.value = this.value.Remove(index.value, 1).Insert(index.value, value.ToString());
+        }
+
+        public str0 this[natch32 index]
+        {
+            get => new str0(this.value[index.value]);
+            set => this.value = this.value.Remove(index.value, 1).Insert(index.value, value.ToString());
+        }
+
+        public str0 this[natch64 index]
+        {
+            get => new str0(this.value[index.value]);
+            set => this.value = this.value.Remove(index.value, 1).Insert(index.value, value.ToString());
+        }
+
         public str64 Reverse()
         {
             char[] dop = this.value.ToCharArray();
