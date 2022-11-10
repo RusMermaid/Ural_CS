@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Ural.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange
+namespace Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange
 {
     public class Drobch64OutOfRangeMinError : SyntaxInvalidDrobchDatatypeError
     {

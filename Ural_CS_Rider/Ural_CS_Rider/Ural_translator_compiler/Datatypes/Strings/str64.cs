@@ -2,9 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Ural.Ural_translator_compiler.Datatypes.Booleans;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Booleans;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Numbers;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings;
 using Ural.Ural_translator_compiler.Datatypes.Numbers;
-using Ural.Ural_translator_compiler.Datatypes.Strings;
 
 
 namespace Ural.Ural_translator_compiler.Datatypes.Strings

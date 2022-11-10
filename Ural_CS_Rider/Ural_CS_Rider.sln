@@ -1,6 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ural_CS_Rider", "Ural_CS_Rider\Ural_CS_Rider.csproj", "{37DE56F7-F055-4DC1-9EED-4BB3917B2FA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08CEA53C-2E23-4A27-B8C6-7104C66C76C0}"
+	ProjectSection(SolutionItems) = preProject
+		Ural_CS_Rider.sln = Ural_CS_Rider.sln
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,21 +1,21 @@
 
 
-using Ural.Ural_translator_compiler.Datatypes.Numbers;
-using Ural.Ural_translator_compiler.Datatypes.Numbers.OtherNumbers;
-using Ural.Ural_translator_compiler.Datatypes.Numbers.OtherNumbers.Binary;
-using Ural.Ural_translator_compiler.Datatypes.Numbers.OtherNumbers.Octal;
-using Ural.Ural_translator_compiler.Datatypes.Numbers.OtherNumbers.Hexadecimal;
-using Ural.Ural_translator_compiler.Datatypes.Booleans;
-using Ural.Ural_translator_compiler.Datatypes.Strings;
-using Ural.Ural_translator_compiler.Datatypes;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Numbers;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Numbers.OtherNumbers;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Numbers.OtherNumbers.Binary;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Numbers.OtherNumbers.Octal;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Numbers.OtherNumbers.Hexadecimal;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Booleans;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings;
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes;
 
-using Ural.Ural_translator_compiler.Errors;
-using Ural.Ural_translator_compiler.Errors.SyntaxInvalidError;
-using Ural.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes;
-using Ural.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
-using Ural.Ural_translator_compiler.Operations;
-using Ural.Ural_translator_compiler;
-using Ural;
+using Ural_CS_Rider.Ural_translator_compiler.Errors;
+using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError;
+using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes;
+using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
+using Ural_CS_Rider.Ural_translator_compiler.Operations;
+using Ural_CS_Rider.Ural_translator_compiler;
+using Ural_CS_Rider;
 using static Ural_CS_Rider.Ural_translator_compiler.Libraries.UralMathLib.UralMath;
 using static Ural_CS_Rider.Ural_translator_compiler.Libraries.UralMathLib.UralMath;
 using System;

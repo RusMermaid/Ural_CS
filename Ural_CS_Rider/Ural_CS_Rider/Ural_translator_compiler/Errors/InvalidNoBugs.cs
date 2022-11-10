@@ -1,5 +1,5 @@
 using System;
-namespace Ural.Ural_translator_compiler.Errors
+namespace Ural_CS_Rider.Ural_translator_compiler.Errors
 
 {
     public class InvalidNoBugs : Error

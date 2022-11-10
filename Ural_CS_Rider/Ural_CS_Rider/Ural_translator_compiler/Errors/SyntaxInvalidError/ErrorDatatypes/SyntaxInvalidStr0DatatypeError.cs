@@ -1,6 +1,6 @@
 using System;
-using Ural.Ural_translator_compiler.Errors;
-namespace Ural.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes
+using Ural_CS_Rider.Ural_translator_compiler.Errors;
+namespace Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes
 
 {
     public class SyntaxInvalidStr0DatatypeError : Error
