@@ -49,6 +49,28 @@
       <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\projectSettingsUpdater.xml" />
       <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\vcs.xml" />
       <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\workspace.xml" />
+      <None Remove="Cvet_FSharp\**" />
+      <None Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Cvet_FSharp">
+        <HintPath>Cvet_FSharp\Cvet_FSharp\bin\Debug\net6.0\Cvet_FSharp.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="Cvet_FSharp\Cvet_FSharp\Library.fs" />
+      <Compile Include="Cvet_FSharp\Cvet_FSharp\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.fs" />
+      <Compile Include="Cvet_FSharp\Cvet_FSharp\obj\Debug\net6.0\Cvet_FSharp.AssemblyInfo.fs" />
+      <Compile Remove="Cvet_FSharp\**" />
+      <Compile Include="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\Cvet_FS.fs" />
+      <Compile Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Cvet_FSharp\**" />
+      <EmbeddedResource Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**" />
     </ItemGroup>
     <PropertyGroup>
         <OutputType>Exe</OutputType>
