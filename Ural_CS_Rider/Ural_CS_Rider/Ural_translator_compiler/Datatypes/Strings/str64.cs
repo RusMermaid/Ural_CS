@@ -1,15 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using Ural_CS_Rider.Ural_translator_compiler.Datatypes;
-using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Booleans;
-using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Numbers;
-using Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings;
-using Ural.Ural_translator_compiler.Datatypes.Numbers;
-
-
-namespace Ural.Ural_translator_compiler.Datatypes.Strings
+﻿
+namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
 {
     public class str64 : VOID
     {
