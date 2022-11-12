@@ -3,11 +3,42 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
 {
     public class str64 : VOID
     {
-        public const uint MaxLength = 4294967295U;
+        public const ulong MaxLength = 18446744073709551615U;
+        public const string DefaultValue = "";
 
-        public str64(object _value = null) : base(_value)
+        public str64(string _value = "") : base(_value)
         {
             this.value = Convert.ToString(_value);
+        }
+        
+        public str64(char _value) : base(_value)
+        {
+            this.value = Convert.ToString(_value);
+        }
+        
+        public str64(str0 _value) : base(_value)
+        {
+            this.value = Convert.ToString(_value.value);
+        }
+        
+        public str64(str10 _value ) : base(_value)
+        {
+            this.value = _value.value;
+        }
+        
+        public str64(str16 _value ) : base(_value)
+        {
+            this.value = _value.value;
+        }
+        
+        public str64(str32 _value ) : base(_value)
+        {
+            this.value = _value.value;
+        }
+        
+        public str64(str64 _value ) : base(_value)
+        {
+            this.value = _value.value;
         }
 
         public str0 this[int index]
