@@ -308,22 +308,23 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Libraries.UralMathLib
 
                 double k = (double)Math.Min(c, Math.Min(m, y));
 
-                if (k == 1.0)
+                if (k == 1.0 | (c==0.0 & m==0.0 & y == 0.0))
                 {
-                    return new int[4] { 0, 0, 0, 1 };
+                    return new int[4] { 0, 0, 0, 255 };
                 }
                 else
                 {
+                    Console.WriteLine(k);
                     return new int[4]
-                        { (int)((c - k) / (1 - k)), (int)((m - k) / (1 - k)), (int)((y - k) / (1 - k)), (int)(k) };
+                        { (int)(255*(c - k) / (1 - k)), (int)(255*(m - k) / (1 - k)), (int)(255*(y - k) / (1 - k)), (int)(255*k) };
                 }
             }
 
             public static int [] cmyk2rgb(int [] cveta)
             {
-                int r = (int)((1 - cveta[0]) * (1 - cveta[3]) * 255.0);
-                int g = (int)((1 - cveta[1]) * (1 - cveta[3]) * 255.0);
-                int b = (int)((1 - cveta[2]) * (1 - cveta[3]) * 255.0);
+                int r = (int)((1 - cveta[0]) * (1 - cveta[3]) / 255.0);
+                int g = (int)((1 - cveta[1]) * (1 - cveta[3]) / 255.0);
+                int b = (int)((1 - cveta[2]) * (1 - cveta[3]) / 255.0);
 
                 return new int[3] { r, g, b };
             }
