@@ -7,11 +7,10 @@ namespace Ural_CS_Rider
     {
         public static unsafe void Main(string[] args)
         {
-            str10 s = new str10("Hello12345678");
-            int[] rgb = new int[3] { 1, 1, 1};
-            int[] cmyk = UralMath.Cvet.rgb2cmyk(rgb);
-            
-            Console.WriteLine($"{cmyk[0]}, {cmyk[1]}, {cmyk[2]}, {cmyk[3]}");
+            str10 str = new str10(
+                "авыгагывавыаовыоарыовпрафвымсрпмвфупывсапвымопфрывфвырпаарыфофрпомвфроьыбичсЧЯИМЬПИ");
+            str0 c = new str0('1');
+            Console.WriteLine(c.___Add(str).GetType());
         }
         static double f(dynamic x, dynamic y)
         {

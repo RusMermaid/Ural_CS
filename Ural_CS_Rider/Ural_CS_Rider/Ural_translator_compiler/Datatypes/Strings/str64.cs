@@ -1,4 +1,9 @@
-﻿
+﻿using Ural_CS_Rider.Ural_translator_compiler.Errors;
+using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError;
+using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes;
+using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOverloadDatatype;
+using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
+
 namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
 {
     public class str64 : VOID
@@ -371,6 +376,30 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
         public str64 this[natch32 start, natch32 stop, natch16 step]
         {
             get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+        
+        public dynamic ___Add(dynamic _value)
+        {
+            if (VOID.IsNumericFull(_value))
+            {
+                return new SyntaxInvalidOverloadStrNumericError(0, 0);
+            }
+            else if (_value is str0)
+            {
+                return this.___Add(_value.ToString());
+            }
+            else
+            {
+                string str = this.value + (string)_value;
+                if ((ulong)str.Length < str64.MaxLength)
+                {
+                    return new str64(str);
+                }
+                else
+                {
+                    return new Str64OutOfRangeError(0, 0);
+                }
+            }
         }
         
         public str64 Reverse()
