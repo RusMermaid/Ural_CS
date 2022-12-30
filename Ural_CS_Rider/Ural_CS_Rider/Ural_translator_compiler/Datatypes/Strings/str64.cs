@@ -402,6 +402,159 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             }
         }
         
+        public dynamic ___Multiply(natch16 _value)
+        {
+            string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Multiply(natch32 _value)
+        {
+            string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Multiply(natch64 _value)
+        {
+            string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Multiply(celch16 _value)
+        {
+            if (_value.value > 0)
+            {
+                string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+                if ((ulong)str.Length < str64.MaxLength)
+                {
+                    return new str64(str);
+                }
+                else
+                {
+                    return new Str64OutOfRangeError(0, 0);
+                }
+            }
+            else
+            {
+                ulong n = Convert.ToUInt64((-1)*_value.value);
+                string str = Convert.ToString(this.value);
+                if (n < (ulong)str.Length)
+                {
+                    str = Slice(str, 0, (ulong)(n+1));
+                    str = VOID.StrMultiply(str, n);
+                    if ((ulong)str.Length < str64.MaxLength)
+                    {
+                        return new str64(str);
+                    }
+                    else
+                    {
+                        return new Str64OutOfRangeError(0, 0);
+                    }
+                }
+                else
+                {
+                    return new StrIndexOutOfRangeError(0, 0);
+                }
+            }
+        }
+        
+        public dynamic ___Multiply(celch32 _value)
+        {
+            if (_value.value > 0)
+            {
+                string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+                if ((ulong)str.Length < str64.MaxLength)
+                {
+                    return new str64(str);
+                }
+                else
+                {
+                    return new Str64OutOfRangeError(0, 0);
+                }
+            }
+            else
+            {
+                ulong n = Convert.ToUInt64((-1)*_value.value);
+                string str = Convert.ToString(this.value);
+                if (n < (ulong)str.Length)
+                {
+                    str = Slice(str, 0, (ulong)(n+1));
+                    str = VOID.StrMultiply(str, n);
+                    if ((ulong)str.Length < str64.MaxLength)
+                    {
+                        return new str64(str);
+                    }
+                    else
+                    {
+                        return new Str64OutOfRangeError(0, 0);
+                    }
+                }
+                else
+                {
+                    return new StrIndexOutOfRangeError(0, 0);
+                }
+            }
+        }
+        
+        public dynamic ___Multiply(celch64 _value)
+        {
+            if (_value.value > 0)
+            {
+                string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+                if ((ulong)str.Length < str64.MaxLength)
+                {
+                    return new str64(str);
+                }
+                else
+                {
+                    return new Str64OutOfRangeError(0, 0);
+                }
+            }
+            else
+            {
+                ulong n = Convert.ToUInt64((-1)*_value.value);
+                string str = Convert.ToString(this.value);
+                if (n < (ulong)str.Length)
+                {
+                    str = Slice(str, 0, (ulong)(n+1));
+                    str = VOID.StrMultiply(str, n);
+                    if ((ulong)str.Length < str64.MaxLength)
+                    {
+                        return new str64(str);
+                    }
+                    else
+                    {
+                        return new Str64OutOfRangeError(0, 0);
+                    }
+                }
+                else
+                {
+                    return new StrIndexOutOfRangeError(0, 0);
+                }
+            }
+        }
+        
         public str64 Reverse()
         {
             char[] dop = this.value.ToCharArray();

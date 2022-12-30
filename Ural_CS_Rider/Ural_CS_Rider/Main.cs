@@ -1,4 +1,4 @@
-
+using Ural_CS_Rider.Ural_translator_compiler.Datatypes;
 using Ural_CS_Rider.Ural_translator_compiler.Libraries.UralMathLib;
 
 namespace Ural_CS_Rider
@@ -7,10 +7,8 @@ namespace Ural_CS_Rider
     {
         public static unsafe void Main(string[] args)
         {
-            str10 str = new str10(
-                "авыгагывавыаовыоарыовпрафвымсрпмвфупывсапвымопфрывфвырпаарыфофрпомвфроьыбичсЧЯИМЬПИ");
-            str0 c = new str0('1');
-            Console.WriteLine(c.___Add(str).GetType());
+            str32 b = new str32("0123456789");
+            Console.WriteLine(b.___Multiply(new celch16(-5)).value);
         }
         static double f(dynamic x, dynamic y)
         {
