@@ -46,6 +46,42 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             this.value = _value.value;
         }
 
+        public static dynamic operator *(str64 l, natch16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r); return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, natch32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, natch64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, celch16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, celch32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, celch64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
         public str0 this[int index]
         {
             get => new str0(this.value[index]);

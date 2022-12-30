@@ -8,7 +8,8 @@ namespace Ural_CS_Rider
         public static unsafe void Main(string[] args)
         {
             str32 b = new str32("0123456789");
-            Console.WriteLine(b.___Multiply(new celch16(-5)).value);
+            natch64 f = new natch64(5);
+            Console.WriteLine(b*f);
         }
         static double f(dynamic x, dynamic y)
         {
