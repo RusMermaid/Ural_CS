@@ -90,6 +90,30 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             return l2.___Multiply(r);
         }
         
+        public static dynamic operator *(str64 l, str10 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, str16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, str32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, str64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
         public str0 this[int index]
         {
             get => new str0(this.value[index]);
@@ -449,6 +473,74 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
                     return new Str64OutOfRangeError(0, 0);
                 }
             }
+        }
+        
+        public str64 ___Multiply(str10 str)
+        {
+            List<ulong> cnv = new List<ulong>();
+
+            foreach (char c1 in this.value)
+            {
+                foreach (char c2 in str.value)
+                {
+                    cnv.Add((ulong)c1 * (ulong)c2);
+                }
+            }
+
+            char[] result = cnv.Select(c => (char)c).ToArray();
+
+            return new str64(new string(result));
+        }
+        
+        public str64 ___Multiply(str16 str)
+        {
+            List<ulong> cnv = new List<ulong>();
+
+            foreach (char c1 in this.value)
+            {
+                foreach (char c2 in str.value)
+                {
+                    cnv.Add((ulong)c1 * (ulong)c2);
+                }
+            }
+
+            char[] result = cnv.Select(c => (char)c).ToArray();
+
+            return new str64(new string(result));
+        }
+        
+        public str64 ___Multiply(str32 str)
+        {
+            List<ulong> cnv = new List<ulong>();
+
+            foreach (char c1 in this.value)
+            {
+                foreach (char c2 in str.value)
+                {
+                    cnv.Add((ulong)c1 * (ulong)c2);
+                }
+            }
+
+            char[] result = cnv.Select(c => (char)c).ToArray();
+
+            return new str64(new string(result));
+        }
+        
+        public str64 ___Multiply(str64 str)
+        {
+            List<ulong> cnv = new List<ulong>();
+
+            foreach (char c1 in this.value)
+            {
+                foreach (char c2 in str.value)
+                {
+                    cnv.Add((ulong)c1 * (ulong)c2);
+                }
+            }
+
+            char[] result = cnv.Select(c => (char)c).ToArray();
+
+            return new str64(new string(result));
         }
         
         public dynamic ___Multiply(natch16 _value)
