@@ -10,40 +10,48 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
     {
         public const ulong MaxLength = 18446744073709551615U;
         public const string DefaultValue = "";
+        public readonly natch64 Len;
 
         public str64(string _value = "") : base(_value)
         {
             this.value = Convert.ToString(_value);
+            this.Len = new natch64(this.value.Length);
         }
         
         public str64(char _value) : base(_value)
         {
             this.value = Convert.ToString(_value);
+            this.Len = new natch64(this.value.Length);
         }
         
         public str64(str0 _value) : base(_value)
         {
             this.value = Convert.ToString(_value.value);
+            this.Len = new natch64(this.value.Length);
         }
         
         public str64(str10 _value ) : base(_value)
         {
             this.value = _value.value;
+            this.Len = new natch64(this.value.Length);
         }
         
         public str64(str16 _value ) : base(_value)
         {
             this.value = _value.value;
+            this.Len = new natch64(this.value.Length);
         }
         
         public str64(str32 _value ) : base(_value)
         {
             this.value = _value.value;
+            this.Len = new natch64(this.value.Length);
         }
         
         public str64(str64 _value ) : base(_value)
         {
             this.value = _value.value;
+            this.Len = new natch64(this.value.Length);
         }
 
         public static dynamic operator *(str64 l, natch16 r)
@@ -412,6 +420,11 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
         public str64 this[natch32 start, natch32 stop, natch16 step]
         {
             get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
+        }
+        
+        public static explicit operator string(str64 str)
+        {
+            return (string)str.value;
         }
         
         public dynamic ___Add(dynamic _value)
