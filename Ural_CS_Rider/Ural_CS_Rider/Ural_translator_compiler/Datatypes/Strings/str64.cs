@@ -57,7 +57,7 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
         public static dynamic operator *(str64 l, natch16 r)
         {
             str64 l2 = new str64(l);
-            return l2.___Multiply(r); return l2.___Multiply(r);
+            return l2.___Multiply(r);
         }
         
         public static dynamic operator *(str64 l, natch32 r)
@@ -483,7 +483,7 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add((ulong)c1 * (ulong)c2);
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (this.Len + str.Len));
                 }
             }
 
@@ -500,7 +500,7 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add((ulong)c1 * (ulong)c2);
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (this.Len + str.Len));
                 }
             }
 
@@ -517,7 +517,7 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add((ulong)c1 * (ulong)c2);
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (this.Len + str.Len));
                 }
             }
 
