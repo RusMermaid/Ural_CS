@@ -386,64 +386,280 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
         }
         
-        public static dynamic operator +(str64 l, dynamic r)
+        public static dynamic operator +(str64 l, str0 r)
         {
             str64 l2 = new str64(l);
-            return l2.___Add(r);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, str10 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, str16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, str32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, str64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, natch16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, natch32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, natch64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, celch16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, celch32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, celch64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, drobch16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, drobch32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator +(str64 l, drobch64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(Convert.ToString(r.value));
         }
         
         public static dynamic operator +(natch16 l, str64 r)
         {
-            str64 r2 = new str64(r);
-            return r2.___Add(Convert.ToString(l.value));
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Add(Convert.ToString(r.value));
         }
         
         public static dynamic operator +(natch32 l, str64 r)
         {
-            str64 r2 = new str64(r);
-            return r2.___Add(Convert.ToString(l.value));
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Add(Convert.ToString(r.value));
         }
         
         public static dynamic operator +(natch64 l, str64 r)
         {
-            str64 r2 = new str64(r);
-            return r2.___Add(Convert.ToString(l.value));
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Add(Convert.ToString(r.value));
         }
         
         public static dynamic operator +(celch16 l, str64 r)
         {
-            str64 r2 = new str64(r);
-            return r2.___Add(Convert.ToString(l.value));
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Add(Convert.ToString(r.value));
         }
         
         public static dynamic operator +(celch32 l, str64 r)
         {
-            str64 r2 = new str64(r);
-            return r2.___Add(Convert.ToString(l.value));
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Add(Convert.ToString(r.value));
         }
         
         public static dynamic operator +(celch64 l, str64 r)
         {
-            str64 r2 = new str64(r);
-            return r2.___Add(Convert.ToString(l.value));
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Add(Convert.ToString(r.value));
         }
         
         public static dynamic operator +(drobch16 l, str64 r)
         {
-            str64 r2 = new str64(r);
-            return r2.___Add(Convert.ToString(l.value));
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Add(Convert.ToString(r.value));
         }
         
         public static dynamic operator +(drobch32 l, str64 r)
         {
-            str64 r2 = new str64(r);
-            return r2.___Add(Convert.ToString(l.value));
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Add(Convert.ToString(r.value));
         }
         
         public static dynamic operator +(drobch64 l, str64 r)
         {
-            str64 r2 = new str64(r);
-            return r2.___Add(Convert.ToString(l.value));
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Add(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, str0 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, str10 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, str16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, str32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, str64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, natch16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, natch32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, natch64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, celch16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, celch32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, celch64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, drobch16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, drobch32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(str64 l, drobch64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(natch16 l, str64 r)
+        {
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(natch32 l, str64 r)
+        {
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(natch64 l, str64 r)
+        {
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(celch16 l, str64 r)
+        {
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(celch32 l, str64 r)
+        {
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(celch64 l, str64 r)
+        {
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(drobch16 l, str64 r)
+        {
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(drobch32 l, str64 r)
+        {
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Minus(Convert.ToString(r.value));
+        }
+        
+        public static dynamic operator -(drobch64 l, str64 r)
+        {
+            str64 l2 = new str64(Convert.ToString(l));
+            return l2.___Minus(Convert.ToString(r.value));
         }
         
         public static dynamic operator *(str64 l, natch16 r)
@@ -558,6 +774,21 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             {
                 return new Str64OutOfRangeError(0, 0);
             }
+        }
+        
+        public str64 ___Minus(string str2)
+        {
+            // Convert str1 to a char array
+            char[] s = this.value.ToCharArray();
+
+            // Loop through each character in str2
+            foreach (char c in str2)
+            {
+                // Remove c from set1 if it is present
+                s = ((string)this.value).Where(val => val != c).ToArray();
+            }
+            // Create a new string from the remaining characters in set1
+            return new str64(new string(s));
         }
         
         public str64 ___Multiply(str10 str)
