@@ -54,66 +54,6 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             this.Len = new natch64(this.value.Length);
         }
 
-        public static dynamic operator *(str64 l, natch16 r)
-        {
-            str64 l2 = new str64(l);
-            return l2.___Multiply(r);
-        }
-        
-        public static dynamic operator *(str64 l, natch32 r)
-        {
-            str64 l2 = new str64(l);
-            return l2.___Multiply(r);
-        }
-        
-        public static dynamic operator *(str64 l, natch64 r)
-        {
-            str64 l2 = new str64(l);
-            return l2.___Multiply(r);
-        }
-        
-        public static dynamic operator *(str64 l, celch16 r)
-        {
-            str64 l2 = new str64(l);
-            return l2.___Multiply(r);
-        }
-        
-        public static dynamic operator *(str64 l, celch32 r)
-        {
-            str64 l2 = new str64(l);
-            return l2.___Multiply(r);
-        }
-        
-        public static dynamic operator *(str64 l, celch64 r)
-        {
-            str64 l2 = new str64(l);
-            return l2.___Multiply(r);
-        }
-        
-        public static dynamic operator *(str64 l, str10 r)
-        {
-            str64 l2 = new str64(l);
-            return l2.___Multiply(r);
-        }
-        
-        public static dynamic operator *(str64 l, str16 r)
-        {
-            str64 l2 = new str64(l);
-            return l2.___Multiply(r);
-        }
-        
-        public static dynamic operator *(str64 l, str32 r)
-        {
-            str64 l2 = new str64(l);
-            return l2.___Multiply(r);
-        }
-        
-        public static dynamic operator *(str64 l, str64 r)
-        {
-            str64 l2 = new str64(l);
-            return l2.___Multiply(r);
-        }
-        
         public str0 this[int index]
         {
             get => new str0(this.value[index]);
@@ -446,6 +386,126 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
         }
         
+        public static dynamic operator +(str64 l, dynamic r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Add(r);
+        }
+        
+        public static dynamic operator +(natch16 l, str64 r)
+        {
+            str64 r2 = new str64(r);
+            return r2.___Add(Convert.ToString(l.value));
+        }
+        
+        public static dynamic operator +(natch32 l, str64 r)
+        {
+            str64 r2 = new str64(r);
+            return r2.___Add(Convert.ToString(l.value));
+        }
+        
+        public static dynamic operator +(natch64 l, str64 r)
+        {
+            str64 r2 = new str64(r);
+            return r2.___Add(Convert.ToString(l.value));
+        }
+        
+        public static dynamic operator +(celch16 l, str64 r)
+        {
+            str64 r2 = new str64(r);
+            return r2.___Add(Convert.ToString(l.value));
+        }
+        
+        public static dynamic operator +(celch32 l, str64 r)
+        {
+            str64 r2 = new str64(r);
+            return r2.___Add(Convert.ToString(l.value));
+        }
+        
+        public static dynamic operator +(celch64 l, str64 r)
+        {
+            str64 r2 = new str64(r);
+            return r2.___Add(Convert.ToString(l.value));
+        }
+        
+        public static dynamic operator +(drobch16 l, str64 r)
+        {
+            str64 r2 = new str64(r);
+            return r2.___Add(Convert.ToString(l.value));
+        }
+        
+        public static dynamic operator +(drobch32 l, str64 r)
+        {
+            str64 r2 = new str64(r);
+            return r2.___Add(Convert.ToString(l.value));
+        }
+        
+        public static dynamic operator +(drobch64 l, str64 r)
+        {
+            str64 r2 = new str64(r);
+            return r2.___Add(Convert.ToString(l.value));
+        }
+        
+        public static dynamic operator *(str64 l, natch16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, natch32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, natch64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, celch16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, celch32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, celch64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, str10 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, str16 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, str32 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static dynamic operator *(str64 l, str64 r)
+        {
+            str64 l2 = new str64(l);
+            return l2.___Multiply(r);
+        }
+        
         public static explicit operator string(str64 str)
         {
             return (string)str.value;
@@ -463,7 +523,7 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             }
             else
             {
-                string str = this.value + (string)_value;
+                string str = this.value + Convert.ToString(_value);
                 if ((ulong)str.Length < str64.MaxLength)
                 {
                     return new str64(str);
@@ -472,6 +532,31 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
                 {
                     return new Str64OutOfRangeError(0, 0);
                 }
+            }
+        }
+        
+        public dynamic ___Add(string _value)
+        {
+            string str = this.value + Convert.ToString(_value);
+            if (str.Length < str10.MaxLength)
+            {
+                return new str10(str);
+            }
+            else if ((str.Length >= str10.MaxLength) & (str.Length < str16.MaxLength))
+            {
+                return new str16(str);
+            }
+            else if ((str.Length >= str16.MaxLength) & (str.Length < str32.MaxLength))
+            {
+                return new str32(str);
+            }
+            else if ((str.Length >= str32.MaxLength) & ((ulong)str.Length < str64.MaxLength))
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
             }
         }
         
