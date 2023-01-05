@@ -799,7 +799,7 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add(((ulong)c1 * (ulong)c2) / (this.Len + str.Len));
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Len + str.Len));
                 }
             }
 
@@ -816,7 +816,7 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add(((ulong)c1 * (ulong)c2) / (this.Len + str.Len));
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Len + str.Len));
                 }
             }
 
@@ -833,7 +833,7 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add(((ulong)c1 * (ulong)c2) / (this.Len + str.Len));
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Len + str.Len));
                 }
             }
 
@@ -850,7 +850,7 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add((ulong)c1 * (ulong)c2);
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Len + str.Len));
                 }
             }
 
