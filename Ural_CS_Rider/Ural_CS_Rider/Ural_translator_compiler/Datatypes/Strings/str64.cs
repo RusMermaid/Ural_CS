@@ -754,19 +754,7 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
         public dynamic ___Add(string _value)
         {
             string str = this.value + Convert.ToString(_value);
-            if (str.Length < str10.MaxLength)
-            {
-                return new str10(str);
-            }
-            else if ((str.Length >= str10.MaxLength) & (str.Length < str16.MaxLength))
-            {
-                return new str16(str);
-            }
-            else if ((str.Length >= str16.MaxLength) & (str.Length < str32.MaxLength))
-            {
-                return new str32(str);
-            }
-            else if ((str.Length >= str32.MaxLength) & ((ulong)str.Length < str64.MaxLength))
+            if ((ulong)str.Length < str64.MaxLength)
             {
                 return new str64(str);
             }
@@ -776,6 +764,122 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             }
         }
         
+        public dynamic ___Add(natch16 _value)
+        {
+            string str = this.value + Convert.ToString(_value.value);
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Add(natch32 _value)
+        {
+            string str = this.value + Convert.ToString(_value.value);
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Add(natch64 _value)
+        {
+            string str = this.value + Convert.ToString(_value.value);
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Add(celch16 _value)
+        {
+            string str = this.value + Convert.ToString(_value.value);
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Add(celch32 _value)
+        {
+            string str = this.value + Convert.ToString(_value.value);
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Add(celch64 _value)
+        {
+            string str = this.value + Convert.ToString(_value.value);
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Add(drobch16 _value)
+        {
+            string str = this.value + Convert.ToString(_value.value);
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Add(drobch32 _value)
+        {
+            string str = this.value + Convert.ToString(_value.value);
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
+        
+        public dynamic ___Add(drobch64 _value)
+        {
+            string str = this.value + Convert.ToString(_value.value);
+            if ((ulong)str.Length < str64.MaxLength)
+            {
+                return new str64(str);
+            }
+            else
+            {
+                return new Str64OutOfRangeError(0, 0);
+            }
+        }
         public str64 ___Minus(string str2)
         {
             // Convert str1 to a char array
@@ -862,7 +966,11 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
         public dynamic ___Multiply(natch16 _value)
         {
             string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
-            if ((ulong)str.Length < str64.MaxLength)
+            if (_value.value == 0)
+            {
+                return this;
+            }
+            else if ((ulong)str.Length < str64.MaxLength)
             {
                 return new str64(str);
             }
@@ -875,7 +983,11 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
         public dynamic ___Multiply(natch32 _value)
         {
             string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
-            if ((ulong)str.Length < str64.MaxLength)
+            if (_value.value == 0)
+            {
+                return this;
+            }
+            else if ((ulong)str.Length < str64.MaxLength)
             {
                 return new str64(str);
             }
@@ -888,7 +1000,11 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
         public dynamic ___Multiply(natch64 _value)
         {
             string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
-            if ((ulong)str.Length < str64.MaxLength)
+            if (_value.value == 0)
+            {
+                return this;
+            }
+            else if ((ulong)str.Length < str64.MaxLength)
             {
                 return new str64(str);
             }
@@ -900,7 +1016,11 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
         
         public dynamic ___Multiply(celch16 _value)
         {
-            if (_value.value > 0)
+            if (_value.value == 0)
+            {
+                return this;
+            }
+            else if (_value.value > 0)
             {
                 string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
                 if ((ulong)str.Length < str64.MaxLength)
@@ -938,7 +1058,11 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
         
         public dynamic ___Multiply(celch32 _value)
         {
-            if (_value.value > 0)
+            if (_value.value == 0)
+            {
+                return this;
+            }
+            else if (_value.value > 0)
             {
                 string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
                 if ((ulong)str.Length < str64.MaxLength)
@@ -976,7 +1100,11 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
         
         public dynamic ___Multiply(celch64 _value)
         {
-            if (_value.value > 0)
+            if (_value.value == 0)
+            {
+                return this;
+            }
+            else if (_value.value > 0)
             {
                 string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
                 if ((ulong)str.Length < str64.MaxLength)
