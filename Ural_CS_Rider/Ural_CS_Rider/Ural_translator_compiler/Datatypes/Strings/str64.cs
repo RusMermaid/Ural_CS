@@ -1206,6 +1206,27 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             string str_step = new string(value.Where((ch, index) => index % (step) == (0)).ToArray());
             return new str64(str_step);
         }
+        
+        massiv reqq(string s) {
+            return s.Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0(c)); acc.___Add(acc); return acc; });
+        }
+        
+        massiv reqq(str10 s) {
+            return ((string)s).Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0((char)c)); acc.___Add(acc); return acc; });
+        }
+        
+        massiv reqq(str16 s) {
+            return ((string)s).Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0((char)c)); acc.___Add(acc); return acc; });
+        }
+        
+        massiv reqq(str32 s) {
+            return ((string)s).Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0((char)c)); acc.___Add(acc); return acc; });
+        }
+        
+        massiv reqq(str64 s) {
+            return ((string)s).Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0((char)c)); acc.___Add(acc); return acc; });
+        }
+        
         public RCI EtoCifra()
         {
             RCI flag = new RCI(true);
