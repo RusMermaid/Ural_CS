@@ -1207,24 +1207,12 @@ namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
             return new str64(str_step);
         }
         
-        massiv reqq(string s) {
-            return s.Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0(c)); acc.___Add(acc); return acc; });
+        massiv ToMassiv() {
+            return new massiv(((string)this.value).Select(c => new str0((char)c)).ToArray());
         }
         
-        massiv reqq(str10 s) {
-            return ((string)s).Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0((char)c)); acc.___Add(acc); return acc; });
-        }
-        
-        massiv reqq(str16 s) {
-            return ((string)s).Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0((char)c)); acc.___Add(acc); return acc; });
-        }
-        
-        massiv reqq(str32 s) {
-            return ((string)s).Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0((char)c)); acc.___Add(acc); return acc; });
-        }
-        
-        massiv reqq(str64 s) {
-            return ((string)s).Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0((char)c)); acc.___Add(acc); return acc; });
+        massiv Reqq() {
+            return ((string)this.value).Aggregate(new massiv(), (acc, c) => { acc.___Add(new str0(c)); acc.___Add(acc); return acc; });
         }
         
         public RCI EtoCifra()
