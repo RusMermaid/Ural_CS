@@ -1,8 +1,6 @@
-﻿using Ural_CS_Rider.Ural_translator_compiler.Errors;
-using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError;
-using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes;
-using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOverloadDatatype;
-using Ural_CS_Rider.Ural_translator_compiler.Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
+﻿using Errors.SyntaxInvalidError.ErrorDatatypes;
+using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOverloadDatatype;
+using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
 
 namespace Ural_CS_Rider.Ural_translator_compiler.Datatypes.Strings
 {

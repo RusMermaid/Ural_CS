@@ -52,6 +52,9 @@
       <None Remove="Cvet_FSharp\**" />
       <None Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**" />
       <None Remove="Ural_Rider_Lib" />
+      <None Remove="Ural_Datatypes_Lib" />
+      <None Remove="Ural_ErrrorHandling" />
+      <None Remove="Errors" />
     </ItemGroup>
 
     <ItemGroup>
@@ -66,6 +69,14 @@
     <ItemGroup>
       <EmbeddedResource Remove="Cvet_FSharp\**" />
       <EmbeddedResource Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**" />
+    </ItemGroup>
+    <ItemGroup>
+      <Reference Include="Ural_Datatypes_Lib">
+        <HintPath>..\..\Ural_Datatypes_Lib\Ural_Datatypes_Lib\bin\Debug\net6.0\Ural_Datatypes_Lib.dll</HintPath>
+      </Reference>
+      <Reference Include="Errors">
+        <HintPath>..\..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
+      </Reference>
     </ItemGroup>
     <PropertyGroup>
         <OutputType>Exe</OutputType>
