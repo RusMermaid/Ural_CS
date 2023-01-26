@@ -10,3 +10,6 @@
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_Datatypes_Lib/Ural_Datatypes_Lib/obj/Debug/net6.0/refint/Ural_Datatypes_Lib.dll
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_Datatypes_Lib/Ural_Datatypes_Lib/obj/Debug/net6.0/Ural_Datatypes_Lib.pdb
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_Datatypes_Lib/Ural_Datatypes_Lib/obj/Debug/net6.0/ref/Ural_Datatypes_Lib.dll
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_Datatypes_Lib/Ural_Datatypes_Lib/bin/Debug/net6.0/Errors.dll
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_Datatypes_Lib/Ural_Datatypes_Lib/bin/Debug/net6.0/Errors.pdb
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_Datatypes_Lib/Ural_Datatypes_Lib/obj/Debug/net6.0/Ural_Datatypes_Lib.csproj.CopyComplete

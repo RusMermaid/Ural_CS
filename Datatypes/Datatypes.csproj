@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Errors" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datatypes\Strings\.idea\.idea.Strings.dir\.idea\indexLayout.xml" />
+    <None Include="Datatypes\Strings\.idea\.idea.Strings.dir\.idea\workspace.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Errors">
+      <HintPath>..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

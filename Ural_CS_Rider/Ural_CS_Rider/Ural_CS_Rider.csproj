@@ -55,6 +55,7 @@
       <None Remove="Ural_Datatypes_Lib" />
       <None Remove="Ural_ErrrorHandling" />
       <None Remove="Errors" />
+      <None Remove="Datatypes" />
     </ItemGroup>
 
     <ItemGroup>
@@ -71,12 +72,15 @@
       <EmbeddedResource Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**" />
     </ItemGroup>
     <ItemGroup>
-      <Reference Include="Ural_Datatypes_Lib">
-        <HintPath>..\..\Ural_Datatypes_Lib\Ural_Datatypes_Lib\bin\Debug\net6.0\Ural_Datatypes_Lib.dll</HintPath>
-      </Reference>
       <Reference Include="Errors">
         <HintPath>..\..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
       </Reference>
+      <Reference Include="Datatypes">
+        <HintPath>..\..\Datatypes\bin\Debug\net6.0\Datatypes.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\Datatypes\Datatypes.csproj" />
     </ItemGroup>
     <PropertyGroup>
         <OutputType>Exe</OutputType>
