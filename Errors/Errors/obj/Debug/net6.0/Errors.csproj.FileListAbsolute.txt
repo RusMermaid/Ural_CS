@@ -1,0 +1,12 @@
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/bin/Debug/net6.0/Errors.deps.json
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/bin/Debug/net6.0/Errors.dll
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/bin/Debug/net6.0/Errors.pdb
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/obj/Debug/net6.0/Errors.csproj.AssemblyReference.cache
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/obj/Debug/net6.0/Errors.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/obj/Debug/net6.0/Errors.AssemblyInfoInputs.cache
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/obj/Debug/net6.0/Errors.AssemblyInfo.cs
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/obj/Debug/net6.0/Errors.csproj.CoreCompileInputs.cache
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/obj/Debug/net6.0/Errors.dll
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/obj/Debug/net6.0/refint/Errors.dll
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/obj/Debug/net6.0/Errors.pdb
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/obj/Debug/net6.0/ref/Errors.dll
