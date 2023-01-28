@@ -1,2 +1,3 @@
 *.cs linguist-language=C#
-*.c linguist-language=C++
+*.c linguist-language=C
+*.dll linguist-language=C
