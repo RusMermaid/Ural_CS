@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datatypes", "..\Datatypes\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Errors", "..\Errors\Errors\Errors.csproj", "{2DACF7C3-C6B3-4B63-A1ED-4B6C90135A5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UralMathLib", "..\UralMathLib\UralMathLib\UralMathLib.csproj", "{82779532-1884-4FF3-BB42-24A77F3C4272}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{2DACF7C3-C6B3-4B63-A1ED-4B6C90135A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DACF7C3-C6B3-4B63-A1ED-4B6C90135A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DACF7C3-C6B3-4B63-A1ED-4B6C90135A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82779532-1884-4FF3-BB42-24A77F3C4272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82779532-1884-4FF3-BB42-24A77F3C4272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82779532-1884-4FF3-BB42-24A77F3C4272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82779532-1884-4FF3-BB42-24A77F3C4272}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

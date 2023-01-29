@@ -14,6 +14,8 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Errors" />
+    <None Remove="Datatypes" />
+    <None Remove="UralMathLib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Datatypes\Strings\.idea\.idea.Strings.dir\.idea\indexLayout.xml" />
@@ -23,5 +25,14 @@
     <Reference Include="Errors">
       <HintPath>..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
     </Reference>
+    <Reference Include="Datatypes">
+      <HintPath>bin\Debug\net6.0\Datatypes.dll</HintPath>
+    </Reference>
+    <Reference Include="UralMathLib">
+      <HintPath>..\UralMathLib\UralMathLib\bin\Debug\net6.0\UralMathLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Errors\Errors\Errors.csproj" />
   </ItemGroup>
 </Project>
