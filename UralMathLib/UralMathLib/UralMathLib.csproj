@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DocumentationFile></DocumentationFile>
+    <DocumentationFile></DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Errors" />
+    <None Remove="Datatypes" />
+    <None Remove="UralMathLib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Errors">
+      <HintPath>..\..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
+    </Reference>
+    <Reference Include="Datatypes">
+      <HintPath>..\..\Datatypes\bin\Debug\net6.0\Datatypes.dll</HintPath>
+    </Reference>
+    <Reference Include="UralMathLib">
+      <HintPath>bin\Debug\net6.0\UralMathLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Ural_CS_Rider\Ural_CS_Rider\Ural_CS_Rider.csproj" />
+    <ProjectReference Include="..\..\Errors\Errors\Errors.csproj" />
+    <ProjectReference Include="..\..\Datatypes\Datatypes.csproj" />
+  </ItemGroup>
+</Project>
