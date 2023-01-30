@@ -10,6 +10,7 @@
         "dependencies": {
           "Datatypes": "1.0.0",
           "Errors.Reference": "1.0.0.0",
+          "UralMathFsharpLib": "1.0.0.0",
           "UralMathLib": "1.0.0.0"
         },
         "runtime": {
@@ -27,6 +28,14 @@
       "Errors.Reference/1.0.0.0": {
         "runtime": {
           "Errors.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "UralMathFsharpLib/1.0.0.0": {
+        "runtime": {
+          "UralMathFsharpLib.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -54,6 +63,11 @@
       "sha512": ""
     },
     "Errors.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UralMathFsharpLib/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
