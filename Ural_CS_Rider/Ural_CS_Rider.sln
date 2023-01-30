@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Errors", "..\Errors\Errors\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UralMathLib", "..\UralMathLib\UralMathLib\UralMathLib.csproj", "{82779532-1884-4FF3-BB42-24A77F3C4272}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "UralMathFsharpLib", "..\UralMathFsharpLib\UralMathFsharpLib\UralMathFsharpLib.fsproj", "{C56686BB-6A7C-4C36-B4FC-58B42FDF29B4}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "UralMathFsharpLib", "..\UralMathFsharpLib\UralMathFsharpLib\UralMathFsharpLib.fsproj", "{515D5ABC-7F39-4599-8C49-BE6AEAE577D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,9 +38,11 @@ Global
 		{82779532-1884-4FF3-BB42-24A77F3C4272}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82779532-1884-4FF3-BB42-24A77F3C4272}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82779532-1884-4FF3-BB42-24A77F3C4272}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C56686BB-6A7C-4C36-B4FC-58B42FDF29B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C56686BB-6A7C-4C36-B4FC-58B42FDF29B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C56686BB-6A7C-4C36-B4FC-58B42FDF29B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C56686BB-6A7C-4C36-B4FC-58B42FDF29B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515D5ABC-7F39-4599-8C49-BE6AEAE577D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515D5ABC-7F39-4599-8C49-BE6AEAE577D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515D5ABC-7F39-4599-8C49-BE6AEAE577D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515D5ABC-7F39-4599-8C49-BE6AEAE577D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
