@@ -57,6 +57,7 @@
       <None Remove="Errors" />
       <None Remove="Datatypes" />
       <None Remove="UralMathLib" />
+      <None Remove="UralMathFsharpLib" />
     </ItemGroup>
 
     <ItemGroup>
@@ -78,6 +79,9 @@
       </Reference>
       <Reference Include="UralMathLib">
         <HintPath>..\..\UralMathLib\UralMathLib\bin\Debug\net6.0\UralMathLib.dll</HintPath>
+      </Reference>
+      <Reference Include="UralMathFsharpLib">
+        <HintPath>..\..\UralMathFsharpLib\UralMathFsharpLib\bin\Debug\net6.0\UralMathFsharpLib.dll</HintPath>
       </Reference>
     </ItemGroup>
     <ItemGroup>
