@@ -19,3 +19,6 @@
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/Ural_CS_Rider
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/Ural_CS_Rider.dll
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/Ural_CS_Rider.pdb
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathFsharpLib.dll
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathFsharpLib.pdb
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathFsharpLib.xml

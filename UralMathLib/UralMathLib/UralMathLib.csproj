@@ -18,6 +18,8 @@
     <None Remove="Errors" />
     <None Remove="Datatypes" />
     <None Remove="UralMathLib" />
+    <None Remove="UralMathFsharpLib" />
+    <None Remove="FSharp.Core, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Errors">
@@ -29,6 +31,10 @@
     <Reference Include="UralMathLib">
       <HintPath>bin\Debug\net6.0\UralMathLib.dll</HintPath>
     </Reference>
+    <Reference Include="UralMathFsharpLib">
+      <HintPath>..\..\UralMathFsharpLib\UralMathFsharpLib\bin\Debug\net6.0\UralMathFsharpLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Ural_CS_Rider\Ural_CS_Rider\Ural_CS_Rider.csproj" />

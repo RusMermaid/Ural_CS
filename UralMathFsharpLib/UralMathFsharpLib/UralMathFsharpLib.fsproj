@@ -10,6 +10,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library.fs" />
+    <Compile Include="LambdaAnaliz.fs" />
   </ItemGroup>
 
   <ItemGroup>
