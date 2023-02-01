@@ -1,3 +1,4 @@
 *.cs linguist-language=C#
+*.fs linguist-language=F#
 *.c linguist-language=C
 *.dll linguist-language=C
