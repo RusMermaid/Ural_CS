@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "UralMathFsharpLib/1.0.0": {
         "dependencies": {
-          "FSharp.Core": "7.0.200",
+          "FSharp.Core": "6.0.6",
           "Datatypes": "1.0.0.0",
           "Errors": "1.0.0.0",
           "UralMathLib": "1.0.0.0"
@@ -17,11 +17,11 @@
           "UralMathFsharpLib.dll": {}
         }
       },
-      "FSharp.Core/7.0.200": {
+      "FSharp.Core/6.0.6": {
         "runtime": {
           "lib/netstandard2.1/FSharp.Core.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.2.23.6902"
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.622.41001"
           }
         },
         "resources": {
@@ -98,12 +98,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FSharp.Core/7.0.200": {
+    "FSharp.Core/6.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NmgUnpNH6Zu9B0SPIhojyo38gnPdkdYFYQfbd6zosEH32kbGY/g/Klk7PfOWe1NAe/O1YOMmK9KhwQ2OWsWEbg==",
-      "path": "fsharp.core/7.0.200",
-      "hashPath": "fsharp.core.7.0.200.nupkg.sha512"
+      "sha512": "sha512-oSbTFqPtsp+EGkWAHwYIYYHyXLJRnbzVwcmM06kmXNLdWsp3P6XZViPSJJ2qUQS8feNK+nyPA0qtpNZXANGB7w==",
+      "path": "fsharp.core/6.0.6",
+      "hashPath": "fsharp.core.6.0.6.nupkg.sha512"
     },
     "Datatypes/1.0.0.0": {
       "type": "reference",

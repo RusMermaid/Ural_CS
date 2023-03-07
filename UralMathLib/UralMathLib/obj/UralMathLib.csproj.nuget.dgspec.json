@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/UralMathLib.csproj": {}
+    "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathLib\\UralMathLib\\UralMathLib.csproj": {}
   },
   "projects": {
-    "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Datatypes/Datatypes.csproj": {
+    "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Datatypes\\Datatypes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Datatypes/Datatypes.csproj",
+        "projectUniqueName": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Datatypes\\Datatypes.csproj",
         "projectName": "Datatypes",
-        "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Datatypes/Datatypes.csproj",
-        "packagesPath": "/Users/rus_mermaid/.nuget/packages/",
-        "outputPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Datatypes/obj/",
+        "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Datatypes\\Datatypes.csproj",
+        "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Datatypes\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/rus_mermaid/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj": {
-                "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj"
+              "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Errors\\Errors\\Errors.csproj": {
+                "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Errors\\Errors\\Errors.csproj"
               }
             }
           }
@@ -57,26 +64,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj": {
+    "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Errors\\Errors\\Errors.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj",
+        "projectUniqueName": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Errors\\Errors\\Errors.csproj",
         "projectName": "Errors",
-        "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj",
-        "packagesPath": "/Users/rus_mermaid/.nuget/packages/",
-        "outputPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/obj/",
+        "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Errors\\Errors\\Errors.csproj",
+        "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Errors\\Errors\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/rus_mermaid/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -110,40 +124,47 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/UralMathLib.csproj": {
+    "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathLib\\UralMathLib\\UralMathLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/UralMathLib.csproj",
+        "projectUniqueName": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathLib\\UralMathLib\\UralMathLib.csproj",
         "projectName": "UralMathLib",
-        "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/UralMathLib.csproj",
-        "packagesPath": "/Users/rus_mermaid/.nuget/packages/",
-        "outputPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/",
+        "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathLib\\UralMathLib\\UralMathLib.csproj",
+        "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathLib\\UralMathLib\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/rus_mermaid/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Datatypes/Datatypes.csproj": {
-                "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Datatypes/Datatypes.csproj"
+              "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Datatypes\\Datatypes.csproj": {
+                "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Datatypes\\Datatypes.csproj"
               },
-              "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj": {
-                "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj"
+              "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Errors\\Errors\\Errors.csproj": {
+                "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Errors\\Errors\\Errors.csproj"
               },
-              "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj": {
-                "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj"
+              "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Ural_CS_Rider\\Ural_CS_Rider\\Ural_CS_Rider.csproj": {
+                "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Ural_CS_Rider\\Ural_CS_Rider\\Ural_CS_Rider.csproj"
               }
             }
           }
@@ -173,34 +194,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj": {
+    "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Ural_CS_Rider\\Ural_CS_Rider\\Ural_CS_Rider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj",
+        "projectUniqueName": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Ural_CS_Rider\\Ural_CS_Rider\\Ural_CS_Rider.csproj",
         "projectName": "Ural_CS_Rider",
-        "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj",
-        "packagesPath": "/Users/rus_mermaid/.nuget/packages/",
-        "outputPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_CS_Rider/Ural_CS_Rider/obj/",
+        "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Ural_CS_Rider\\Ural_CS_Rider\\Ural_CS_Rider.csproj",
+        "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Ural_CS_Rider\\Ural_CS_Rider\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/rus_mermaid/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Datatypes/Datatypes.csproj": {
-                "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Datatypes/Datatypes.csproj"
+              "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Datatypes\\Datatypes.csproj": {
+                "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Datatypes\\Datatypes.csproj"
               }
             }
           }
@@ -230,7 +258,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
