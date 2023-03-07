@@ -48,7 +48,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -60,7 +60,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -72,7 +72,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -84,7 +84,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -96,7 +96,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -108,7 +108,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -120,7 +120,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -132,7 +132,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -144,7 +144,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -156,7 +156,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -168,7 +168,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -180,7 +180,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -192,7 +192,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -204,7 +204,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -216,7 +216,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
 
@@ -228,7 +228,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
 
@@ -240,7 +240,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
 
@@ -516,7 +516,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -529,7 +529,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -542,7 +542,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -555,7 +555,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -568,7 +568,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -581,7 +581,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -594,7 +594,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -607,7 +607,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -620,7 +620,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -633,7 +633,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -646,7 +646,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -659,7 +659,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -672,7 +672,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -685,7 +685,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -698,7 +698,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -711,7 +711,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -724,7 +724,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -737,7 +737,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -750,7 +750,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -763,7 +763,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -776,7 +776,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -789,7 +789,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -802,7 +802,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -815,7 +815,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -828,7 +828,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -841,7 +841,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -854,7 +854,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -867,7 +867,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -880,7 +880,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -893,7 +893,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -906,7 +906,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -919,7 +919,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -932,7 +932,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -945,7 +945,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -958,7 +958,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -971,7 +971,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -984,7 +984,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -998,7 +998,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1011,7 +1011,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1024,7 +1024,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1037,7 +1037,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1050,7 +1050,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1063,7 +1063,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1076,7 +1076,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1089,7 +1089,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1102,7 +1102,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1115,7 +1115,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1128,7 +1128,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1141,7 +1141,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1154,7 +1154,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1167,7 +1167,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1180,7 +1180,7 @@ public class kortezh : VOID
         }
         else
         {
-            this.value = new MassivOutOfRangeError(0, 0);
+            this.value = new KortezhOutOfRangeError(0, 0);
         }
     }
 
@@ -1516,61 +1516,61 @@ public class kortezh : VOID
         get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
     }
     
-    public MassivOutOfRangeError? ___Add(dynamic el)
+    public KortezhOutOfRangeError? ___Add(dynamic el)
     {
         if (this.Len + 1 > this.MaxLength)
         {
-            return new MassivOutOfRangeError(0, 0);
+            return new KortezhOutOfRangeError(0, 0);
         }
         this.value.Add(kortezh.ParamsValidation(el));
         return null;
     }
     
-    public MassivOutOfRangeError? ___Add(in IList el)
+    public KortezhOutOfRangeError? ___Add(in IList el)
     {
         if (this.Len + el.Count > this.MaxLength)
         {
-            return new MassivOutOfRangeError(0, 0);
+            return new KortezhOutOfRangeError(0, 0);
         }
         this.value.Add(kortezh.ParamsValidation(el));
         return null;
     }
     
-    public MassivOutOfRangeError? ___Add(in Array el)
+    public KortezhOutOfRangeError? ___Add(in Array el)
     {
         if (this.Len + el.Length > this.MaxLength)
         {
-            return new MassivOutOfRangeError(0, 0);
+            return new KortezhOutOfRangeError(0, 0);
         }
         this.value.Add(kortezh.ParamsValidation(el));
         return null;
     }
     
-    public MassivOutOfRangeError? ___Add(in VOID el)
+    public KortezhOutOfRangeError? ___Add(in VOID el)
     {
         if (this.Len + 1 > this.MaxLength)
         {
-            return new MassivOutOfRangeError(0, 0);
+            return new KortezhOutOfRangeError(0, 0);
         }
         this.value.Add(kortezh.ParamsValidation(el));
         return null;
     }
     
-    public MassivOutOfRangeError? ___Add(kortezh el)
+    public KortezhOutOfRangeError? ___Add(kortezh el)
     {
         if (this.Len + el.Len > this.MaxLength)
         {
-            return new MassivOutOfRangeError(0, 0);
+            return new KortezhOutOfRangeError(0, 0);
         }
         this.value.Add(kortezh.ParamsValidation(el));
         return null;
     }
     
-    public MassivOutOfRangeError? ___Add(spisok el)
+    public KortezhOutOfRangeError? ___Add(spisok el)
     {
         if (this.Len + el.Len > this.MaxLength)
         {
-            return new MassivOutOfRangeError(0, 0);
+            return new KortezhOutOfRangeError(0, 0);
         }
         this.value.Add(kortezh.ParamsValidation(el));
         return null;
@@ -1596,7 +1596,7 @@ public class kortezh : VOID
         }
         else
         {
-            return new MassivOutOfRangeError(0, 0);
+            return new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1613,7 +1613,7 @@ public class kortezh : VOID
         }
         else
         {
-            return new MassivOutOfRangeError(0, 0);
+            return new KortezhOutOfRangeError(0, 0);
         }
     }
     
@@ -1629,7 +1629,7 @@ public class kortezh : VOID
         }
         else
         {
-            return new MassivOutOfRangeError(0, 0);
+            return new KortezhOutOfRangeError(0, 0);
         }
     }
 
@@ -1691,4 +1691,3 @@ public class kortezh : VOID
         return _out + right_b;
     }
 }
-
