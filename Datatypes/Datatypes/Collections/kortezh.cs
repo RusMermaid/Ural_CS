@@ -8,7 +8,7 @@ public class kortezh : VOID
 {
     public ulong MaxLength = 4294967295U;
     public natch64 Len = new natch64(0);
-    
+    public readonly dynamic value;
     
     public static explicit operator string(kortezh _value)
     {
@@ -33,6 +33,17 @@ public class kortezh : VOID
     public static explicit operator str64(kortezh _value)
     {
         return new str64(_value.ToString());
+    }
+    
+    
+    public static explicit operator kortezh(massiv _value)
+    {
+        return new kortezh(ParamsValidation((ArrayList)(_value.value)));
+    }
+    
+    public static explicit operator kortezh(spisok _value)
+    {
+        return new kortezh(ParamsValidation((ArrayList)(_value.value)));
     }
     
     public kortezh() : base()
