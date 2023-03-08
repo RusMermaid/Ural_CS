@@ -1,4 +1,5 @@
 ﻿using Datatypes.Numbers;
+using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorNotImplementedDatatype;
 using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
 
 namespace Datatypes.Collections;
@@ -248,61 +249,61 @@ public class kortezh : VOID
     {
         for (int i = 0; i < param.Length; i++)
         {
-            if (param[i] is kortezh)
+            switch (param[i])
             {
-                param[i] = new kortezh(ParamsValidation((dynamic [])param[i]));
-            }
-            else if ((param[i].GetType().IsArray) | (param[i] is IList))
-            {
-                param[i] = new kortezh(ParamsValidation((dynamic [])param[i]));
-            }
-            else if (param[i] is bool)
-            {
-                param[i] = new RCI((bool)param[i]);
-            }
-            else if (param[i] is string)
-            {
-                param[i] = new str64((string)param[i]);
-            }
-            else if (param[i] is char)
-            {
-                param[i] = new str0((char)param[i]);
-            }
-            else if (param[i] is ushort)
-            {
-                param[i] = new natch16((ushort)param[i]);
-            }
-            else if (param[i] is uint)
-            {
-                param[i] = new natch32((uint)param[i]);
-            }
-            else if (param[i] is ulong)
-            {
-                param[i] = new natch64((ulong)param[i]);
-            }
-            else if (param[i] is short)
-            {
-                param[i] = new celch16((short)param[i]);
-            }
-            else if (param[i] is int)
-            {
-                param[i] = new celch32((int)param[i]);
-            }
-            else if (param[i] is long)
-            {
-                param[i] = new celch64((ulong)param[i]);
-            }
-            else if (param[i] is float)
-            {
-                param[i] = new drobch32((float)param[i]);
-            }
-            else if (param[i] is double)
-            {
-                param[i] = new drobch64((double)param[i]);
-            }
-            else if (param[i] is decimal)
-            {
-                param[i] = new drobch64((double)param[i]);
+                case kortezh :
+                    param[i] = new kortezh(ParamsValidation((dynamic [])param[i]));
+                    break;
+                case massiv :
+                case spisok :
+                    param[i] = new massiv(ParamsValidation((dynamic [])param[i]));
+                    break;
+                default :
+                {
+                    if ((param[i].GetType().IsArray) | (param[i] is IList))
+                    {
+                        param[i] = new kortezh(ParamsValidation((dynamic [])param[i]));
+                    }
+                    else switch (param[i])
+                    {
+                        case bool :
+                            param[i] = new RCI((bool)param[i]);
+                            break;
+                        case string :
+                            param[i] = new str64((string)param[i]);
+                            break;
+                        case char :
+                            param[i] = new str0((char)param[i]);
+                            break;
+                        case ushort :
+                            param[i] = new natch16((ushort)param[i]);
+                            break;
+                        case uint :
+                            param[i] = new natch32((uint)param[i]);
+                            break;
+                        case ulong :
+                            param[i] = new natch64((ulong)param[i]);
+                            break;
+                        case short :
+                            param[i] = new celch16((short)param[i]);
+                            break;
+                        case int :
+                            param[i] = new celch32((int)param[i]);
+                            break;
+                        case long :
+                            param[i] = new celch64((ulong)param[i]);
+                            break;
+                        case float :
+                            param[i] = new drobch32((float)param[i]);
+                            break;
+                        case double :
+                        case decimal :
+                            param[i] = new drobch64((double)param[i]);
+                            break;
+                    }
+
+                    break;
+                }
             }
         }
 
@@ -313,61 +314,61 @@ public class kortezh : VOID
     {
         for (int i = 0; i < param.Count; i++)
         {
-            if (param[i] is kortezh)
+            switch (param[i])
             {
-                param[i] = new kortezh(ParamsValidation((ArrayList)param[i]));
-            }
-            else if ((param[i].GetType().IsArray) | (param[i] is IList))
-            {
-                param[i] = new kortezh(ParamsValidation((ArrayList)param[i]));
-            }
-            else if (param[i] is bool)
-            {
-                param[i] = new RCI((bool)param[i]);
-            }
-            else if (param[i] is string)
-            {
-                param[i] = new str64((string)param[i]);
-            }
-            else if (param[i] is char)
-            {
-                param[i] = new str0((char)param[i]);
-            }
-            else if (param[i] is ushort)
-            {
-                param[i] = new natch16((ushort)param[i]);
-            }
-            else if (param[i] is uint)
-            {
-                param[i] = new natch32((uint)param[i]);
-            }
-            else if (param[i] is ulong)
-            {
-                param[i] = new natch64((ulong)param[i]);
-            }
-            else if (param[i] is short)
-            {
-                param[i] = new celch16((short)param[i]);
-            }
-            else if (param[i] is int)
-            {
-                param[i] = new celch32((int)param[i]);
-            }
-            else if (param[i] is long)
-            {
-                param[i] = new celch64((ulong)param[i]);
-            }
-            else if (param[i] is float)
-            {
-                param[i] = new drobch32((float)param[i]);
-            }
-            else if (param[i] is double)
-            {
-                param[i] = new drobch64((double)param[i]);
-            }
-            else if (param[i] is decimal)
-            {
-                param[i] = new drobch64((double)param[i]);
+                case kortezh :
+                    param[i] = new kortezh(ParamsValidation((ArrayList)param[i]));
+                    break;
+                case massiv :
+                case spisok :
+                    param[i] = new massiv(ParamsValidation((ArrayList)param[i]));
+                    break;
+                default :
+                {
+                    if ((param[i].GetType().IsArray) | (param[i] is IList))
+                    {
+                        param[i] = new kortezh(ParamsValidation((ArrayList)param[i]));
+                    }
+                    else switch (param[i])
+                    {
+                        case bool :
+                            param[i] = new RCI((bool)param[i]);
+                            break;
+                        case string :
+                            param[i] = new str64((string)param[i]);
+                            break;
+                        case char :
+                            param[i] = new str0((char)param[i]);
+                            break;
+                        case ushort :
+                            param[i] = new natch16((ushort)param[i]);
+                            break;
+                        case uint :
+                            param[i] = new natch32((uint)param[i]);
+                            break;
+                        case ulong :
+                            param[i] = new natch64((ulong)param[i]);
+                            break;
+                        case short :
+                            param[i] = new celch16((short)param[i]);
+                            break;
+                        case int :
+                            param[i] = new celch32((int)param[i]);
+                            break;
+                        case long :
+                            param[i] = new celch64((ulong)param[i]);
+                            break;
+                        case float :
+                            param[i] = new drobch32((float)param[i]);
+                            break;
+                        case double :
+                        case decimal :
+                            param[i] = new drobch64((double)param[i]);
+                            break;
+                    }
+
+                    break;
+                }
             }
         }
 
@@ -378,61 +379,61 @@ public class kortezh : VOID
     {
         for (int i = 0; i < param.Count; i++)
         {
-            if (param[i] is kortezh)
+            switch (param[i])
             {
-                param[i] = new kortezh(ParamsValidation((List<dynamic>)param[i]));
-            }
-            else if ((param[i].GetType().IsArray) | (param[i] is IList))
-            {
-                param[i] = new kortezh(ParamsValidation((List<dynamic>)param[i]));
-            }
-            else if (param[i] is bool)
-            {
-                param[i] = new RCI((bool)param[i]);
-            }
-            else if (param[i] is string)
-            {
-                param[i] = new str64((string)param[i]);
-            }
-            else if (param[i] is char)
-            {
-                param[i] = new str0((char)param[i]);
-            }
-            else if (param[i] is ushort)
-            {
-                param[i] = new natch16((ushort)param[i]);
-            }
-            else if (param[i] is uint)
-            {
-                param[i] = new natch32((uint)param[i]);
-            }
-            else if (param[i] is ulong)
-            {
-                param[i] = new natch64((ulong)param[i]);
-            }
-            else if (param[i] is short)
-            {
-                param[i] = new celch16((short)param[i]);
-            }
-            else if (param[i] is int)
-            {
-                param[i] = new celch32((int)param[i]);
-            }
-            else if (param[i] is long)
-            {
-                param[i] = new celch64((ulong)param[i]);
-            }
-            else if (param[i] is float)
-            {
-                param[i] = new drobch32((float)param[i]);
-            }
-            else if (param[i] is double)
-            {
-                param[i] = new drobch64((double)param[i]);
-            }
-            else if (param[i] is decimal)
-            {
-                param[i] = new drobch64((double)param[i]);
+                case kortezh :
+                    param[i] = new kortezh(ParamsValidation((List<dynamic>)param[i]));
+                    break;
+                case massiv :
+                case spisok :
+                    param[i] = new massiv(ParamsValidation((List<dynamic>)param[i]));
+                    break;
+                default :
+                {
+                    if ((param[i].GetType().IsArray) | (param[i] is IList))
+                    {
+                        param[i] = new kortezh(ParamsValidation((List<dynamic>)param[i]));
+                    }
+                    else switch (param[i])
+                    {
+                        case bool :
+                            param[i] = new RCI((bool)param[i]);
+                            break;
+                        case string :
+                            param[i] = new str64((string)param[i]);
+                            break;
+                        case char :
+                            param[i] = new str0((char)param[i]);
+                            break;
+                        case ushort :
+                            param[i] = new natch16((ushort)param[i]);
+                            break;
+                        case uint :
+                            param[i] = new natch32((uint)param[i]);
+                            break;
+                        case ulong :
+                            param[i] = new natch64((ulong)param[i]);
+                            break;
+                        case short :
+                            param[i] = new celch16((short)param[i]);
+                            break;
+                        case int :
+                            param[i] = new celch32((int)param[i]);
+                            break;
+                        case long :
+                            param[i] = new celch64((ulong)param[i]);
+                            break;
+                        case float :
+                            param[i] = new drobch32((float)param[i]);
+                            break;
+                        case double :
+                        case decimal :
+                            param[i] = new drobch64((double)param[i]);
+                            break;
+                    }
+
+                    break;
+                }
             }
         }
 
@@ -446,6 +447,10 @@ public class kortezh : VOID
             if (param is kortezh)
             {
                 param = new kortezh(ParamsValidation((List<dynamic>)param));
+            }
+            else if (param[i] is massiv  || param[i] is spisok)
+            {
+                param = new massiv(ParamsValidation((List<dynamic>)param));
             }
             else if ((param.GetType().IsArray) | (param is IList))
             {
@@ -530,6 +535,32 @@ public class kortezh : VOID
         else
         {
             this.value = new KortezhOutOfRangeError(0, 0);
+        }
+    }
+    
+    public kortezh(massiv _value) : base(_value)
+    {
+        if (this.Len.value <= this.MaxLength)
+        {
+            this.value = new ArrayList();
+            this.value.AddRange(kortezh.ParamsValidation((ArrayList)_value.value));
+        }
+        else
+        {
+            this.value = new MassivOutOfRangeError(0, 0);
+        }
+    }
+    
+    public kortezh(spisok _value) : base(_value)
+    {
+        if (this.Len.value <= this.MaxLength)
+        {
+            this.value = new ArrayList();
+            this.value.AddRange(kortezh.ParamsValidation((ArrayList)_value.value));
+        }
+        else
+        {
+            this.value = new MassivOutOfRangeError(0, 0);
         }
     }
     
@@ -1516,64 +1547,29 @@ public class kortezh : VOID
         get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
     }
     
-    public KortezhOutOfRangeError? ___Add(dynamic el)
+    public  KortezhNotImplementedDatatypeError ___Add(dynamic el)
     {
-        if (this.Len + 1 > this.MaxLength)
-        {
-            return new KortezhOutOfRangeError(0, 0);
-        }
-        this.value.Add(kortezh.ParamsValidation(el));
-        return null;
+        return new KortezhNotImplementedDatatypeError(0, 0);
     }
     
-    public KortezhOutOfRangeError? ___Add(in IList el)
+    public KortezhNotImplementedDatatypeError ___Add(in object el)
     {
-        if (this.Len + el.Count > this.MaxLength)
-        {
-            return new KortezhOutOfRangeError(0, 0);
-        }
-        this.value.Add(kortezh.ParamsValidation(el));
-        return null;
+        return new KortezhNotImplementedDatatypeError(0, 0);
     }
     
-    public KortezhOutOfRangeError? ___Add(in Array el)
+    public KortezhNotImplementedDatatypeError ___Add(in IList el)
     {
-        if (this.Len + el.Length > this.MaxLength)
-        {
-            return new KortezhOutOfRangeError(0, 0);
-        }
-        this.value.Add(kortezh.ParamsValidation(el));
-        return null;
+        return new KortezhNotImplementedDatatypeError(0, 0);
     }
     
-    public KortezhOutOfRangeError? ___Add(in VOID el)
+    public KortezhNotImplementedDatatypeError ___Add(in Array el)
     {
-        if (this.Len + 1 > this.MaxLength)
-        {
-            return new KortezhOutOfRangeError(0, 0);
-        }
-        this.value.Add(kortezh.ParamsValidation(el));
-        return null;
+        return new KortezhNotImplementedDatatypeError(0, 0);
     }
     
-    public KortezhOutOfRangeError? ___Add(kortezh el)
+    public KortezhNotImplementedDatatypeError ___Add(in VOID el)
     {
-        if (this.Len + el.Len > this.MaxLength)
-        {
-            return new KortezhOutOfRangeError(0, 0);
-        }
-        this.value.Add(kortezh.ParamsValidation(el));
-        return null;
-    }
-    
-    public KortezhOutOfRangeError? ___Add(spisok el)
-    {
-        if (this.Len + el.Len > this.MaxLength)
-        {
-            return new KortezhOutOfRangeError(0, 0);
-        }
-        this.value.Add(kortezh.ParamsValidation(el));
-        return null;
+        return new KortezhNotImplementedDatatypeError(0, 0);
     }
     
     public  RCI IsMaxLength()
@@ -1632,32 +1628,7 @@ public class kortezh : VOID
             return new KortezhOutOfRangeError(0, 0);
         }
     }
-
-    
-    public kortezh Rolling(Func<double, double, double> f)
-    {
-        double [] data = new double [] {this.value.ToArray().Select(new Func<object, double>(i => (double)i))};
-        var windows = Enumerable.Range(0, data.Length - 1).Select(i => data.Skip(i).Take(2).Select(x=> (double)x).ToArray()).Select(x => x.Aggregate(f));
-        return new kortezh(windows.Select(i => new drobch64(i)).ToArray());
-    }
-    
-    public kortezh Rolling(int h, Func<double, double, double> f)
-    {
-        double [] data = new double [] {this.value.ToArray().Select(new Func<object, double>(i => (double)i))};
-        var windows = Enumerable.Range(0, data.Length - h + 1).Select(i => data.Skip(i).Take(h).Select(x=> (double)x).ToArray()).Select(x => x.Aggregate(f));
-        return new kortezh(windows.Select(i => new drobch64(i)).ToArray());
-    }
-    
-    public kortezh Rolling(int h, ulong min_periods, Func<double, double, double> f)
-    {
-        double [] data = new double [] {this.value.ToArray().Select(new Func<object, double>(i => (double)i))};
-        var windows = Enumerable.Range(0, data.Length - h + 1)
-            .Select(i => data.Skip(i).Take(h).Select(x=> (double)x).ToArray())
-            .Where(x => (ulong)x.Count() >= min_periods).Select(x => x.Aggregate(f));
-        return new kortezh(windows.Select(i => new drobch64(i)).ToArray());
-    }
-
-    public string ToString(string left_b = "[", string right_b = "]", string sep = ",", string str = "\"")
+    public string ToString(string left_b = "⎣", string right_b = "⎦", string sep = ",", string str = "\"")
     {
         string _out = left_b;
         for (int i = 0; i < this.value.Count; i++)
@@ -1666,9 +1637,13 @@ public class kortezh : VOID
             {
                 _out += this.value[i].ToString(left_b, right_b, sep);
             }
+            else if (this.value[i] is massiv || this.value[i] is spisok)
+            {
+                _out += new massiv(this.value[i]).ToString(left_b, right_b, sep);
+            }
             else if ((this.value[i].GetType().IsArray) | (this.value[i] is IList))
             {
-                _out += new kortezh(this.value[i]).ToString(left_b, right_b, sep);
+                _out += new massiv(this.value[i]).ToString(left_b, right_b, sep);
             }
             else if (this.value[i] is bool)
             {
