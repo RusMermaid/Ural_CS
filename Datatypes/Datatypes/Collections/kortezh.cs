@@ -7,7 +7,7 @@ namespace Datatypes.Collections;
 public class kortezh : VOID
 {
     public ulong MaxLength = 4294967295U;
-    public natch64 Len = new natch64(0);
+    public natch64 Count = new natch64(0);
     public readonly dynamic value;
     
     public static explicit operator string(kortezh _value)
@@ -38,14 +38,23 @@ public class kortezh : VOID
     
     public static explicit operator kortezh(massiv _value)
     {
-        return new kortezh(ParamsValidation((ArrayList)(_value.value)));
+        return new kortezh((ArrayList)(_value.value));
     }
     
     public static explicit operator kortezh(spisok _value)
     {
-        return new kortezh(ParamsValidation((ArrayList)(_value.value)));
+        return new kortezh((ArrayList)(_value.value));
     }
     
+    public static explicit operator kortezh(ArrayList _value)
+    {
+        return new kortezh(ParamsValidation(_value));
+    }
+    
+    public static explicit operator ArrayList(kortezh _value)
+    {
+        return (ArrayList)(_value.value);
+    }
     public kortezh() : base()
     {
         this.value = new ArrayList();
@@ -54,7 +63,7 @@ public class kortezh : VOID
     
     public kortezh(string _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new str64(_value)};
         }
@@ -66,7 +75,7 @@ public class kortezh : VOID
     
     public kortezh(bool _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new RCI(_value)};
         }
@@ -78,7 +87,7 @@ public class kortezh : VOID
     
     public kortezh(int _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new celch32(_value)};
         }
@@ -90,7 +99,7 @@ public class kortezh : VOID
     
     public kortezh(long _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new natch64(_value)};
         }
@@ -102,7 +111,7 @@ public class kortezh : VOID
     
     public kortezh(ushort _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new natch16(_value)};
         }
@@ -114,7 +123,7 @@ public class kortezh : VOID
     
     public kortezh(uint _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new natch32(_value)};
         }
@@ -126,7 +135,7 @@ public class kortezh : VOID
     
     public kortezh(ulong _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new natch64(_value)};
         }
@@ -138,7 +147,7 @@ public class kortezh : VOID
     
     public kortezh(natch16 _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new natch16(_value)};
         }
@@ -150,7 +159,7 @@ public class kortezh : VOID
     
     public kortezh(natch32 _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new natch32(_value)};
         }
@@ -162,7 +171,7 @@ public class kortezh : VOID
     
     public kortezh(natch64 _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new natch64(_value)};
         }
@@ -174,7 +183,7 @@ public class kortezh : VOID
     
     public kortezh(double _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new drobch64(_value)};
         }
@@ -186,7 +195,7 @@ public class kortezh : VOID
     
     public kortezh(celch16 _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new celch16(_value.value)};
         }
@@ -198,7 +207,7 @@ public class kortezh : VOID
     
     public kortezh(celch32 _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new celch32(_value.value)};
         }
@@ -210,7 +219,7 @@ public class kortezh : VOID
     
     public kortezh(celch64 _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new celch64(_value.value)};
         }
@@ -222,7 +231,7 @@ public class kortezh : VOID
     
     public kortezh(drobch16 _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new drobch16(_value.value)};
         }
@@ -234,7 +243,7 @@ public class kortezh : VOID
 
     public kortezh(drobch32 _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList { new drobch32(_value.value) };
         }
@@ -246,7 +255,7 @@ public class kortezh : VOID
 
     public kortezh(drobch64 _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList {new drobch64(_value.value)};
         }
@@ -453,7 +462,7 @@ public class kortezh : VOID
     
     protected static dynamic ParamsValidation(dynamic param)
     {
-        for (int i = 0; i < param.Count; i++)
+        for (int i = 0; i < (int)(param.Count); i++)
         {
             if (param is kortezh)
             {
@@ -525,7 +534,7 @@ public class kortezh : VOID
     
     public kortezh(params  dynamic[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(kortezh.ParamsValidation(_value));
@@ -538,7 +547,7 @@ public class kortezh : VOID
     
     public kortezh(kortezh _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(kortezh.ParamsValidation((ArrayList)_value.value));
@@ -551,7 +560,7 @@ public class kortezh : VOID
     
     public kortezh(massiv _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(kortezh.ParamsValidation((ArrayList)_value.value));
@@ -564,7 +573,7 @@ public class kortezh : VOID
     
     public kortezh(spisok _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(kortezh.ParamsValidation((ArrayList)_value.value));
@@ -577,7 +586,7 @@ public class kortezh : VOID
     
     public kortezh(ArrayList _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(kortezh.ParamsValidation(_value));
@@ -590,7 +599,7 @@ public class kortezh : VOID
     
     public kortezh(string[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new str64(c)));
@@ -603,7 +612,7 @@ public class kortezh : VOID
     
     public kortezh(List<string> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new str64(c)));
@@ -616,7 +625,7 @@ public class kortezh : VOID
     
     public kortezh(bool[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new RCI(c)));
@@ -629,7 +638,7 @@ public class kortezh : VOID
     
     public kortezh(List<bool> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new RCI(c)));
@@ -642,7 +651,7 @@ public class kortezh : VOID
     
     public kortezh(short[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new celch16(c)));
@@ -655,7 +664,7 @@ public class kortezh : VOID
     
     public kortezh(List<short> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new celch16(c)));
@@ -668,7 +677,7 @@ public class kortezh : VOID
     
     public kortezh(int[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new celch32(c)));
@@ -681,7 +690,7 @@ public class kortezh : VOID
     
     public kortezh(List<int> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new celch32(c)));
@@ -694,7 +703,7 @@ public class kortezh : VOID
     
     public kortezh(long[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new celch64(c)));
@@ -707,7 +716,7 @@ public class kortezh : VOID
     
     public kortezh(List<long> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new celch64(c)));
@@ -720,7 +729,7 @@ public class kortezh : VOID
     
     public kortezh(List<ushort> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new natch16(c)));
@@ -733,7 +742,7 @@ public class kortezh : VOID
     
     public kortezh(List<uint> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new natch32(c)));
@@ -746,7 +755,7 @@ public class kortezh : VOID
     
     public kortezh(ulong[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new natch64(c)));
@@ -759,7 +768,7 @@ public class kortezh : VOID
     
     public kortezh(List<ulong> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new natch64(c)));
@@ -772,7 +781,7 @@ public class kortezh : VOID
     
     public kortezh(float[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new drobch32(c)));
@@ -785,7 +794,7 @@ public class kortezh : VOID
     
     public kortezh(List<float> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new drobch32(c)));
@@ -798,7 +807,7 @@ public class kortezh : VOID
     
     public kortezh(double[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new drobch64(c)));
@@ -811,7 +820,7 @@ public class kortezh : VOID
     
     public kortezh(List<double> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value.Select(c => new drobch64(c)));
@@ -824,7 +833,7 @@ public class kortezh : VOID
     
     public kortezh(List<dynamic> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(kortezh.ParamsValidation(_value));
@@ -837,7 +846,7 @@ public class kortezh : VOID
     
     public kortezh(VOID[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -850,7 +859,7 @@ public class kortezh : VOID
     
     public kortezh(List<VOID> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -863,7 +872,7 @@ public class kortezh : VOID
     
     public kortezh(str0[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -876,7 +885,7 @@ public class kortezh : VOID
     
     public kortezh(List<str0> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -889,7 +898,7 @@ public class kortezh : VOID
     
     public kortezh(str10[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -902,7 +911,7 @@ public class kortezh : VOID
     
     public kortezh(List<str10> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -915,7 +924,7 @@ public class kortezh : VOID
     
     public kortezh(str16[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -928,7 +937,7 @@ public class kortezh : VOID
     
     public kortezh(List<str16> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -941,7 +950,7 @@ public class kortezh : VOID
     
     public kortezh(str32[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -954,7 +963,7 @@ public class kortezh : VOID
     
     public kortezh(List<str32> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -967,7 +976,7 @@ public class kortezh : VOID
     
     public kortezh(str64[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -980,7 +989,7 @@ public class kortezh : VOID
     
     public kortezh(List<str64> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -993,7 +1002,7 @@ public class kortezh : VOID
     
     public kortezh(natch16[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1006,7 +1015,7 @@ public class kortezh : VOID
     
     public kortezh(List<natch16> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1019,7 +1028,7 @@ public class kortezh : VOID
     
     public kortezh(natch32[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1033,7 +1042,7 @@ public class kortezh : VOID
     public kortezh(List<natch32> _value) : base(_value)
     {
         this.value.Capacity = this.MaxLength;
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1046,7 +1055,7 @@ public class kortezh : VOID
     
     public kortezh(natch64[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1059,7 +1068,7 @@ public class kortezh : VOID
     
     public kortezh(List<natch64> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1072,7 +1081,7 @@ public class kortezh : VOID
     
     public kortezh(celch16[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1085,7 +1094,7 @@ public class kortezh : VOID
     
     public kortezh(List<celch16> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1098,7 +1107,7 @@ public class kortezh : VOID
     
     public kortezh(celch32[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1111,7 +1120,7 @@ public class kortezh : VOID
     
     public kortezh(List<celch32> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1124,7 +1133,7 @@ public class kortezh : VOID
     
     public kortezh(celch64[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1137,7 +1146,7 @@ public class kortezh : VOID
     
     public kortezh(List<celch64> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1150,7 +1159,7 @@ public class kortezh : VOID
     
     public kortezh(drobch16[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1163,7 +1172,7 @@ public class kortezh : VOID
     
     public kortezh(List<drobch16> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1176,7 +1185,7 @@ public class kortezh : VOID
     
     public kortezh(drobch32[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1189,7 +1198,7 @@ public class kortezh : VOID
     
     public kortezh(List<drobch32> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1202,7 +1211,7 @@ public class kortezh : VOID
     
     public kortezh(drobch64[] _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1215,7 +1224,7 @@ public class kortezh : VOID
     
     public kortezh(List<drobch64> _value) : base(_value)
     {
-        if (this.Len.value <= this.MaxLength)
+        if (this.Count.value <= this.MaxLength)
         {
             this.value = new ArrayList();
             this.value.AddRange(_value);
@@ -1585,7 +1594,7 @@ public class kortezh : VOID
     
     public  RCI IsMaxLength()
     {
-        if (this.Len > new natch64(this.MaxLength))
+        if (this.Count > new natch64(this.MaxLength))
         {
             return new RCI(true);
         }
