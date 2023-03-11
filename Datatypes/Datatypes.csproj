@@ -16,6 +16,7 @@
     <None Remove="Errors" />
     <None Remove="Datatypes" />
     <None Remove="UralMathLib" />
+    <None Remove="Datatypes\Collections\MathCollections\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Datatypes\Strings\.idea\.idea.Strings.dir\.idea\indexLayout.xml" />
@@ -34,5 +35,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Errors\Errors\Errors.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datatypes\Collections\MathCollections\" />
   </ItemGroup>
 </Project>

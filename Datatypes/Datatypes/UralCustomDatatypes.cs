@@ -11,3 +11,4 @@ global using Datatypes.Numbers.OtherNumbers.Hexadecimal;
 global using Datatypes.Strings;
 
 global using Datatypes.Collections;
+global using Datatypes.Collections.MathCollections;

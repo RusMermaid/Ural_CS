@@ -4,52 +4,54 @@ using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
 
 namespace Datatypes.Strings
 {
-    public class str64 : VOID
+    public interface Interface_Ustr {}
+
+    public class str64 : VOID, Interface_Ustr
     {
         public const ulong MaxLength = 18446744073709551615U;
         public const string DefaultValue = "";
-        public readonly natch64 Len;
+        public readonly natch64 Count;
 
         public str64(string _value = "") : base(_value)
         {
             this.value = Convert.ToString(_value);
-            this.Len = new natch64(this.value.Length);
+            this.Count = new natch64(this.value.Length);
         }
         
         public str64(char _value) : base(_value)
         {
             this.value = Convert.ToString(_value);
-            this.Len = new natch64(this.value.Length);
+            this.Count = new natch64(this.value.Length);
         }
         
         public str64(str0 _value) : base(_value)
         {
             this.value = Convert.ToString(_value.value);
-            this.Len = new natch64(this.value.Length);
+            this.Count = new natch64(this.value.Length);
         }
         
         public str64(str10 _value ) : base(_value)
         {
             this.value = _value.value;
-            this.Len = new natch64(this.value.Length);
+            this.Count = new natch64(this.value.Length);
         }
         
         public str64(str16 _value ) : base(_value)
         {
             this.value = _value.value;
-            this.Len = new natch64(this.value.Length);
+            this.Count = new natch64(this.value.Length);
         }
         
         public str64(str32 _value ) : base(_value)
         {
             this.value = _value.value;
-            this.Len = new natch64(this.value.Length);
+            this.Count = new natch64(this.value.Length);
         }
         
         public str64(str64 _value ) : base(_value)
         {
             this.value = _value.value;
-            this.Len = new natch64(this.value.Length);
+            this.Count = new natch64(this.value.Length);
         }
 
         public str0 this[int index]
@@ -1178,7 +1180,7 @@ namespace Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Len + str.Len));
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Count + str.Count));
                 }
             }
 
@@ -1195,7 +1197,7 @@ namespace Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Len + str.Len));
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Count + str.Count));
                 }
             }
 
@@ -1212,7 +1214,7 @@ namespace Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Len + str.Len));
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Count + str.Count));
                 }
             }
 
@@ -1229,7 +1231,7 @@ namespace Datatypes.Strings
             {
                 foreach (char c2 in str.value)
                 {
-                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Len + str.Len));
+                    cnv.Add(((ulong)c1 * (ulong)c2) / (ulong)(this.Count + str.Count));
                 }
             }
 
