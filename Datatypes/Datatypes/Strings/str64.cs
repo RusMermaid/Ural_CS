@@ -384,6 +384,156 @@ namespace Datatypes.Strings
             get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
         }
         
+        public  static RCI operator ==(str64 l, string r)
+        {
+            return l.___Equals(r);
+        }
+        
+        public  static RCI operator ==(str64 l, str10 r)
+        {
+            return l.___Equals(r);
+        }
+        
+        public  static RCI operator ==(str64 l, str16 r)
+        {
+            return l.___Equals(r);
+        }
+        
+        public  static RCI operator ==(str64 l, str32 r)
+        {
+            return l.___Equals(r);
+        }
+        
+        public  static RCI operator ==(str64 l, str64 r)
+        {
+            return l.___Equals(r);
+        }
+        
+        public  static RCI operator !=(str64 l, string r)
+        {
+            return l.___Equals(r).NE();
+        }
+        
+        public  static RCI operator !=(str64 l, str10 r)
+        {
+            return l.___Equals(r).NE();
+        }
+        
+        public  static RCI operator !=(str64 l, str16 r)
+        {
+            return l.___Equals(r).NE();
+        }
+        
+        public  static RCI operator !=(str64 l, str32 r)
+        {
+            return l.___Equals(r).NE();
+        }
+        
+        public  static RCI operator !=(str64 l, str64 r)
+        {
+            return l.___Equals(r).NE();
+        }
+        
+        public  static RCI operator >(str64 l, string r)
+        {
+            return l.___GreaterThan(r);
+        }
+        
+        public  static RCI operator >(str64 l, str10 r)
+        {
+            return l.___GreaterThan(r);
+        }
+        
+        public  static RCI operator >(str64 l, str16 r)
+        {
+            return l.___GreaterThan(r);
+        }
+        
+        public  static RCI operator >(str64 l, str32 r)
+        {
+            return l.___GreaterThan(r);
+        }
+        
+        public  static RCI operator >(str64 l, str64 r)
+        {
+            return l.___GreaterThan(r);
+        }
+        
+        public  static RCI operator <(str64 l, string r)
+        {
+            return l.___SmallerThan(r);
+        }
+        
+        public  static RCI operator <(str64 l, str10 r)
+        {
+            return l.___SmallerThan(r);
+        }
+        
+        public  static RCI operator <(str64 l, str16 r)
+        {
+            return l.___SmallerThan(r);
+        }
+        
+        public  static RCI operator <(str64 l, str32 r)
+        {
+            return l.___SmallerThan(r);
+        }
+        
+        public  static RCI operator <(str64 l, str64 r)
+        {
+            return l.___SmallerThan(r);
+        }
+        
+        public  static RCI operator >=(str64 l, string r)
+        {
+            return l.___GreaterOrEqualThan(r);
+        }
+        
+        public  static RCI operator >=(str64 l, str10 r)
+        {
+            return l.___GreaterOrEqualThan(r);
+        }
+        
+        public  static RCI operator >=(str64 l, str16 r)
+        {
+            return l.___GreaterOrEqualThan(r);
+        }
+        
+        public  static RCI operator >=(str64 l, str32 r)
+        {
+            return l.___GreaterOrEqualThan(r);
+        }
+        
+        public  static RCI operator >=(str64 l, str64 r)
+        {
+            return l.___GreaterOrEqualThan(r);
+        }
+        
+        public  static RCI operator <=(str64 l, string r)
+        {
+            return l.___SmallerOrEqualThan(r);
+        }
+        
+        public  static RCI operator <=(str64 l, str10 r)
+        {
+            return l.___SmallerOrEqualThan(r);
+        }
+        
+        public  static RCI operator <=(str64 l, str16 r)
+        {
+            return l.___SmallerOrEqualThan(r);
+        }
+        
+        public  static RCI operator <=(str64 l, str32 r)
+        {
+            return l.___SmallerOrEqualThan(r);
+        }
+        
+        public  static RCI operator <=(str64 l, str64 r)
+        {
+            return l.___SmallerOrEqualThan(r);
+        }
+        
         public static dynamic operator +(str64 l, str0 r)
         {
             str64 l2 = new str64(l);
@@ -723,6 +873,133 @@ namespace Datatypes.Strings
         public static explicit operator string(str64 str)
         {
             return (string)str.value;
+        }
+        
+        public RCI ___Equals(string str)
+        {
+            return (string)(this.value) == (string)str ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___Equals(str10 str)
+        {
+            return (string)(this.value) == (string)(str.value) ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___Equals(str16 str)
+        {
+            return (string)(this.value) == (string)(str.value) ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___Equals(str32 str)
+        {
+            return (string)(this.value) == (string)(str.value) ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___Equals(str64 str)
+        {
+            return (string)(this.value) == (string)(str.value) ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___GreaterThan(string str)
+        {
+            return this.value.Lengt > str.Length ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___GreaterThan(str10 str)
+        {
+            return this.value.Length > str.value.Length ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___GreaterThan(str16 str)
+        {
+            return this.value.Length > str.value.Length ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___GreaterThan(str32 str)
+        {
+            return this.value.Length > str.value.Length ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___GreaterThan(str64 str)
+        {
+            return this.value.Length > str.value.Length ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___SmallerThan(string str)
+        {
+            return this.value.Lengt < str.Length ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___SmallerThan(str10 str)
+        {
+            return this.value.Length < str.value.Length ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___SmallerThan(str16 str)
+        {
+            return this.value.Length < str.value.Length ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___SmallerThan(str32 str)
+        {
+            return this.value.Length < str.value.Length ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___SmallerThan(str64 str)
+        {
+            return this.value.Length < str.value.Length ? new RCI(true) : new RCI(false);
+        }
+        
+        public RCI ___GreaterOrEqualThan(string str)
+        {
+            return RCI.ILI(this.___Equals(str), this.___GreaterThan(str));
+        }
+
+
+        public RCI ___GreaterOrEqualThan(str10 str)
+        {
+            return RCI.ILI(this.___Equals(str), this.___GreaterThan(str));
+        }
+        
+        public RCI ___GreaterOrEqualThan(str16 str)
+        {
+            return RCI.ILI(this.___Equals(str), this.___GreaterThan(str));
+        }
+        
+        public RCI ___GreaterOrEqualThan(str32 str)
+        {
+            return RCI.ILI(this.___Equals(str), this.___GreaterThan(str));
+        }
+        
+        public RCI ___GreaterOrEqualThan(str64 str)
+        {
+            return RCI.ILI(this.___Equals(str), this.___GreaterThan(str));
+        }
+        
+        public RCI ___SmallerOrEqualThan(string str)
+        {
+            return RCI.ILI(this.___Equals(str), this.___SmallerThan(str));
+        }
+
+
+        public RCI ___SmallerOrEqualThan(str10 str)
+        {
+            return RCI.ILI(this.___Equals(str), this.___SmallerThan(str));
+        }
+        
+        public RCI ___SmallerOrEqualThan(str16 str)
+        {
+            return RCI.ILI(this.___Equals(str), this.___SmallerThan(str));
+        }
+        
+        public RCI ___SmallerOrEqualThan(str32 str)
+        {
+            return RCI.ILI(this.___Equals(str), this.___SmallerThan(str));
+        }
+        
+        public RCI ___SmallerOrEqualThan(str64 str)
+        {
+            return RCI.ILI(this.___Equals(str), this.___SmallerThan(str));
         }
         
         public dynamic ___Add(dynamic _value)
