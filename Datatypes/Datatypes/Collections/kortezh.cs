@@ -71,7 +71,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -84,7 +84,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -97,7 +97,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -110,7 +110,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -123,7 +123,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -136,7 +136,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -149,7 +149,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -162,7 +162,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -175,7 +175,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -188,7 +188,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -201,7 +201,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -214,7 +214,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -227,7 +227,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -240,7 +240,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -253,7 +253,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -266,7 +266,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -279,7 +279,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -563,7 +563,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -577,7 +577,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -591,7 +591,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -605,7 +605,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -619,7 +619,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -633,7 +633,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -647,7 +647,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -661,7 +661,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -675,7 +675,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -689,7 +689,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -703,7 +703,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -717,7 +717,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -731,7 +731,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -745,7 +745,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -759,7 +759,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -773,7 +773,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -800,7 +800,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -814,7 +814,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -828,7 +828,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -842,7 +842,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -856,7 +856,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -870,7 +870,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -884,7 +884,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -898,7 +898,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -912,7 +912,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -926,7 +926,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -940,7 +940,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -954,7 +954,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -968,7 +968,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -982,7 +982,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -996,7 +996,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1010,7 +1010,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1024,7 +1024,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1038,7 +1038,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1052,7 +1052,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1066,7 +1066,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1080,7 +1080,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1094,7 +1094,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1109,7 +1109,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1123,7 +1123,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1137,7 +1137,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1164,7 +1164,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1178,7 +1178,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1192,7 +1192,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1206,7 +1206,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1220,7 +1220,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1234,7 +1234,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1248,7 +1248,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1262,7 +1262,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1276,7 +1276,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1290,7 +1290,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1304,7 +1304,7 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
             }
         }
 
@@ -1640,34 +1640,34 @@ namespace Datatypes.Collections
             get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
         }
 
-        public KortezhNotImplementedDatatypeError ___Add(dynamic el)
+        public void ___Add(dynamic el)
         {
             KortezhNotImplementedDatatypeError err = new KortezhNotImplementedDatatypeError(0, 0);
-            throw err.Visiv();
+            err.Execute();
         }
 
-        public KortezhNotImplementedDatatypeError ___Add(in object el)
+        public void ___Add(in object el)
         {
             KortezhNotImplementedDatatypeError err = new KortezhNotImplementedDatatypeError(0, 0);
-            throw err.Visiv();
+            err.Execute();
         }
 
-        public KortezhNotImplementedDatatypeError ___Add(in IList el)
+        public void ___Add(in IList el)
         {
             KortezhNotImplementedDatatypeError err = new KortezhNotImplementedDatatypeError(0, 0);
-            throw err.Visiv();
+            err.Execute();
         }
 
-        public KortezhNotImplementedDatatypeError ___Add(in Array el)
+        public void ___Add(in Array el)
         {
             KortezhNotImplementedDatatypeError err = new KortezhNotImplementedDatatypeError(0, 0);
-            throw err.Visiv();
+            err.Execute();
         }
 
-        public KortezhNotImplementedDatatypeError ___Add(in VOID el)
+        public void ___Add(in VOID el)
         {
             KortezhNotImplementedDatatypeError err = new KortezhNotImplementedDatatypeError(0, 0);
-            throw err.Visiv();
+            err.Execute();
         }
 
         public RCI IsMaxLength()
@@ -1682,7 +1682,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public static dynamic Slice(dynamic [] _value, int start)
+        public static dynamic? Slice(dynamic [] _value, int start)
         {
             if ((start >= 0u) & (start <= _value.Length))
             {
@@ -1691,11 +1691,12 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
+                return null;
             }
         }
 
-        public static dynamic Slice(dynamic [] _value, int start, int end)
+        public static dynamic? Slice(dynamic [] _value, int start, int end)
         {
             if ((start >= 0u) & (start <= _value.Length) & (end >= 0u) & (end <= _value.Length) &
                 (start <= end))
@@ -1709,11 +1710,12 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
+                return null;
             }
         }
 
-        public static dynamic Slice(dynamic [] data, int start, int end, int step)
+        public static dynamic? Slice(dynamic [] data, int start, int end, int step)
         {
             if ((start >= 0) & (start <= data.Length) & (end >= 0) & (end <= data.Length) & (start <= end))
             {
@@ -1726,7 +1728,8 @@ namespace Datatypes.Collections
             else
             {
                 KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                throw err.Visiv();
+                err.Execute();
+                return null;
             }
         }
 
@@ -1771,3 +1774,4 @@ namespace Datatypes.Collections
         }
     }
 }
+

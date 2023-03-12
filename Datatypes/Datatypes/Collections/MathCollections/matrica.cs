@@ -1021,7 +1021,7 @@ namespace Datatypes.Collections.MathCollections
 					if (newN < 1)
 					{
 						MatricaOutOfRangeError err = new MatricaOutOfRangeError(1021, 1023);
-						throw err.Visiv();
+						err.Execute();
 					}
 
 					matrica result = new matrica(newN);
@@ -1053,7 +1053,7 @@ namespace Datatypes.Collections.MathCollections
 					if (newN < 1)
 					{
 						MatricaOutOfRangeError err = new MatricaOutOfRangeError(1021, 1023);
-						throw err.Visiv();
+						err.Execute();
 					}
 
 					matrica result = new matrica(newN);
@@ -1085,7 +1085,7 @@ namespace Datatypes.Collections.MathCollections
 					if (newN < 1)
 					{
 						MatricaOutOfRangeError err = new MatricaOutOfRangeError(1021, 1023);
-						throw err.Visiv();
+						err.Execute();
 					}
 
 					matrica result = new matrica(newN);
@@ -1149,7 +1149,7 @@ namespace Datatypes.Collections.MathCollections
 				output += in_right_b;
 				if (i < this.value.GetLength(0) - 1)
 				{
-					output += sep + "\n ";
+					output += sep + "\n";
 				}
 			}
 			return output + out_right_b;
