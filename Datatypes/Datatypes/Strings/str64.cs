@@ -6,7 +6,7 @@ namespace Datatypes.Strings
 {
     public interface Interface_Ustr {}
 
-    public class str64 : VOID, Interface_Ustr
+    public class str64 : VOID, Interface_Ustr, Interface_Ural_Datatype
     {
         public const ulong MaxLength = 18446744073709551615U;
         public const string DefaultValue = "";
