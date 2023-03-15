@@ -1,18 +1,19 @@
 ﻿using Datatypes.Numbers;
+using MathNet.Numerics.LinearAlgebra;
+
 using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
 using natch16 = Datatypes.Numbers.natch16;
-
 namespace Datatypes.Collections.MathCollections
 {
 	public class matrica : VOID, Interface_UCollection, Interface_Ural_Datatype
 	{
 		public ulong MaxLength = 4294967295U;
-		public Interface_UDrobch[,] value;
+		public drobch64[,] value;
 		public readonly kortezh Count;
 		
 		public matrica(ushort n)
 		{
-			this.value = new Interface_UDrobch[n, n];
+			this.value = new drobch64[n, n];
 			for (int i = 0; i < n; i++)
 			{
 				for (int j = 0; j < n; j++)
@@ -26,7 +27,7 @@ namespace Datatypes.Collections.MathCollections
 		
 		public matrica(uint n)
 		{
-			this.value = new Interface_UDrobch[n, n];
+			this.value = new drobch64[n, n];
 			for (int i = 0; i < n; i++)
 			{
 				for (int j = 0; j < n; j++)
@@ -40,7 +41,7 @@ namespace Datatypes.Collections.MathCollections
 		
 		public matrica(ulong n)
 		{
-			this.value = new Interface_UDrobch[n, n];
+			this.value = new drobch64[n, n];
 			for (long i = 0; i < (long)n; i++)
 			{
 				for (long j = 0; j < (long)n; j++)
@@ -54,7 +55,7 @@ namespace Datatypes.Collections.MathCollections
 		
 		public matrica(natch16 n)
 		{
-			this.value = new Interface_UDrobch[(ushort)n, (ushort)n];
+			this.value = new drobch64[(ushort)n, (ushort)n];
 			for (int i = 0; i < (ushort)n; i++)
 			{
 				for (int j = 0; j < (ushort)n; j++)
@@ -68,7 +69,7 @@ namespace Datatypes.Collections.MathCollections
 		
 		public matrica(natch32 n)
 		{
-			this.value = new Interface_UDrobch[(uint)n, (uint)n];
+			this.value = new drobch64[(uint)n, (uint)n];
 			for (int i = 0; i < (uint)n; i++)
 			{
 				for (int j = 0; j < (uint)n; j++)
@@ -82,7 +83,7 @@ namespace Datatypes.Collections.MathCollections
 		
 		public matrica(natch64 n)
 		{
-			this.value = new Interface_UDrobch[(ulong)n, (ulong)n];
+			this.value = new drobch64[(ulong)n, (ulong)n];
 			for (long i = 0; i < (long)n; i++)
 			{
 				for (long j = 0; j < (long)n; j++)
@@ -98,20 +99,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch16(mtx.GetLength(1)), new natch16(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch16(mtx[i, j]);
+					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
 			}
 
@@ -121,20 +122,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch16(mtx[0].Count), new natch16(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch16(mtx.Count), new natch16(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch16(mtx[i][j]);
+					this.value[i, j] = new drobch64(mtx[i][j]);
 				}
 			}
 		}
@@ -143,20 +144,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch32(mtx.GetLength(1)), new natch32(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch32(mtx[i, j]);
+					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
 			}
 
@@ -166,20 +167,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch32(mtx.Count), new natch32(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch32(mtx[i][j]);
+					this.value[i, j] = new drobch64(mtx[i][j]);
 				}
 			}
 		}
@@ -188,20 +189,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch64(mtx.GetLength(1)), new natch64(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch64(mtx[i, j]);
+					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
 			}
 
@@ -211,20 +212,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch64(mtx.Count), new natch64(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch64(mtx[i][j]);
+					this.value[i, j] = new drobch64(mtx[i][j]);
 				}
 			}
 		}
@@ -233,20 +234,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch32(mtx.GetLength(1)), new natch32(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new drobch32(mtx[i, j]);
+					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
 			}
 		}
@@ -255,20 +256,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch32(mtx.Count), new natch32(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new drobch32(mtx[i][j]);
+					this.value[i, j] = new drobch64(mtx[i][j]);
 				}
 			}
 		}
@@ -277,18 +278,18 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch64(mtx.GetLength(1)), new natch64(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
 					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
@@ -299,18 +300,18 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch64(mtx.Count), new natch64(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
 					this.value[i, j] = new drobch64(mtx[i][j]);
 				}
@@ -321,20 +322,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch16(mtx.GetLength(1)), new natch16(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch16(mtx[i, j]);
+					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
 			}
 
@@ -344,20 +345,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch16(mtx[0].Count), new natch16(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch16(mtx.Count), new natch16(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch16(mtx[i][j]);
+					this.value[i, j] = new drobch64(mtx[i][j]);
 				}
 			}
 		}
@@ -366,20 +367,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch32(mtx.GetLength(1)), new natch32(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch32(mtx[i, j]);
+					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
 			}
 
@@ -389,20 +390,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch32(mtx.Count), new natch32(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch32(mtx[i][j]);
+					this.value[i, j] = new drobch64(mtx[i][j]);
 				}
 			}
 		}
@@ -411,20 +412,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch64(mtx.GetLength(1)), new natch64(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch64(mtx[i, j]);
+					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
 			}
 
@@ -434,20 +435,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch64(mtx.Count), new natch64(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch64(mtx[i][j]);
+					this.value[i, j] = new drobch64(mtx[i][j]);
 				}
 			}
 		}
@@ -456,20 +457,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch16(mtx.GetLength(1)), new natch16(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new celch16(mtx[i, j]);
+					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
 			}
 
@@ -479,20 +480,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch16(mtx[0].Count), new natch16(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch16(mtx.Count), new natch16(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new drobch16(mtx[i][j]);
+					this.value[i, j] = new drobch64(mtx[i][j]);
 				}
 			}
 		}
@@ -501,20 +502,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch32(mtx.GetLength(1)), new natch32(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new drobch32(mtx[i, j]);
+					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
 			}
 		}
@@ -523,20 +524,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch32(mtx.Count), new natch32(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
-					this.value[i, j] = new drobch32(mtx[i][j]);
+					this.value[i, j] = new drobch64(mtx[i][j]);
 				}
 			}
 		}
@@ -545,18 +546,18 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.GetLength(0) >= mtx.GetLength(1))
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
+				this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
 				this.Count = new kortezh(new natch64(mtx.GetLength(1)), new natch64(mtx.GetLength(1)));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
+				this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
 				this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(0)));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
 					this.value[i, j] = new drobch64(mtx[i, j]);
 				}
@@ -567,42 +568,20 @@ namespace Datatypes.Collections.MathCollections
 		{
 			if (mtx.Count >= mtx[0].Count)
 			{
-				this.value = new Interface_UDrobch[mtx[0].Count, mtx[0].Count];
+				this.value = new drobch64[mtx[0].Count, mtx[0].Count];
 				this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx[0].Count));
 			}
 			else
 			{
-				this.value = new Interface_UDrobch[mtx.Count, mtx.Count];
+				this.value = new drobch64[mtx.Count, mtx.Count];
 				this.Count = new kortezh(new natch64(mtx.Count), new natch64(mtx.Count));
 			}
 			
-			for (int i = 0; i < (this.Count[0]); i++)
+			for (int i = 0; i < (int)(this.Count[0]); i++)
 			{
-				for (int j = 0; j < (this.Count[0]); j++)
+				for (int j = 0; j < (int)(this.Count[0]); j++)
 				{
 					this.value[i, j] = new drobch64(mtx[i][j]);
-				}
-			}
-		}
-		
-		public matrica(Interface_UDrobch[,] mtx)
-		{
-			if (mtx.GetLength(0) >= mtx.GetLength(1))
-			{
-				this.value = new Interface_UDrobch[mtx.GetLength(1), mtx.GetLength(1)];
-				this.Count = new kortezh(new natch64(mtx.GetLength(1)), new natch64(mtx.GetLength(1)));
-			}
-			else
-			{
-				this.value = new Interface_UDrobch[mtx.GetLength(0), mtx.GetLength(0)];
-				this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(0)));
-			}
-			
-			for (ulong i = 0; i < (ulong)(this.Count[0]); i++)
-			{
-				for (ulong j = 0; j < (ulong)(this.Count[0]); j++)
-				{
-					this.value[i, j] =mtx[i, j];
 				}
 			}
 		}
@@ -1083,7 +1062,7 @@ namespace Datatypes.Collections.MathCollections
 			return new drobch64(Enumerable.Range(0, (int) this.value.GetLength(0)).Select(i => this[(ulong)i, (ulong)i]).Sum(x => (double)x));
 		}
 
-		public matrica ___Split(ushort scales, ushort x = 0, ushort y = 0)
+		public matrica ___AngleSplit(ushort scales, ushort x = 0, ushort y = 0)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = y; i < (ulong)(x + scales); i++)
@@ -1101,7 +1080,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, uint x = 0, uint y = 0)
+		public matrica ___AngleSplit(ushort scales, uint x = 0, uint y = 0)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = y; i < (ulong)(x + scales); i++)
@@ -1119,7 +1098,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, ulong x = 0, ulong y = 0)
+		public matrica ___AngleSplit(ushort scales, ulong x = 0, ulong y = 0)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = y; i < (ulong)(x + scales); i++)
@@ -1137,7 +1116,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, natch16 x, natch16 y)
+		public matrica ___AngleSplit(ushort scales, natch16 x, natch16 y)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = (ulong)y; i < (ulong)(x + scales); i++)
@@ -1155,7 +1134,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, natch16 x, natch32 y)
+		public matrica ___AngleSplit(ushort scales, natch16 x, natch32 y)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = (ulong)y; i < (ulong)(x + scales); i++)
@@ -1173,7 +1152,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, natch16 x, natch64 y)
+		public matrica ___AngleSplit(ushort scales, natch16 x, natch64 y)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = (ulong)y; i < (ulong)(x + scales); i++)
@@ -1191,7 +1170,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, natch32 x, natch16 y)
+		public matrica ___AngleSplit(ushort scales, natch32 x, natch16 y)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = (ulong)y; i < (ulong)(x + scales); i++)
@@ -1209,7 +1188,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, natch32 x, natch32 y)
+		public matrica ___AngleSplit(ushort scales, natch32 x, natch32 y)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = (ulong)y; i < (ulong)(x + scales); i++)
@@ -1227,7 +1206,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, natch32 x, natch64 y)
+		public matrica ___AngleSplit(ushort scales, natch32 x, natch64 y)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = (ulong)y; i < (ulong)(x + scales); i++)
@@ -1245,7 +1224,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, natch64 x, natch16 y)
+		public matrica ___AngleSplit(ushort scales, natch64 x, natch16 y)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = (ulong)y; i < (ulong)(x + scales); i++)
@@ -1263,7 +1242,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, natch64 x, natch32 y)
+		public matrica ___AngleSplit(ushort scales, natch64 x, natch32 y)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = (ulong)y; i < (ulong)(x + scales); i++)
@@ -1281,7 +1260,7 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
-		public matrica ___Split(ushort scales, natch64 x, natch64 y)
+		public matrica ___AngleSplit(ushort scales, natch64 x, natch64 y)
 		{
 			matrica new_mtx = new matrica(scales);
 			for (ulong i = (ulong)y; i < (ulong)(x + scales); i++)
@@ -1297,6 +1276,234 @@ namespace Datatypes.Collections.MathCollections
 			}
 
 			return new_mtx;
+		}
+		
+		public matrica ___DistanceSplit(ushort x, ushort y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(uint x, uint y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(ulong x, ulong y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(natch16 x, natch16 y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == (ulong)y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == (ulong)x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(natch16 x, natch32 y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == (ulong)y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == (ulong)x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(natch16 x, natch64 y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == (ulong)y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == (ulong)x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(natch32 x, natch16 y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == (ulong)y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == (ulong)x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(natch32 x, natch32 y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == (ulong)y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == (ulong)x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(natch32 x, natch64 y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == (ulong)y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == (ulong)x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(natch64 x, natch16 y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == (ulong)y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == (ulong)x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(natch64 x, natch32 y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == (ulong)y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == (ulong)x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
+		}
+		
+		public matrica ___DistanceSplit(natch64 x, natch64 y)
+		{
+			matrica mtx = new matrica(this);
+			List<List<drobch64>> new_list_mtx = new List<List<drobch64>>();
+
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				if (i == (ulong)y) continue;
+				List<drobch64> row = new List<drobch64>();
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (j == (ulong)x) continue;
+					row.Add(mtx[i, j]);
+				}
+				new_list_mtx.Add(row);
+			}
+			return new matrica(new_list_mtx);
 		}
 
 		public matrica ___Add(short _value)
@@ -1642,6 +1849,60 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
+		public drobch64 ___Abs()
+		{
+			matrica mtx = new matrica(this);
+			switch ((ulong)mtx.Count[0b0])
+			{
+				case 0 :
+					return mtx[0, 0];
+				case 2 :
+					return mtx[0, 0] * mtx[1, 1] - mtx[0, 1] *mtx[1, 0];
+				default :
+				{
+					drobch64 summa = new drobch64(0b0);
+					for (ulong i = 0b0; i < (ulong)mtx.Count[0b0]; i++)
+					{
+						if (!Convert.ToBoolean((double)mtx[0b0, i])) continue;
+						summa = (i % 0b10) switch
+						{
+							0b1 => summa -0b1 * mtx[0b0, i] * mtx.___DistanceSplit(i, 0b0).___Abs(),
+							_ => summa + mtx[0b0, i] * mtx.___DistanceSplit(i, 0b0).___Abs()
+						};
+					}
+					return summa;
+				}
+			}
+		}
+
+		public matrica ___Transpose()
+		{
+			matrica mtx = new matrica((ulong)this.Count[0]);
+			for (ulong i = 0; i < (ulong)this.Count[0]; i++)
+			{
+				for (ulong j = 0; j < (ulong)this.Count[1]; j++)
+				{
+					mtx[j, i] = this[i, j];
+				}
+			}
+
+			return mtx;
+		}
+		
+		public massiv ___SobZnacheniya()
+		{
+			Matrix<double> mtx = matrica.MatricaToMatrix(this);
+			var eigenvalues = mtx.Evd().EigenValues;
+			return new massiv(eigenvalues.Select(x => new drobch64(x.Real)).ToArray());
+		}
+		
+		public matrica ___SobVektora()
+		{
+			Matrix<double> mtx = matrica.MatricaToMatrix(this);
+			Matrix<double> eigenvectors = mtx.Evd().EigenVectors;
+			return matrica.MatrixToMatrica(eigenvectors);
+		}
+		
 		public string ToString(string out_left_b = "[", string out_right_b = "]", string in_left_b = "[", string in_right_b = "]", string sep = ", ")
 		{
 			string output = out_left_b;
@@ -1663,6 +1924,32 @@ namespace Datatypes.Collections.MathCollections
 				}
 			}
 			return output + out_right_b;
+		}
+
+		protected static Matrix<double> MatricaToMatrix(matrica mtx)
+		{
+			double [,] values = new double[(ulong)mtx.Count[0], (ulong)mtx.Count[1]];
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				for (ulong j = 0; j < (ulong)mtx.Count[1]; j++)
+				{
+					values[i, j] = (double)mtx.value[i, j];
+				}
+			}
+			return Matrix<double>.Build.DenseOfArray(values);
+		}
+		
+		protected static matrica MatrixToMatrica(Matrix<double> mtx)
+		{
+			drobch64[,] values = new drobch64[mtx.RowCount, mtx.ColumnCount];
+			for (ulong i = 0; i < (ulong)mtx.RowCount; i++)
+			{
+				for (ulong j = 0; j < (ulong)mtx.ColumnCount; j++)
+				{
+					values[i, j] = new drobch64(mtx[(int)i, (int)j]);
+				}
+			}
+			return new matrica(values);
 		}
 
 		public static matrica MatricaToNumeric(short _value)
@@ -2515,4 +2802,3 @@ namespace Datatypes.Collections.MathCollections
 
 	}
 }
-
