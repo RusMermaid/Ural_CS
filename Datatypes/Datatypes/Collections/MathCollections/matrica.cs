@@ -1,8 +1,7 @@
-﻿using Datatypes.Numbers;
+﻿using Errors.SyntaxInvalidError.ErrorDatatypes;
+using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
 using MathNet.Numerics.LinearAlgebra;
 
-using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
-using natch16 = Datatypes.Numbers.natch16;
 namespace Datatypes.Collections.MathCollections
 {
 	public class matrica : VOID, Interface_UCollection, Interface_Ural_Datatype
@@ -1508,77 +1507,77 @@ namespace Datatypes.Collections.MathCollections
 
 		public matrica ___Add(short _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch16(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch16(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
 		
 		public matrica ___Add(int _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch32(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch32(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
 		
 		public matrica ___Add(long _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch64(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch64(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
 		
 		public matrica ___Add(float _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch32(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch32(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
 		
 		public matrica ___Add(double _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch64(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch64(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
 		
 		public matrica ___Add(celch16 _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch16(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch16(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
 		
 		public matrica ___Add(celch32 _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch32(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch32(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
 		
 		public matrica ___Add(celch64 _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch64(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch64(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
 		
 		public matrica ___Add(drobch16 _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch16(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch16(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
 		
 		public matrica ___Add(drobch32 _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch32(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch32(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
 		
 		public matrica ___Add(drobch64 _value)
 		{
-			matrica num_mtx = matrica.MatricaToNumeric(_value, new natch64(this.value.GetLength(0)));
+			matrica num_mtx = MatricaToNumeric(_value, new natch64(this.value.GetLength(0)));
 			matrica new_mtx = this.___Add(num_mtx);
 			return new_mtx;
 		}
@@ -1657,7 +1656,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1675,7 +1674,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1693,7 +1692,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1711,7 +1710,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1729,7 +1728,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1747,7 +1746,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1765,7 +1764,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1783,7 +1782,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1801,7 +1800,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1819,7 +1818,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1837,7 +1836,7 @@ namespace Datatypes.Collections.MathCollections
 			matrica new_mtx = new matrica(this.value);
 			for (long  i = 0; i < (long)mtx.Count[0]; i++)
 			{
-				for (long j = 0; i < (long)mtx.Count[0]; j++)
+				for (long j = 0; j < (long)mtx.Count[0]; j++)
 				{
 					if (j >= (long)mtx.Count[0] || j >= (long)mtx.Count[0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
 					{
@@ -1849,6 +1848,269 @@ namespace Datatypes.Collections.MathCollections
 			return new_mtx;
 		}
 		
+		public matrica ___Multiply(matrica _value)
+		{
+			Matrix<double> mtx = MatricaToMatrix(new matrica(this.value));
+			Matrix<double> val = MatricaToMatrix(new matrica(_value.value));
+			return MatrixToMatrica(mtx.Multiply(val));
+		}
+
+		public matrica ___Divide(short _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value));
+		}
+		
+		public matrica ___Divide(int _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value));
+		}
+		
+		public matrica ___Divide(long _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value));
+		}
+		
+		public matrica ___Divide(float _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value));
+		}
+		
+		public matrica ___Divide(double _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value));
+		}
+		
+		public matrica ___Divide(celch16 _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value.value));
+		}
+		
+		public matrica ___Divide(celch32 _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value.value));
+		}
+		
+		public matrica ___Divide(celch64 _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value.value));
+		}
+		
+		public matrica ___Divide(drobch16 _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value.value));
+		}
+		
+		public matrica ___Divide(drobch32 _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value.value));
+		}
+		
+		public matrica ___Divide(drobch64 _value)
+		{
+			matrica mtx = new matrica(this);
+			return  mtx.___Multiply(new drobch64(1 / _value.value));
+		}
+		
+		public matrica ___Divide(matrica _value)
+		{
+			matrica mtx = new matrica(this);
+			matrica inverse = new matrica(_value).___Inverse();
+			return  mtx.___Multiply(inverse);
+		}
+		
+		public matrica ___Pow(short _value)
+		{
+			return MatrixToMatrica(MatricaToMatrix(this).Power(_value));
+		}
+		
+		public matrica ___Pow(int _value)
+		{
+			return MatrixToMatrica(MatricaToMatrix(this).Power(_value));
+		}
+		
+		public matrica ___Pow(long _value)
+		{
+			return MatrixToMatrica(MatricaToMatrix(this).Power((int)_value));
+		}
+		
+		public matrica ___Pow(float _value)
+		{
+			massiv diag = this.___Diagonalisacia();
+			for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
+			{
+				diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value));
+			}
+
+			return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
+		}
+		
+		public matrica ___Pow(double _value)
+		{
+			massiv diag = this.___Diagonalisacia();
+			for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
+			{
+				diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value));
+			}
+
+			return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
+		}
+		
+		public matrica ___Pow(celch16 _value)
+		{
+			massiv diag = this.___Diagonalisacia();
+			for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
+			{
+				diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
+			}
+
+			return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
+		}
+		
+		public matrica ___Pow(celch32 _value)
+		{
+			massiv diag = this.___Diagonalisacia();
+			for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
+			{
+				diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
+			}
+
+			return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
+		}
+		
+		public matrica ___Pow(celch64 _value)
+		{
+			massiv diag = this.___Diagonalisacia();
+			for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
+			{
+				diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
+			}
+
+			return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
+		}
+		
+		public matrica ___Pow(drobch16 _value)
+		{
+			massiv diag = this.___Diagonalisacia();
+			for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
+			{
+				diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
+			}
+
+			return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
+		}
+		
+		public matrica ___Pow(drobch32 _value)
+		{
+			massiv diag = this.___Diagonalisacia();
+			for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
+			{
+				diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
+			}
+
+			return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
+		}
+		
+		public matrica ___Pow(drobch64 _value)
+		{
+			massiv diag = this.___Diagonalisacia();
+			for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
+			{
+				diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
+			}
+
+			return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
+		}
+		
+		/*
+		public matrica ___Ln()
+		{
+			return MatrixToMatrica(MatricaToMatrix(this).PointwiseLog());
+		}
+		
+		public matrica ___Exp()
+		{
+			return MatrixToMatrica(MatricaToMatrix(this).PointwiseExp());
+		}
+		*/
+
+		public massiv ___Diagonalisacia()
+		{
+			matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(this).Evd().D);
+			matrica eigenvectors_mtx = this.___SobVektora();
+			matrica eigenvectors_mtx_inverse = this.___SobVektora().___Inverse();
+
+			ArrayList _value = new ArrayList();
+			_value.Add(eigenvectors_mtx); _value.Add(eigenvalues_mtx); _value.Add(eigenvectors_mtx_inverse);
+			return new massiv(_value);
+
+		}
+		
+		public static matrica ___Func(matrica mtx, Func<drobch64, drobch64> f)
+		{
+			matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(mtx).Evd().D);
+			matrica eigenvectors_mtx = mtx.___SobVektora();
+			matrica eigenvectors_mtx_inverse = mtx.___SobVektora().___Inverse();
+
+			for (ulong i = 0; i < (ulong)eigenvalues_mtx.Count[0]; i++)
+			{
+				eigenvalues_mtx[i, i] = f(eigenvalues_mtx[i, i]);
+			}
+			return eigenvalues_mtx.___Multiply(eigenvalues_mtx).___Multiply(eigenvectors_mtx_inverse);
+
+		}
+		
+		public static matrica ___Func(matrica mtx, Func<drobch64, drobch64, drobch64> f, drobch64 x)
+		{
+			matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(mtx).Evd().D);
+			matrica eigenvectors_mtx = mtx.___SobVektora();
+			matrica eigenvectors_mtx_inverse = mtx.___SobVektora().___Inverse();
+
+			for (ulong i = 0; i < (ulong)eigenvalues_mtx.Count[0]; i++)
+			{
+				eigenvalues_mtx[i, i] = f(eigenvalues_mtx[i, i], x);
+			}
+			return eigenvalues_mtx.___Multiply(eigenvalues_mtx).___Multiply(eigenvectors_mtx_inverse);
+
+		}
+
+		public matrica ___Inverse()
+		{
+			if (this.___Abs().___Equals(0.0))
+			{
+				ZeroDivisionError err = new ZeroDivisionError(0, 0);
+				err.Execute();
+			}
+
+			matrica mtx = new matrica(this.value);
+			drobch64 det_inverse = new drobch64(1).___Divide(this.___Abs());
+			switch ((ulong)mtx.Count[0b0])
+			{
+				case 1 :
+					mtx[0, 0] = new drobch64(1).___Divide(this[0, 0]);
+					return mtx;
+				case 2 :
+					mtx[0, 0] = this[1, 1];
+					mtx[1, 1] = this[0, 0];
+					mtx[0, 1] = -1 * this[1, 0];
+					mtx[1, 0] = -1 * this[0, 1];
+					return mtx.___Multiply(det_inverse).___Transpose();
+				default :
+				{
+					return MatrixToMatrica(MatricaToMatrix(mtx).Inverse());
+				}
+			}
+		}
+
 		public drobch64 ___Abs()
 		{
 			matrica mtx = new matrica(this);
@@ -1891,19 +2153,23 @@ namespace Datatypes.Collections.MathCollections
 		
 		public massiv ___SobZnacheniya()
 		{
-			Matrix<double> mtx = matrica.MatricaToMatrix(this);
-			var eigenvalues = mtx.Evd().EigenValues;
-			return new massiv(eigenvalues.Select(x => new drobch64(x.Real)).ToArray());
+			matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(this).Evd().D);
+			ArrayList eigenvalues = new ArrayList();
+			for (ulong i = 0; i < (ulong)eigenvalues_mtx.Count[0]; i++)
+			{
+				eigenvalues.Add(eigenvalues_mtx[i, i]);
+			}
+			return new massiv(eigenvalues);
 		}
 		
 		public matrica ___SobVektora()
 		{
-			Matrix<double> mtx = matrica.MatricaToMatrix(this);
+			Matrix<double> mtx = MatricaToMatrix(this);
 			Matrix<double> eigenvectors = mtx.Evd().EigenVectors;
-			return matrica.MatrixToMatrica(eigenvectors);
+			return MatrixToMatrica(eigenvectors);
 		}
 		
-		public string ToString(string out_left_b = "[", string out_right_b = "]", string in_left_b = "[", string in_right_b = "]", string sep = ", ")
+		public virtual string ToString(string out_left_b = "[", string out_right_b = "]", string in_left_b = "[", string in_right_b = "]", string sep = ", ")
 		{
 			string output = out_left_b;
 			for (int i = 0; i < this.value.GetLength(0); i++)
@@ -1924,6 +2190,20 @@ namespace Datatypes.Collections.MathCollections
 				}
 			}
 			return output + out_right_b;
+		}
+		
+		public matrica SignAlternator()
+		{
+			matrica mtx = new matrica(this);
+			for (ulong i = 0; i < (ulong)mtx.Count[0]; i++)
+			{
+				for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
+				{
+					if (i % 2 == 0 && j % 2 == 0) continue;
+					mtx[i, j] = -1 * this[i, j];
+				}
+			}
+			return mtx;
 		}
 
 		protected static Matrix<double> MatricaToMatrix(matrica mtx)
@@ -1951,7 +2231,7 @@ namespace Datatypes.Collections.MathCollections
 			}
 			return new matrica(values);
 		}
-
+		
 		public static matrica MatricaToNumeric(short _value)
 		{
 			matrica mtx = new matrica(2);
