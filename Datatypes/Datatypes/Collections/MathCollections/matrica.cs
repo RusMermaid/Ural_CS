@@ -2065,21 +2065,7 @@ namespace Datatypes.Collections.MathCollections
 			{
 				eigenvalues_mtx[i, i] = f(eigenvalues_mtx[i, i]);
 			}
-			return eigenvalues_mtx.___Multiply(eigenvalues_mtx).___Multiply(eigenvectors_mtx_inverse);
-
-		}
-		
-		public static matrica ___Func(matrica mtx, Func<drobch64, drobch64, drobch64> f, drobch64 x)
-		{
-			matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(mtx).Evd().D);
-			matrica eigenvectors_mtx = mtx.___SobVektora();
-			matrica eigenvectors_mtx_inverse = mtx.___SobVektora().___Inverse();
-
-			for (ulong i = 0; i < (ulong)eigenvalues_mtx.Count[0]; i++)
-			{
-				eigenvalues_mtx[i, i] = f(eigenvalues_mtx[i, i], x);
-			}
-			return eigenvalues_mtx.___Multiply(eigenvalues_mtx).___Multiply(eigenvectors_mtx_inverse);
+			return eigenvectors_mtx.___Multiply(eigenvalues_mtx).___Multiply(eigenvectors_mtx_inverse);
 
 		}
 
