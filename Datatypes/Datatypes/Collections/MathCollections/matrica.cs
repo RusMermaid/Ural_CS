@@ -881,6 +881,560 @@ namespace Datatypes.Collections.MathCollections
 			}
 			return result;
 		}
+
+		public RCI ___Equals(matrica mtx)
+		{
+			RCI flag = new RCI(true);
+			mtx = mtx.___Extends((ulong)this.Count[0] - (ulong)mtx.Count[0]);
+			for (ulong i = 0; i < (ulong)this.Count[0]; i++)
+			{
+				for (ulong j = 0; j < (ulong)this.Count[1]; j++)
+				{
+					flag *= this[i, j].___Equals(mtx[i, j]);
+				}
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(matrica mtx)
+		{
+			RCI flag = new RCI(true);
+			mtx = mtx.___Extends((ulong)this.Count[0] - (ulong)mtx.Count[0]);
+			for (ulong i = 0; i < (ulong)this.Count[0]; i++)
+			{
+				for (ulong j = 0; j < (ulong)this.Count[1]; j++)
+				{
+					flag *= this[i, j].___GreaterThan(mtx[i, j]);
+				}
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(short _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(int _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(long _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(float _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(double _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(celch16 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(celch32 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(celch64 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(drobch16 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(drobch32 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterThan(drobch64 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(matrica mtx)
+		{
+			RCI flag = new RCI(true);
+			mtx = mtx.___Extends((ulong)this.Count[0] - (ulong)mtx.Count[0]);
+			for (ulong i = 0; i < (ulong)this.Count[0]; i++)
+			{
+				for (ulong j = 0; j < (ulong)this.Count[1]; j++)
+				{
+					flag *= this[i, j].___SmallerThan(mtx[i, j]);
+				}
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(short _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(int _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(long _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(float _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(double _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(celch16 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(celch32 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(celch64 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(drobch16 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(drobch32 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerThan(drobch64 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(matrica mtx)
+		{
+			RCI flag = new RCI(true);
+			mtx = mtx.___Extends((ulong)this.Count[0] - (ulong)mtx.Count[0]);
+			for (ulong i = 0; i < (ulong)this.Count[0]; i++)
+			{
+				for (ulong j = 0; j < (ulong)this.Count[1]; j++)
+				{
+					flag *= this[i, j].___GreaterOrEqualThan(mtx[i, j]);
+				}
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(short _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(int _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(long _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(float _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(double _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(celch16 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(celch32 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(celch64 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(drobch16 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(drobch32 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___GreaterOrEqualThan(drobch64 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(matrica mtx)
+		{
+			RCI flag = new RCI(true);
+			mtx = mtx.___Extends((ulong)this.Count[0] - (ulong)mtx.Count[0]);
+			for (ulong i = 0; i < (ulong)this.Count[0]; i++)
+			{
+				for (ulong j = 0; j < (ulong)this.Count[1]; j++)
+				{
+					flag *= this[i, j].___SmallerOrEqualThan(mtx[i, j]);
+				}
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(short _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(int _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(long _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(float _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(double _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(celch16 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(celch32 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(celch64 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(drobch16 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(drobch32 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
+		
+		public RCI ___SmallerOrEqualThan(drobch64 _value)
+		{
+			RCI flag = new RCI(true);
+			massiv eigenvalues = this.___SobZnacheniya();
+			for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
+			{
+				flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
+			}
+			return flag;
+		}
 		
 		public matrica ___Extends(uint scales)
 		{
