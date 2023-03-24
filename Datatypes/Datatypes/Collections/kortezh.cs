@@ -283,60 +283,60 @@ namespace Datatypes.Collections
             }
         }
 
-        protected static dynamic [] ParamsValidation(dynamic [] param)
+        protected static dynamic[] ParamsValidation(dynamic[] param)
         {
             for (int i = 0; i < param.Length; i++)
             {
                 switch (param[i])
                 {
-                    case kortezh :
-                        param[i] = new kortezh(ParamsValidation((dynamic [])param[i]));
+                    case kortezh:
+                        param[i] = new kortezh(ParamsValidation((dynamic[])param[i]));
                         break;
-                    case massiv :
-                    case spisok :
-                        param[i] = new massiv(ParamsValidation((dynamic [])param[i]));
+                    case massiv:
+                    case spisok:
+                        param[i] = new massiv(ParamsValidation((dynamic[])param[i]));
                         break;
-                    default :
+                    default:
                     {
                         if ((param[i].GetType().IsArray) | (param[i] is IList))
                         {
-                            param[i] = new kortezh(ParamsValidation((dynamic [])param[i]));
+                            param[i] = new kortezh(ParamsValidation((dynamic[])param[i]));
                         }
                         else
                             switch (param[i])
                             {
-                                case bool :
+                                case bool:
                                     param[i] = new RCI((bool)param[i]);
                                     break;
-                                case string :
+                                case string:
                                     param[i] = new str64((string)param[i]);
                                     break;
-                                case char :
+                                case char:
                                     param[i] = new str0((char)param[i]);
                                     break;
-                                case ushort :
+                                case ushort:
                                     param[i] = new natch16((ushort)param[i]);
                                     break;
-                                case uint :
+                                case uint:
                                     param[i] = new natch32((uint)param[i]);
                                     break;
-                                case ulong :
+                                case ulong:
                                     param[i] = new natch64((ulong)param[i]);
                                     break;
-                                case short :
+                                case short:
                                     param[i] = new celch16((short)param[i]);
                                     break;
-                                case int :
+                                case int:
                                     param[i] = new celch32((int)param[i]);
                                     break;
-                                case long :
+                                case long:
                                     param[i] = new celch64((ulong)param[i]);
                                     break;
-                                case float :
+                                case float:
                                     param[i] = new drobch32((float)param[i]);
                                     break;
-                                case double :
-                                case decimal :
+                                case double:
+                                case decimal:
                                     param[i] = new drobch64((double)param[i]);
                                     break;
                             }
@@ -355,14 +355,14 @@ namespace Datatypes.Collections
             {
                 switch (param[i])
                 {
-                    case kortezh :
+                    case kortezh:
                         param[i] = new kortezh(ParamsValidation((ArrayList)param[i]));
                         break;
-                    case massiv :
-                    case spisok :
+                    case massiv:
+                    case spisok:
                         param[i] = new massiv(ParamsValidation((ArrayList)param[i]));
                         break;
-                    default :
+                    default:
                     {
                         if ((param[i].GetType().IsArray) | (param[i] is IList))
                         {
@@ -371,38 +371,38 @@ namespace Datatypes.Collections
                         else
                             switch (param[i])
                             {
-                                case bool :
+                                case bool:
                                     param[i] = new RCI((bool)param[i]);
                                     break;
-                                case string :
+                                case string:
                                     param[i] = new str64((string)param[i]);
                                     break;
-                                case char :
+                                case char:
                                     param[i] = new str0((char)param[i]);
                                     break;
-                                case ushort :
+                                case ushort:
                                     param[i] = new natch16((ushort)param[i]);
                                     break;
-                                case uint :
+                                case uint:
                                     param[i] = new natch32((uint)param[i]);
                                     break;
-                                case ulong :
+                                case ulong:
                                     param[i] = new natch64((ulong)param[i]);
                                     break;
-                                case short :
+                                case short:
                                     param[i] = new celch16((short)param[i]);
                                     break;
-                                case int :
+                                case int:
                                     param[i] = new celch32((int)param[i]);
                                     break;
-                                case long :
+                                case long:
                                     param[i] = new celch64((ulong)param[i]);
                                     break;
-                                case float :
+                                case float:
                                     param[i] = new drobch32((float)param[i]);
                                     break;
-                                case double :
-                                case decimal :
+                                case double:
+                                case decimal:
                                     param[i] = new drobch64((double)param[i]);
                                     break;
                             }
@@ -421,14 +421,14 @@ namespace Datatypes.Collections
             {
                 switch (param[i])
                 {
-                    case kortezh :
+                    case kortezh:
                         param[i] = new kortezh(ParamsValidation((List<dynamic>)param[i]));
                         break;
-                    case massiv :
-                    case spisok :
+                    case massiv:
+                    case spisok:
                         param[i] = new massiv(ParamsValidation((List<dynamic>)param[i]));
                         break;
-                    default :
+                    default:
                     {
                         if ((param[i].GetType().IsArray) | (param[i] is IList))
                         {
@@ -437,38 +437,38 @@ namespace Datatypes.Collections
                         else
                             switch (param[i])
                             {
-                                case bool :
+                                case bool:
                                     param[i] = new RCI((bool)param[i]);
                                     break;
-                                case string :
+                                case string:
                                     param[i] = new str64((string)param[i]);
                                     break;
-                                case char :
+                                case char:
                                     param[i] = new str0((char)param[i]);
                                     break;
-                                case ushort :
+                                case ushort:
                                     param[i] = new natch16((ushort)param[i]);
                                     break;
-                                case uint :
+                                case uint:
                                     param[i] = new natch32((uint)param[i]);
                                     break;
-                                case ulong :
+                                case ulong:
                                     param[i] = new natch64((ulong)param[i]);
                                     break;
-                                case short :
+                                case short:
                                     param[i] = new celch16((short)param[i]);
                                     break;
-                                case int :
+                                case int:
                                     param[i] = new celch32((int)param[i]);
                                     break;
-                                case long :
+                                case long:
                                     param[i] = new celch64((ulong)param[i]);
                                     break;
-                                case float :
+                                case float:
                                     param[i] = new drobch32((float)param[i]);
                                     break;
-                                case double :
-                                case decimal :
+                                case double:
+                                case decimal:
                                     param[i] = new drobch64((double)param[i]);
                                     break;
                             }
@@ -553,7 +553,7 @@ namespace Datatypes.Collections
 
         //Array Overloads
 
-        public kortezh(params dynamic [] _value) : base(_value)
+        public kortezh(params dynamic[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -623,7 +623,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(string [] _value) : base(_value)
+        public kortezh(string[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -651,7 +651,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(bool [] _value) : base(_value)
+        public kortezh(bool[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -679,7 +679,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(short [] _value) : base(_value)
+        public kortezh(short[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -707,7 +707,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(int [] _value) : base(_value)
+        public kortezh(int[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -735,7 +735,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(long [] _value) : base(_value)
+        public kortezh(long[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -790,7 +790,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(ulong [] _value) : base(_value)
+        public kortezh(ulong[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -818,7 +818,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(float [] _value) : base(_value)
+        public kortezh(float[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -846,7 +846,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(double [] _value) : base(_value)
+        public kortezh(double[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -888,7 +888,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(VOID [] _value) : base(_value)
+        public kortezh(VOID[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -916,7 +916,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(str0 [] _value) : base(_value)
+        public kortezh(str0[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -944,7 +944,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(str10 [] _value) : base(_value)
+        public kortezh(str10[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -972,7 +972,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(str16 [] _value) : base(_value)
+        public kortezh(str16[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1000,7 +1000,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(str32 [] _value) : base(_value)
+        public kortezh(str32[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1028,7 +1028,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(str64 [] _value) : base(_value)
+        public kortezh(str64[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1056,7 +1056,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(natch16 [] _value) : base(_value)
+        public kortezh(natch16[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1084,7 +1084,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(natch32 [] _value) : base(_value)
+        public kortezh(natch32[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1113,7 +1113,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(natch64 [] _value) : base(_value)
+        public kortezh(natch64[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1141,7 +1141,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(celch16 [] _value) : base(_value)
+        public kortezh(celch16[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1168,7 +1168,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(celch32 [] _value) : base(_value)
+        public kortezh(celch32[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1196,7 +1196,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(celch64 [] _value) : base(_value)
+        public kortezh(celch64[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1224,7 +1224,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(drobch16 [] _value) : base(_value)
+        public kortezh(drobch16[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1252,7 +1252,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(drobch32 [] _value) : base(_value)
+        public kortezh(drobch32[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1280,7 +1280,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(drobch64 [] _value) : base(_value)
+        public kortezh(drobch64[] _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1682,7 +1682,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public static dynamic? Slice(dynamic [] _value, int start)
+        public static dynamic? Slice(dynamic[] _value, int start)
         {
             if ((start >= 0u) & (start <= _value.Length))
             {
@@ -1696,7 +1696,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public static dynamic? Slice(dynamic [] _value, int start, int end)
+        public static dynamic? Slice(dynamic[] _value, int start, int end)
         {
             if ((start >= 0u) & (start <= _value.Length) & (end >= 0u) & (end <= _value.Length) &
                 (start <= end))
@@ -1715,7 +1715,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public static dynamic? Slice(dynamic [] data, int start, int end, int step)
+        public static dynamic? Slice(dynamic[] data, int start, int end, int step)
         {
             if ((start >= 0) & (start <= data.Length) & (end >= 0) & (end <= data.Length) & (start <= end))
             {
@@ -1774,4 +1774,3 @@ namespace Datatypes.Collections
         }
     }
 }
-
