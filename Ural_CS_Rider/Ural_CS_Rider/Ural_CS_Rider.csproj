@@ -1,77 +1,80 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
-        <None Remove="UralFunc\UralFunc\.dockerignore"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.fs"/>
-        <None Remove="UralFunc\UralFunc\Dockerfile"/>
-        <None Remove="UralFunc\UralFunc\Program.fs"/>
-        <None Remove="UralFunc\UralFunc\obj\UralFunc.fsproj.nuget.g.props"/>
-        <None Remove="UralFunc\UralFunc\obj\rider.project.restore.info"/>
-        <None Remove="UralFunc\UralFunc\obj\project.nuget.cache"/>
-        <None Remove="UralFunc\UralFunc\obj\UralFunc.fsproj.nuget.dgspec.json"/>
-        <None Remove="UralFunc\UralFunc\obj\project.packagespec.json"/>
-        <None Remove="UralFunc\UralFunc\obj\project.assets.json"/>
-        <None Remove="UralFunc\UralFunc\obj\UralFunc.fsproj.nuget.g.targets"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.AssemblyInfo.fs"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.pdb"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.genruntimeconfig.cache"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.fsproj.CopyComplete"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\apphost"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.dll"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.fsproj.CoreCompileInputs.cache"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.fsproj.AssemblyReference.cache"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.AssemblyInfoInputs.cache"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.fsproj.FileListAbsolute.txt"/>
-        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.assets.cache"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\UralFunc.runtimeconfig.json"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\UralFunc.pdb"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\UralFunc.deps.json"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\UralFunc.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\UralFunc"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\FSharp.Core.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\zh-Hans\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\zh-Hant\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\pl\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\ja\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\it\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\cs\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\ru\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\pt-BR\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\de\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\ko\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\fr\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\es\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\tr\FSharp.Core.resources.dll"/>
-        <None Remove="UralFunc\UralFunc.sln"/>
-        <None Remove="UralFunc\UralFunc\UralFunc.fsproj"/>
-        <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\indexLayout.xml"/>
-        <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\encodings.xml"/>
-        <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\projectSettingsUpdater.xml"/>
-        <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\vcs.xml"/>
-        <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\workspace.xml"/>
-        <None Remove="Cvet_FSharp\**"/>
-        <None Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**"/>
-        <None Remove="Ural_Rider_Lib"/>
-        <None Remove="Ural_Datatypes_Lib"/>
-        <None Remove="Ural_ErrrorHandling"/>
-        <None Remove="Errors"/>
-        <None Remove="Datatypes"/>
-        <None Remove="UralMathLib"/>
-        <None Remove="UralMathFsharpLib"/>
+        <None Remove="UralFunc\UralFunc\.dockerignore" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.fs" />
+        <None Remove="UralFunc\UralFunc\Dockerfile" />
+        <None Remove="UralFunc\UralFunc\Program.fs" />
+        <None Remove="UralFunc\UralFunc\obj\UralFunc.fsproj.nuget.g.props" />
+        <None Remove="UralFunc\UralFunc\obj\rider.project.restore.info" />
+        <None Remove="UralFunc\UralFunc\obj\project.nuget.cache" />
+        <None Remove="UralFunc\UralFunc\obj\UralFunc.fsproj.nuget.dgspec.json" />
+        <None Remove="UralFunc\UralFunc\obj\project.packagespec.json" />
+        <None Remove="UralFunc\UralFunc\obj\project.assets.json" />
+        <None Remove="UralFunc\UralFunc\obj\UralFunc.fsproj.nuget.g.targets" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.AssemblyInfo.fs" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.pdb" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.genruntimeconfig.cache" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.fsproj.CopyComplete" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\apphost" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.dll" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.fsproj.CoreCompileInputs.cache" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.fsproj.AssemblyReference.cache" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.AssemblyInfoInputs.cache" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.fsproj.FileListAbsolute.txt" />
+        <None Remove="UralFunc\UralFunc\obj\Debug\net6.0\UralFunc.assets.cache" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\UralFunc.runtimeconfig.json" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\UralFunc.pdb" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\UralFunc.deps.json" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\UralFunc.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\UralFunc" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\FSharp.Core.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\zh-Hans\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\zh-Hant\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\pl\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\ja\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\it\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\cs\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\ru\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\pt-BR\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\de\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\ko\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\fr\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\es\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc\bin\Debug\net6.0\tr\FSharp.Core.resources.dll" />
+        <None Remove="UralFunc\UralFunc.sln" />
+        <None Remove="UralFunc\UralFunc\UralFunc.fsproj" />
+        <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\indexLayout.xml" />
+        <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\encodings.xml" />
+        <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\projectSettingsUpdater.xml" />
+        <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\vcs.xml" />
+        <None Remove="UralFunc\.idea\.idea.UralFunc\.idea\workspace.xml" />
+        <None Remove="Cvet_FSharp\**" />
+        <None Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**" />
+        <None Remove="Ural_Rider_Lib" />
+        <None Remove="Ural_Datatypes_Lib" />
+        <None Remove="Ural_ErrrorHandling" />
+        <None Remove="Errors" />
+        <None Remove="Datatypes" />
+        <None Remove="UralMathLib" />
+        <None Remove="UralMathFsharpLib" />
+        <None Remove="Ural_translator_compiler\Libraries\lib-csharp-core\**" />
     </ItemGroup>
 
     <ItemGroup>
-        <Compile Include="Cvet_FSharp\Cvet_FSharp\Library.fs"/>
-        <Compile Include="Cvet_FSharp\Cvet_FSharp\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.fs"/>
-        <Compile Include="Cvet_FSharp\Cvet_FSharp\obj\Debug\net6.0\Cvet_FSharp.AssemblyInfo.fs"/>
-        <Compile Remove="Cvet_FSharp\**"/>
-        <Compile Include="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\Cvet_FS.fs"/>
-        <Compile Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**"/>
+        <Compile Include="Cvet_FSharp\Cvet_FSharp\Library.fs" />
+        <Compile Include="Cvet_FSharp\Cvet_FSharp\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.fs" />
+        <Compile Include="Cvet_FSharp\Cvet_FSharp\obj\Debug\net6.0\Cvet_FSharp.AssemblyInfo.fs" />
+        <Compile Remove="Cvet_FSharp\**" />
+        <Compile Include="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\Cvet_FS.fs" />
+        <Compile Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**" />
+        <Compile Remove="Ural_translator_compiler\Libraries\lib-csharp-core\**" />
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Remove="Cvet_FSharp\**"/>
-        <EmbeddedResource Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**"/>
+        <EmbeddedResource Remove="Cvet_FSharp\**" />
+        <EmbeddedResource Remove="Ural_translator_compiler\Libraries\UralMathLib\UralMath_FSharp\**" />
+        <EmbeddedResource Remove="Ural_translator_compiler\Libraries\lib-csharp-core\**" />
     </ItemGroup>
     <ItemGroup>
         <Reference Include="Errors">
@@ -85,7 +88,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\Datatypes\Datatypes.csproj"/>
+        <ProjectReference Include="..\..\Datatypes\Datatypes.csproj" />
     </ItemGroup>
     <PropertyGroup>
         <OutputType>Exe</OutputType>
