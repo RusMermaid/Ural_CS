@@ -1,26 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj": {}
+    "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathFsharpLib\\UralMathFsharpLib\\UralMathFsharpLib.fsproj": {}
   },
   "projects": {
-    "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj": {
+    "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathFsharpLib\\UralMathFsharpLib\\UralMathFsharpLib.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj",
+        "projectUniqueName": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathFsharpLib\\UralMathFsharpLib\\UralMathFsharpLib.fsproj",
         "projectName": "UralMathFsharpLib",
-        "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj",
-        "packagesPath": "/Users/rus_mermaid/.nuget/packages/",
-        "outputPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathFsharpLib/UralMathFsharpLib/obj/",
+        "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathFsharpLib\\UralMathFsharpLib\\UralMathFsharpLib.fsproj",
+        "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathFsharpLib\\UralMathFsharpLib\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/rus_mermaid/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/7.0.202/FSharp/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.202\\FSharp\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "COKhoUFXJ0eMHi9ZTMPUpLbvFt/7R4X7iSENYMVb/ZmS3M5AiGC3v6Q8NUk36rIuCaIvkriHtRNLdiYf2poOeA==",
+  "dgSpecHash": "SUloPgO0TQ7AwzQVDmoAum15xbOuC8DxNooB550knzJQrTbrVm0M4js+y19YIGki2jLNLNoWUooo5nsrL1cwIg==",
   "success": true,
-  "projectFilePath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/UralMathLib.csproj",
+  "projectFilePath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathLib\\UralMathLib\\UralMathLib.csproj",
   "expectedPackageFiles": [
-    "/Users/rus_mermaid/.nuget/packages/mathnet.numerics/5.0.0/mathnet.numerics.5.0.0.nupkg.sha512"
+    "C:\\Users\\Ivan\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
