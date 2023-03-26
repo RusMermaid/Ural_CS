@@ -86,9 +86,14 @@
         <Reference Include="UralMathFsharpLib">
             <HintPath>..\..\UralMathFsharpLib\UralMathFsharpLib\bin\Debug\net6.0\UralMathFsharpLib.dll</HintPath>
         </Reference>
+        <Reference Include="Datatypes">
+          <HintPath>..\..\Datatypes\obj\Debug\net6.0\Datatypes.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\..\Datatypes\Datatypes.csproj" />
+        <ProjectReference Include="..\..\UralMathFsharpLib\UralMathFsharpLib\UralMathFsharpLib.fsproj" />
+        <ProjectReference Include="..\..\Errors\Errors\Errors.csproj" />
     </ItemGroup>
     <PropertyGroup>
         <OutputType>Exe</OutputType>

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "n0DoapA+NX9YxVkuOHyRCcirPEirWq3HH6ptBaCbnDX62U4AycCWButWVMPCSQaL90QI48LcagDc+nmD0oJMOg==",
+  "dgSpecHash": "Kpz63auNouD/ovPASi3A88kLs7Ro6MW1CCpcv4actkQQ6aWdVtILXV0XicP/+862CLq3Am0GvNwVgFdW+hgNvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathFsharpLib\\UralMathFsharpLib\\UralMathFsharpLib.fsproj",
+  "projectFilePath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ivan\\.nuget\\packages\\fsharp.core\\7.0.200\\fsharp.core.7.0.200.nupkg.sha512"
+    "/Users/rus_mermaid/.nuget/packages/fsharp.core/7.0.200/fsharp.core.7.0.200.nupkg.sha512"
   ],
   "logs": []
 }

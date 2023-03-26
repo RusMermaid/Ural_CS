@@ -2,6 +2,60 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FSharp.Core/7.0.200": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FSharp.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FSharp.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/netstandard2.1/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.1/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.1/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.1/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.1/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.1/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.1/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.1/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.1/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.1/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "MathNet.Numerics/5.0.0": {
         "type": "package",
         "compile": {
@@ -39,11 +93,26 @@
           "bin/placeholder/Errors.dll": {}
         }
       },
+      "UralMathFsharpLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FSharp.Core": "7.0.200"
+        },
+        "compile": {
+          "bin/placeholder/UralMathFsharpLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UralMathFsharpLib.dll": {}
+        }
+      },
       "Ural_CS_Rider/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Datatypes": "1.0.0"
+          "Datatypes": "1.0.0",
+          "Errors": "1.0.0",
+          "UralMathFsharpLib": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Ural_CS_Rider.dll": {}
@@ -55,6 +124,48 @@
     }
   },
   "libraries": {
+    "FSharp.Core/7.0.200": {
+      "sha512": "NmgUnpNH6Zu9B0SPIhojyo38gnPdkdYFYQfbd6zosEH32kbGY/g/Klk7PfOWe1NAe/O1YOMmK9KhwQ2OWsWEbg==",
+      "type": "package",
+      "path": "fsharp.core/7.0.200",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "fsharp.core.7.0.200.nupkg.sha512",
+        "fsharp.core.nuspec",
+        "lib/netstandard2.0/FSharp.Core.dll",
+        "lib/netstandard2.0/FSharp.Core.xml",
+        "lib/netstandard2.0/cs/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/de/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/es/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/fr/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/it/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ja/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ko/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/pl/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ru/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/tr/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/FSharp.Core.dll",
+        "lib/netstandard2.1/FSharp.Core.xml",
+        "lib/netstandard2.1/cs/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/de/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/es/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/fr/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/it/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ja/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ko/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/pl/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/ru/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/tr/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
+      ]
+    },
     "MathNet.Numerics/5.0.0": {
       "sha512": "pg1W2VwaEQMAiTpGK840hZgzavnqjlCMTVSbtVCXVyT+7AX4mc1o89SPv4TBlAjhgCOo9c1Y+jZ5m3ti2YgGgA==",
       "type": "package",
@@ -87,6 +198,11 @@
       "path": "../../Errors/Errors/Errors.csproj",
       "msbuildProject": "../../Errors/Errors/Errors.csproj"
     },
+    "UralMathFsharpLib/1.0.0": {
+      "type": "project",
+      "path": "../../UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj",
+      "msbuildProject": "../../UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj"
+    },
     "Ural_CS_Rider/1.0.0": {
       "type": "project",
       "path": "../../Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj",
@@ -101,46 +217,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ivan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/rus_mermaid/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathLib\\UralMathLib\\UralMathLib.csproj",
+      "projectUniqueName": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/UralMathLib.csproj",
       "projectName": "UralMathLib",
-      "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathLib\\UralMathLib\\UralMathLib.csproj",
-      "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\UralMathLib\\UralMathLib\\obj\\",
+      "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/UralMathLib.csproj",
+      "packagesPath": "/Users/rus_mermaid/.nuget/packages/",
+      "outputPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/rus_mermaid/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Datatypes\\Datatypes.csproj": {
-              "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Datatypes\\Datatypes.csproj"
+            "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Datatypes/Datatypes.csproj": {
+              "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Datatypes/Datatypes.csproj"
             },
-            "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Errors\\Errors\\Errors.csproj": {
-              "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Errors\\Errors\\Errors.csproj"
+            "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj": {
+              "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj"
             },
-            "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Ural_CS_Rider\\Ural_CS_Rider\\Ural_CS_Rider.csproj": {
-              "projectPath": "C:\\Users\\Ivan\\Documents\\GitHub\\Ural_CS\\Ural_CS_Rider\\Ural_CS_Rider\\Ural_CS_Rider.csproj"
+            "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj": {
+              "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj"
             }
           }
         }
@@ -170,7 +278,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }
