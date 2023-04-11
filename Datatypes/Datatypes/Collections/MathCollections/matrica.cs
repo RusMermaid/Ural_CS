@@ -909,7 +909,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(short _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -921,7 +921,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(int _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -933,7 +933,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(long _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -945,7 +945,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(float _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -957,7 +957,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(double _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -969,7 +969,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(celch16 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -981,7 +981,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(celch32 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -993,7 +993,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(celch64 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -1005,7 +1005,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(drobch16 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -1017,7 +1017,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(drobch32 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -1029,7 +1029,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterThan(drobch64 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterThan(_value);
@@ -1056,7 +1056,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(short _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1068,7 +1068,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(int _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1080,7 +1080,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(long _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1092,7 +1092,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(float _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1104,7 +1104,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(double _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1116,7 +1116,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(celch16 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1128,7 +1128,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(celch32 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1140,7 +1140,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(celch64 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1152,7 +1152,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(drobch16 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1164,7 +1164,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(drobch32 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1176,7 +1176,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerThan(drobch64 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerThan(_value);
@@ -1203,7 +1203,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(short _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1215,7 +1215,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(int _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1227,7 +1227,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(long _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1239,7 +1239,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(float _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1251,7 +1251,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(double _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1263,7 +1263,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(celch16 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1275,7 +1275,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(celch32 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1287,7 +1287,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(celch64 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1299,7 +1299,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(drobch16 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1311,7 +1311,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(drobch32 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1323,7 +1323,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___GreaterOrEqualThan(drobch64 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___GreaterOrEqualThan(_value);
@@ -1350,7 +1350,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(short _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -1362,7 +1362,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(int _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -1374,7 +1374,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(long _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -1386,7 +1386,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(float _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -1398,7 +1398,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(double _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -1410,7 +1410,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(celch16 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -1422,7 +1422,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(celch32 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -1434,7 +1434,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(celch64 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -1446,7 +1446,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(drobch16 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -1458,7 +1458,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(drobch32 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -1470,7 +1470,7 @@ namespace Datatypes.Collections.MathCollections
         public RCI ___SmallerOrEqualThan(drobch64 _value)
         {
             RCI flag = new RCI(true);
-            massiv eigenvalues = this.___SobZnacheniya();
+            massiv<dynamic> eigenvalues = this.___SobZnacheniya();
             for (ulong i = 0; i < (ulong)eigenvalues.value.Count; i++)
             {
                 flag *= eigenvalues[(int)i].___SmallerOrEqualThan(_value);
@@ -2258,8 +2258,10 @@ namespace Datatypes.Collections.MathCollections
 
             return new_mtx;
         }
+        
+        
 
-        public matrica ___Add(massiv _value) //Testing needed
+        public matrica ___Add(massiv<drobch64> _value) //Testing needed
         {
             matrica _val;
             matrica mtx = new matrica(this);
@@ -2651,7 +2653,7 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica ___Pow(float _value)
         {
-            massiv diag = this.___Diagonalisacia();
+            massiv<matrica> diag = this.___Diagonalisacia();
             for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
             {
                 diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value));
@@ -2662,7 +2664,7 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica ___Pow(double _value)
         {
-            massiv diag = this.___Diagonalisacia();
+            massiv<matrica> diag = this.___Diagonalisacia();
             for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
             {
                 diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value));
@@ -2673,7 +2675,7 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica ___Pow(celch16 _value)
         {
-            massiv diag = this.___Diagonalisacia();
+            massiv<matrica> diag = this.___Diagonalisacia();
             for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
             {
                 diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
@@ -2684,7 +2686,7 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica ___Pow(celch32 _value)
         {
-            massiv diag = this.___Diagonalisacia();
+            massiv<matrica> diag = this.___Diagonalisacia();
             for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
             {
                 diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
@@ -2695,7 +2697,7 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica ___Pow(celch64 _value)
         {
-            massiv diag = this.___Diagonalisacia();
+            massiv<matrica> diag = this.___Diagonalisacia();
             for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
             {
                 diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
@@ -2706,7 +2708,7 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica ___Pow(drobch16 _value)
         {
-            massiv diag = this.___Diagonalisacia();
+            massiv<matrica> diag = this.___Diagonalisacia();
             for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
             {
                 diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
@@ -2717,7 +2719,7 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica ___Pow(drobch32 _value)
         {
-            massiv diag = this.___Diagonalisacia();
+            massiv<matrica> diag = this.___Diagonalisacia();
             for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
             {
                 diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
@@ -2728,7 +2730,7 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica ___Pow(drobch64 _value)
         {
-            massiv diag = this.___Diagonalisacia();
+            massiv<matrica> diag = this.___Diagonalisacia();
             for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
             {
                 diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value.value));
@@ -2749,7 +2751,7 @@ namespace Datatypes.Collections.MathCollections
         }
         */
 
-        public massiv ___Diagonalisacia()
+        public massiv<matrica>___Diagonalisacia()
         {
             matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(this).Evd().D);
             matrica eigenvectors_mtx = this.___SobVektora();
@@ -2759,7 +2761,7 @@ namespace Datatypes.Collections.MathCollections
             _value.Add(eigenvectors_mtx);
             _value.Add(eigenvalues_mtx);
             _value.Add(eigenvectors_mtx_inverse);
-            return new massiv(_value);
+            return new massiv<matrica>(_value);
         }
 
         public static matrica ___Func(matrica mtx, Func<drobch64, drobch64> f)
@@ -2845,7 +2847,7 @@ namespace Datatypes.Collections.MathCollections
             return mtx;
         }
 
-        public massiv ___SobZnacheniya()
+        public massiv<dynamic> ___SobZnacheniya()
         {
             matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(this).Evd().D);
             ArrayList eigenvalues = new ArrayList();
@@ -2854,7 +2856,7 @@ namespace Datatypes.Collections.MathCollections
                 eigenvalues.Add(eigenvalues_mtx[i, i]);
             }
 
-            return new massiv(eigenvalues);
+            return new massiv<dynamic>(eigenvalues);
         }
 
         public matrica ___SobVektora()

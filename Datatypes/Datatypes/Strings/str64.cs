@@ -1535,14 +1535,14 @@ namespace Datatypes.Strings
             return new str64(str_step);
         }
 
-        massiv ToMassiv()
+        massiv<str0> ToMassiv()
         {
-            return new massiv(((string)this.value).Select(c => new str0((char)c)).ToArray());
+            return new massiv<str0>(((string)this.value).Select(c => new str0((char)c)).ToArray());
         }
 
-        massiv Reqq()
+        massiv<str0> Reqq()
         {
-            return ((string)this.value).Aggregate(new massiv(), (acc, c) =>
+            return ((string)this.value).Aggregate(new massiv<str0>(), (acc, c) =>
             {
                 acc.___Add(new str0(c));
                 acc.___Add(acc);

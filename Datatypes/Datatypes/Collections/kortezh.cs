@@ -36,7 +36,7 @@ namespace Datatypes.Collections
         }
 
 
-        public static explicit operator kortezh(massiv _value)
+        public static explicit operator kortezh(massiv<Type> _value)
         {
             return new kortezh((ArrayList)(_value.value));
         }
@@ -292,9 +292,9 @@ namespace Datatypes.Collections
                     case kortezh:
                         param[i] = new kortezh(ParamsValidation((dynamic[])param[i]));
                         break;
-                    case massiv:
+                    case massiv<Type>:
                     case spisok:
-                        param[i] = new massiv(ParamsValidation((dynamic[])param[i]));
+                        param[i] = new massiv<dynamic>(ParamsValidation((dynamic[])param[i]));
                         break;
                     default:
                     {
@@ -358,9 +358,9 @@ namespace Datatypes.Collections
                     case kortezh:
                         param[i] = new kortezh(ParamsValidation((ArrayList)param[i]));
                         break;
-                    case massiv:
+                    case massiv<Type>:
                     case spisok:
-                        param[i] = new massiv(ParamsValidation((ArrayList)param[i]));
+                        param[i] = new massiv<dynamic>(ParamsValidation((ArrayList)param[i]));
                         break;
                     default:
                     {
@@ -424,9 +424,9 @@ namespace Datatypes.Collections
                     case kortezh:
                         param[i] = new kortezh(ParamsValidation((List<dynamic>)param[i]));
                         break;
-                    case massiv:
+                    case massiv<drobch64>:
                     case spisok:
-                        param[i] = new massiv(ParamsValidation((List<dynamic>)param[i]));
+                        param[i] = new massiv<dynamic>(ParamsValidation((List<dynamic>)param[i]));
                         break;
                     default:
                     {
@@ -489,9 +489,9 @@ namespace Datatypes.Collections
                 {
                     param = new kortezh(ParamsValidation((List<dynamic>)param));
                 }
-                else if (param[i] is massiv || param[i] is spisok)
+                else if (param[i] is massiv<Type> || param[i] is spisok)
                 {
-                    param = new massiv(ParamsValidation((List<dynamic>)param));
+                    param = new massiv<dynamic>(ParamsValidation((List<dynamic>)param));
                 }
                 else if ((param.GetType().IsArray) | (param is IList))
                 {
@@ -581,7 +581,7 @@ namespace Datatypes.Collections
             }
         }
 
-        public kortezh(massiv _value) : base(_value)
+        public kortezh(massiv<Type> _value) : base(_value)
         {
             if (this.Count.value <= this.MaxLength)
             {
@@ -1742,13 +1742,13 @@ namespace Datatypes.Collections
                 {
                     _out += this.value[i].ToString(left_b, right_b, sep);
                 }
-                else if (this.value[i] is massiv || this.value[i] is spisok)
+                else if (this.value[i] is massiv<Type> || this.value[i] is spisok)
                 {
-                    _out += new massiv(this.value[i]).ToString(left_b, right_b, sep);
+                    _out += new massiv<Type>(this.value[i]).ToString(left_b, right_b, sep);
                 }
                 else if ((this.value[i].GetType().IsArray) | (this.value[i] is IList))
                 {
-                    _out += new massiv(this.value[i]).ToString(left_b, right_b, sep);
+                    _out += new massiv<Type>(this.value[i]).ToString(left_b, right_b, sep);
                 }
                 else if (this.value[i] is bool)
                 {
