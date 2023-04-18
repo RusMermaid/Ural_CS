@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10c826f8-1f5d-4396-b1a4-5268a9ee19fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/rider.project.restore.info" afterDir="false" />
+    <list default="true" id="a44e4ba5-ba04-4382-be9e-505e76171e9c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../UralMathFsharpLib/.idea/.idea.UralMathFsharpLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathFsharpLib/.idea/.idea.UralMathFsharpLib/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathFsharpLib/UralMathFsharpLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathFsharpLib/UralMathFsharpLib/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/.idea/.idea.UralMathLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/.idea/.idea.UralMathLib/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
@@ -20,31 +22,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2ObRxPmJeiHA9QU0bJ1XtYbcAaY" />
+  <component name="ProjectId" id="2ObYUUkcZFs09bCzf6bRULYJBDx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "AndroidSettingsPageId",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="10c826f8-1f5d-4396-b1a4-5268a9ee19fa" name="Changes" comment="" />
-      <created>1681827540417</created>
+      <changelist id="a44e4ba5-ba04-4382-be9e-505e76171e9c" name="Changes" comment="" />
+      <created>1681830763405</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1681827540417</updated>
-      <workItem from="1681827543397" duration="10000" />
-      <workItem from="1681830720419" duration="10000" />
+      <updated>1681830763405</updated>
+      <workItem from="1681830766433" duration="5000" />
     </task>
     <servers />
   </component>

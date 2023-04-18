@@ -8,6 +8,8 @@
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <WarningLevel>4</WarningLevel>
+        <DocumentationFile>bin\Debug\net6.0\UralMathLib.xml</DocumentationFile>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <DocumentationFile></DocumentationFile>
