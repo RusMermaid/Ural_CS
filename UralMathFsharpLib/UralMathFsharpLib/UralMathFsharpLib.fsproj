@@ -6,11 +6,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Remove="Cvet_FS.fs"/>
+        <Compile Remove="Cvet_FS.fs" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Library.fs"/>
-        <Compile Include="LambdaAnaliz.fs"/>
+        <Compile Include="Library.fs" />
+        <Compile Include="LambdaAnaliz.fs" />
     </ItemGroup>
 
     <ItemGroup>
@@ -23,5 +23,12 @@
         <Reference Include="UralMathLib">
             <HintPath>..\..\UralMathLib\UralMathLib\bin\Debug\net6.0\UralMathLib.dll</HintPath>
         </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Colorful.Console" Version="1.2.15" />
+      <PackageReference Include="MathNet.Numerics" Version="4.15.0">
+        <GeneratePathProperty></GeneratePathProperty>
+      </PackageReference>
     </ItemGroup>
 </Project>

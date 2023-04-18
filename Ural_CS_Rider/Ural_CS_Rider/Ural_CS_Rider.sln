@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ural_CS_Rider", "Ural_CS_Rider.csproj", "{762D365F-3C6C-42CC-AE61-0FEA40CE0396}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "UralMathFsharpLib", "..\..\UralMathFsharpLib\UralMathFsharpLib\UralMathFsharpLib.fsproj", "{1F8A0FC1-A5B2-4F14-AE07-F73DE27D62FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UralMathLib", "..\..\UralMathLib\UralMathLib\UralMathLib.csproj", "{5F583704-6E7A-45A5-813B-75FD740B1BF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Errors", "..\..\Errors\Errors\Errors.csproj", "{BB6B4C4E-BA86-4EEE-8125-45DD535D281A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datatypes", "..\..\Datatypes\Datatypes.csproj", "{A13EBD9A-2C47-490A-811C-56286684F2A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{138710A6-E40F-4DCF-8127-EF53E25D631A}"
+	ProjectSection(SolutionItems) = preProject
+		Ural_CS_Rider.sln = Ural_CS_Rider.sln
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{762D365F-3C6C-42CC-AE61-0FEA40CE0396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762D365F-3C6C-42CC-AE61-0FEA40CE0396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762D365F-3C6C-42CC-AE61-0FEA40CE0396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762D365F-3C6C-42CC-AE61-0FEA40CE0396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F8A0FC1-A5B2-4F14-AE07-F73DE27D62FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F8A0FC1-A5B2-4F14-AE07-F73DE27D62FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F8A0FC1-A5B2-4F14-AE07-F73DE27D62FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F8A0FC1-A5B2-4F14-AE07-F73DE27D62FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F583704-6E7A-45A5-813B-75FD740B1BF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F583704-6E7A-45A5-813B-75FD740B1BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F583704-6E7A-45A5-813B-75FD740B1BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F583704-6E7A-45A5-813B-75FD740B1BF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB6B4C4E-BA86-4EEE-8125-45DD535D281A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6B4C4E-BA86-4EEE-8125-45DD535D281A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB6B4C4E-BA86-4EEE-8125-45DD535D281A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB6B4C4E-BA86-4EEE-8125-45DD535D281A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13EBD9A-2C47-490A-811C-56286684F2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13EBD9A-2C47-490A-811C-56286684F2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13EBD9A-2C47-490A-811C-56286684F2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13EBD9A-2C47-490A-811C-56286684F2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B776893-02A8-4933-84D5-458A90E4E930}
+	EndGlobalSection
+EndGlobal

@@ -13,36 +13,34 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
     <ItemGroup>
-        <None Remove="Errors"/>
-        <None Remove="Datatypes"/>
-        <None Remove="UralMathLib"/>
-        <None Remove="Datatypes\Collections\MathCollections\"/>
+        <None Remove="Errors" />
+        <None Remove="Datatypes" />
+        <None Remove="UralMathLib" />
+        <None Remove="Datatypes\Collections\MathCollections\" />
     </ItemGroup>
     <ItemGroup>
-        <None Include="Datatypes\Strings\.idea\.idea.Strings.dir\.idea\indexLayout.xml"/>
-        <None Include="Datatypes\Strings\.idea\.idea.Strings.dir\.idea\workspace.xml"/>
+        <None Include="Datatypes\Strings\.idea\.idea.Strings.dir\.idea\indexLayout.xml" />
+        <None Include="Datatypes\Strings\.idea\.idea.Strings.dir\.idea\workspace.xml" />
     </ItemGroup>
     <ItemGroup>
         <Reference Include="Errors">
             <HintPath>..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
-        </Reference>
-        <Reference Include="Datatypes">
-            <HintPath>bin\Debug\net6.0\Datatypes.dll</HintPath>
         </Reference>
         <Reference Include="UralMathLib">
             <HintPath>..\UralMathLib\UralMathLib\bin\Debug\net6.0\UralMathLib.dll</HintPath>
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\Errors\Errors\Errors.csproj"/>
+        <ProjectReference Include="..\Errors\Errors\Errors.csproj" />
     </ItemGroup>
     <ItemGroup>
-        <Folder Include="Datatypes\Collections\MathCollections\"/>
+        <Folder Include="Datatypes\Collections\MathCollections\" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Remove="Datatypes\Collections\MathCollections\x.cs"/>
+        <Compile Remove="Datatypes\Collections\MathCollections\x.cs" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="MathNet.Numerics" Version="5.0.0"/>
+        <PackageReference Include="Colorful.Console" Version="1.2.15" />
+        <PackageReference Include="MathNet.Numerics" Version="4.15.0" />
     </ItemGroup>
 </Project>

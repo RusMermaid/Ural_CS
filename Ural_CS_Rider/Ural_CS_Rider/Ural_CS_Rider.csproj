@@ -91,9 +91,10 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\Datatypes\Datatypes.csproj" />
-        <ProjectReference Include="..\..\UralMathFsharpLib\UralMathFsharpLib\UralMathFsharpLib.fsproj" />
-        <ProjectReference Include="..\..\Errors\Errors\Errors.csproj" />
+      <PackageReference Include="Colorful.Console" Version="1.2.15" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\Datatypes\Datatypes.csproj" />
     </ItemGroup>
     <PropertyGroup>
         <OutputType>Exe</OutputType>

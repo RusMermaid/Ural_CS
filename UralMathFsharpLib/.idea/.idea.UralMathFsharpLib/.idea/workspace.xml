@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10c826f8-1f5d-4396-b1a4-5268a9ee19fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/Error.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/Error.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/Errors.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/Errors.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/bin/Debug/net6.0/Errors.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/bin/Debug/net6.0/Errors.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/bin/Debug/net6.0/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/bin/Debug/net6.0/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/bin/Debug/net6.0/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/bin/Debug/net6.0/Errors.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/Errors.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/Errors.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/Errors.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/Errors.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/Errors.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/Errors.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/Errors.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/ref/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/ref/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/refint/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/Debug/net6.0/refint/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/Errors.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/Errors.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/Errors.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/Errors.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Errors/Errors/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Errors/Errors/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/UralMathFsharpLib.fsproj" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/UralMathFsharpLib.fsproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/UralMathFsharpLib.fsproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/UralMathFsharpLib.fsproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/UralMathFsharpLib.fsproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/UralMathFsharpLib.fsproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/UralMathLib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/UralMathLib.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/UralMathLib.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/UralMathLib.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/UralMathLib.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/UralMathLib.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2ObRxPmJeiHA9QU0bJ1XtYbcAaY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "project.scopes",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10c826f8-1f5d-4396-b1a4-5268a9ee19fa" name="Changes" comment="" />
+      <created>1681827540417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681827540417</updated>
+      <workItem from="1681827543397" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

@@ -14,5 +14,6 @@
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/rus_mermaid/.nuget/packages/fsharp.core/7.0.200</PkgFSharp_Core>
+    <PkgColorful_Console Condition=" '$(PkgColorful_Console)' == '' ">/Users/rus_mermaid/.nuget/packages/colorful.console/1.2.15</PkgColorful_Console>
   </PropertyGroup>
 </Project>

@@ -34,11 +34,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Colorful.Console": {
+              "target": "Package",
+              "version": "[1.2.15, )",
+              "generatePathProperty": true
+            },
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[7.0.200, )",
               "generatePathProperty": true
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[4.15.0, )"
             }
           },
           "imports": [
