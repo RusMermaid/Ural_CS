@@ -4,37 +4,7 @@
     <projectFile>Ural_CS_Rider.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe81b3ef-eb00-4677-9076-2120c880814f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/bin/Debug/net6.0/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Errors/Errors/bin/Debug/net6.0/Errors.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/bin/Debug/net6.0/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Errors/Errors/bin/Debug/net6.0/Errors.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/obj/Debug/net6.0/Errors.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Errors/Errors/obj/Debug/net6.0/Errors.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/obj/Debug/net6.0/Errors.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Errors/Errors/obj/Debug/net6.0/Errors.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/obj/Debug/net6.0/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Errors/Errors/obj/Debug/net6.0/Errors.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/obj/Debug/net6.0/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Errors/Errors/obj/Debug/net6.0/Errors.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/obj/Errors.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Errors/Errors/obj/Errors.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/obj/Errors.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Errors/Errors/obj/Errors.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Errors/Errors/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Errors/Errors/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/UralMathFsharpLib.fsproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/UralMathFsharpLib.fsproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/MatematicheskiyAnaliz/Integracia.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/MatematicheskiyAnaliz/Integracia.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/UralMathLib.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/UralMathLib.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../global 2.json" beforeDir="false" />
-    </list>
+    <list default="true" id="fe81b3ef-eb00-4677-9076-2120c880814f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +79,7 @@
       <workItem from="1681830991889" duration="41000" />
       <workItem from="1681831180246" duration="46000" />
       <workItem from="1681831285062" duration="6894000" />
-      <workItem from="1682152942174" duration="241000" />
+      <workItem from="1682152942174" duration="860000" />
     </task>
     <servers />
   </component>
