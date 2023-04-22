@@ -19,11 +19,6 @@ C:/Users/Ivan/Documents/GitHub/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/
 C:/Users/Ivan/Documents/GitHub/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.dll
 C:/Users/Ivan/Documents/GitHub/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/refint/UralMathLib.dll
 C:/Users/Ivan/Documents/GitHub/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.pdb
-/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache
-/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.GeneratedMSBuildEditorConfig.editorconfig
-/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfoInputs.cache
-/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfo.cs
-/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.CoreCompileInputs.cache
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/Ural_CS_Rider.deps.json
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/Ural_CS_Rider.runtimeconfig.json
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/Ural_CS_Rider
@@ -37,6 +32,11 @@ C:/Users/Ivan/Documents/GitHub/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/Datatypes.pdb
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathFsharpLib.pdb
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathFsharpLib.xml
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfoInputs.cache
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfo.cs
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.CoreCompileInputs.cache
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.CopyComplete
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.dll
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathLib/UralMathLib/obj/Debug/net6.0/refint/UralMathLib.dll

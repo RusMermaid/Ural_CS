@@ -657,6 +657,7 @@
         "dependencies": {
           "Colorful.Console": "1.2.15",
           "Datatypes": "1.0.0",
+          "Errors": "1.0.0",
           "UralMathFsharpLib": "1.0.0"
         },
         "compile": {

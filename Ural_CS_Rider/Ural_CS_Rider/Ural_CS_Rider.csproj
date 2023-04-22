@@ -95,6 +95,12 @@
         <Reference Include="UralMathFsharpLib">
           <HintPath>..\..\UralMathFsharpLib\UralMathFsharpLib\bin\Debug\net6.0\UralMathFsharpLib.dll</HintPath>
         </Reference>
+        <Reference Include="Datatypes">
+          <HintPath>..\..\Datatypes\bin\Debug\net6.0\Datatypes.dll</HintPath>
+        </Reference>
+        <Reference Include="UralMathFsharpLib">
+          <HintPath>..\..\UralMathFsharpLib\UralMathFsharpLib\bin\Debug\net6.0\UralMathFsharpLib.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Colorful.Console" Version="1.2.15" />
@@ -102,6 +108,7 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Datatypes\Datatypes.csproj" />
       <ProjectReference Include="..\..\UralMathFsharpLib\UralMathFsharpLib\UralMathFsharpLib.fsproj" />
+      <ProjectReference Include="..\..\Errors\Errors\Errors.csproj" />
     </ItemGroup>
     <PropertyGroup>
         <OutputType>Exe</OutputType>
