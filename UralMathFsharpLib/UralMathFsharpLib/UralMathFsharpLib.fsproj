@@ -18,12 +18,6 @@
         <Reference Include="Datatypes">
             <HintPath>..\..\Datatypes\bin\Debug\net6.0\Datatypes.dll</HintPath>
         </Reference>
-        <Reference Include="Errors">
-            <HintPath>..\..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
-        </Reference>
-        <Reference Include="UralMathLib">
-            <HintPath>..\..\UralMathLib\UralMathLib\bin\Debug\net6.0\UralMathLib.dll</HintPath>
-        </Reference>
     </ItemGroup>
 
     <ItemGroup>

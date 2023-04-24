@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net6.0-android;net6.0-ios16.0;net6.0-maccatalyst</TargetFrameworks>
@@ -46,7 +46,7 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\ural_logo.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -78,5 +78,22 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Resources\AppIcon\appicon.svg" />
+	  <None Remove="Resources\AppIcon\appiconfg.svg" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="Ural_IDE.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\UralMathLib\UralMathLib\UralMathLib.csproj" />
+	  <ProjectReference Include="..\..\..\UralMathFsharpLib\UralMathFsharpLib\UralMathFsharpLib.fsproj" />
+	  <ProjectReference Include="..\..\..\Errors\Errors\Errors.csproj" />
+	  <ProjectReference Include="..\..\..\Datatypes\Datatypes.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\AppIcon\appicon.svg" />
+	  <BundleResource Include="Resources\AppIcon\appiconfg.svg" />
 	</ItemGroup>
 </Project>

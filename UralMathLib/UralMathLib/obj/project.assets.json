@@ -2716,6 +2716,7 @@
       "Datatypes >= 1.0.0",
       "Errors >= 1.0.0",
       "MathNet.Numerics >= 4.15.0",
+      "UralMathFsharpLib >= 1.0.0",
       "Ural_CS_Rider >= 1.0.0"
     ]
   },
@@ -2750,6 +2751,9 @@
             },
             "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj": {
               "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Errors/Errors/Errors.csproj"
+            },
+            "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj": {
+              "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj"
             },
             "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj": {
               "projectPath": "/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj"

@@ -112,6 +112,7 @@
     </ItemGroup>
     <PropertyGroup>
         <OutputType>Exe</OutputType>
+<SelfContained>true</SelfContained>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
@@ -121,6 +122,7 @@
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+	<SelfContained>true</SelfContained>
     </PropertyGroup>
 
 </Project>

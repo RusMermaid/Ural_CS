@@ -43,6 +43,7 @@
         <ProjectReference Include="..\..\Ural_CS_Rider\Ural_CS_Rider\Ural_CS_Rider.csproj" />
         <ProjectReference Include="..\..\Errors\Errors\Errors.csproj" />
         <ProjectReference Include="..\..\Datatypes\Datatypes.csproj" />
+        <ProjectReference Include="..\..\UralMathFsharpLib\UralMathFsharpLib\UralMathFsharpLib.fsproj" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Colorful.Console" Version="1.2.15" />
