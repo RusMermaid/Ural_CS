@@ -4,7 +4,13 @@
     <projectFile>Ural_CS_Rider.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe81b3ef-eb00-4677-9076-2120c880814f" name="Changes" comment="" />
+    <list default="true" id="fe81b3ef-eb00-4677-9076-2120c880814f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Booleans/RCI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Booleans/RCI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +20,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ObXoik6cCQsjRGHlzt8vbiP9ip" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -80,6 +88,7 @@
       <workItem from="1681831180246" duration="46000" />
       <workItem from="1681831285062" duration="6894000" />
       <workItem from="1682152942174" duration="860000" />
+      <workItem from="1682605036839" duration="8712000" />
     </task>
     <servers />
   </component>
