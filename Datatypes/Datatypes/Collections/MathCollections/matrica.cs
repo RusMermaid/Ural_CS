@@ -2865,9 +2865,13 @@ namespace Datatypes.Collections.MathCollections
             Matrix<double> eigenvectors = mtx.Evd().EigenVectors;
             return MatrixToMatrica(eigenvectors);
         }
+        
+        public override string ToString()
+        {
+            return (this.ToString("[", "]", "[", "]", ", "));
+        }
 
-        public virtual string ToString(string out_left_b = "[", string out_right_b = "]", string in_left_b = "[",
-            string in_right_b = "]", string sep = ", ")
+        public virtual string ToString(string out_left_b = "[", string out_right_b = "]", string in_left_b = "[", string in_right_b = "]", string sep = ", ")
         {
             string output = out_left_b;
             for (int i = 0; i < this.value.GetLength(0); i++)

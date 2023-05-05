@@ -1732,6 +1732,11 @@ namespace Datatypes.Collections
                 return null;
             }
         }
+        
+        public override string ToString()
+        {
+            return (this.ToString("⎣", "⎦", ",", "\""));
+        }
 
         public string ToString(string left_b = "⎣", string right_b = "⎦", string sep = ",", string str = "\"")
         {
