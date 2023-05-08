@@ -1,5 +1,6 @@
 ﻿using Errors.SyntaxInvalidError.ErrorDatatypes;
 using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
+using Libraries.UralMathLib;
 using MathNet.Numerics.LinearAlgebra;
 
 namespace Datatypes.Collections.MathCollections
@@ -2305,262 +2306,72 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica ___Multiply(short _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * new drobch64(_value);
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value));
         }
 
         public matrica ___Multiply(int _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * new drobch64(_value);
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value));
         }
 
         public matrica ___Multiply(long _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * new drobch64(_value);
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value));
         }
 
         public matrica ___Multiply(float _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * new drobch64(_value);
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value));
         }
 
         public matrica ___Multiply(double _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * new drobch64(_value);
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value));
         }
 
         public matrica ___Multiply(celch16 _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * new drobch64(_value);
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value.value));
         }
 
         public matrica ___Multiply(celch32 _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * new drobch64(_value);
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value.value));
         }
 
         public matrica ___Multiply(celch64 _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * new drobch64(_value);
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value.value));
         }
 
         public matrica ___Multiply(drobch16 _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * new drobch64(_value);
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value.value));
         }
 
         public matrica ___Multiply(drobch32 _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * new drobch64(_value);
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value.value));
         }
 
         public matrica ___Multiply(drobch64 _value)
         {
-            matrica mtx = new matrica(this.value);
-            matrica new_mtx = new matrica(this.value);
-            for (long i = 0; i < (long)mtx.Count[0]; i++)
-            {
-                for (long j = 0; j < (long)mtx.Count[0]; j++)
-                {
-                    if (j >= (long)mtx.Count[0] ||
-                        j >= (long)mtx
-                            .Count
-                                [0]) //This is a BUG -  not in my code but in compiler. Without this if statement there is out of range index error!
-                    {
-                        break; //BUG - logic wise this if statment is redundant, but needs it here!
-                    }
-
-                    new_mtx[(ulong)j, (ulong)i] = mtx[(ulong)j, (ulong)i] * _value;
-                }
-            }
-
-            return new_mtx;
+            return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value.value));
         }
 
         public matrica ___Multiply(matrica _value)
         {
             Matrix<double> mtx = MatricaToMatrix(new matrica(this.value));
             Matrix<double> val = MatricaToMatrix(new matrica(_value.value));
-            return MatrixToMatrica(mtx.Multiply(val));
+            try
+            {
+                return MatrixToMatrica(mtx.Multiply(val));
+            }
+            catch (Exception err)
+            {
+                return _value;
+            }
+            
         }
 
         public matrica ___Divide(short _value)
@@ -2629,9 +2440,14 @@ namespace Datatypes.Collections.MathCollections
             return mtx.___Multiply(new drobch64(1 / _value.value));
         }
 
-        public matrica ___Divide(matrica _value)
+        public matrica? ___Divide(matrica _value)
         {
             matrica mtx = new matrica(this);
+            if (mtx.___Abs() == 0)
+            {
+                ZeroDivisionError err = new ZeroDivisionError(0, 0);
+                err.Execute();
+            }
             matrica inverse = new matrica(_value).___Inverse();
             return mtx.___Multiply(inverse);
         }
@@ -2739,17 +2555,17 @@ namespace Datatypes.Collections.MathCollections
             return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
         }
 
-        /*
+        
         public matrica ___Ln()
         {
-            return MatrixToMatrica(MatricaToMatrix(this).PointwiseLog());
+            return ___MathFunc(this, UralMathLib.Ln);
         }
         
         public matrica ___Exp()
         {
-            return MatrixToMatrica(MatricaToMatrix(this).PointwiseExp());
+            return ___MathFunc(this, UralMathLib.Exp);
         }
-        */
+        
 
         public massiv<matrica>___Diagonalisacia()
         {
@@ -2764,7 +2580,7 @@ namespace Datatypes.Collections.MathCollections
             return new massiv<matrica>(_value);
         }
 
-        public static matrica ___Func(matrica mtx, Func<drobch64, drobch64> f)
+        public static matrica ___MathFunc(matrica mtx, Func<drobch64, drobch64> f)
         {
             matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(mtx).Evd().D);
             matrica eigenvectors_mtx = mtx.___SobVektora();
