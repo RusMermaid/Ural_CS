@@ -46,6 +46,7 @@
         <ProjectReference Include="..\..\UralMathFsharpLib\UralMathFsharpLib\UralMathFsharpLib.fsproj" />
     </ItemGroup>
     <ItemGroup>
+      <PackageReference Include="Aspose.PDF" Version="23.1.0" />
       <PackageReference Include="Colorful.Console" Version="1.2.15" />
       <PackageReference Include="MathNet.Numerics" Version="4.15.0" />
     </ItemGroup>

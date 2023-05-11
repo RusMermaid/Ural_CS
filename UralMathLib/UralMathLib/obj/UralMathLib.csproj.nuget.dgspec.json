@@ -247,6 +247,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Aspose.PDF": {
+              "target": "Package",
+              "version": "[23.1.0, )"
+            },
             "Colorful.Console": {
               "target": "Package",
               "version": "[1.2.15, )"

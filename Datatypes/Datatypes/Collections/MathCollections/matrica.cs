@@ -2,13 +2,19 @@
 using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
 using Libraries.UralMathLib;
 using MathNet.Numerics.LinearAlgebra;
+using MathNet.Numerics.LinearAlgebra.Factorization;
 
 namespace Datatypes.Collections.MathCollections
 {
-    public class matrica : VOID, Interface_UCollection, Interface_Ural_Datatype
+    
+    public interface Interface_UMathNumerics
+    {
+    }
+    
+    public class matrica : VOID, Interface_UCollection, Interface_UMathNumerics, Interface_Ural_Datatype
     {
         public ulong MaxLength = 4294967295U;
-        public drobch64[,] value;
+        public Interface_UMathNumerics[,] value;
         public readonly kortezh Count;
 
         public matrica(ushort n)
@@ -2361,8 +2367,8 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica ___Multiply(matrica _value)
         {
-            Matrix<double> mtx = MatricaToMatrix(new matrica(this.value));
-            Matrix<double> val = MatricaToMatrix(new matrica(_value.value));
+            Matrix<double> mtx = MatricaToMatrix(new matrica((drobch64 [,])this.value));
+            Matrix<double> val = MatricaToMatrix(new matrica((drobch64 [,])_value.value));
             try
             {
                 return MatrixToMatrica(mtx.Multiply(val));
@@ -2561,6 +2567,71 @@ namespace Datatypes.Collections.MathCollections
             return ___MathFunc(this, UralMathLib.Ln);
         }
         
+        public matrica ___Lt()
+        {
+            return ___MathFunc(this, UralMathLib.Lt);
+        }
+        
+        public matrica ___Lg()
+        {
+            return ___MathFunc(this, UralMathLib.Lg);
+        }
+        
+        public matrica ___Sin()
+        {
+            return ___MathFunc(this, UralMathLib.Sin);
+        }
+        
+        public matrica ___ArcSin()
+        {
+            return ___MathFunc(this, UralMathLib.ArcSin);
+        }
+        
+        public matrica ___Cos()
+        {
+            return ___MathFunc(this, UralMathLib.Cos);
+        }
+        
+        public matrica ___ArcCos()
+        {
+            return ___MathFunc(this, UralMathLib.ArcCos);
+        }
+        
+        public matrica ___Sec()
+        {
+            return ___MathFunc(this, UralMathLib.Sec);
+        }
+        
+        public matrica ___Csc()
+        {
+            return ___MathFunc(this, UralMathLib.Csc);
+        }
+        
+        public matrica ___Sinh()
+        {
+            return ___MathFunc(this, UralMathLib.Sinh);
+        }
+        
+        public matrica ___ArcSinh()
+        {
+            return ___MathFunc(this, UralMathLib.ArcSinh);
+        }
+        
+        public matrica ___Cosh()
+        {
+            return ___MathFunc(this, UralMathLib.Cosh);
+        }
+        
+        public matrica ___ArcCosh()
+        {
+            return ___MathFunc(this, UralMathLib.ArcCosh);
+        }
+        
+        public matrica ___Tanh()
+        {
+            return ___MathFunc(this, UralMathLib.Tanh);
+        }
+        
         public matrica ___Exp()
         {
             return ___MathFunc(this, UralMathLib.Exp);
@@ -2578,6 +2649,42 @@ namespace Datatypes.Collections.MathCollections
             _value.Add(eigenvalues_mtx);
             _value.Add(eigenvectors_mtx_inverse);
             return new massiv<matrica>(_value);
+        }
+        
+        public massiv<matrica>___LU()
+        {
+            Matrix<double> mtx = MatricaToMatrix(this);
+            ArrayList _value = new ArrayList();
+            _value.Add(MatrixToMatrica(mtx.LU().L));
+            _value.Add(MatrixToMatrica(mtx.LU().U));
+            return new massiv<matrica>(_value);
+        }
+        
+        public massiv<matrica>___QR()
+        {
+            Matrix<double> mtx = MatricaToMatrix(this);
+            ArrayList _value = new ArrayList();
+            _value.Add(MatrixToMatrica(mtx.QR(QRMethod.Full).Q));
+            _value.Add(MatrixToMatrica(mtx.QR(QRMethod.Full).R));
+            return new massiv<matrica>(_value);
+        }
+        
+        public massiv<matrica>?___Cholesky()
+        {
+            try
+            {
+                Matrix<double> mtx = MatricaToMatrix(this);
+                ArrayList _value = new ArrayList();
+                _value.Add(MatrixToMatrica(mtx.Cholesky().Factor));
+                _value.Add(MatrixToMatrica(mtx.Cholesky().Factor.Transpose()));
+                return new massiv<matrica>(_value);
+            }
+            catch (Exception e)
+            {
+                ZeroDivisionError err = new ZeroDivisionError(0, 0);
+                err.Execute();
+                return null;
+            }
         }
 
         public static matrica ___MathFunc(matrica mtx, Func<drobch64, drobch64> f)
@@ -2602,7 +2709,7 @@ namespace Datatypes.Collections.MathCollections
                 err.Execute();
             }
 
-            matrica mtx = new matrica(this.value);
+            matrica mtx = new matrica((drobch64 [,])this.value);
             drobch64 det_inverse = new drobch64(1).___Divide(this.___Abs());
             switch ((ulong)mtx.Count[0b0])
             {
@@ -2734,7 +2841,7 @@ namespace Datatypes.Collections.MathCollections
             {
                 for (ulong j = 0; j < (ulong)mtx.Count[1]; j++)
                 {
-                    values[i, j] = (double)mtx.value[i, j];
+                    values[i, j] = (double)(new drobch64((drobch64)mtx.value[i, j])); //ToDo
                 }
             }
 

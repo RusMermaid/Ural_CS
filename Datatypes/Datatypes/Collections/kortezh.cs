@@ -1751,6 +1751,10 @@ namespace Datatypes.Collections
                 {
                     _out += new massiv<Type>(this.value[i]).ToString(left_b, right_b, sep);
                 }
+                else if (this.value[i] is matrica)
+                {
+                    _out += "\n" + (this.value[i]).ToString();
+                }
                 else if ((this.value[i].GetType().IsArray) | (this.value[i] is IList))
                 {
                     _out += new massiv<Type>(this.value[i]).ToString(left_b, right_b, sep);
@@ -1772,6 +1776,13 @@ namespace Datatypes.Collections
                 if (i != this.value.Count - 1)
                 {
                     _out += $"{sep} ";
+                }
+                else
+                {
+                    if (this.value[i] is matrica)
+                    {
+                        _out += "\n";
+                    }
                 }
             }
 
