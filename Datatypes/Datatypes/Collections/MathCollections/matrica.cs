@@ -105,13 +105,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.GetLength(0) >= mtx.GetLength(1))
             {
-                this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
-                this.Count = new kortezh(new natch16(mtx.GetLength(1)), new natch16(mtx.GetLength(1)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(1)));
             }
             else
             {
-                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
-                this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(0)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(1)));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -127,13 +127,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.Count >= mtx[0].Count)
             {
-                this.value = new drobch64[mtx[0].Count, mtx[0].Count];
-                this.Count = new kortezh(new natch16(mtx[0].Count), new natch16(mtx[0].Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch16(mtx[0].Count), new natch16(mtx.Count));
             }
             else
             {
-                this.value = new drobch64[mtx.Count, mtx.Count];
-                this.Count = new kortezh(new natch16(mtx.Count), new natch16(mtx.Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch16(mtx[0].Count), new natch16(mtx.Count));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -171,13 +171,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.Count >= mtx[0].Count)
             {
-                this.value = new drobch64[mtx[0].Count, mtx[0].Count];
-                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx[0].Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx.Count));
             }
             else
             {
-                this.value = new drobch64[mtx.Count, mtx.Count];
-                this.Count = new kortezh(new natch32(mtx.Count), new natch32(mtx.Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx.Count));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -193,13 +193,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.GetLength(0) >= mtx.GetLength(1))
             {
-                this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
-                this.Count = new kortezh(new natch64(mtx.GetLength(1)), new natch64(mtx.GetLength(1)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(1)));
             }
             else
             {
-                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
-                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(0)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(1)));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -215,13 +215,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.Count >= mtx[0].Count)
             {
-                this.value = new drobch64[mtx[0].Count, mtx[0].Count];
-                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx[0].Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx.Count));
             }
             else
             {
-                this.value = new drobch64[mtx.Count, mtx.Count];
-                this.Count = new kortezh(new natch64(mtx.Count), new natch64(mtx.Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx.Count));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -237,13 +237,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.GetLength(0) >= mtx.GetLength(1))
             {
-                this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
-                this.Count = new kortezh(new natch32(mtx.GetLength(1)), new natch32(mtx.GetLength(1)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(1)));
             }
             else
             {
-                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
-                this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(0)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(1)));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -259,13 +259,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.Count >= mtx[0].Count)
             {
-                this.value = new drobch64[mtx[0].Count, mtx[0].Count];
-                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx[0].Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx.Count));
             }
             else
             {
-                this.value = new drobch64[mtx.Count, mtx.Count];
-                this.Count = new kortezh(new natch32(mtx.Count), new natch32(mtx.Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx.Count));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -281,13 +281,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.GetLength(0) >= mtx.GetLength(1))
             {
-                this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
-                this.Count = new kortezh(new natch64(mtx.GetLength(1)), new natch64(mtx.GetLength(1)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(1)));
             }
             else
             {
-                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
-                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(0)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(1)));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -303,13 +303,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.Count >= mtx[0].Count)
             {
-                this.value = new drobch64[mtx[0].Count, mtx[0].Count];
-                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx[0].Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx.Count));
             }
             else
             {
-                this.value = new drobch64[mtx.Count, mtx.Count];
-                this.Count = new kortezh(new natch64(mtx.Count), new natch64(mtx.Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx.Count));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -325,13 +325,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.GetLength(0) >= mtx.GetLength(1))
             {
-                this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
-                this.Count = new kortezh(new natch16(mtx.GetLength(1)), new natch16(mtx.GetLength(1)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(1)));
             }
             else
             {
-                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
-                this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(0)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(1)));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -369,13 +369,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.GetLength(0) >= mtx.GetLength(1))
             {
-                this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
-                this.Count = new kortezh(new natch32(mtx.GetLength(1)), new natch32(mtx.GetLength(1)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(1)));
             }
             else
             {
-                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
-                this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(0)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(1)));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -391,13 +391,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.Count >= mtx[0].Count)
             {
-                this.value = new drobch64[mtx[0].Count, mtx[0].Count];
-                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx[0].Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx.Count));
             }
             else
             {
-                this.value = new drobch64[mtx.Count, mtx.Count];
-                this.Count = new kortezh(new natch32(mtx.Count), new natch32(mtx.Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx.Count));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -413,13 +413,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.GetLength(0) >= mtx.GetLength(1))
             {
-                this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
-                this.Count = new kortezh(new natch64(mtx.GetLength(1)), new natch64(mtx.GetLength(1)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(1)));
             }
             else
             {
-                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
-                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(0)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(1)));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -435,13 +435,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.Count >= mtx[0].Count)
             {
-                this.value = new drobch64[mtx[0].Count, mtx[0].Count];
-                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx[0].Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx.Count));
             }
             else
             {
-                this.value = new drobch64[mtx.Count, mtx.Count];
-                this.Count = new kortezh(new natch64(mtx.Count), new natch64(mtx.Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx.Count));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -457,13 +457,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.GetLength(0) >= mtx.GetLength(1))
             {
-                this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
-                this.Count = new kortezh(new natch16(mtx.GetLength(1)), new natch16(mtx.GetLength(1)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(1)));
             }
             else
             {
-                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
-                this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(0)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch16(mtx.GetLength(0)), new natch16(mtx.GetLength(1)));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -479,13 +479,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.Count >= mtx[0].Count)
             {
-                this.value = new drobch64[mtx[0].Count, mtx[0].Count];
-                this.Count = new kortezh(new natch16(mtx[0].Count), new natch16(mtx[0].Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch16(mtx[0].Count), new natch16(mtx.Count));
             }
             else
             {
-                this.value = new drobch64[mtx.Count, mtx.Count];
-                this.Count = new kortezh(new natch16(mtx.Count), new natch16(mtx.Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch16(mtx[0].Count), new natch16(mtx.Count));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -501,13 +501,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.GetLength(0) >= mtx.GetLength(1))
             {
-                this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
-                this.Count = new kortezh(new natch32(mtx.GetLength(1)), new natch32(mtx.GetLength(1)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(1)));
             }
             else
             {
-                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
-                this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(0)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch32(mtx.GetLength(0)), new natch32(mtx.GetLength(1)));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -523,13 +523,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.Count >= mtx[0].Count)
             {
-                this.value = new drobch64[mtx[0].Count, mtx[0].Count];
-                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx[0].Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx.Count));
             }
             else
             {
-                this.value = new drobch64[mtx.Count, mtx.Count];
-                this.Count = new kortezh(new natch32(mtx.Count), new natch32(mtx.Count));
+                this.value = new drobch64[mtx[0].Count, mtx.Count];
+                this.Count = new kortezh(new natch32(mtx[0].Count), new natch32(mtx.Count));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -545,13 +545,13 @@ namespace Datatypes.Collections.MathCollections
         {
             if (mtx.GetLength(0) >= mtx.GetLength(1))
             {
-                this.value = new drobch64[mtx.GetLength(1), mtx.GetLength(1)];
-                this.Count = new kortezh(new natch64(mtx.GetLength(1)), new natch64(mtx.GetLength(1)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(1)));
             }
             else
             {
-                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(0)];
-                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(0)));
+                this.value = new drobch64[mtx.GetLength(0), mtx.GetLength(1)];
+                this.Count = new kortezh(new natch64(mtx.GetLength(0)), new natch64(mtx.GetLength(1)));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -568,12 +568,12 @@ namespace Datatypes.Collections.MathCollections
             if (mtx.Count >= mtx[0].Count)
             {
                 this.value = new drobch64[mtx[0].Count, mtx[0].Count];
-                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx[0].Count));
+                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx.Count));
             }
             else
             {
                 this.value = new drobch64[mtx.Count, mtx.Count];
-                this.Count = new kortezh(new natch64(mtx.Count), new natch64(mtx.Count));
+                this.Count = new kortezh(new natch64(mtx[0].Count), new natch64(mtx.Count));
             }
 
             for (int i = 0; i < (int)(this.Count[0]); i++)
@@ -587,8 +587,8 @@ namespace Datatypes.Collections.MathCollections
 
         public matrica(matrica mtx)
         {
-            this.value = new drobch64[mtx.value.GetLength(0), mtx.value.GetLength(0)];
-            this.Count = new kortezh(new natch64(mtx.value.GetLength(0)), new natch64(mtx.value.GetLength(0)));
+            this.value = new drobch64[mtx.value.GetLength(0), mtx.value.GetLength(1)];
+            this.Count = new kortezh(new natch64(mtx.value.GetLength(0)), new natch64(mtx.value.GetLength(1)));
             for (ulong i = 0; i < (ulong)(mtx.Count[0]); i++)
             {
                 for (ulong j = 0; j < (ulong)(mtx.Count[0]); j++)
@@ -789,6 +789,763 @@ namespace Datatypes.Collections.MathCollections
                     this.value[(ulong)x, (ulong)y] = (drobch64)value;
                 }
             }
+        }
+        
+        public static matrica operator +(matrica l, VOID r)
+        {
+            return l;
+        }
+        
+        public static matrica operator +(VOID l, matrica r)
+        {
+            return r;
+        }
+        
+        public static matrica operator +(matrica l, int r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r);
+        }
+        
+        public static matrica operator +(matrica l, float r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r);
+        }
+        
+        public static matrica operator +(matrica l, double r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r);
+        }
+        
+        public static matrica operator +(matrica l, natch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r.value);
+        }
+        
+        public static matrica operator +(matrica l, natch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r.value);
+        }
+        
+        public static matrica operator +(matrica l, natch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r.value);
+        }
+        
+        public static matrica operator +(matrica l, celch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r.value);
+        }
+        
+        public static matrica operator +(matrica l, celch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r.value);
+        }
+        
+        public static matrica operator +(matrica l, celch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r.value);
+        }
+        
+        public static matrica operator +(matrica l, drobch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r.value);
+        }
+        
+        public static matrica operator +(matrica l, drobch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r.value);
+        }
+        
+        public static matrica operator +(matrica l, drobch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r.value);
+        }
+        
+        public static matrica operator +(matrica l, matrica r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r);
+        }
+        
+        public static matrica operator +(int l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(float l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(double l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(natch16 l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(natch32 l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(natch64 l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(celch16 l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(celch32 l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(celch64 l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(drobch16 l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(drobch32 l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator +(drobch64 l, matrica r)
+        {
+            return r + l;
+        }
+        
+        public static matrica operator -(matrica l, VOID r)
+        {
+            return l;
+        }
+        
+        public static matrica operator -(VOID l, matrica r)
+        {
+            return r;
+        }
+        
+        public static matrica operator -(matrica l, int r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r);
+        }
+        
+        public static matrica operator -(matrica l, float r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r);
+        }
+        
+        public static matrica operator -(matrica l, double r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(r);
+        }
+        
+        public static matrica operator -(matrica l, natch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(-r.value);
+        }
+        
+        public static matrica operator -(matrica l, natch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(-r.value);
+        }
+        
+        public static matrica operator -(matrica l, natch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(-r.value);
+        }
+        
+        public static matrica operator -(matrica l, celch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(-r.value);
+        }
+        
+        public static matrica operator -(matrica l, celch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(-r.value);
+        }
+        
+        public static matrica operator -(matrica l, celch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(-r.value);
+        }
+        
+        public static matrica operator -(matrica l, drobch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(-r.value);
+        }
+        
+        public static matrica operator -(matrica l, drobch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(-r.value);
+        }
+        
+        public static matrica operator -(matrica l, drobch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Add(-r.value);
+        }
+        
+        public static matrica operator -(matrica l, matrica r)
+        {
+            matrica l2 = new matrica(l);
+            matrica r2 = new matrica(r);
+            
+            return l2.___Add(-r2);
+        }
+        
+        public static matrica operator -(int l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(float l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(double l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(natch16 l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(natch32 l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(natch64 l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(celch16 l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(celch32 l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(celch64 l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(drobch16 l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(drobch32 l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(drobch64 l, matrica r)
+        {
+            return (-r) + l;
+        }
+        
+        public static matrica operator -(matrica l)
+        {
+            matrica l2 = new matrica(l);
+            
+            for (int i = 0; i < l2.value.GetLength(0); i++)
+            {
+                for (int j = 0; j < l2.value.GetLength(1); j++)
+                {
+                    l2[(ulong)i, (ulong)j] = (drobch64)l2[(ulong)i, (ulong)j] * -1;
+                }
+            }
+            
+            return l2;
+        }
+        
+        public static matrica operator *(matrica l, VOID r)
+        {
+            return l;
+        }
+        
+        public static matrica operator *(VOID l, matrica r)
+        {
+            return r;
+        }
+        
+        public static matrica operator *(matrica l, int r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static matrica operator *(matrica l, float r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static matrica operator *(matrica l, double r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static matrica operator *(matrica l, natch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r.value);
+        }
+        
+        public static matrica operator *(matrica l, natch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r.value);
+        }
+        
+        public static matrica operator *(matrica l, natch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r.value);
+        }
+        
+        public static matrica operator *(matrica l, celch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r.value);
+        }
+        
+        public static matrica operator *(matrica l, celch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r.value);
+        }
+        
+        public static matrica operator *(matrica l, celch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r.value);
+        }
+        
+        public static matrica operator *(matrica l, drobch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r.value);
+        }
+        
+        public static matrica operator *(matrica l, drobch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r.value);
+        }
+        
+        public static matrica operator *(matrica l, drobch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r.value);
+        }
+        
+        public static matrica operator *(matrica l, matrica r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static matrica operator *(int l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(float l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(double l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(natch16 l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(natch32 l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(natch64 l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(celch16 l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(celch32 l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(celch64 l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(drobch16 l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(drobch32 l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator *(drobch64 l, matrica r)
+        {
+            return r * l;
+        }
+        
+        public static matrica operator /(matrica l, VOID r)
+        {
+            return l;
+        }
+        
+        public static matrica operator /(VOID l, matrica r)
+        {
+            return r;
+        }
+        
+        public static matrica operator /(matrica l, int r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r);
+        }
+        
+        public static matrica operator /(matrica l, float r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r); 
+        }
+        
+        public static matrica operator /(matrica l, double r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r);
+        }
+        
+        public static matrica operator /(matrica l, natch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r.value);
+        }
+        
+        public static matrica operator /(matrica l, natch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r.value);
+        }
+        
+        public static matrica operator /(matrica l, natch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r.value);
+        }
+        
+        public static matrica operator /(matrica l, celch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r.value);
+        }
+        
+        public static matrica operator /(matrica l, celch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r.value);
+        }
+        
+        public static matrica operator /(matrica l, celch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r.value);
+        }
+        
+        public static matrica operator /(matrica l, drobch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r.value);
+        }
+        
+        public static matrica operator /(matrica l, drobch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r.value);
+        }
+        
+        public static matrica operator /(matrica l, drobch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r.value);
+        }
+        
+        public static matrica operator /(int l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(float l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(double l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(natch16 l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(natch32 l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(natch64 l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(celch16 l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(celch32 l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(celch64 l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(drobch16 l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(drobch32 l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(drobch64 l, matrica r)
+        {
+            return r.___Inverse() * l;
+        }
+        
+        public static matrica operator /(matrica l, matrica r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Divide(r);
+        }
+        
+        public static matrica operator ^(matrica l, VOID r)
+        {
+            return l;
+        }
+        
+        public static matrica operator ^(VOID l, matrica r)
+        {
+            return r;
+        }
+        
+        public static matrica operator ^(matrica l, int r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r);
+        }
+        
+        public static matrica operator ^(matrica l, float r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r);
+        }
+        
+        public static matrica operator ^(matrica l, double r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r);
+        }
+        
+        public static matrica operator ^(matrica l, natch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r.value);
+        }
+        
+        public static matrica operator ^(matrica l, natch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r.value);
+        }
+        
+        public static matrica operator ^(matrica l, natch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r.value);
+        }
+        
+        public static matrica operator ^(matrica l, celch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r.value);
+        }
+        
+        public static matrica operator ^(matrica l, celch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r.value);
+        }
+        
+        public static matrica operator ^(matrica l, celch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r.value);
+        }
+        
+        public static matrica operator ^(matrica l, drobch16 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r.value);
+        }
+        
+        public static matrica operator ^(matrica l, drobch32 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r.value);
+        }
+        
+        public static matrica operator ^(matrica l, drobch64 r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r.value);
+        }
+        
+        public static matrica operator ^(matrica l, matrica r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Pow(r);
+        }
+        
+        public static matrica operator ^(int l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(float l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(double l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(natch16 l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(natch32 l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(natch64 l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(celch16 l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(celch32 l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(celch64 l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(drobch16 l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(drobch32 l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public static matrica operator ^(drobch64 l, matrica r)
+        {
+            return (r * UralMathLib.Ln(l)).___Exp();
         }
 
         protected static matrica ChisloMatrica(Interface_UDrobch value, ushort scales)
@@ -2559,6 +3316,11 @@ namespace Datatypes.Collections.MathCollections
             }
 
             return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
+        }
+        
+        public matrica ___Pow(matrica _value)
+        {
+            return (_value * this.___Ln()).___Exp();
         }
 
         
