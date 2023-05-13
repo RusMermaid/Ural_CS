@@ -3322,6 +3322,34 @@ namespace Datatypes.Collections.MathCollections
         {
             return (_value * this.___Ln()).___Exp();
         }
+        
+        public matrica ___Sqrt()
+        {
+            matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(this).Evd().D);
+            matrica eigenvectors_mtx = this.___SobVektora();
+            matrica eigenvectors_mtx_inverse = this.___SobVektora().___Inverse();
+
+            for (ulong i = 0; i < (ulong)eigenvalues_mtx.Count[0]; i++)
+            {
+                eigenvalues_mtx[i, i] = UralMathLib.Sqrt(new drobch64(eigenvalues_mtx[i, i]));
+            }
+
+            return eigenvectors_mtx.___Multiply(eigenvalues_mtx).___Multiply(eigenvectors_mtx_inverse);
+        }
+        
+        public matrica ___Cbrt()
+        {
+            matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(this).Evd().D);
+            matrica eigenvectors_mtx = this.___SobVektora();
+            matrica eigenvectors_mtx_inverse = this.___SobVektora().___Inverse();
+
+            for (ulong i = 0; i < (ulong)eigenvalues_mtx.Count[0]; i++)
+            {
+                eigenvalues_mtx[i, i] = UralMathLib.Cbrt(new drobch64(eigenvalues_mtx[i, i]));
+            }
+
+            return eigenvectors_mtx.___Multiply(eigenvalues_mtx).___Multiply(eigenvectors_mtx_inverse);
+        }
 
         
         public matrica ___Ln()
