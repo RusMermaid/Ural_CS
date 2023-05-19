@@ -98,295 +98,121 @@ namespace Datatypes.Strings
             set => this.value = this.value.Remove(index.value, 1).Insert(index.value, value.ToString());
         }
 
-        public str64 this[int start, int stop]
-        {
-            get => new str64(Slice((string)this.value, start, stop));
-        }
+        public str64 this[int start, int stop] => new str64(Slice((string)this.value, start, stop));
 
-        public str64 this[int start, natch16 stop]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value));
-        }
+        public str64 this[int start, natch16 stop] => new str64(Slice((string)this.value, start, (int)stop.value));
 
-        public str64 this[int start, natch32 stop]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value));
-        }
+        public str64 this[int start, natch32 stop] => new str64(Slice((string)this.value, start, (int)stop.value));
 
-        public str64 this[int start, natch64 stop]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value));
-        }
+        public str64 this[int start, natch64 stop] => new str64(Slice((string)this.value, start, (int)stop.value));
 
-        public str64 this[natch16 start, int stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop));
-        }
+        public str64 this[natch16 start, int stop] => new str64(Slice((string)this.value, (int)start.value, stop));
 
-        public str64 this[natch16 start, natch16 stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
-        }
+        public str64 this[natch16 start, natch16 stop] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
 
-        public str64 this[natch16 start, natch32 stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
-        }
+        public str64 this[natch16 start, natch32 stop] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
 
-        public str64 this[natch16 start, natch64 stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
-        }
+        public str64 this[natch16 start, natch64 stop] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
 
-        public str64 this[natch32 start, int stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop));
-        }
+        public str64 this[natch32 start, int stop] => new str64(Slice((string)this.value, (int)start.value, stop));
 
-        public str64 this[natch32 start, natch16 stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
-        }
+        public str64 this[natch32 start, natch16 stop] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
 
-        public str64 this[natch32 start, natch32 stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
-        }
+        public str64 this[natch32 start, natch32 stop] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
 
-        public str64 this[natch32 start, natch64 stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
-        }
+        public str64 this[natch32 start, natch64 stop] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
 
-        public str64 this[natch64 start, int stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop));
-        }
+        public str64 this[natch64 start, int stop] => new str64(Slice((string)this.value, (int)start.value, stop));
 
-        public str64 this[natch64 start, natch16 stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
-        }
+        public str64 this[natch64 start, natch16 stop] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
 
-        public str64 this[natch64 start, natch32 stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
-        }
+        public str64 this[natch64 start, natch32 stop] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
 
-        public str64 this[natch64 start, natch64 stop]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
-        }
+        public str64 this[natch64 start, natch64 stop] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value));
 
-        public str64 this[int start, int stop, int step]
-        {
-            get => new str64(Slice((string)this.value, start, stop, step));
-        }
+        public str64 this[int start, int stop, int step] => new str64(Slice((string)this.value, start, stop, step));
 
-        public str64 this[int start, int stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, start, stop, (int)step.value));
-        }
+        public str64 this[int start, int stop, natch16 step] => new str64(Slice((string)this.value, start, stop, (int)step.value));
 
-        public str64 this[int start, int stop, natch32 step]
-        {
-            get => new str64(Slice((string)this.value, start, stop, (int)step.value));
-        }
+        public str64 this[int start, int stop, natch32 step] => new str64(Slice((string)this.value, start, stop, (int)step.value));
 
-        public str64 this[int start, int stop, natch64 step]
-        {
-            get => new str64(Slice((string)this.value, start, stop, (int)step.value));
-        }
+        public str64 this[int start, int stop, natch64 step] => new str64(Slice((string)this.value, start, stop, (int)step.value));
 
-        public str64 this[int start, natch16 stop, int step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, step));
-        }
+        public str64 this[int start, natch16 stop, int step] => new str64(Slice((string)this.value, start, (int)stop.value, step));
 
-        public str64 this[int start, natch16 stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
-        }
+        public str64 this[int start, natch16 stop, natch16 step] => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
 
-        public str64 this[int start, natch16 stop, natch32 step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
-        }
+        public str64 this[int start, natch16 stop, natch32 step] => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
 
-        public str64 this[int start, natch16 stop, natch64 step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
-        }
+        public str64 this[int start, natch16 stop, natch64 step] => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
 
-        public str64 this[int start, natch32 stop, int step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, step));
-        }
+        public str64 this[int start, natch32 stop, int step] => new str64(Slice((string)this.value, start, (int)stop.value, step));
 
-        public str64 this[int start, natch32 stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
-        }
+        public str64 this[int start, natch32 stop, natch16 step] => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
 
-        public str64 this[int start, natch32 stop, natch32 step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
-        }
+        public str64 this[int start, natch32 stop, natch32 step] => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
 
-        public str64 this[int start, natch32 stop, natch64 step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
-        }
+        public str64 this[int start, natch32 stop, natch64 step] => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
 
-        public str64 this[int start, natch64 stop, int step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, step));
-        }
+        public str64 this[int start, natch64 stop, int step] => new str64(Slice((string)this.value, start, (int)stop.value, step));
 
-        public str64 this[int start, natch64 stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
-        }
+        public str64 this[int start, natch64 stop, natch16 step] => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
 
-        public str64 this[int start, natch64 stop, natch32 step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
-        }
+        public str64 this[int start, natch64 stop, natch32 step] => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
 
-        public str64 this[int start, natch64 stop, natch64 step]
-        {
-            get => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
-        }
+        public str64 this[int start, natch64 stop, natch64 step] => new str64(Slice((string)this.value, start, (int)stop.value, (int)step.value));
 
-        public str64 this[natch16 start, int stop, int step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop, step));
-        }
+        public str64 this[natch16 start, int stop, int step] => new str64(Slice((string)this.value, (int)start.value, stop, step));
 
-        public str64 this[natch16 start, int stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
-        }
+        public str64 this[natch16 start, int stop, natch16 step] => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
 
-        public str64 this[natch16 start, int stop, natch32 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
-        }
+        public str64 this[natch16 start, int stop, natch32 step] => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
 
-        public str64 this[natch16 start, int stop, natch64 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
-        }
+        public str64 this[natch16 start, int stop, natch64 step] => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
 
-        public str64 this[natch16 start, natch16 stop, int step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
-        }
+        public str64 this[natch16 start, natch16 stop, int step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
 
-        public str64 this[natch16 start, natch16 stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch16 start, natch16 stop, natch16 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch16 start, natch16 stop, natch32 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch16 start, natch16 stop, natch32 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch16 start, natch16 stop, natch64 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch16 start, natch16 stop, natch64 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch16 start, natch32 stop, int step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
-        }
+        public str64 this[natch16 start, natch32 stop, int step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
 
-        public str64 this[natch16 start, natch32 stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch16 start, natch32 stop, natch16 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch16 start, natch32 stop, natch32 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch16 start, natch32 stop, natch32 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch16 start, natch32 stop, natch64 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch16 start, natch32 stop, natch64 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch16 start, natch64 stop, int step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
-        }
+        public str64 this[natch16 start, natch64 stop, int step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
 
-        public str64 this[natch16 start, natch64 stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch16 start, natch64 stop, natch16 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch16 start, natch64 stop, natch32 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch16 start, natch64 stop, natch32 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch16 start, natch64 stop, natch64 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch16 start, natch64 stop, natch64 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch32 start, int stop, int step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop, step));
-        }
+        public str64 this[natch32 start, int stop, int step] => new str64(Slice((string)this.value, (int)start.value, stop, step));
 
-        public str64 this[natch32 start, int stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
-        }
+        public str64 this[natch32 start, int stop, natch16 step] => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
 
-        public str64 this[natch32 start, int stop, natch32 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
-        }
+        public str64 this[natch32 start, int stop, natch32 step] => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
 
-        public str64 this[natch32 start, int stop, natch64 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
-        }
+        public str64 this[natch32 start, int stop, natch64 step] => new str64(Slice((string)this.value, (int)start.value, stop, (int)step.value));
 
-        public str64 this[natch32 start, natch16 stop, int step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
-        }
+        public str64 this[natch32 start, natch16 stop, int step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
 
-        public str64 this[natch32 start, natch16 stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch32 start, natch16 stop, natch16 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch32 start, natch16 stop, natch32 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch32 start, natch16 stop, natch32 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch32 start, natch16 stop, natch64 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch32 start, natch16 stop, natch64 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
-        public str64 this[natch32 start, natch32 stop, int step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
-        }
+        public str64 this[natch32 start, natch32 stop, int step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, step));
 
-        public str64 this[natch32 start, natch32 stop, natch16 step]
-        {
-            get => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public str64 this[natch32 start, natch32 stop, natch16 step] => new str64(Slice((string)this.value, (int)start.value, (int)stop.value, (int)step.value));
 
         public static RCI operator ==(str64 l, string r)
         {
@@ -1012,18 +838,36 @@ namespace Datatypes.Strings
             {
                 return new SyntaxInvalidOverloadStrNumericError(0, 0);
             }
-            else if (_value is str0)
+            else switch (_value)
             {
-                return this.___Add(_value.ToString());
-            }
-            else
-            {
-                string str = this.value + Convert.ToString(_value);
-                if ((ulong)str.Length < str64.MaxLength)
+                case str0 :
+                    return this.___Add(_value.ToString());
+                default :
                 {
-                    return new str64(str);
+                    string str = this.value + Convert.ToString(_value);
+                    switch ((ulong)str.Length)
+                    {
+                        case < str64.MaxLength :
+                            return new str64(str);
+                        default :
+                        {
+                            Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                            err.Execute();
+                            return null;
+                        }
+                    }
                 }
-                else
+            }
+        }
+
+        public dynamic ___Add(string _value)
+        {
+            string str = this.value + Convert.ToString(_value);
+            switch ((ulong)str.Length)
+            {
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
                 {
                     Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
                     err.Execute();
@@ -1032,153 +876,147 @@ namespace Datatypes.Strings
             }
         }
 
-        public dynamic ___Add(string _value)
-        {
-            string str = this.value + Convert.ToString(_value);
-            if ((ulong)str.Length < str64.MaxLength)
-            {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
-            }
-        }
-
         public dynamic ___Add(natch16 _value)
         {
             string str = this.value + Convert.ToString(_value.value);
-            if ((ulong)str.Length < str64.MaxLength)
+            switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
         public dynamic ___Add(natch32 _value)
         {
             string str = this.value + Convert.ToString(_value.value);
-            if ((ulong)str.Length < str64.MaxLength)
+            switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
         public dynamic ___Add(natch64 _value)
         {
             string str = this.value + Convert.ToString(_value.value);
-            if ((ulong)str.Length < str64.MaxLength)
+            switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
         public dynamic ___Add(celch16 _value)
         {
             string str = this.value + Convert.ToString(_value.value);
-            if ((ulong)str.Length < str64.MaxLength)
+            switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
         public dynamic ___Add(celch32 _value)
         {
             string str = this.value + Convert.ToString(_value.value);
-            if ((ulong)str.Length < str64.MaxLength)
+            switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
         public dynamic ___Add(celch64 _value)
         {
             string str = this.value + Convert.ToString(_value.value);
-            if ((ulong)str.Length < str64.MaxLength)
+            switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
         public dynamic ___Add(drobch16 _value)
         {
             string str = this.value + Convert.ToString(_value.value);
-            if ((ulong)str.Length < str64.MaxLength)
+            switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
         public dynamic ___Add(drobch32 _value)
         {
             string str = this.value + Convert.ToString(_value.value);
-            if ((ulong)str.Length < str64.MaxLength)
+            switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
         public dynamic ___Add(drobch64 _value)
         {
             string str = this.value + Convert.ToString(_value.value);
-            if ((ulong)str.Length < str64.MaxLength)
+            switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
@@ -1273,15 +1111,16 @@ namespace Datatypes.Strings
             {
                 return this;
             }
-            else if ((ulong)str.Length < str64.MaxLength)
+            else switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
@@ -1292,15 +1131,16 @@ namespace Datatypes.Strings
             {
                 return this;
             }
-            else if ((ulong)str.Length < str64.MaxLength)
+            else switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
@@ -1311,15 +1151,16 @@ namespace Datatypes.Strings
             {
                 return this;
             }
-            else if ((ulong)str.Length < str64.MaxLength)
+            else switch ((ulong)str.Length)
             {
-                return new str64(str);
-            }
-            else
-            {
-                Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case < str64.MaxLength :
+                    return new str64(str);
+                default :
+                {
+                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
@@ -1332,15 +1173,16 @@ namespace Datatypes.Strings
             else if (_value.value > 0)
             {
                 string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
-                if ((ulong)str.Length < str64.MaxLength)
+                switch ((ulong)str.Length)
                 {
-                    return new str64(str);
-                }
-                else
-                {
-                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                    err.Execute();
-                    return null;
+                    case < str64.MaxLength :
+                        return new str64(str);
+                    default :
+                    {
+                        Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                        err.Execute();
+                        return null;
+                    }
                 }
             }
             else
@@ -1351,15 +1193,16 @@ namespace Datatypes.Strings
                 {
                     str = Slice(str, 0, (ulong)(n + 1));
                     str = VOID.StrMultiply(str, n);
-                    if ((ulong)str.Length < str64.MaxLength)
+                    switch ((ulong)str.Length)
                     {
-                        return new str64(str);
-                    }
-                    else
-                    {
-                        Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                        err.Execute();
-                        return null;
+                        case < str64.MaxLength :
+                            return new str64(str);
+                        default :
+                        {
+                            Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                            err.Execute();
+                            return null;
+                        }
                     }
                 }
                 else
@@ -1380,15 +1223,16 @@ namespace Datatypes.Strings
             else if (_value.value > 0)
             {
                 string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
-                if ((ulong)str.Length < str64.MaxLength)
+                switch ((ulong)str.Length)
                 {
-                    return new str64(str);
-                }
-                else
-                {
-                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                    err.Execute();
-                    return null;
+                    case < str64.MaxLength :
+                        return new str64(str);
+                    default :
+                    {
+                        Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                        err.Execute();
+                        return null;
+                    }
                 }
             }
             else
@@ -1399,15 +1243,16 @@ namespace Datatypes.Strings
                 {
                     str = Slice(str, 0, (ulong)(n + 1));
                     str = VOID.StrMultiply(str, n);
-                    if ((ulong)str.Length < str64.MaxLength)
+                    switch ((ulong)str.Length)
                     {
-                        return new str64(str);
-                    }
-                    else
-                    {
-                        Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                        err.Execute();
-                        return null;
+                        case < str64.MaxLength :
+                            return new str64(str);
+                        default :
+                        {
+                            Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                            err.Execute();
+                            return null;
+                        }
                     }
                 }
                 else
@@ -1428,15 +1273,16 @@ namespace Datatypes.Strings
             else if (_value.value > 0)
             {
                 string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
-                if ((ulong)str.Length < str64.MaxLength)
+                switch ((ulong)str.Length)
                 {
-                    return new str64(str);
-                }
-                else
-                {
-                    Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                    err.Execute();
-                    return null;
+                    case < str64.MaxLength :
+                        return new str64(str);
+                    default :
+                    {
+                        Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                        err.Execute();
+                        return null;
+                    }
                 }
             }
             else
@@ -1447,15 +1293,16 @@ namespace Datatypes.Strings
                 {
                     str = Slice(str, 0, (ulong)(n + 1));
                     str = VOID.StrMultiply(str, n);
-                    if ((ulong)str.Length < str64.MaxLength)
+                    switch ((ulong)str.Length)
                     {
-                        return new str64(str);
-                    }
-                    else
-                    {
-                        Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
-                        err.Execute();
-                        return null;
+                        case < str64.MaxLength :
+                            return new str64(str);
+                        default :
+                        {
+                            Str64OutOfRangeError err = new Str64OutOfRangeError(0, 0);
+                            err.Execute();
+                            return null;
+                        }
                     }
                 }
                 else
@@ -1565,14 +1412,11 @@ namespace Datatypes.Strings
             {
                 for (int i = 0; i < this.value.Length; i++)
                 {
-                    if (i == 0)
+                    switch (i)
                     {
-                        if (this.value[i] == '+' | this.value[i] == '-')
-                        {
+                        case 0 when this.value[i] == '+' | this.value[i] == '-' :
                             continue;
-                        }
-                        else
-                        {
+                        case 0 :
                             switch (this.value[i])
                             {
                                 case '0':
@@ -1609,81 +1453,10 @@ namespace Datatypes.Strings
                                     flag *= new RCI(false);
                                     goto End;
                             }
-                        }
-                    }
-                    else
-                    {
-                        switch (this.value[i])
-                        {
-                            case '0':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '1':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '2':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '3':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '4':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '5':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '6':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '7':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '8':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '9':
-                                flag *= new RCI(true);
-                                goto End;
-                            default:
-                                flag *= new RCI(false);
-                                goto End;
-                        }
-                    }
-                }
-            }
 
-            Sign:
-            return new RCI(false);
-
-            End:
-            return flag;
-        }
-
-        public static RCI EtoCifra(string value)
-        {
-            RCI flag = new RCI(true);
-            if (value.Length == 0)
-            {
-                goto Sign;
-            }
-            else if (value.Length == 1 & (value[0] == '+' | value[0] == '-'))
-            {
-                goto Sign;
-            }
-            else
-            {
-                for (int i = 0; i < value.Length; i++)
-                {
-                    if (i == 0)
-                    {
-                        if (value[i] == '+' | value[i] == '-')
-                        {
-                            continue;
-                        }
-                        else
-                        {
-                            switch (value[i])
+                            break;
+                        default :
+                            switch (this.value[i])
                             {
                                 case '0':
                                     flag *= new RCI(true);
@@ -1719,47 +1492,126 @@ namespace Datatypes.Strings
                                     flag *= new RCI(false);
                                     goto End;
                             }
-                        }
+
+                            break;
                     }
-                    else
+                }
+            }
+
+            Sign:
+            return new RCI(false);
+
+            End:
+            return flag;
+        }
+
+        public static RCI EtoCifra(string value)
+        {
+            RCI flag = new RCI(true);
+            switch (value.Length)
+            {
+                case 0 :
+                    goto Sign;
+                default :
+                {
+                    switch (value.Length == 1 & (value[0] == '+' | value[0] == '-'))
                     {
-                        switch (value[i])
+                        case true :
+                            goto Sign;
+                        default :
                         {
-                            case '0':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '1':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '2':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '3':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '4':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '5':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '6':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '7':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '8':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '9':
-                                flag *= new RCI(true);
-                                goto End;
-                            default:
-                                flag *= new RCI(false);
-                                goto End;
+                            for (int i = 0; i < value.Length; i++)
+                            {
+                                switch (i)
+                                {
+                                    case 0 when value[i] == '+' | value[i] == '-' :
+                                        continue;
+                                    case 0 :
+                                        switch (value[i])
+                                        {
+                                            case '0':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '1':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '2':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '3':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '4':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '5':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '6':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '7':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '8':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '9':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            default:
+                                                flag *= new RCI(false);
+                                                goto End;
+                                        }
+
+                                        break;
+                                    default :
+                                        switch (value[i])
+                                        {
+                                            case '0':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '1':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '2':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '3':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '4':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '5':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '6':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '7':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '8':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            case '9':
+                                                flag *= new RCI(true);
+                                                goto End;
+                                            default:
+                                                flag *= new RCI(false);
+                                                goto End;
+                                        }
+
+                                        break;
+                                }
+                            }
+
+                            break;
                         }
                     }
+
+                    break;
                 }
             }
 
@@ -1785,14 +1637,11 @@ namespace Datatypes.Strings
             {
                 for (int i = 0; i < value.value.Length; i++)
                 {
-                    if (i == 0)
+                    switch (i)
                     {
-                        if (value.value[i] == '+' | value.value[i] == '-')
-                        {
+                        case 0 when value.value[i] == '+' | value.value[i] == '-' :
                             continue;
-                        }
-                        else
-                        {
+                        case 0 :
                             switch (value.value[i])
                             {
                                 case '0':
@@ -1829,46 +1678,47 @@ namespace Datatypes.Strings
                                     flag *= new RCI(false);
                                     goto End;
                             }
-                        }
-                    }
-                    else
-                    {
-                        switch (value.value[i])
-                        {
-                            case '0':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '1':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '2':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '3':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '4':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '5':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '6':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '7':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '8':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '9':
-                                flag *= new RCI(true);
-                                goto End;
-                            default:
-                                flag *= new RCI(false);
-                                goto End;
-                        }
+
+                            break;
+                        default :
+                            switch (value.value[i])
+                            {
+                                case '0':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '1':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '2':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '3':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '4':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '5':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '6':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '7':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '8':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '9':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                default:
+                                    flag *= new RCI(false);
+                                    goto End;
+                            }
+
+                            break;
                     }
                 }
             }
@@ -1895,14 +1745,11 @@ namespace Datatypes.Strings
             {
                 for (int i = 0; i < value.value.Length; i++)
                 {
-                    if (i == 0)
+                    switch (i)
                     {
-                        if (value.value[i] == '+' | value.value[i] == '-')
-                        {
+                        case 0 when value.value[i] == '+' | value.value[i] == '-' :
                             continue;
-                        }
-                        else
-                        {
+                        case 0 :
                             switch (value.value[i])
                             {
                                 case '0':
@@ -1939,46 +1786,47 @@ namespace Datatypes.Strings
                                     flag *= new RCI(false);
                                     goto End;
                             }
-                        }
-                    }
-                    else
-                    {
-                        switch (value.value[i])
-                        {
-                            case '0':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '1':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '2':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '3':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '4':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '5':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '6':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '7':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '8':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '9':
-                                flag *= new RCI(true);
-                                goto End;
-                            default:
-                                flag *= new RCI(false);
-                                goto End;
-                        }
+
+                            break;
+                        default :
+                            switch (value.value[i])
+                            {
+                                case '0':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '1':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '2':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '3':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '4':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '5':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '6':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '7':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '8':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '9':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                default:
+                                    flag *= new RCI(false);
+                                    goto End;
+                            }
+
+                            break;
                     }
                 }
             }
@@ -2005,14 +1853,11 @@ namespace Datatypes.Strings
             {
                 for (int i = 0; i < value.value.Length; i++)
                 {
-                    if (i == 0)
+                    switch (i)
                     {
-                        if (value.value[i] == '+' | value.value[i] == '-')
-                        {
+                        case 0 when value.value[i] == '+' | value.value[i] == '-' :
                             continue;
-                        }
-                        else
-                        {
+                        case 0 :
                             switch (value.value[i])
                             {
                                 case '0':
@@ -2049,46 +1894,47 @@ namespace Datatypes.Strings
                                     flag *= new RCI(false);
                                     goto End;
                             }
-                        }
-                    }
-                    else
-                    {
-                        switch (value.value[i])
-                        {
-                            case '0':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '1':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '2':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '3':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '4':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '5':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '6':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '7':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '8':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '9':
-                                flag *= new RCI(true);
-                                goto End;
-                            default:
-                                flag *= new RCI(false);
-                                goto End;
-                        }
+
+                            break;
+                        default :
+                            switch (value.value[i])
+                            {
+                                case '0':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '1':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '2':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '3':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '4':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '5':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '6':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '7':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '8':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '9':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                default:
+                                    flag *= new RCI(false);
+                                    goto End;
+                            }
+
+                            break;
                     }
                 }
             }
@@ -2115,14 +1961,11 @@ namespace Datatypes.Strings
             {
                 for (int i = 0; i < value.value.Length; i++)
                 {
-                    if (i == 0)
+                    switch (i)
                     {
-                        if (value.value[i] == '+' | value.value[i] == '-')
-                        {
+                        case 0 when value.value[i] == '+' | value.value[i] == '-' :
                             continue;
-                        }
-                        else
-                        {
+                        case 0 :
                             switch (value.value[i])
                             {
                                 case '0':
@@ -2159,46 +2002,47 @@ namespace Datatypes.Strings
                                     flag *= new RCI(false);
                                     goto End;
                             }
-                        }
-                    }
-                    else
-                    {
-                        switch (value.value[i])
-                        {
-                            case '0':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '1':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '2':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '3':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '4':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '5':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '6':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '7':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '8':
-                                flag *= new RCI(true);
-                                goto End;
-                            case '9':
-                                flag *= new RCI(true);
-                                goto End;
-                            default:
-                                flag *= new RCI(false);
-                                goto End;
-                        }
+
+                            break;
+                        default :
+                            switch (value.value[i])
+                            {
+                                case '0':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '1':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '2':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '3':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '4':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '5':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '6':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '7':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '8':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                case '9':
+                                    flag *= new RCI(true);
+                                    goto End;
+                                default:
+                                    flag *= new RCI(false);
+                                    goto End;
+                            }
+
+                            break;
                     }
                 }
             }
@@ -2213,34 +2057,24 @@ namespace Datatypes.Strings
         public RCI EtoDrob()
         {
             string[] value = (Convert.ToString(this.value)).Split(".");
-            if (value.Length == 0)
+            switch (value.Length)
             {
-                goto End;
-            }
-            else if (value.Length == 1)
-            {
-                if (str10.EtoCifra(value[0]))
-                {
-                    goto Success;
-                }
-                else
-                {
+                case 0 :
                     goto End;
-                }
-            }
-            else if (value.Length == 2)
-            {
-                if (str10.EtoCifra((string)value[0]))
+                case 1 when str10.EtoCifra(value[0]) :
+                    goto Success;
+                case 1 :
+                    goto End;
+                case 2 when str10.EtoCifra((string)value[0]) :
                 {
                     if (str10.EtoCifra((string)value[1]))
                     {
-                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        switch ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
                         {
-                            goto Success;
-                        }
-                        else
-                        {
-                            goto End;
+                            case true :
+                                goto Success;
+                            default :
+                                goto End;
                         }
                     }
                     else
@@ -2248,10 +2082,8 @@ namespace Datatypes.Strings
                         goto End;
                     }
                 }
-                else
-                {
+                case 2 :
                     goto End;
-                }
             }
 
             End:
@@ -2263,34 +2095,24 @@ namespace Datatypes.Strings
         public static RCI EtoDrob(string s)
         {
             string[] value = (Convert.ToString(s)).Split(".");
-            if (value.Length == 0)
+            switch (value.Length)
             {
-                goto End;
-            }
-            else if (value.Length == 1)
-            {
-                if (str10.EtoCifra(value[0]))
-                {
-                    goto Success;
-                }
-                else
-                {
+                case 0 :
                     goto End;
-                }
-            }
-            else if (value.Length == 2)
-            {
-                if (str10.EtoCifra((string)value[0]))
+                case 1 when str10.EtoCifra(value[0]) :
+                    goto Success;
+                case 1 :
+                    goto End;
+                case 2 when str10.EtoCifra((string)value[0]) :
                 {
                     if (str10.EtoCifra((string)value[1]))
                     {
-                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        switch ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
                         {
-                            goto Success;
-                        }
-                        else
-                        {
-                            goto End;
+                            case true :
+                                goto Success;
+                            default :
+                                goto End;
                         }
                     }
                     else
@@ -2298,10 +2120,8 @@ namespace Datatypes.Strings
                         goto End;
                     }
                 }
-                else
-                {
+                case 2 :
                     goto End;
-                }
             }
 
             End:
@@ -2313,34 +2133,24 @@ namespace Datatypes.Strings
         public static RCI EtoDrob(str10 s)
         {
             string[] value = (Convert.ToString(s.value)).Split(".");
-            if (value.Length == 0)
+            switch (value.Length)
             {
-                goto End;
-            }
-            else if (value.Length == 1)
-            {
-                if (str10.EtoCifra(value[0]))
-                {
-                    goto Success;
-                }
-                else
-                {
+                case 0 :
                     goto End;
-                }
-            }
-            else if (value.Length == 2)
-            {
-                if (str10.EtoCifra((string)value[0]))
+                case 1 when str10.EtoCifra(value[0]) :
+                    goto Success;
+                case 1 :
+                    goto End;
+                case 2 when str10.EtoCifra((string)value[0]) :
                 {
                     if (str10.EtoCifra((string)value[1]))
                     {
-                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        switch ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
                         {
-                            goto Success;
-                        }
-                        else
-                        {
-                            goto End;
+                            case true :
+                                goto Success;
+                            default :
+                                goto End;
                         }
                     }
                     else
@@ -2348,10 +2158,8 @@ namespace Datatypes.Strings
                         goto End;
                     }
                 }
-                else
-                {
+                case 2 :
                     goto End;
-                }
             }
 
             End:
@@ -2363,34 +2171,24 @@ namespace Datatypes.Strings
         public static RCI EtoDrob(str16 s)
         {
             string[] value = (Convert.ToString(s.value)).Split(".");
-            if (value.Length == 0)
+            switch (value.Length)
             {
-                goto End;
-            }
-            else if (value.Length == 1)
-            {
-                if (str10.EtoCifra(value[0]))
-                {
-                    goto Success;
-                }
-                else
-                {
+                case 0 :
                     goto End;
-                }
-            }
-            else if (value.Length == 2)
-            {
-                if (str10.EtoCifra((string)value[0]))
+                case 1 when str10.EtoCifra(value[0]) :
+                    goto Success;
+                case 1 :
+                    goto End;
+                case 2 when str10.EtoCifra((string)value[0]) :
                 {
                     if (str10.EtoCifra((string)value[1]))
                     {
-                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        switch ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
                         {
-                            goto Success;
-                        }
-                        else
-                        {
-                            goto End;
+                            case true :
+                                goto Success;
+                            default :
+                                goto End;
                         }
                     }
                     else
@@ -2398,10 +2196,8 @@ namespace Datatypes.Strings
                         goto End;
                     }
                 }
-                else
-                {
+                case 2 :
                     goto End;
-                }
             }
 
             End:
@@ -2413,34 +2209,24 @@ namespace Datatypes.Strings
         public static RCI EtoDrob(str32 s)
         {
             string[] value = (Convert.ToString(s.value)).Split(".");
-            if (value.Length == 0)
+            switch (value.Length)
             {
-                goto End;
-            }
-            else if (value.Length == 1)
-            {
-                if (str10.EtoCifra(value[0]))
-                {
-                    goto Success;
-                }
-                else
-                {
+                case 0 :
                     goto End;
-                }
-            }
-            else if (value.Length == 2)
-            {
-                if (str10.EtoCifra((string)value[0]))
+                case 1 when str10.EtoCifra(value[0]) :
+                    goto Success;
+                case 1 :
+                    goto End;
+                case 2 when str10.EtoCifra((string)value[0]) :
                 {
                     if (str10.EtoCifra((string)value[1]))
                     {
-                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        switch ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
                         {
-                            goto Success;
-                        }
-                        else
-                        {
-                            goto End;
+                            case true :
+                                goto Success;
+                            default :
+                                goto End;
                         }
                     }
                     else
@@ -2448,10 +2234,8 @@ namespace Datatypes.Strings
                         goto End;
                     }
                 }
-                else
-                {
+                case 2 :
                     goto End;
-                }
             }
 
             End:
@@ -2463,34 +2247,24 @@ namespace Datatypes.Strings
         public static RCI EtoDrob(str64 s)
         {
             string[] value = (Convert.ToString(s.value)).Split(".");
-            if (value.Length == 0)
+            switch (value.Length)
             {
-                goto End;
-            }
-            else if (value.Length == 1)
-            {
-                if (str10.EtoCifra(value[0]))
-                {
-                    goto Success;
-                }
-                else
-                {
+                case 0 :
                     goto End;
-                }
-            }
-            else if (value.Length == 2)
-            {
-                if (str10.EtoCifra((string)value[0]))
+                case 1 when str10.EtoCifra(value[0]) :
+                    goto Success;
+                case 1 :
+                    goto End;
+                case 2 when str10.EtoCifra((string)value[0]) :
                 {
                     if (str10.EtoCifra((string)value[1]))
                     {
-                        if ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
+                        switch ((((string)value[1])[0] != '+') & ((string)value[1])[0] != '-')
                         {
-                            goto Success;
-                        }
-                        else
-                        {
-                            goto End;
+                            case true :
+                                goto Success;
+                            default :
+                                goto End;
                         }
                     }
                     else
@@ -2498,10 +2272,8 @@ namespace Datatypes.Strings
                         goto End;
                     }
                 }
-                else
-                {
+                case 2 :
                     goto End;
-                }
             }
 
             End:

@@ -5,8 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe81b3ef-eb00-4677-9076-2120c880814f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Booleans/RCI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Booleans/RCI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/MathCollections/matrica.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/MathCollections/matrica.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/kortezh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/kortezh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/massiv.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/massiv.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/spisok.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/spisok.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Binary/binch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Binary/binch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Hexadecimal/kvalia.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Hexadecimal/kvalia.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Hexadecimal/shesch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Hexadecimal/shesch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Octal/vosch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Octal/vosch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/celch16.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/celch16.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/celch32.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/celch32.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/celch64.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/celch64.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/drobch16.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/drobch16.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/drobch32.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/drobch32.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/drobch64.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/drobch64.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/natch16.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/natch16.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/natch32.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/natch32.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/natch64.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/natch64.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str0.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str0.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str10.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str10.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str16.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str16.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str32.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str32.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str64.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str64.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ural_App_UI/Ural_IDE/Ural_IDE/Resources/AppIcon/appicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ural_App_UI/Ural_IDE/Ural_IDE/Resources/AppIcon/appicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ural_App_UI/Ural_IDE/Ural_IDE/Resources/AppIcon/appiconfg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ural_App_UI/Ural_IDE/Ural_IDE/Resources/AppIcon/appiconfg.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +114,7 @@
       <workItem from="1682152942174" duration="860000" />
       <workItem from="1682605036839" duration="10701000" />
       <workItem from="1683393235670" duration="12278000" />
-      <workItem from="1683799572585" duration="34480000" />
+      <workItem from="1683799572585" duration="45023000" />
     </task>
     <servers />
   </component>
@@ -115,13 +142,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/MathCollections/matrica.cs</url>
-          <line>3126</line>
+          <line>3138</line>
           <properties documentPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/MathCollections/matrica.cs" initialLine="2364" containingFunctionPresentation="method '___Multiply'">
             <startOffsets>
-              <option value="95247" />
+              <option value="95541" />
             </startOffsets>
             <endOffsets>
-              <option value="95323" />
+              <option value="95617" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />

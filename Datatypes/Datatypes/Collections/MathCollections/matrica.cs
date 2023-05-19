@@ -600,7 +600,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[ushort x, ushort y]
         {
-            get { return (drobch64)this.value[x, y]; }
+            get => (drobch64)this.value[x, y];
             set
             {
                 try
@@ -616,7 +616,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[uint x, uint y]
         {
-            get { return (drobch64)this.value[x, y]; }
+            get => (drobch64)this.value[x, y];
             set
             {
                 try
@@ -632,7 +632,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[ulong x, ulong y]
         {
-            get { return (drobch64)this.value[x, y]; }
+            get => (drobch64)this.value[x, y];
             set
             {
                 try
@@ -648,7 +648,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[natch16 x, natch16 y]
         {
-            get { return (drobch64)this.value[(ushort)x, (ushort)y]; }
+            get => (drobch64)this.value[(ushort)x, (ushort)y];
             set
             {
                 try
@@ -664,7 +664,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[natch16 x, natch32 y]
         {
-            get { return (drobch64)this.value[(uint)x, (uint)y]; }
+            get => (drobch64)this.value[(uint)x, (uint)y];
             set
             {
                 try
@@ -680,7 +680,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[natch16 x, natch64 y]
         {
-            get { return (drobch64)this.value[(ulong)x, (ulong)y]; }
+            get => (drobch64)this.value[(ulong)x, (ulong)y];
             set
             {
                 try
@@ -696,7 +696,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[natch32 x, natch16 y]
         {
-            get { return (drobch64)this.value[(uint)x, (uint)y]; }
+            get => (drobch64)this.value[(uint)x, (uint)y];
             set
             {
                 ;
@@ -713,7 +713,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[natch32 x, natch32 y]
         {
-            get { return (drobch64)this.value[(uint)x, (uint)y]; }
+            get => (drobch64)this.value[(uint)x, (uint)y];
             set
             {
                 try
@@ -729,7 +729,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[natch32 x, natch64 y]
         {
-            get { return (drobch64)this.value[(ulong)x, (ulong)y]; }
+            get => (drobch64)this.value[(ulong)x, (ulong)y];
             set
             {
                 try
@@ -745,7 +745,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[natch64 x, natch16 y]
         {
-            get { return (drobch64)this.value[(ulong)x, (ulong)y]; }
+            get => (drobch64)this.value[(ulong)x, (ulong)y];
             set
             {
                 try
@@ -761,7 +761,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[natch64 x, natch32 y]
         {
-            get { return (drobch64)this.value[(ulong)x, (ulong)y]; }
+            get => (drobch64)this.value[(ulong)x, (ulong)y];
             set
             {
                 try
@@ -777,7 +777,7 @@ namespace Datatypes.Collections.MathCollections
 
         public drobch64 this[natch64 x, natch64 y]
         {
-            get { return (drobch64)this.value[(ulong)x, (ulong)y]; }
+            get => (drobch64)this.value[(ulong)x, (ulong)y];
             set
             {
                 try
@@ -2305,10 +2305,14 @@ namespace Datatypes.Collections.MathCollections
                 {
                     ushort newN = (ushort)(this.value.GetLength(0) + scales);
 
-                    if (newN < 1)
+                    switch (newN)
                     {
-                        MatricaOutOfRangeError err = new MatricaOutOfRangeError(1021, 1023);
-                        err.Execute();
+                        case < 1 :
+                        {
+                            MatricaOutOfRangeError err = new MatricaOutOfRangeError(1021, 1023);
+                            err.Execute();
+                            break;
+                        }
                     }
 
                     matrica result = new matrica(newN);
@@ -2338,10 +2342,14 @@ namespace Datatypes.Collections.MathCollections
                 {
                     uint newN = (uint)(this.value.GetLength(0) + scales);
 
-                    if (newN < 1)
+                    switch (newN)
                     {
-                        MatricaOutOfRangeError err = new MatricaOutOfRangeError(1021, 1023);
-                        err.Execute();
+                        case < 1 :
+                        {
+                            MatricaOutOfRangeError err = new MatricaOutOfRangeError(1021, 1023);
+                            err.Execute();
+                            break;
+                        }
                     }
 
                     matrica result = new matrica(newN);
@@ -2371,10 +2379,14 @@ namespace Datatypes.Collections.MathCollections
                 {
                     ulong newN = (ulong)(this.value.GetLength(0) + scales);
 
-                    if (newN < 1)
+                    switch (newN)
                     {
-                        MatricaOutOfRangeError err = new MatricaOutOfRangeError(1021, 1023);
-                        err.Execute();
+                        case < 1 :
+                        {
+                            MatricaOutOfRangeError err = new MatricaOutOfRangeError(1021, 1023);
+                            err.Execute();
+                            break;
+                        }
                     }
 
                     matrica result = new matrica(newN);
@@ -3533,12 +3545,18 @@ namespace Datatypes.Collections.MathCollections
                     drobch64 summa = new drobch64(0b0);
                     for (ulong i = 0b0; i < (ulong)mtx.Count[0b0]; i++)
                     {
-                        if (!Convert.ToBoolean((double)mtx[0b0, i])) continue;
-                        summa = (i % 0b10) switch
+                        switch (Convert.ToBoolean((double)mtx[0b0, i]))
                         {
-                            0b1 => summa - 0b1 * mtx[0b0, i] * mtx.___DistanceSplit(i, 0b0).___Abs(),
-                            _ => summa + mtx[0b0, i] * mtx.___DistanceSplit(i, 0b0).___Abs()
-                        };
+                            case false :
+                                continue;
+                            default :
+                                summa = (i % 0b10) switch
+                                {
+                                    0b1 => summa - 0b1 * mtx[0b0, i] * mtx.___DistanceSplit(i, 0b0).___Abs(),
+                                    _ => summa + mtx[0b0, i] * mtx.___DistanceSplit(i, 0b0).___Abs()
+                                };
+                                break;
+                        }
                     }
 
                     return summa;
@@ -3616,8 +3634,14 @@ namespace Datatypes.Collections.MathCollections
             {
                 for (ulong j = 0; j < (ulong)mtx.Count[0]; j++)
                 {
-                    if (i % 2 == 0 && j % 2 == 0) continue;
-                    mtx[i, j] = -1 * this[i, j];
+                    switch (i % 2)
+                    {
+                        case 0 when j % 2 == 0 :
+                            continue;
+                        default :
+                            mtx[i, j] = -1 * this[i, j];
+                            break;
+                    }
                 }
             }
 

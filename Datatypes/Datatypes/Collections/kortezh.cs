@@ -364,48 +364,52 @@ namespace Datatypes.Collections
                         break;
                     default:
                     {
-                        if ((param[i].GetType().IsArray) | (param[i] is IList))
+                        switch ((param[i].GetType().IsArray) | (param[i] is IList))
                         {
-                            param[i] = new kortezh(ParamsValidation((ArrayList)param[i]));
+                            case true :
+                                param[i] = new kortezh(ParamsValidation((ArrayList)param[i]));
+                                break;
+                            default :
+                                switch (param[i])
+                                {
+                                    case bool:
+                                        param[i] = new RCI((bool)param[i]);
+                                        break;
+                                    case string:
+                                        param[i] = new str64((string)param[i]);
+                                        break;
+                                    case char:
+                                        param[i] = new str0((char)param[i]);
+                                        break;
+                                    case ushort:
+                                        param[i] = new natch16((ushort)param[i]);
+                                        break;
+                                    case uint:
+                                        param[i] = new natch32((uint)param[i]);
+                                        break;
+                                    case ulong:
+                                        param[i] = new natch64((ulong)param[i]);
+                                        break;
+                                    case short:
+                                        param[i] = new celch16((short)param[i]);
+                                        break;
+                                    case int:
+                                        param[i] = new celch32((int)param[i]);
+                                        break;
+                                    case long:
+                                        param[i] = new celch64((ulong)param[i]);
+                                        break;
+                                    case float:
+                                        param[i] = new drobch32((float)param[i]);
+                                        break;
+                                    case double:
+                                    case decimal:
+                                        param[i] = new drobch64((double)param[i]);
+                                        break;
+                                }
+
+                                break;
                         }
-                        else
-                            switch (param[i])
-                            {
-                                case bool:
-                                    param[i] = new RCI((bool)param[i]);
-                                    break;
-                                case string:
-                                    param[i] = new str64((string)param[i]);
-                                    break;
-                                case char:
-                                    param[i] = new str0((char)param[i]);
-                                    break;
-                                case ushort:
-                                    param[i] = new natch16((ushort)param[i]);
-                                    break;
-                                case uint:
-                                    param[i] = new natch32((uint)param[i]);
-                                    break;
-                                case ulong:
-                                    param[i] = new natch64((ulong)param[i]);
-                                    break;
-                                case short:
-                                    param[i] = new celch16((short)param[i]);
-                                    break;
-                                case int:
-                                    param[i] = new celch32((int)param[i]);
-                                    break;
-                                case long:
-                                    param[i] = new celch64((ulong)param[i]);
-                                    break;
-                                case float:
-                                    param[i] = new drobch32((float)param[i]);
-                                    break;
-                                case double:
-                                case decimal:
-                                    param[i] = new drobch64((double)param[i]);
-                                    break;
-                            }
 
                         break;
                     }
@@ -485,65 +489,69 @@ namespace Datatypes.Collections
         {
             for (int i = 0; i < (int)(param.Count); i++)
             {
-                if (param is kortezh)
+                switch (param)
                 {
-                    param = new kortezh(ParamsValidation((List<dynamic>)param));
-                }
-                else if (param[i] is massiv<Type> || param[i] is spisok)
-                {
-                    param = new massiv<dynamic>(ParamsValidation((List<dynamic>)param));
-                }
-                else if ((param.GetType().IsArray) | (param is IList))
-                {
-                    param = new kortezh(ParamsValidation((List<dynamic>)param));
-                }
-                else if (param is bool)
-                {
-                    param = new RCI((bool)param);
-                }
-                else if (param is string)
-                {
-                    param = new str64((string)param);
-                }
-                else if (param is char)
-                {
-                    param = new str0((char)param);
-                }
-                else if (param is ushort)
-                {
-                    param = new natch16((ushort)param);
-                }
-                else if (param is uint)
-                {
-                    param = new natch32((uint)param);
-                }
-                else if (param is ulong)
-                {
-                    param = new natch64((ulong)param);
-                }
-                else if (param is short)
-                {
-                    param = new celch16((short)param);
-                }
-                else if (param is int)
-                {
-                    param = new celch32((int)param);
-                }
-                else if (param is long)
-                {
-                    param = new celch64((ulong)param);
-                }
-                else if (param is float)
-                {
-                    param = new drobch32((float)param);
-                }
-                else if (param is double)
-                {
-                    param = new drobch64((double)param);
-                }
-                else if (param is decimal)
-                {
-                    param = new drobch64((double)param);
+                    case kortezh :
+                        param = new kortezh(ParamsValidation((List<dynamic>)param));
+                        break;
+                    default :
+                    {
+                        switch (param[i])
+                        {
+                            case massiv<Type> :
+                            case spisok :
+                                param = new massiv<dynamic>(ParamsValidation((List<dynamic>)param));
+                                break;
+                            default :
+                            {
+                                if ((param.GetType().IsArray) | (param is IList))
+                                {
+                                    param = new kortezh(ParamsValidation((List<dynamic>)param));
+                                }
+                                else switch (param)
+                                {
+                                    case bool b :
+                                        param = new RCI(b);
+                                        break;
+                                    case string s :
+                                        param = new str64(s);
+                                        break;
+                                    case char c :
+                                        param = new str0(c);
+                                        break;
+                                    case ushort @ushort :
+                                        param = new natch16(@ushort);
+                                        break;
+                                    case uint u :
+                                        param = new natch32(u);
+                                        break;
+                                    case ulong @ulong :
+                                        param = new natch64(@ulong);
+                                        break;
+                                    case short s :
+                                        param = new celch16(s);
+                                        break;
+                                    case int i1 :
+                                        param = new celch32(i1);
+                                        break;
+                                    case long :
+                                        param = new celch64((ulong)param);
+                                        break;
+                                    case float f :
+                                        param = new drobch32(f);
+                                        break;
+                                    case double :
+                                    case decimal :
+                                        param = new drobch64((double)param);
+                                        break;
+                                }
+
+                                break;
+                            }
+                        }
+
+                        break;
+                    }
                 }
             }
 
@@ -1350,295 +1358,121 @@ namespace Datatypes.Collections
             set => this.value[index] = value;
         }
 
-        public kortezh this[int start, int stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, stop));
-        }
+        public kortezh this[int start, int stop] => new kortezh(Slice(this.value.ToArray(), start, stop));
 
-        public kortezh this[int start, natch16 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value));
-        }
+        public kortezh this[int start, natch16 stop] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value));
 
-        public kortezh this[int start, natch32 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value));
-        }
+        public kortezh this[int start, natch32 stop] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value));
 
-        public kortezh this[int start, natch64 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value));
-        }
+        public kortezh this[int start, natch64 stop] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value));
 
-        public kortezh this[natch16 start, int stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop));
-        }
+        public kortezh this[natch16 start, int stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop));
 
-        public kortezh this[natch16 start, natch16 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
-        }
+        public kortezh this[natch16 start, natch16 stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
 
-        public kortezh this[natch16 start, natch32 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
-        }
+        public kortezh this[natch16 start, natch32 stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
 
-        public kortezh this[natch16 start, natch64 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
-        }
+        public kortezh this[natch16 start, natch64 stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
 
-        public kortezh this[natch32 start, int stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop));
-        }
+        public kortezh this[natch32 start, int stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop));
 
-        public kortezh this[natch32 start, natch16 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
-        }
+        public kortezh this[natch32 start, natch16 stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
 
-        public kortezh this[natch32 start, natch32 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
-        }
+        public kortezh this[natch32 start, natch32 stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
 
-        public kortezh this[natch32 start, natch64 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
-        }
+        public kortezh this[natch32 start, natch64 stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
 
-        public kortezh this[natch64 start, int stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop));
-        }
+        public kortezh this[natch64 start, int stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop));
 
-        public kortezh this[natch64 start, natch16 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
-        }
+        public kortezh this[natch64 start, natch16 stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
 
-        public kortezh this[natch64 start, natch32 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
-        }
+        public kortezh this[natch64 start, natch32 stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
 
-        public kortezh this[natch64 start, natch64 stop]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
-        }
+        public kortezh this[natch64 start, natch64 stop] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value));
 
-        public kortezh this[int start, int stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, stop, step));
-        }
+        public kortezh this[int start, int stop, int step] => new kortezh(Slice(this.value.ToArray(), start, stop, step));
 
-        public kortezh this[int start, int stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, stop, (int)step.value));
-        }
+        public kortezh this[int start, int stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), start, stop, (int)step.value));
 
-        public kortezh this[int start, int stop, natch32 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, stop, (int)step.value));
-        }
+        public kortezh this[int start, int stop, natch32 step] => new kortezh(Slice(this.value.ToArray(), start, stop, (int)step.value));
 
-        public kortezh this[int start, int stop, natch64 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, stop, (int)step.value));
-        }
+        public kortezh this[int start, int stop, natch64 step] => new kortezh(Slice(this.value.ToArray(), start, stop, (int)step.value));
 
-        public kortezh this[int start, natch16 stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, step));
-        }
+        public kortezh this[int start, natch16 stop, int step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, step));
 
-        public kortezh this[int start, natch16 stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[int start, natch16 stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
 
-        public kortezh this[int start, natch16 stop, natch32 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[int start, natch16 stop, natch32 step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
 
-        public kortezh this[int start, natch16 stop, natch64 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[int start, natch16 stop, natch64 step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
 
-        public kortezh this[int start, natch32 stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, step));
-        }
+        public kortezh this[int start, natch32 stop, int step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, step));
 
-        public kortezh this[int start, natch32 stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[int start, natch32 stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
 
-        public kortezh this[int start, natch32 stop, natch32 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[int start, natch32 stop, natch32 step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
 
-        public kortezh this[int start, natch32 stop, natch64 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[int start, natch32 stop, natch64 step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
 
-        public kortezh this[int start, natch64 stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, step));
-        }
+        public kortezh this[int start, natch64 stop, int step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, step));
 
-        public kortezh this[int start, natch64 stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[int start, natch64 stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
 
-        public kortezh this[int start, natch64 stop, natch32 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[int start, natch64 stop, natch32 step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
 
-        public kortezh this[int start, natch64 stop, natch64 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[int start, natch64 stop, natch64 step] => new kortezh(Slice(this.value.ToArray(), start, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch16 start, int stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, step));
-        }
+        public kortezh this[natch16 start, int stop, int step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, step));
 
-        public kortezh this[natch16 start, int stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
-        }
+        public kortezh this[natch16 start, int stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
 
-        public kortezh this[natch16 start, int stop, natch32 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
-        }
+        public kortezh this[natch16 start, int stop, natch32 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
 
-        public kortezh this[natch16 start, int stop, natch64 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
-        }
+        public kortezh this[natch16 start, int stop, natch64 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
 
-        public kortezh this[natch16 start, natch16 stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, step));
-        }
+        public kortezh this[natch16 start, natch16 stop, int step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, step));
 
-        public kortezh this[natch16 start, natch16 stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch16 start, natch16 stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch16 start, natch16 stop, natch32 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch16 start, natch16 stop, natch32 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch16 start, natch16 stop, natch64 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch16 start, natch16 stop, natch64 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch16 start, natch32 stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, step));
-        }
+        public kortezh this[natch16 start, natch32 stop, int step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, step));
 
-        public kortezh this[natch16 start, natch32 stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch16 start, natch32 stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch16 start, natch32 stop, natch32 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch16 start, natch32 stop, natch32 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch16 start, natch32 stop, natch64 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch16 start, natch32 stop, natch64 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch16 start, natch64 stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, step));
-        }
+        public kortezh this[natch16 start, natch64 stop, int step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, step));
 
-        public kortezh this[natch16 start, natch64 stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch16 start, natch64 stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch16 start, natch64 stop, natch32 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch16 start, natch64 stop, natch32 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch16 start, natch64 stop, natch64 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch16 start, natch64 stop, natch64 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch32 start, int stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, step));
-        }
+        public kortezh this[natch32 start, int stop, int step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, step));
 
-        public kortezh this[natch32 start, int stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
-        }
+        public kortezh this[natch32 start, int stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
 
-        public kortezh this[natch32 start, int stop, natch32 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
-        }
+        public kortezh this[natch32 start, int stop, natch32 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
 
-        public kortezh this[natch32 start, int stop, natch64 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
-        }
+        public kortezh this[natch32 start, int stop, natch64 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, stop, (int)step.value));
 
-        public kortezh this[natch32 start, natch16 stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, step));
-        }
+        public kortezh this[natch32 start, natch16 stop, int step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, step));
 
-        public kortezh this[natch32 start, natch16 stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch32 start, natch16 stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch32 start, natch16 stop, natch32 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch32 start, natch16 stop, natch32 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch32 start, natch16 stop, natch64 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch32 start, natch16 stop, natch64 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
-        public kortezh this[natch32 start, natch32 stop, int step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, step));
-        }
+        public kortezh this[natch32 start, natch32 stop, int step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, step));
 
-        public kortezh this[natch32 start, natch32 stop, natch16 step]
-        {
-            get => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
-        }
+        public kortezh this[natch32 start, natch32 stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
         public void ___Add(dynamic el)
         {
@@ -1672,64 +1506,66 @@ namespace Datatypes.Collections
 
         public RCI IsMaxLength()
         {
-            if (this.Count > new natch64(this.MaxLength))
-            {
-                return new RCI(true);
-            }
-            else
-            {
-                return new RCI(false);
-            }
+            return this.Count > new natch64(this.MaxLength) ? new RCI(true) : new RCI(false);
         }
 
         public static dynamic? Slice(dynamic[] _value, int start)
         {
-            if ((start >= 0u) & (start <= _value.Length))
+            switch ((start >= 0u) & (start <= _value.Length))
             {
-                return _value.Skip(start).ToArray();
-            }
-            else
-            {
-                KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case true :
+                    return _value.Skip(start).ToArray();
+                default :
+                {
+                    KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
+                }
             }
         }
 
         public static dynamic? Slice(dynamic[] _value, int start, int end)
         {
-            if ((start >= 0u) & (start <= _value.Length) & (end >= 0u) & (end <= _value.Length) &
-                (start <= end))
+            switch ((start >= 0u) & (start <= _value.Length) & (end >= 0u) & (end <= _value.Length) &
+                    (start <= end))
             {
-                return _value.Skip(start).Take(end - start).ToArray();
-            }
-            else if (start > end)
-            {
-                return VOID.Reverse(_value.Skip(start).Take(end - start).ToArray());
-            }
-            else
-            {
-                KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case true :
+                    return _value.Skip(start).Take(end - start).ToArray();
+                default :
+                {
+                    if (start > end)
+                    {
+                        return VOID.Reverse(_value.Skip(start).Take(end - start).ToArray());
+                    }
+                    else
+                    {
+                        KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
+                        err.Execute();
+                        return null;
+                    }
+                }
             }
         }
 
         public static dynamic? Slice(dynamic[] data, int start, int end, int step)
         {
-            if ((start >= 0) & (start <= data.Length) & (end >= 0) & (end <= data.Length) & (start <= end))
+            switch ((start >= 0) & (start <= data.Length) & (end >= 0) & (end <= data.Length) & (start <= end))
             {
-                return data.Skip(start).Take(end - start).Where((val, index) => index % step == 0).ToArray();
-            }
-            else if (start > end)
-            {
-                return Reverse(data.Skip(end).Take(start - end).Where((val, index) => index % step == 0).ToArray());
-            }
-            else
-            {
-                KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                err.Execute();
-                return null;
+                case true :
+                    return data.Skip(start).Take(end - start).Where((val, index) => index % step == 0).ToArray();
+                default :
+                {
+                    if (start > end)
+                    {
+                        return Reverse(data.Skip(end).Take(start - end).Where((val, index) => index % step == 0).ToArray());
+                    }
+                    else
+                    {
+                        KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
+                        err.Execute();
+                        return null;
+                    }
+                }
             }
         }
         
@@ -1743,34 +1579,39 @@ namespace Datatypes.Collections
             string _out = left_b;
             for (int i = 0; i < this.value.Count; i++)
             {
-                if (this.value[i] is kortezh)
+                switch (this.value[i])
                 {
-                    _out += this.value[i].ToString(left_b, right_b, sep);
-                }
-                else if (this.value[i] is massiv<Type> || this.value[i] is spisok)
-                {
-                    _out += new massiv<Type>(this.value[i]).ToString(left_b, right_b, sep);
-                }
-                else if (this.value[i] is matrica)
-                {
-                    _out += "\n" + (this.value[i]).ToString();
-                }
-                else if ((this.value[i].GetType().IsArray) | (this.value[i] is IList))
-                {
-                    _out += new massiv<Type>(this.value[i]).ToString(left_b, right_b, sep);
-                }
-                else if (this.value[i] is bool)
-                {
-                    _out += new RCI(this.value[i]);
-                }
-                else if ((this.value[i] is string) | (this.value[i] is str0) | (this.value[i] is str10) |
-                         (this.value[i] is str16) | (this.value[i] is str32) | (this.value[i] is str64))
-                {
-                    _out += $"{str}{this.value[i]}{str}";
-                }
-                else
-                {
-                    _out += this.value[i].ToString();
+                    case kortezh :
+                        _out += this.value[i].ToString(left_b, right_b, sep);
+                        break;
+                    case massiv<Type> :
+                    case spisok :
+                        _out += new massiv<Type>(this.value[i]).ToString(left_b, right_b, sep);
+                        break;
+                    case matrica :
+                        _out += "\n" + (this.value[i]).ToString();
+                        break;
+                    default :
+                    {
+                        if ((this.value[i].GetType().IsArray) | (this.value[i] is IList))
+                        {
+                            _out += new massiv<Type>(this.value[i]).ToString(left_b, right_b, sep);
+                        }
+                        else
+                            _out += this.value[i] switch
+                            {
+                                bool => new RCI(this.value[i]),
+                                _ => ((this.value[i] is string) | (this.value[i] is str0) | (this.value[i] is str10) |
+                                      (this.value[i] is str16) | (this.value[i] is str32) |
+                                      (this.value[i] is str64)) switch
+                                {
+                                    true => $"{str}{this.value[i]}{str}",
+                                    _ => this.value[i].ToString()
+                                }
+                            };
+
+                        break;
+                    }
                 }
 
                 if (i != this.value.Count - 1)
@@ -1779,9 +1620,11 @@ namespace Datatypes.Collections
                 }
                 else
                 {
-                    if (this.value[i] is matrica)
+                    switch (this.value[i])
                     {
-                        _out += "\n";
+                        case matrica :
+                            _out += "\n";
+                            break;
                     }
                 }
             }
