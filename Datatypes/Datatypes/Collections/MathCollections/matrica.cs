@@ -1186,6 +1186,72 @@ namespace Datatypes.Collections.MathCollections
             return l2.___Multiply(r.value);
         }
         
+        public static massiv<drobch64> operator *(matrica l, massiv<short> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static massiv<drobch64> operator *(matrica l, massiv<int> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static massiv<drobch64> operator *(matrica l, massiv<long> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static massiv<drobch64> operator *(matrica l, massiv<float> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static massiv<drobch64> operator *(matrica l, massiv<double> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static massiv<drobch64> operator *(matrica l, massiv<celch16> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static massiv<drobch64> operator *(matrica l, massiv<celch32> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static massiv<drobch64> operator *(matrica l, massiv<celch64> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static massiv<drobch64> operator *(matrica l, massiv<drobch16> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static massiv<drobch64> operator *(matrica l, massiv<drobch32> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
+        public static massiv<drobch64> operator *(matrica l, massiv<drobch64> r)
+        {
+            matrica l2 = new matrica(l);
+            return l2.___Multiply(r);
+        }
+        
         public static matrica operator *(matrica l, matrica r)
         {
             matrica l2 = new matrica(l);
@@ -3133,11 +3199,68 @@ namespace Datatypes.Collections.MathCollections
         {
             return MatrixToMatrica(MatricaToMatrix(this).Multiply(_value.value));
         }
+        
+        
+        
+        public massiv<drobch64> ___Multiply(massiv<short> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
+        
+        public massiv<drobch64> ___Multiply(massiv<int> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
+        
+        public massiv<drobch64> ___Multiply(massiv<long> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
+        
+        public massiv<drobch64> ___Multiply(massiv<float> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
+        
+        public massiv<drobch64> ___Multiply(massiv<double> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
+        
+        public massiv<drobch64> ___Multiply(massiv<celch16> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
+        
+        public massiv<drobch64> ___Multiply(massiv<celch32> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
+        
+        public massiv<drobch64> ___Multiply(massiv<celch64> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
+        
+        public massiv<drobch64> ___Multiply(massiv<drobch16> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
+        
+        public massiv<drobch64> ___Multiply(massiv<drobch32> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
+        
+        public massiv<drobch64> ___Multiply(massiv<drobch64> _value)
+        {
+            return NullityVectorToMatrica(this.___Multiply(MatricaToNullityVector(_value)));
+        }
 
         public matrica ___Multiply(matrica _value)
         {
-            Matrix<double> mtx = MatricaToMatrix(new matrica((drobch64 [,])this.value));
-            Matrix<double> val = MatricaToMatrix(new matrica((drobch64 [,])_value.value));
+            Matrix<double> mtx = MatricaToMatrix(new matrica((drobch64[,])this.value));
+            Matrix<double> val = MatricaToMatrix(new matrica((drobch64[,])_value.value));
             try
             {
                 return MatrixToMatrica(mtx.Multiply(val));
@@ -3647,6 +3770,127 @@ namespace Datatypes.Collections.MathCollections
 
             return mtx;
         }
+        
+        protected static matrica MatricaToNullityVector(massiv<short> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<int> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<long> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<float> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<double> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<natch16> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<natch32> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<natch64> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<celch16> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<celch32> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<celch64> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<drobch16> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<drobch32> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static matrica MatricaToNullityVector(massiv<drobch64> vec)
+        {
+            drobch64[,] mtx = new drobch64[vec.value.Count, vec.value.Count];
+            for (int i = 0; i < vec.value.Count * vec.value.Count; i++) mtx[i % vec.value.Count, i / vec.value.Count] = new drobch64(0);
+            for (int i = 0; i < (int)vec.value.Count; i++) mtx[i, 0] = new drobch64(vec[i]);
+            return new matrica(mtx);
+        }
+        
+        protected static massiv<drobch64> NullityVectorToMatrica(matrica mtx) //ToDo
+        {
+            drobch64[] vec = new drobch64[(int)mtx.Count[0]];
+            for (int i = 0; i < (int)mtx.Count[0]; i++) vec[i] = mtx[(ulong)i, 0];
+            
+            return new massiv<drobch64>(vec);
+        }
+        
 
         protected static Matrix<double> MatricaToMatrix(matrica mtx)
         {
