@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe81b3ef-eb00-4677-9076-2120c880814f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/MathCollections/matrica.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/MathCollections/matrica.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/massiv.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/massiv.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cs" afterDir="false" />
     </list>
@@ -94,7 +90,7 @@
       <workItem from="1682152942174" duration="860000" />
       <workItem from="1682605036839" duration="10701000" />
       <workItem from="1683393235670" duration="12278000" />
-      <workItem from="1683799572585" duration="51390000" />
+      <workItem from="1683799572585" duration="53760000" />
     </task>
     <servers />
   </component>
