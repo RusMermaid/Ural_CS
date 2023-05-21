@@ -1,0 +1,20 @@
+version: 1.0.{build}
+configuration: Release
+branches:
+  only:
+  - master
+build:
+  verbosity: minimal
+cache: 
+- 'C:\projects\MatplotlibCS\tools'
+- 'C:\projects\MatplotlibCS\packages'
+build_script:
+- ps: '& ./build.ps1'
+test: off
+artifacts:
+- path: artifacts\**\*.*
+deploy:
+- provider: NuGet
+  api_key:
+    secure: r5vF3QENzP28+dU6gvmD7Sqbdt5Ti43yhuSye3O7TJxKT+6vuponJ7tVwkGkotH7
+  skip_symbols: true
