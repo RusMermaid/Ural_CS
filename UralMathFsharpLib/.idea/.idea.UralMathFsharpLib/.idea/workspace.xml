@@ -2,23 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10c826f8-1f5d-4396-b1a4-5268a9ee19fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/UralMathLib.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/UralMathLib.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/UralMathLib.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/UralMathLib.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathLib/UralMathLib/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/Ural_CS_Rider.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/Examples.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/IExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/Images/ExampleSin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/Plot2D/ExampleArс.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/Plot2D/ExampleHistogram.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/Plot2D/ExamplePoint2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/Plot2D/ExampleSin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/Plot2D/ExampleTimeAxis.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/Plot2D/ExampleVisibility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/Examples/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Axes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Figure.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Grid.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/MatplotlibCS.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/MatplotlibCS.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/Annotation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/Arc.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/Enums.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/Histogram.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/Hline.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/IHealthCheck.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/Line2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/PlotItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/Point2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/Text.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/PlotItems/Vline.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Python/annotations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Python/arc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Python/helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Python/histogram.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Python/hline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Python/line_2d.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Python/matplotlib_cs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Python/subplot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Python/task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/MatplotlibCS/Python/vline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/appveyor.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/build.cake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MatplotlibCS-master/build.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UralMathFsharpLib/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UralMathFsharpLib/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UralMathFsharpLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UralMathFsharpLib/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralMathFsharpLib/UralMathFsharpLib.fsproj" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathFsharpLib/UralMathFsharpLib.fsproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ObRxPmJeiHA9QU0bJ1XtYbcAaY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -45,6 +86,7 @@
       <updated>1681827540417</updated>
       <workItem from="1681827543397" duration="10000" />
       <workItem from="1681830720419" duration="10000" />
+      <workItem from="1684678722442" duration="103000" />
     </task>
     <servers />
   </component>

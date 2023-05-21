@@ -3,7 +3,6 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <ReleaseVersion>V1_0</ReleaseVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,11 +11,15 @@
     <ItemGroup>
         <Compile Include="Library.fs" />
         <Compile Include="LambdaAnaliz.fs" />
+        <Compile Include="UraFunctionalPlot.fs" />
     </ItemGroup>
 
     <ItemGroup>
         <Reference Include="Datatypes">
             <HintPath>..\..\Datatypes\bin\Debug\net6.0\Datatypes.dll</HintPath>
+        </Reference>
+        <Reference Include="Errors">
+          <HintPath>..\..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
         </Reference>
     </ItemGroup>
 
