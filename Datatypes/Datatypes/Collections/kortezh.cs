@@ -4,7 +4,7 @@ using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
 
 namespace Datatypes.Collections
 {
-    public class kortezh : VOID, Interface_UCollection, Interface_Ural_Datatype
+    public class kortezh : VOID, Interface_Ural_Datatype
     {
         public ulong MaxLength = 4294967295U;
         public natch64 Count = new natch64(0);

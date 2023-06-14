@@ -5,62 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe81b3ef-eb00-4677-9076-2120c880814f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/MathCollections/lambda.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/MathCollections/lambda.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/Examples.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/IExample.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/Images/ExampleSin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/Plot2D/ExampleArс.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/Plot2D/ExampleHistogram.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/Plot2D/ExamplePoint2D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/Plot2D/ExampleSin.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/Plot2D/ExampleTimeAxis.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/Plot2D/ExampleVisibility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/Examples/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS.nuspec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Axes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Figure.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Grid.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/MatplotlibCS.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/MatplotlibCS.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/Annotation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/Arc.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/Enums.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/Histogram.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/Hline.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/IHealthCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/Line2D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/PlotItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/Point2D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/Text.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/PlotItems/Vline.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Python/annotations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Python/arc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Python/helpers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Python/histogram.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Python/hline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Python/line_2d.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Python/matplotlib_cs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Python/subplot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Python/task.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/MatplotlibCS/Python/vline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/appveyor.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/build.cake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MatplotlibCS-master/build.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/.idea/.idea.UralMathFsharpLib/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/.idea/.idea.UralMathFsharpLib/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/.idea/.idea.UralMathFsharpLib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/.idea/.idea.UralMathFsharpLib/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/UralMathLib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/UralMathLib.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Booleans/RCI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Booleans/RCI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/MathCollections/matrica.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/MathCollections/matrica.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/kortezh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/kortezh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/massiv.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/massiv.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/spisok.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Collections/spisok.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Binary/binch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Binary/binch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Hexadecimal/kvalia.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Hexadecimal/kvalia.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Hexadecimal/shesch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Hexadecimal/shesch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Octal/vosch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/OtherNumbers/Octal/vosch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/drobch64.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/drobch64.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/natch16.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/natch16.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/natch32.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Numbers/natch32.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str0.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str0.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str10.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str10.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str16.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str16.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str32.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str32.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str64.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Datatypes/Datatypes/Strings/str64.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cs" afterDir="false" />
     </list>
@@ -150,7 +113,8 @@
       <workItem from="1682605036839" duration="10701000" />
       <workItem from="1683393235670" duration="12278000" />
       <workItem from="1683799572585" duration="54648000" />
-      <workItem from="1684679048007" duration="6101000" />
+      <workItem from="1684679048007" duration="8134000" />
+      <workItem from="1685273043176" duration="19590000" />
     </task>
     <servers />
   </component>

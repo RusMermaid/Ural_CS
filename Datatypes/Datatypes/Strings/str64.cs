@@ -6,6 +6,51 @@ namespace Datatypes.Strings
 {
     public interface Interface_Ustr
     {
+
+        dynamic ___Add(string s);
+        dynamic ___Add(str0 s);
+        dynamic ___Add(str10 s);
+        dynamic ___Add(str16 s);
+        dynamic ___Add(str32 s);
+        dynamic ___Add(str64 s);
+        dynamic ___Add(natch16 n);
+        dynamic ___Add(natch32 n);
+        dynamic ___Add(natch64 n);
+        dynamic ___Add(celch16 n);
+        dynamic ___Add(celch32 n);
+        dynamic ___Add(celch64 n);
+        dynamic ___Add(drobch16 n);
+        dynamic ___Add(drobch32 n);
+        dynamic ___Add(drobch64 n);
+        
+        /*
+        dynamic ___Minus(string s);
+        dynamic ___Minus(str0 s);
+        dynamic ___Minus(str10 s);
+        dynamic ___Minus(str16 s);
+        dynamic ___Minus(str32 s);
+        dynamic ___Minus(str64 s);
+        */
+        dynamic ___Multiply(natch16 n);
+        dynamic ___Multiply(natch32 n);
+        dynamic ___Multiply(natch64 n);
+        dynamic ___Multiply(celch16 n);
+        dynamic ___Multiply(celch32 n);
+        dynamic ___Multiply(celch64 n);
+        
+        /*
+        dynamic ___Multiply(string s);
+        dynamic ___Multiply(str0 s);
+        dynamic ___Multiply(str10 s);
+        dynamic ___Multiply(str16 s);
+        dynamic ___Multiply(str32 s);
+        dynamic ___Multiply(str64 s);
+        */
+
+        massiv<str0> ToMassiv();
+        spisok ToSpisok();
+        RCI EtoCifra();
+        RCI EtoDrob();
     }
 
     public class str64 : VOID, Interface_Ustr, Interface_Ural_Datatype
@@ -875,6 +920,31 @@ namespace Datatypes.Strings
                 }
             }
         }
+        
+        public dynamic ___Add(str0 _value)
+        {
+            return this.___Add((string)_value.value);
+        }
+        
+        public dynamic ___Add(str10 _value)
+        {
+            return this.___Add((string)_value.value);
+        }
+        
+        public dynamic ___Add(str16 _value)
+        {
+            return this.___Add((string)_value.value);
+        }
+        
+        public dynamic ___Add(str32 _value)
+        {
+            return this.___Add((string)_value.value);
+        }
+        
+        public dynamic ___Add(str64 _value)
+        {
+            return this.___Add((string)_value.value);
+        }
 
         public dynamic ___Add(natch16 _value)
         {
@@ -1034,6 +1104,31 @@ namespace Datatypes.Strings
 
             // Create a new string from the remaining characters in set1
             return new str64(new string(s));
+        }
+        
+        public str64 ___Minus(str0 _value)
+        {
+            return this.___Add((string)_value.value);
+        }
+        
+        public str64 ___Minus(str10 _value)
+        {
+            return this.___Add((string)_value.value);
+        }
+        
+        public str64 ___Minus(str16 _value)
+        {
+            return this.___Add((string)_value.value);
+        }
+        
+        public str64 ___Minus(str32 _value)
+        {
+            return this.___Add((string)_value.value);
+        }
+        
+        public str64 ___Minus(str64 _value)
+        {
+            return this.___Add((string)_value.value);
         }
 
         public str64 ___Multiply(str10 str)
@@ -1382,12 +1477,17 @@ namespace Datatypes.Strings
             return new str64(str_step);
         }
 
-        massiv<str0> ToMassiv()
+        public massiv<str0> ToMassiv()
         {
             return new massiv<str0>(((string)this.value).Select(c => new str0((char)c)).ToArray());
         }
+        
+        public spisok ToSpisok()
+        {
+            return new spisok(((string)this.value).Select(c => new str0((char)c)).ToArray());
+        }
 
-        massiv<str0> Reqq()
+        public massiv<str0> Reqq()
         {
             return ((string)this.value).Aggregate(new massiv<str0>(), (acc, c) =>
             {

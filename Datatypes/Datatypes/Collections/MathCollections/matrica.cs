@@ -11,7 +11,7 @@ namespace Datatypes.Collections.MathCollections
     {
     }
     
-    public class matrica : VOID, Interface_UCollection, Interface_UMathNumerics, Interface_Ural_Datatype
+    public class matrica : VOID, Interface_UMathNumerics, Interface_Ural_Datatype
     {
         public ulong MaxLength = 4294967295U;
         public Interface_UMathNumerics[,] value;
