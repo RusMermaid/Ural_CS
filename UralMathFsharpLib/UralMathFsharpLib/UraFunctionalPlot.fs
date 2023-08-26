@@ -1,6 +1,10 @@
 // ----------------------------------------------------------------------------
 // UraFunctionalPlot.fs - Provides simple wrappers for calling UraFunctionalPlot to GnuPlot from F#
 // ----------------------------------------------------------------------------
+
+//Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot Plt = new Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot("uralplot"); ToDo
+//Plt.Plot("sin(x)", FSharpOption<Style>.None, FSharpOption<Internal.LambdaRange>.None, FSharpOption<Output>.None, FSharpOption<Titles>.None); ToDo
+// ----------------------------------------------------------------------------
 namespace Libraries.UralMathFsharpLib.UralPlot
 
 open System

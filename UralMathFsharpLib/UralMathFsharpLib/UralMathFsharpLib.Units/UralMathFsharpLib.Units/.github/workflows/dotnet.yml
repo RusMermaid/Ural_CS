@@ -1,0 +1,68 @@
+name: .NET
+
+on:
+  push:
+    branches: [ main ]
+  
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Install GitVersion
+        uses: gittools/actions/gitversion/setup@v0.9.7
+        with:
+          versionSpec: '5.x'
+
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Determine Version
+        id: gitversion
+        uses: gittools/actions/gitversion/execute@v0.9.7
+        with:
+          useConfigFile: true
+          configFilePath: ./.github/gitversion.yml
+
+      - name: Setup .NET Newest
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build dotnet
+        run: dotnet build Math.Units.sln --configuration Release /p:Version=${{ steps.gitversion.outputs.AssemblySemVer }} /p:AssemblyVersion=${{ steps.gitversion.outputs.AssemblySemVer }} /p:InformationalVersion=${{ steps.gitversion.outputs.InformationalVersion }} --no-restore
+
+      - name: Run Tests
+        run: dotnet test --configuration Release /p:Version=${{ steps.gitversion.outputs.AssemblySemVer }} --no-build --verbosity normal
+        
+      - name: Download fsdocs documentation tool
+        run: dotnet tool restore
+
+      - name: Build documentation
+        run: dotnet fsdocs build --strict --eval --input Docs --properties Configuration=Release
+        
+      - name: Package nuget
+        run: dotnet pack Math.Units.sln --configuration Release -o:package /p:PackageVersion=${{ steps.gitversion.outputs.AssemblySemVer }}
+
+      - name: Push generated package to GitHub registry
+        run: dotnet nuget push ./package/Math.Units.*.nupkg --source https://nuget.pkg.github.com/evelios/index.json --api-key ${{ github.token }}
+        
+      - name: Push documentation
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: docs
+          FOLDER: output
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Push generated package to Nuget registry
+        run: nuget push ./package/Math.Units.*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NugetKey}}
+     

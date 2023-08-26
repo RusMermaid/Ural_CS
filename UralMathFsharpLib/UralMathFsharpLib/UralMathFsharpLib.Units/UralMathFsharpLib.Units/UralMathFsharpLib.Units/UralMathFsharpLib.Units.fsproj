@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Units</RootNamespace>
+
+        <Version>0.0.1</Version>
+        <PackageVersion>0.0.1</PackageVersion>
+        <Product>Math.Units</Product>
+        <Authors>Thomas Waters</Authors>
+        <Copyright>Thomas Waters</Copyright>
+        <Company />
+        <PackageTags>units, fsharp, f#</PackageTags>
+        <PackageLicense>MIT</PackageLicense>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <RepositoryUrl>https://github.com/Evelios/Math.Units</RepositoryUrl>
+        <PackageProjectUrl>https://evelios.github.io/Math.Units/</PackageProjectUrl>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+        <RepositoryType>git</RepositoryType>
+        <NeutralLanguage>en-US</NeutralLanguage>
+
+        <FsDocsLicenseLink>https://opensource.org/licenses/MIT</FsDocsLicenseLink>
+        <FsDocsReleaseNotesLink>https://www.nuget.org/packages/Math.Units/</FsDocsReleaseNotesLink>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+<!--        <FsDocsWarnOnMissingDocs>true</FsDocsWarnOnMissingDocs>-->
+        <FsDocsTheme>default</FsDocsTheme>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="../LICENSE.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="Extensions\TupleExtensions.fs" />
+        <Compile Include="Float.fs" />
+        <Compile Include="Types.fs" />
+        <Compile Include="Quantity.fs" />
+        <Compile Include="MetricConstants.fs" />
+        <Compile Include="Angle.fs" />
+        <Compile Include="Interval.fs" />
+        <Compile Include="Duration.fs" />
+        <Compile Include="Length.fs" />
+        <Compile Include="Area.fs" />
+        <Compile Include="Volume.fs" />
+        <Compile Include="Pixels.fs" />
+        <Compile Include="Speed.fs" />
+        <Compile Include="SolidAngle.fs" />
+        <Compile Include="Acceleration.fs" />
+        <Compile Include="AngularSpeed.fs" />
+        <Compile Include="AngularAcceleration.fs" />
+        <Compile Include="Mass.fs" />
+        <Compile Include="Density.fs" />
+        <Compile Include="Force.fs" />
+        <Compile Include="Energy.fs" />
+        <Compile Include="Pressure.fs" />
+        <Compile Include="LuminousFlux.fs" />
+        <Compile Include="Illuminance.fs" />
+        <Compile Include="Inductance.fs" />
+        <Compile Include="LuminousIntensity.fs" />
+        <Compile Include="Luminance.fs" />
+        <Compile Include="SubstanceAmount.fs" />
+        <Compile Include="Molarity.fs" />
+        <Compile Include="Charge.fs" />
+        <Compile Include="Current.fs" />
+        <Compile Include="Power.fs" />
+        <Compile Include="Capacitance.fs" />
+        <Compile Include="Resistance.fs" />
+        <Compile Include="Voltage.fs" />
+        <Compile Include="Temperature.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FsCheck.NUnit" Version="2.16.5" />
+        <PackageReference Include="NUnit" Version="3.13.3" />
+    </ItemGroup>
+
+
+</Project>

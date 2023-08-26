@@ -1,0 +1,10 @@
+# For more information on configuring this file refer to
+# https://gitversion.net/docs/reference/configuration
+
+mode: Mainline
+branches:
+  feature:
+    tag: beta
+  main: {}
+ignore:
+  sha: []

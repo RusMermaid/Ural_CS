@@ -1,0 +1,23 @@
+# FSharp Files
+bin/
+obj/
+build/
+/packages/
+/package/
+*.nupgk
+
+# FsDocs
+output/
+tmp/
+cache
+
+# Mac Files
+.DS_Store
+
+# Jetbrains & Dot Net Files
+riderModule.iml
+/_ReSharper.Caches/
+contentModel.xml
+**/*.user
+.idea/**/workspace.xml
+.idea/**/tasks.xml

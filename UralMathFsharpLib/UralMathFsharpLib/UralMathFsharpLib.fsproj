@@ -21,6 +21,9 @@
         <Reference Include="Errors">
           <HintPath>..\..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
         </Reference>
+        <Reference Include="UralMathFsharpLib.Units">
+          <HintPath>UralMathFsharpLib.Units\UralMathFsharpLib.Units\UralMathFsharpLib.Units\bin\Debug\net6.0\UralMathFsharpLib.Units.dll</HintPath>
+        </Reference>
     </ItemGroup>
 
     <ItemGroup>

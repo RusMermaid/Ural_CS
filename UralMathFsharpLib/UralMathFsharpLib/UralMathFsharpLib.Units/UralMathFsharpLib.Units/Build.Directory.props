@@ -1,0 +1,24 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Version>0.0.1</Version>
+        <PackageVersion>0.0.1</PackageVersion>
+        <Product>UralMathFsharpLib.Units</Product>
+        <Authors>Thomas Waters</Authors>
+        <Copyright>Thomas Waters</Copyright>
+        <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+        <Company/>
+
+        <PackageTags>units, fsharp, f#</PackageTags>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <PackageLicense>MIT</PackageLicense>
+        <RepositoryType>git</RepositoryType>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        
+        <PackageProjectUrl>https://evelios.github.io/UralMathFsharpLib.Units/</PackageProjectUrl>
+        <RepositoryUrl>https://evelios.github.io/UralMathFsharpLib.Units/index.html</RepositoryUrl>
+        <FsDocsLicenseLink>https://opensource.org/licenses/MIT</FsDocsLicenseLink>
+        <FsDocsReleaseNotesLink>https://www.nuget.org/packages/UralMathFsharpLib.Units/</FsDocsReleaseNotesLink>
+        <FsDocsWarnOnMissingDocs>true</FsDocsWarnOnMissingDocs>
+        <FsDocsTheme>default</FsDocsTheme>
+    </PropertyGroup>
+</Project>

@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe81b3ef-eb00-4677-9076-2120c880814f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/UraFunctionalPlot.fs" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/UraFunctionalPlot.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/UralMathFsharpLib.fsproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathFsharpLib/UralMathFsharpLib/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +104,7 @@
       <workItem from="1685273043176" duration="19590000" />
       <workItem from="1686925755279" duration="1218000" />
       <workItem from="1687010984311" duration="1269000" />
+      <workItem from="1693061821657" duration="366000" />
     </task>
     <servers />
   </component>
