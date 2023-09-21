@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <ReleaseVersion>V1_0</ReleaseVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="Errors.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Colorful.Console" Version="1.2.15" />
+    </ItemGroup>
+</Project>
