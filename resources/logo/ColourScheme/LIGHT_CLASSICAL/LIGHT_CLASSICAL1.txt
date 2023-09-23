@@ -1,0 +1,11 @@
+Your selected colors:
+
+    Primary: #08143d (RGB: 8, 20, 61)
+    Secondary: #fbc7a7 (RGB: 251, 199, 167)
+    Primary Button: #fd8217 (RGB: 253, 130, 23)
+    Secondary Button: #ffbeb7 (RGB: 255, 190, 183)
+    Accent: #394060 (RGB: 57, 64, 96)
+
+Realtime Colors link for selected colors: https://realtimecolors.com/?colors=08143d-fbc7a7-fd8217-ffbeb7-394060
+
+Thanks for using RealtimeColors.com!

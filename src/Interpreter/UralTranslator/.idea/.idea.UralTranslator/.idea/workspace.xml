@@ -5,38 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe0c5a0f-8f10-4180-8cfa-83caa94af6b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/IndexErrors/StrIndexOutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/IndexErrors/StrIndexStartEndError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/SyntaxInvalidError/ErrorDatatypes/ErrorOutOfRange/FuncOutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/SyntaxInvalidError/ErrorDatatypes/ErrorOutOfRange/KortezhOutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/SyntaxInvalidError/ErrorDatatypes/ErrorOutOfRange/MassivOutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/SyntaxInvalidError/ErrorDatatypes/ErrorOutOfRange/MatricaOutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/SyntaxInvalidError/ErrorDatatypes/ErrorOutOfRange/SpisokOutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/SyntaxInvalidError/ErrorDatatypes/ErrorOutOfRange/Str0OutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/SyntaxInvalidError/ErrorDatatypes/ErrorOutOfRange/Str10OutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/SyntaxInvalidError/ErrorDatatypes/ErrorOutOfRange/Str16OutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/SyntaxInvalidError/ErrorDatatypes/ErrorOutOfRange/Str32OutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Errors/Errors/SyntaxInvalidError/ErrorDatatypes/ErrorOutOfRange/Str64OutOfRangeError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/MatematicheskiyAnaliz/LambdaAnaliz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../UralMathLib/UralMathLib/MatematicheskiyAnaliz/LambdaAnaliz.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/.idea/ep14.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/basic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/example.myopl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/grammar.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/shell.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/MyOPL/strings_with_arrows.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/datatypes/Number.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Ural_Python/datatypes/VectorQuaternion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UralTranslator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UralTranslator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralTranslator/Grammar/UralLexer.g4" beforeDir="false" afterPath="$PROJECT_DIR$/UralTranslator/Grammar/UralLexer.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralTranslator/Grammar/main.ural" beforeDir="false" afterPath="$PROJECT_DIR$/UralTranslator/Grammar/main.ural" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/UralTranslator/obj/Debug/net6.0/UralLexerLexer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -84,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695477982379</updated>
-      <workItem from="1695477984139" duration="2122000" />
+      <workItem from="1695477984139" duration="3564000" />
     </task>
     <servers />
   </component>
