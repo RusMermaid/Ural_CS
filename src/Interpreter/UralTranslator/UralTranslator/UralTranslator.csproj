@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Datatypes 2">
+        <HintPath>..\..\..\Datatypes\bin\Debug\net6.0\Datatypes 2.dll</HintPath>
+      </Reference>
+      <Reference Include="Datatypes">
+        <HintPath>..\..\..\Datatypes\bin\Debug\net6.0\Datatypes.dll</HintPath>
+      </Reference>
+      <Reference Include="Errors 2">
+        <HintPath>..\..\..\Errors\Errors\bin\Debug\net6.0\Errors 2.dll</HintPath>
+      </Reference>
+      <Reference Include="Errors">
+        <HintPath>..\..\..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
+      </Reference>
+      <Reference Include="UralMathFsharpLib 2">
+        <HintPath>..\..\..\UralMathFsharpLib\UralMathFsharpLib\bin\Debug\net6.0\UralMathFsharpLib 2.dll</HintPath>
+      </Reference>
+      <Reference Include="UralMathFsharpLib.Units">
+        <HintPath>..\..\..\UralMathFsharpLib\UralMathFsharpLib\bin\Debug\net6.0\UralMathFsharpLib.Units.dll</HintPath>
+      </Reference>
+      <Reference Include="UralMathFsharpLib">
+        <HintPath>..\..\..\UralMathFsharpLib\UralMathFsharpLib\bin\Debug\net6.0\UralMathFsharpLib.dll</HintPath>
+      </Reference>
+      <Reference Include="UralMathLib 3">
+        <HintPath>..\..\..\UralMathLib\UralMathLib\bin\Debug\net6.0\UralMathLib 3.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Antlr4" Version="4.6.6">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Antlr4.Runtime" Version="4.6.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Grammar\CSharp\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Grammar\CSharp\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Grammar\CSharp\**" />
+      <None Remove="Grammar\UralParser.g4.zip" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Grammar\UralLexer.g4" />
+    </ItemGroup>
+</Project>
