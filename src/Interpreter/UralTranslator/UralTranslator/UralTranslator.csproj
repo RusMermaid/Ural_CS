@@ -57,6 +57,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="Grammar\UralLexer.g4" />
+      <Content Include="Grammar\UralNet.g4" />
     </ItemGroup>
 </Project>
