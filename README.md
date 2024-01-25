@@ -63,7 +63,7 @@ Collections/Коллекции:
 <tr>
 <td>
 
-- arraylist<Type> - mutable array with a data type
+- arraylist< Type > - mutable array with a data type
 - list - mutable list
 - tuple - immutable list
 - stack<Type> - mutable stack
