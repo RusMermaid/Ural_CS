@@ -1,7 +1,9 @@
-﻿using Errors.SyntaxInvalidError.ErrorDatatypes;
+﻿using Datatypes.Collections;
+using Errors.SyntaxInvalidError.ErrorDatatypes;
 using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
 using Libraries.UralMathLib;
 using MathNet.Numerics.LinearAlgebra;
+using MathNet.Numerics.LinearAlgebra.Double;
 using MathNet.Numerics.LinearAlgebra.Factorization;
 
 namespace Datatypes.Collections.MathCollections
@@ -3687,18 +3689,26 @@ namespace Datatypes.Collections.MathCollections
             }
         }
 
-        public matrica ___Transpose()
+        /*
+         public drobch64 ___Trace()
         {
-            matrica mtx = new matrica((ulong)this.Count[0]);
-            for (ulong i = 0; i < (ulong)this.Count[0]; i++)
+            int min = (int)this.Count?[0] > (int)this.Count?[1] ? (int)this.Count?[1] : (int)this.Count?[0];
+            Matrix<double> mtx = Matrix<double>.Build.DenseIdentity(min);
+            for (int i = 0; i < min; i++)
             {
-                for (ulong j = 0; j < (ulong)this.Count[1]; j++)
+                for (int j = 0; i < min; i++)
                 {
-                    mtx[j, i] = this[i, j];
+                    mtx[i, j] = (double)this[new natch64(i), new natch64(j)];
                 }
             }
 
-            return mtx;
+            return new drobch64(mtx.Trace());
+        }
+        */
+
+        public matrica ___Transpose()
+        {
+            return MatrixToMatrica(MatricaToMatrix(this).Transpose());
         }
 
         public massiv<dynamic> ___SobZnacheniya()
@@ -3719,7 +3729,70 @@ namespace Datatypes.Collections.MathCollections
             Matrix<double> eigenvectors = mtx.Evd().EigenVectors;
             return MatrixToMatrica(eigenvectors);
         }
+
+        public static drobch64 ___HyperDotProduct(matrica mtx1, matrica mtx2)
+        {
+            return mtx1.___Multiply(mtx2.___Transpose()).___Trace();
+        }
         
+        public static matrica ___HyperCrossProduct(matrica mtx1, matrica mtx2)
+        {
+            return (mtx1.___Multiply(mtx2.___Transpose())).___Diagonalisacia()[0];
+        }
+
+        public static matrica ___HyperQuaternion(spisok arr, RCI var)
+        {
+            for (int i = 0; i < (int)arr.Count; i++) arr[i] = (double)arr[i];
+            double [] extendedArr = new double[(int)arr.Count];
+            for (int i = 0; i < (int)arr.Count; i++) extendedArr[i] = (double)arr[i];
+            
+        switch (extendedArr.Length)
+            {
+                case 1 :
+                    return new matrica(arr[0]);
+                case 2 :
+                    return new matrica(2)
+                    {
+                        [0, 0] = new drobch64(arr[0]),
+                        [0, 1] = new drobch64(arr[1]),
+                        [1, 0] = new drobch64(-arr[1]),
+                        [1, 1] = new drobch64(arr[0]),
+                    };
+                case 4 :
+                    return new matrica(4)
+                    {
+                        [0, 0] = new drobch64(arr[0]),
+                        [0, 1] = new drobch64(arr[1]),
+                        [0, 2] = new drobch64(-arr[2]),
+                        [0, 3] = new drobch64(-arr[3]),
+                        [1, 0] = new drobch64(arr[1]),
+                        [1, 1] = new drobch64(arr[0]),
+                        [1, 2] = new drobch64(-arr[3]),
+                        [1, 3] = new drobch64(arr[2]),
+                        [2, 0] = new drobch64(arr[2]),
+                        [2, 1] = new drobch64(arr[3]),
+                        [2, 2] = new drobch64(arr[0]),
+                        [2, 3] = new drobch64(-arr[1]),
+                        [3, 0] = new drobch64(arr[3]),
+                        [3, 1] = new drobch64(-arr[2]),
+                        [3, 2] = new drobch64(arr[1]),
+                        [3, 3] = new drobch64(arr[0])
+                    };
+            }
+            
+
+            int mid = extendedArr.Length / 2;
+            
+            matrica A = ___HyperQuaternion(new spisok(extendedArr[0..mid]), var);
+            matrica B = ___HyperQuaternion(new spisok(extendedArr[mid..]), var);
+
+            if (!var) return A * B;
+            var top = DenseMatrix.OfMatrix(MatricaToMatrix(A)).Append(MatricaToMatrix(B));
+            var bottom = DenseMatrix.OfMatrix(-(MatricaToMatrix(B).Transpose())).Append(MatricaToMatrix(A).Transpose());
+            return MatrixToMatrica(top.Stack(bottom));
+            
+        }
+
         public override string ToString()
         {
             return (this.ToString("[", "]", "[", "]", ", "));
