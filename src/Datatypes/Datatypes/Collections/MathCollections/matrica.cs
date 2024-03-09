@@ -3564,6 +3564,11 @@ namespace Datatypes.Collections.MathCollections
             return ___MathFunc(this, UralMathLib.Exp);
         }
         
+        public natch64 ___Rank()
+        {
+            return new natch64(MatricaToMatrix(this).Rank());
+        }
+        
 
         public massiv<matrica>___Diagonalisacia()
         {
@@ -3636,24 +3641,7 @@ namespace Datatypes.Collections.MathCollections
                 err.Execute();
             }
 
-            matrica mtx = new matrica((drobch64 [,])this.value);
-            drobch64 det_inverse = new drobch64(1).___Divide(this.___Abs());
-            switch ((ulong)mtx.Count[0b0])
-            {
-                case 1:
-                    mtx[0, 0] = new drobch64(1).___Divide(this[0, 0]);
-                    return mtx;
-                case 2:
-                    mtx[0, 0] = this[1, 1];
-                    mtx[1, 1] = this[0, 0];
-                    mtx[0, 1] = -1 * this[1, 0];
-                    mtx[1, 0] = -1 * this[0, 1];
-                    return mtx.___Multiply(det_inverse).___Transpose();
-                default:
-                {
-                    return MatrixToMatrica(MatricaToMatrix(mtx).Inverse());
-                }
-            }
+            return MatrixToMatrica(MatricaToMatrix(this).Inverse());
         }
 
         public drobch64 ___Abs()
