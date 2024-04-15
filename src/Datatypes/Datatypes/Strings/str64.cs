@@ -744,6 +744,14 @@ namespace Datatypes.Strings
             str64 l2 = new str64(l);
             return l2.___Multiply(r);
         }
+        
+        public IEnumerator GetEnumerator()
+        {
+            for (int i = 0; i < (int)this.Count; i++)
+            {
+                yield return new str0(this.value[i]);
+            }
+        }
 
         public static explicit operator string(str64 str)
         {

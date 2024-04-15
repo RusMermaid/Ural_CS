@@ -4,7 +4,7 @@ using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
 
 namespace Datatypes.Collections
 {
-    public class kortezh : VOID, Interface_Ural_Datatype
+    public class kortezh : VOID, IEnumerable, Interface_Ural_Datatype
     {
         public ulong MaxLength = 4294967295U;
         public natch64 Count = new natch64(0);
@@ -1474,6 +1474,14 @@ namespace Datatypes.Collections
 
         public kortezh this[natch32 start, natch32 stop, natch16 step] => new kortezh(Slice(this.value.ToArray(), (int)start.value, (int)stop.value, (int)step.value));
 
+        public IEnumerator GetEnumerator()
+        {
+            for (int i = 0; i < (int)this.Count; i++)
+            {
+                yield return (Type)this.value[i];
+            }
+        }
+        
         public void ___Add(dynamic el)
         {
             KortezhNotImplementedDatatypeError err = new KortezhNotImplementedDatatypeError(0, 0);

@@ -13,7 +13,7 @@ namespace Datatypes.Collections.MathCollections
     {
     }
     
-    public class matrica : VOID, Interface_UMathNumerics, Interface_Ural_Datatype
+    public class matrica : VOID, IEnumerable, Interface_UMathNumerics, Interface_Ural_Datatype
     {
         public ulong MaxLength = 4294967295U;
         public Interface_UMathNumerics[,] value;
@@ -1614,6 +1614,18 @@ namespace Datatypes.Collections.MathCollections
         public static matrica operator ^(drobch64 l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
+        }
+        
+        public IEnumerator GetEnumerator()
+        {
+            for (int i = 0; i < (int)this.Count[0]; i++)
+            {
+                drobch64[] row = Enumerable.Range(0, (int)this.Count[1])
+                    .Select(j => (drobch64)this.value[i, j])
+                    .ToArray();
+                
+                yield return new massiv<drobch64>(row); 
+            }
         }
 
         protected static matrica ChisloMatrica(Interface_UDrobch value, ushort scales)
