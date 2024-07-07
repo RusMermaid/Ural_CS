@@ -1,5 +1,4 @@
-﻿using Datatypes.Collections;
-using Errors.SyntaxInvalidError.ErrorDatatypes;
+﻿using Errors.SyntaxInvalidError.ErrorDatatypes;
 using Errors.SyntaxInvalidError.ErrorDatatypes.ErrorOutOfRange;
 using Libraries.UralMathLib;
 using MathNet.Numerics.LinearAlgebra;
@@ -8,7 +7,7 @@ using MathNet.Numerics.LinearAlgebra.Factorization;
 
 namespace Datatypes.Collections.MathCollections
 {
-    
+
     public interface Interface_UMathNumerics
     {
     }
@@ -1549,73 +1548,73 @@ namespace Datatypes.Collections.MathCollections
             matrica l2 = new matrica(l);
             return l2.___Pow(r.value);
         }
-        
+
         public static matrica operator ^(matrica l, matrica r)
         {
             matrica l2 = new matrica(l);
             return l2.___Pow(r);
         }
-        
+
         public static matrica operator ^(int l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(float l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(double l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(natch16 l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(natch32 l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(natch64 l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(celch16 l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(celch32 l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(celch64 l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(drobch16 l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(drobch32 l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public static matrica operator ^(drobch64 l, matrica r)
         {
             return (r * UralMathLib.Ln(l)).___Exp();
         }
-        
+
         public IEnumerator GetEnumerator()
         {
             for (int i = 0; i < (int)this.Count[0]; i++)
@@ -3466,12 +3465,12 @@ namespace Datatypes.Collections.MathCollections
 
             return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
         }
-        
+
         public matrica ___Pow(matrica _value)
         {
             return (_value * this.___Ln()).___Exp();
         }
-        
+
         public matrica ___Sqrt()
         {
             matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(this).Evd().D);
@@ -3485,7 +3484,7 @@ namespace Datatypes.Collections.MathCollections
 
             return eigenvectors_mtx.___Multiply(eigenvalues_mtx).___Multiply(eigenvectors_mtx_inverse);
         }
-        
+
         public matrica ___Cbrt()
         {
             matrica eigenvalues_mtx = MatrixToMatrica(MatricaToMatrix(this).Evd().D);
@@ -3500,82 +3499,82 @@ namespace Datatypes.Collections.MathCollections
             return eigenvectors_mtx.___Multiply(eigenvalues_mtx).___Multiply(eigenvectors_mtx_inverse);
         }
 
-        
+
         public matrica ___Ln()
         {
             return ___MathFunc(this, UralMathLib.Ln);
         }
-        
+
         public matrica ___Lt()
         {
             return ___MathFunc(this, UralMathLib.Lt);
         }
-        
+
         public matrica ___Lg()
         {
             return ___MathFunc(this, UralMathLib.Lg);
         }
-        
+
         public matrica ___Sin()
         {
             return ___MathFunc(this, UralMathLib.Sin);
         }
-        
+
         public matrica ___ArcSin()
         {
             return ___MathFunc(this, UralMathLib.ArcSin);
         }
-        
+
         public matrica ___Cos()
         {
             return ___MathFunc(this, UralMathLib.Cos);
         }
-        
+
         public matrica ___ArcCos()
         {
             return ___MathFunc(this, UralMathLib.ArcCos);
         }
-        
+
         public matrica ___Sec()
         {
             return ___MathFunc(this, UralMathLib.Sec);
         }
-        
+
         public matrica ___Csc()
         {
             return ___MathFunc(this, UralMathLib.Csc);
         }
-        
+
         public matrica ___Sinh()
         {
             return ___MathFunc(this, UralMathLib.Sinh);
         }
-        
+
         public matrica ___ArcSinh()
         {
             return ___MathFunc(this, UralMathLib.ArcSinh);
         }
-        
+
         public matrica ___Cosh()
         {
             return ___MathFunc(this, UralMathLib.Cosh);
         }
-        
+
         public matrica ___ArcCosh()
         {
             return ___MathFunc(this, UralMathLib.ArcCosh);
         }
-        
+
         public matrica ___Tanh()
         {
             return ___MathFunc(this, UralMathLib.Tanh);
         }
-        
+
         public matrica ___Exp()
         {
             return ___MathFunc(this, UralMathLib.Exp);
         }
-        
+
         public natch64 ___Rank()
         {
             return new natch64(MatricaToMatrix(this).Rank());

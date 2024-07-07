@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c41e285c-1a12-4558-80c0-8fedcc3fbd52" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes/Collections/MathCollections/matrica.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes/Collections/MathCollections/matrica.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes/Collections/kortezh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes/Collections/kortezh.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes/Collections/massiv.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes/Collections/massiv.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes/Collections/spisok.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes/Collections/spisok.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/celch16.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/celch16.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/celch32.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/celch32.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/celch64.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/celch64.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/drobch16.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/drobch16.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/drobch32.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/drobch32.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/drobch64.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Datatypes/Datatypes/Numbers/drobch64.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/UralMathLib.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/UralMathLib.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/UralMathLib.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/UralMathLib.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/obj/Debug/net6.0/UralMathLib.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/obj/Debug/net6.0/UralMathLib.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/obj/UralMathLib.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/obj/UralMathLib.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/obj/UralMathLib.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/obj/UralMathLib.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UralMathLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UralMathLib/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/.idea/.idea.Ural_CS_Rider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Ural_CS_Rider/Ural_CS_Rider/Main.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c41e285c-1a12-4558-80c0-8fedcc3fbd52" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,21 +10,32 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2ObS10Mb4ZMvwqF5sKjq0EOYZLP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/rus_mermaid/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/rus_mermaid/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/rus_mermaid/Library/Application Support/Symbols/src"
+    ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,6 +49,7 @@
       <workItem from="1681830937605" duration="37000" />
       <workItem from="1681830979399" duration="3000" />
       <workItem from="1683799773916" duration="232000" />
+      <workItem from="1720355847325" duration="246000" />
     </task>
     <servers />
   </component>
@@ -71,6 +57,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
