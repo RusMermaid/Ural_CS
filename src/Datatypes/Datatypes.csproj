@@ -4,6 +4,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -38,6 +39,7 @@
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Datatypes\Collections\MathCollections\" />
+        <Folder Include="Datatypes\Collections\MathCollections\LambdaAnaliz\LambdaSyntaxTree\" />
     </ItemGroup>
     <ItemGroup>
         <Compile Remove="Datatypes\Collections\MathCollections\x.cs" />
@@ -45,5 +47,6 @@
     <ItemGroup>
         <PackageReference Include="Colorful.Console" Version="1.2.15" />
         <PackageReference Include="MathNet.Numerics" Version="4.15.0" />
+        <PackageReference Include="Sprache" Version="3.0.0-develop-00049" />
     </ItemGroup>
 </Project>
