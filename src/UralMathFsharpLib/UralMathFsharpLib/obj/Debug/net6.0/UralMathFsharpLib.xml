@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>UralMathFsharpLib</name></assembly>
+<members>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot.Unset(Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Style},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRange})">
+<summary>
+ Reset style or range set previously (used mainly internally)
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot.Set(Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Style},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRange},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Output},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Titles},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.TimeFormatX})">
+<summary>
+ Set a style or a range of the gnuplot session. For example:
+
+     // set fill style to a numbered pattern
+     plt.Set(style = Style(fill = Pattern(3)))
+  
+     // set the X range of the output plot to [-10:]
+     plt.Set(range = RangeX.[-10.0 .. ]
+
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot.SendCommand(System.String)">
+<summary>
+ Send a string command directly to the UralFunctionalPlot process.
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot.Plot(System.Collections.Generic.IEnumerable{Libraries.UralMathFsharpLib.UralPlot.Series},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Style},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRange},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Output},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Titles})">
+<summary>
+ Draw a plot consisting of multiple data series. Range and 
+ style can be specified using optional parameters. For example:
+
+     // Create a simple line plot
+     pltPlot
+      [ Series.Lines(title=&quot;Lines&quot;, data=[2.0; 1.0; 2.0; 5.0])
+        Series.Histogram(fill=Solid, data=[2.0; 1.0; 2.0; 5.0]) ]
+    
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot.Plot(Libraries.UralMathFsharpLib.UralPlot.Series,Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Style},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRange},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Output},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Titles})">
+<summary>
+ Draw a plot of a single data series. Range and style can 
+ be specified using optional parameters. For example:
+
+     // Create a simple line plot
+     plt.Plot(Series.Lines [2.0; 1.0; 2.0; 5FUralPlot.0],
+             range = RangeY.[-1.0 ..])   
+    
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot.Plot(System.String,Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Style},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRange},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Output},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Titles})">
+<summary>
+ Draw a plot specified as a string. Range and style can
+ be specified using optional parameters. For example:
+
+     // draw sin(x) function
+     plt.Plot(&quot;sin(x)&quot;)
+
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot.#ctor(Microsoft.FSharp.Core.FSharpOption{System.String})">
+<summary>
+ Create a new instance of the `UralFunctionalPlot` object. This starts the `uralplot`
+ process in the background. The optional parameter `path` can be used to
+ specify `UralFunctionalPlot` location if it is not available in `PATH`.
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot">
+<summary>
+ The main type of the library. It provides a wrapper for calling gnuplot from F#. 
+ Plots are drawn using the `Plot` function and can be created using the `Series` type. 
+ For example:
+
+     // Create gnuplot process
+     let plt = UraFunctionalPlot()
+
+     // Plot a function specified as a string
+     plt.Plot(&quot;sin(x)&quot;)
+
+     // Create a simple line plot
+     plt.Plot(Series.Lines [2.0; 1.0; 2.0; 5.0])   
+
+     // Create a histogram plot drawn using blue color 
+     plt.Plot(Series.Histogram(lineColor=Color.Blue, data=[2.0; 1.0; 2.0; 5.0]))
+
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Titles">
+<summary>
+ Used to specify titles for the X and Y axes. In addition to the text for the labels,
+ you can also specify the rotation of the labels. For example:
+ 
+     // specify rotated titles for x axis
+     Titles(x=[&quot;one&quot;; &quot;two&quot;], xrotate=-70)
+
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Output">
+<summary>
+ The type can be used to specify output type for `gnuplot`. The type
+ combines a value of `OutputType` with additional parameters such as fonts.
+ For example, to create a PNG, you can use:
+
+     plt.Set(output = Output(Png(&quot;/test.png&quot;)))
+
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.OutputType.Eps">
+<summary>
+ Saves charts to a specified EPS file
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.OutputType.Png">
+<summary>
+ Saves charts to a specified PNG file
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.OutputType.Qt">
+<summary>
+ Creates charts in a new Qt window on OS X
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.OutputType.X11">
+<summary>
+ Creates charts in a new window
+</summary>
+</member>
+<member name="P:Libraries.UralMathFsharpLib.UralPlot.Series.Data">
+<summary>
+ Returns the data of the series
+</summary>
+</member>
+<member name="P:Libraries.UralMathFsharpLib.UralPlot.Series.Command">
+<summary>
+ Returns the formatted UralFunctionalPlot command
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Points(System.Collections.Generic.IEnumerable{System.Tuple{System.DateTime,System.Double}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates a points data series for a plot of DateTime and y values
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Points(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates a points data series for a function
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Points(System.Collections.Generic.IEnumerable{System.Tuple{System.Double,System.Double}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates a points data series for a plot of xy values
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Points(System.Collections.Generic.IEnumerable{System.Double},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates a points data series for a plot of y values
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Lines(System.Collections.Generic.IEnumerable{System.Tuple{System.DateTime,System.Double}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates a line data series for a plot of DateTime and y values.
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Lines(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates a line data series for a function
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Lines(System.Collections.Generic.IEnumerable{System.Tuple{System.Double,System.Double}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates a line data series for a plot of xy values
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Lines(System.Collections.Generic.IEnumerable{System.Double},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates a line data series for a plot of y values
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Impulses(System.Collections.Generic.IEnumerable{System.Tuple{System.DateTime,System.Double}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates an impulse data series for a plot of DateTime and y values
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Impulses(System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates an impulse data series for a function
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Impulses(System.Collections.Generic.IEnumerable{System.Tuple{System.Double,System.Double}},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates an impulse data series for a plot of xy values
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Impulses(System.Collections.Generic.IEnumerable{System.Double},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Creates an impulse data series for a plot of y values
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Histogram(System.Collections.Generic.IEnumerable{System.Double},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.UralFillStyle})">
+<summary>
+ Creates a histogram data series for a plot  
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Series">
+<summary>
+ Represents a series of data for the `gp.Plot` function
+ The type can be constructed directly (by setting the `plot` parameter
+ to the desired series type) or indirectly using static
+ members such as &apos;Series.Histogram&apos;
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.SeriesType.Impulses">
+<summary>
+ Series will be displayed as impulses
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.SeriesType.Points">
+<summary>
+ Series will be displayed as points
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.SeriesType.Histogram">
+<summary>
+ Series will be displayed as a histogram.
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.SeriesType.Lines">
+<summary>
+ Series will be displayed as lines
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.SeriesType">
+<summary>
+ Represents the different types or styles of series.  Roughly corresponds to the gnuPlot &apos;with lines&apos;, &apos;with points&apos; etc.
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Data.Function">
+<summary>
+ A string holding a function of X in the gnuplot format, e.g. `sin(x)`. The range of X comes from the other 
+ Data series on the plot, or from the optional `Range` object.
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Data.DataTimeY">
+<summary>
+ Sequence of X and Y coordinates where the X is `DateTime`. The `DateTime` determines the position on the 
+ X axis. This cannot be mixed with the other Data type options such as DataXY.
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Data.DataXY">
+<summary>
+ Sequence of X and Y coordinates. The first element of the tuple is the X value, the second is the Y value
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Data.DataY">
+<summary>
+ Sequence of numerical values. The index of an item is the X value, the number is the Y value
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Interface_UCommand">
+<summary>
+ Represents an abstract command that sets some property
+ of the plot (and allows undoing the change)
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.UralFillStyle.Pattern">
+<summary>
+ Fill the plot with a pre-defined gnuplot pattern
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.UralFillStyle.Solid">
+<summary>
+ Fill the plot with a solid fill
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.UralFillStyle">
+<summary>
+ Represents possible fill styles of a plot. A plot can be filled using
+ a solid fill or using a specified pre-defined pattern (represented by 
+ an integer that `gnuplot` understands)
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.timeFormatting">
+<summary>
+ [omit]
+ The below two values control UralFunctionalPlot&apos;s display of DateTimes. They must match.
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.InternalFormat">
+<summary>
+ [omit]
+ Module that contains formatting of various gnuplot arguments
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRangeImplY">
+<summary>
+ Type that allows elegant construction of ranges specifying only Y range
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRangeImplX">
+<summary>
+ Type that allows elegant construction of ranges specifying only X range
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRangeImplXY">
+<summary>
+ Type that allows elegant construction of ranges specifying both X and Y
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRange">
+<summary>
+ Type that represents a range for a plot (this type is not
+ intended to be constructed directly - use &apos;Range.[ ... ]` instead)
+</summary>
+</member>
+<member name="P:Libraries.UralMathFsharpLib.UralPlot.InternalPlotting.formatNum">
+<summary>
+ Formats a value of type option&lt;float&gt;
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.InternalPlotting.commandList``1(Microsoft.FSharp.Core.FSharpOption{``0})">
+<summary>
+ Turns an option value containing some class implementing
+ ICommand into a list containing exactly ICommand values
+</summary>
+</member>
+<member name="M:Libraries.UralMathFsharpLib.UralPlot.InternalPlotting.formatArg``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.String},Microsoft.FSharp.Core.FSharpOption{``0})">
+<summary>
+ Formats a value of type option&lt;&apos;a&gt; as a string
+ using the emtpy string if the value is missing
+</summary>
+</member>
+<member name="T:Libraries.UralMathFsharpLib.UralPlot.InternalPlotting">
+<summary>
+ Utilities for formatting values and for working with commands
+</summary>
+</member>
+</members>
+</doc>
