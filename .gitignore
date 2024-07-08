@@ -15,18 +15,11 @@
 # Mono auto generated files
 mono_crash.*
 
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
 x64/
 x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
 bld/
-[Bb]in/
-[Oo]bj/
 [Ll]og/
 [Ll]ogs/
 
@@ -71,16 +64,12 @@ StyleCopReport.xml
 *.obj
 *.iobj
 *.pch
-*.pdb
-*.ipdb
 *.rsp
 *.sbr
 *.tlb
 *.tli
 *.tlh
 *.tmp
-*.tmp_proj
-*_wpftmp.csproj
 *.log
 *.vspscc
 *.vssscc
@@ -165,32 +154,10 @@ DocProject/Help/html
 # Click-Once directory
 publish/
 
-# Publish Web Output
-*.[Pp]ublish.xml
-*.azurePubxml
-# Note: Comment the next line if you want to checkin your web deploy settings,
-# but database connection strings (with potential passwords) will be unencrypted
-*.pubxml
-*.publishproj
-
 # Microsoft Azure Web App publish settings. Comment the next line if you want to
 # checkin your Azure Web App publish settings, but sensitive information contained
 # in these scripts will be unencrypted
 PublishScripts/
-
-# NuGet Packages
-*.nupkg
-# NuGet Symbol Packages
-*.snupkg
-# The packages folder can be ignored because of Package Restore
-**/[Pp]ackages/*
-# except build/, which is used as an MSBuild target.
-!**/[Pp]ackages/build/
-# Uncomment if necessary however generally it will be regenerated when needed
-#!**/[Pp]ackages/repositories.config
-# NuGet v3's project.json files produces more ignorable files
-*.nuget.props
-*.nuget.targets
 
 # Microsoft Azure Build Output
 csx/
@@ -208,12 +175,6 @@ _pkginfo.txt
 *.appx
 *.appxbundle
 *.appxupload
-
-# Visual Studio cache files
-# files ending in .cache can be ignored
-*.[Cc]ache
-# but keep track of directories ending in .cache
-!?*.[Cc]ache/
 
 # Others
 ClientBin/
@@ -248,7 +209,6 @@ ServiceFabricBackup/
 *.rptproj.bak
 
 # SQL Server files
-*.mdf
 *.ldf
 *.ndf
 
