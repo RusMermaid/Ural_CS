@@ -14,8 +14,8 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 			first.Parent = this;
 			second.Parent = this;
 
-			First = first;
-			Second = second;
+			this.First = first;
+			this.Second = second;
 		}
 
 		/// <summary>
@@ -24,43 +24,43 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		/// <returns>True if a beta reduction happened, false if not</returns>
 		public override bool BetaReduce()
 		{
-			if (First.GetType() == typeof(LambdaFunction))
+			if (this.First.GetType() == typeof(LambdaFunction))
 			{
 				//If the left-hand side of an application is a function, then b-reduction can happen, woo
-				var toReduce = (First as LambdaFunction);
+				LambdaFunction? toReduce = (this.First as LambdaFunction);
 
-				var reduceInput = toReduce.Input;
+				LambdaVariable reduceInput = toReduce.Input;
 
 				//Create a new expression from the output, so that the bound occurrences of reduceInput in the output are no longer bound
 				//This is (a little) hackey
-				var reduceOutput = new LambdaExpression(toReduce.Output);
+				LambdaExpression reduceOutput = new LambdaExpression(toReduce.Output);
 
 				//Call replace to replace all free occurrences of the input with the right-hand side of our application
-				reduceOutput.Replace(toReduce.Input, Second);
-				var reduced = reduceOutput.Root;
+				reduceOutput.Replace(toReduce.Input, this.Second);
+				LambdaTerm reduced = reduceOutput.Root;
 
 				//Preserve the parental relationships
-				if (Parent.GetType() == typeof(LambdaExpression))
+				if (this.Parent.GetType() == typeof(LambdaExpression))
 				{
-					reduced.Parent = Parent;
-					(Parent as LambdaExpression).Root = reduced;
+					reduced.Parent = this.Parent;
+					(this.Parent as LambdaExpression).Root = reduced;
 				}
-				else if (Parent.GetType() == typeof(LambdaFunction))
+				else if (this.Parent.GetType() == typeof(LambdaFunction))
 				{
-					reduced.Parent = Parent;
-					(Parent as LambdaFunction).Output = reduced;
+					reduced.Parent = this.Parent;
+					(this.Parent as LambdaFunction).Output = reduced;
 				}
-				else if (Parent.GetType() == typeof(LambdaApplication))
+				else if (this.Parent.GetType() == typeof(LambdaApplication))
 				{
-					if ((Parent as LambdaApplication).First == this)
+					if ((this.Parent as LambdaApplication).First == this)
 					{
-						reduced.Parent = Parent;
-						(Parent as LambdaApplication).First = reduced;
+						reduced.Parent = this.Parent;
+						(this.Parent as LambdaApplication).First = reduced;
 					}
 					else
 					{
-						reduced.Parent = Parent;
-						(Parent as LambdaApplication).Second = reduced;
+						reduced.Parent = this.Parent;
+						((this.Parent as LambdaApplication)!).Second = reduced;
 					}
 				}
 
@@ -90,8 +90,8 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		/// <param name="with"></param>
 		internal override void Replace(LambdaVariable what, LambdaTerm with)
 		{
-			First.Replace(what, with);
-			Second.Replace(what, with);
+			this.First.Replace(what, with);
+			this.Second.Replace(what, with);
 		}
 
 		/// <summary>
@@ -101,12 +101,12 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		/// <returns></returns>
 		public override bool IsBound(string variable)
 		{
-			return Parent == null ? false : Parent.IsBound(variable);
+			return this.Parent != null && this.Parent.IsBound(variable);
 		}
 
 		public override int GetDeBruijnIndex(string name = "")
 		{
-			return Parent.GetDeBruijnIndex(name);
+			return this.Parent.GetDeBruijnIndex(name);
 		}
 
 		/// <summary>
@@ -115,15 +115,15 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		/// <returns>An appropriate string representation of the object</returns>
 		public override string ToString()
 		{
-			var firstString = First.GetType() == typeof(LambdaVariable) ? First.ToString() : "(" + First.ToString() + ")";
-			var secondString = Second.GetType() == typeof(LambdaVariable) ? Second.ToString() : "(" + Second.ToString() + ")";
+			string? firstString = this.First.GetType() == typeof(LambdaVariable) ? this.First.ToString() : "(" + this.First.ToString() + ")";
+			string? secondString = this.Second.GetType() == typeof(LambdaVariable) ? this.Second.ToString() : "(" + this.Second.ToString() + ")";
 
 			return firstString + " " + secondString;
 		}
 
 		public override string PrintDeBruijn()
 		{
-			return First.PrintDeBruijn() + " " + Second.PrintDeBruijn();
+			return this.First.PrintDeBruijn() + " " + this.Second.PrintDeBruijn();
 		}
 	}
 }

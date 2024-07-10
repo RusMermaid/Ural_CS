@@ -3383,7 +3383,7 @@ namespace Datatypes.Collections.MathCollections
             massiv<matrica> diag = this.___Diagonalisacia();
             for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
             {
-                diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value));
+                diag[1][i, i] = new drobch64(this.pow((double)diag[1][i, i], _value));
             }
 
             return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);
@@ -3394,7 +3394,7 @@ namespace Datatypes.Collections.MathCollections
             massiv<matrica> diag = this.___Diagonalisacia();
             for (ulong i = 0; i < (ulong)diag[1].Count[0]; i++)
             {
-                diag[1][i, i] = new drobch64(pow((double)diag[1][i, i], _value));
+                diag[1][i, i] = new drobch64(this.pow((double)diag[1][i, i], _value));
             }
 
             return diag[0].___Multiply(diag[1]).___Multiply(diag[2]);

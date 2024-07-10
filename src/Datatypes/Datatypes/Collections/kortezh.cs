@@ -566,7 +566,7 @@ namespace Datatypes.Collections
             if (this.Count.value <= this.MaxLength)
             {
                 this.value = new ArrayList();
-                this.value.AddRange(kortezh.ParamsValidation(_value));
+                this.value.AddRange(ParamsValidation(_value));
             }
             else
             {
@@ -580,7 +580,7 @@ namespace Datatypes.Collections
             if (this.Count.value <= this.MaxLength)
             {
                 this.value = new ArrayList();
-                this.value.AddRange(kortezh.ParamsValidation((ArrayList)_value.value));
+                this.value.AddRange(ParamsValidation((ArrayList)_value.value));
             }
             else
             {
@@ -594,7 +594,7 @@ namespace Datatypes.Collections
             if (this.Count.value <= this.MaxLength)
             {
                 this.value = new ArrayList();
-                this.value.AddRange(kortezh.ParamsValidation((ArrayList)_value.value));
+                this.value.AddRange(ParamsValidation((ArrayList)_value.value));
             }
             else
             {
@@ -608,7 +608,7 @@ namespace Datatypes.Collections
             if (this.Count.value <= this.MaxLength)
             {
                 this.value = new ArrayList();
-                this.value.AddRange(kortezh.ParamsValidation((ArrayList)_value.value));
+                this.value.AddRange(ParamsValidation((ArrayList)_value.value));
             }
             else
             {
@@ -622,7 +622,7 @@ namespace Datatypes.Collections
             if (this.Count.value <= this.MaxLength)
             {
                 this.value = new ArrayList();
-                this.value.AddRange(kortezh.ParamsValidation(_value));
+                this.value.AddRange(ParamsValidation(_value));
             }
             else
             {
@@ -887,7 +887,7 @@ namespace Datatypes.Collections
             if (this.Count.value <= this.MaxLength)
             {
                 this.value = new ArrayList();
-                this.value.AddRange(kortezh.ParamsValidation(_value));
+                this.value.AddRange(ParamsValidation(_value));
             }
             else
             {
@@ -1543,14 +1543,12 @@ namespace Datatypes.Collections
                 {
                     if (start > end)
                     {
-                        return VOID.Reverse(_value.Skip(start).Take(end - start).ToArray());
+                        return Reverse(_value.Skip(start).Take(end - start).ToArray());
                     }
-                    else
-                    {
-                        KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                        err.Execute();
-                        return null;
-                    }
+
+                    KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
                 }
             }
         }
@@ -1567,12 +1565,10 @@ namespace Datatypes.Collections
                     {
                         return Reverse(data.Skip(end).Take(start - end).Where((val, index) => index % step == 0).ToArray());
                     }
-                    else
-                    {
-                        KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
-                        err.Execute();
-                        return null;
-                    }
+
+                    KortezhOutOfRangeError err = new KortezhOutOfRangeError(0, 0);
+                    err.Execute();
+                    return null;
                 }
             }
         }

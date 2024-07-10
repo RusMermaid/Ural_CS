@@ -16,9 +16,9 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 			input.Parent = this;
 			output.Parent = this;
 
-			Input = input;
-			Output = output;
-            Input.IsDefinition = true;
+			this.Input = input;
+			this.Output = output;
+			this.Input.IsDefinition = true;
 		}
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		{
 			try
 			{
-				return Output.BetaReduce();
+				return this.Output.BetaReduce();
 			}
 			catch
 			{
@@ -44,11 +44,8 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		/// <returns>True if this functions binds the variable, otherwise it passes the check to its parent</returns>
 		public override bool IsBound(string variable)
 		{
-			if (Input.Name == variable) return true;
-			else
-			{
-				return Parent == null ? false : Parent.IsBound(variable);
-			}
+			if (this.Input.Name == variable) return true;
+			return this.Parent != null && this.Parent.IsBound(variable);
 		}
 
 		/// <summary>
@@ -58,21 +55,19 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		/// <param name="with"></param>
 		internal override void Replace(LambdaVariable what, LambdaTerm with)
 		{
-			Output.Replace(what, with);
+			this.Output.Replace(what, with);
 		}
 
         public override int GetDeBruijnIndex(string name = "")
-		{
-			if (name == Input.Name)
+        {
+	        if (name == this.Input.Name)
 			{
 				return 1;
 			}
-			else
-			{
-				var parentDeBruijn = Parent.GetDeBruijnIndex(name);
-				return parentDeBruijn < 0 ? parentDeBruijn : parentDeBruijn + 1;
-			}
-		}
+
+	        int parentDeBruijn = this.Parent.GetDeBruijnIndex(name);
+	        return parentDeBruijn < 0 ? parentDeBruijn : parentDeBruijn + 1;
+        }
 
 		/// <summary>
 		/// 
@@ -80,12 +75,12 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		/// <returns>A nice string representation of the object</returns>
 		public override string ToString()
 		{
-			return "\\" + Input.ToString() + "." + Output.ToString();
+			return "\\" + this.Input.ToString() + "." + this.Output.ToString();
 		}
 
 		public override string PrintDeBruijn()
 		{
-			return "\\." + Output.PrintDeBruijn();
+			return "\\." + this.Output.PrintDeBruijn();
 		}
 	}
 }

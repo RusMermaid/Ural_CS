@@ -17,9 +17,9 @@
 		/// <param name="term"></param>
 		public TermDefinition(string name, string term)
 		{
-			Name = name;
+			this.Name = name;
 
-			isFirstDefinition = true;
+			this.isFirstDefinition = true;
 			
 
 			//RuntimeEnvironment.Terms.Add(name, term);
@@ -31,7 +31,7 @@
 		/// <returns>An appropriate explanation to the user of what they have wrought</returns>
 		public override string ToString()
 		{
-			return (!isFirstDefinition ? "re" : "") + "defined " + Name;
+			return (!this.isFirstDefinition ? "re" : "") + "defined " + this.Name;
 		}
 	}
 }

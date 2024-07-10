@@ -887,11 +887,12 @@ namespace Datatypes.Strings
 
         public dynamic ___Add(dynamic _value)
         {
-            if (VOID.IsNumericFull(_value))
+            if (IsNumericFull(_value))
             {
                 return new SyntaxInvalidOverloadStrNumericError(0, 0);
             }
-            else switch (_value)
+
+            switch (_value)
             {
                 case str0 :
                     return this.___Add(_value.ToString());
@@ -900,7 +901,7 @@ namespace Datatypes.Strings
                     string str = this.value + Convert.ToString(_value);
                     switch ((ulong)str.Length)
                     {
-                        case < str64.MaxLength :
+                        case < MaxLength :
                             return new str64(str);
                         default :
                         {
@@ -918,7 +919,7 @@ namespace Datatypes.Strings
             string str = this.value + Convert.ToString(_value);
             switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -959,7 +960,7 @@ namespace Datatypes.Strings
             string str = this.value + Convert.ToString(_value.value);
             switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -975,7 +976,7 @@ namespace Datatypes.Strings
             string str = this.value + Convert.ToString(_value.value);
             switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -991,7 +992,7 @@ namespace Datatypes.Strings
             string str = this.value + Convert.ToString(_value.value);
             switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -1007,7 +1008,7 @@ namespace Datatypes.Strings
             string str = this.value + Convert.ToString(_value.value);
             switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -1023,7 +1024,7 @@ namespace Datatypes.Strings
             string str = this.value + Convert.ToString(_value.value);
             switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -1039,7 +1040,7 @@ namespace Datatypes.Strings
             string str = this.value + Convert.ToString(_value.value);
             switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -1055,7 +1056,7 @@ namespace Datatypes.Strings
             string str = this.value + Convert.ToString(_value.value);
             switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -1071,7 +1072,7 @@ namespace Datatypes.Strings
             string str = this.value + Convert.ToString(_value.value);
             switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -1087,7 +1088,7 @@ namespace Datatypes.Strings
             string str = this.value + Convert.ToString(_value.value);
             switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -1209,14 +1210,15 @@ namespace Datatypes.Strings
 
         public dynamic ___Multiply(natch16 _value)
         {
-            string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+            string str = StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
             if (_value.value == 0)
             {
                 return this;
             }
-            else switch ((ulong)str.Length)
+
+            switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -1229,14 +1231,15 @@ namespace Datatypes.Strings
 
         public dynamic ___Multiply(natch32 _value)
         {
-            string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+            string str = StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
             if (_value.value == 0)
             {
                 return this;
             }
-            else switch ((ulong)str.Length)
+
+            switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -1249,14 +1252,15 @@ namespace Datatypes.Strings
 
         public dynamic ___Multiply(natch64 _value)
         {
-            string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+            string str = StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
             if (_value.value == 0)
             {
                 return this;
             }
-            else switch ((ulong)str.Length)
+
+            switch ((ulong)str.Length)
             {
-                case < str64.MaxLength :
+                case < MaxLength :
                     return new str64(str);
                 default :
                 {
@@ -1273,12 +1277,13 @@ namespace Datatypes.Strings
             {
                 return this;
             }
-            else if (_value.value > 0)
+
+            if (_value.value > 0)
             {
-                string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+                string str = StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
                 switch ((ulong)str.Length)
                 {
-                    case < str64.MaxLength :
+                    case < MaxLength :
                         return new str64(str);
                     default :
                     {
@@ -1295,10 +1300,10 @@ namespace Datatypes.Strings
                 if (n < (ulong)str.Length)
                 {
                     str = Slice(str, 0, (ulong)(n + 1));
-                    str = VOID.StrMultiply(str, n);
+                    str = StrMultiply(str, n);
                     switch ((ulong)str.Length)
                     {
-                        case < str64.MaxLength :
+                        case < MaxLength :
                             return new str64(str);
                         default :
                         {
@@ -1308,7 +1313,7 @@ namespace Datatypes.Strings
                         }
                     }
                 }
-                else
+
                 {
                     StrIndexOutOfRangeError err = new StrIndexOutOfRangeError(0, 0);
                     err.Execute();
@@ -1323,12 +1328,13 @@ namespace Datatypes.Strings
             {
                 return this;
             }
-            else if (_value.value > 0)
+
+            if (_value.value > 0)
             {
-                string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+                string str = StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
                 switch ((ulong)str.Length)
                 {
-                    case < str64.MaxLength :
+                    case < MaxLength :
                         return new str64(str);
                     default :
                     {
@@ -1345,10 +1351,10 @@ namespace Datatypes.Strings
                 if (n < (ulong)str.Length)
                 {
                     str = Slice(str, 0, (ulong)(n + 1));
-                    str = VOID.StrMultiply(str, n);
+                    str = StrMultiply(str, n);
                     switch ((ulong)str.Length)
                     {
-                        case < str64.MaxLength :
+                        case < MaxLength :
                             return new str64(str);
                         default :
                         {
@@ -1358,7 +1364,7 @@ namespace Datatypes.Strings
                         }
                     }
                 }
-                else
+
                 {
                     StrIndexOutOfRangeError err = new StrIndexOutOfRangeError(0, 0);
                     err.Execute();
@@ -1373,12 +1379,13 @@ namespace Datatypes.Strings
             {
                 return this;
             }
-            else if (_value.value > 0)
+
+            if (_value.value > 0)
             {
-                string str = VOID.StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
+                string str = StrMultiply(Convert.ToString(this.value), Convert.ToUInt64(_value.value));
                 switch ((ulong)str.Length)
                 {
-                    case < str64.MaxLength :
+                    case < MaxLength :
                         return new str64(str);
                     default :
                     {
@@ -1395,10 +1402,10 @@ namespace Datatypes.Strings
                 if (n < (ulong)str.Length)
                 {
                     str = Slice(str, 0, (ulong)(n + 1));
-                    str = VOID.StrMultiply(str, n);
+                    str = StrMultiply(str, n);
                     switch ((ulong)str.Length)
                     {
-                        case < str64.MaxLength :
+                        case < MaxLength :
                             return new str64(str);
                         default :
                         {
@@ -1408,7 +1415,7 @@ namespace Datatypes.Strings
                         }
                     }
                 }
-                else
+
                 {
                     StrIndexOutOfRangeError err = new StrIndexOutOfRangeError(0, 0);
                     err.Execute();
@@ -1512,97 +1519,95 @@ namespace Datatypes.Strings
             {
                 goto Sign;
             }
-            else if (this.value.Length == 1 & (this.value[0] == '+' | this.value[0] == '-'))
+
+            if (this.value.Length == 1 & (this.value[0] == '+' | this.value[0] == '-'))
             {
                 goto Sign;
             }
-            else
+            for (int i = 0; i < this.value.Length; i++)
             {
-                for (int i = 0; i < this.value.Length; i++)
+                switch (i)
                 {
-                    switch (i)
-                    {
-                        case 0 when this.value[i] == '+' | this.value[i] == '-' :
-                            continue;
-                        case 0 :
-                            switch (this.value[i])
-                            {
-                                case '0':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '1':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '2':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '3':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '4':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '5':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '6':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '7':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '8':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '9':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                default:
-                                    flag *= new RCI(false);
-                                    goto End;
-                            }
+                    case 0 when this.value[i] == '+' | this.value[i] == '-' :
+                        continue;
+                    case 0 :
+                        switch (this.value[i])
+                        {
+                            case '0':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '1':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '2':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '3':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '4':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '5':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '6':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '7':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '8':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '9':
+                                flag *= new RCI(true);
+                                goto End;
+                            default:
+                                flag *= new RCI(false);
+                                goto End;
+                        }
 
-                            break;
-                        default :
-                            switch (this.value[i])
-                            {
-                                case '0':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '1':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '2':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '3':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '4':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '5':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '6':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '7':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '8':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '9':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                default:
-                                    flag *= new RCI(false);
-                                    goto End;
-                            }
+                        break;
+                    default :
+                        switch (this.value[i])
+                        {
+                            case '0':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '1':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '2':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '3':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '4':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '5':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '6':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '7':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '8':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '9':
+                                flag *= new RCI(true);
+                                goto End;
+                            default:
+                                flag *= new RCI(false);
+                                goto End;
+                        }
 
-                            break;
-                    }
+                        break;
                 }
             }
 
@@ -1737,97 +1742,95 @@ namespace Datatypes.Strings
             {
                 goto Sign;
             }
-            else if (value.value.Length == 1 & (value.value[0] == '+' | value.value[0] == '-'))
+
+            if (value.value.Length == 1 & (value.value[0] == '+' | value.value[0] == '-'))
             {
                 goto Sign;
             }
-            else
+            for (int i = 0; i < value.value.Length; i++)
             {
-                for (int i = 0; i < value.value.Length; i++)
+                switch (i)
                 {
-                    switch (i)
-                    {
-                        case 0 when value.value[i] == '+' | value.value[i] == '-' :
-                            continue;
-                        case 0 :
-                            switch (value.value[i])
-                            {
-                                case '0':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '1':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '2':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '3':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '4':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '5':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '6':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '7':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '8':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '9':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                default:
-                                    flag *= new RCI(false);
-                                    goto End;
-                            }
+                    case 0 when value.value[i] == '+' | value.value[i] == '-' :
+                        continue;
+                    case 0 :
+                        switch (value.value[i])
+                        {
+                            case '0':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '1':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '2':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '3':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '4':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '5':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '6':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '7':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '8':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '9':
+                                flag *= new RCI(true);
+                                goto End;
+                            default:
+                                flag *= new RCI(false);
+                                goto End;
+                        }
 
-                            break;
-                        default :
-                            switch (value.value[i])
-                            {
-                                case '0':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '1':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '2':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '3':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '4':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '5':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '6':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '7':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '8':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '9':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                default:
-                                    flag *= new RCI(false);
-                                    goto End;
-                            }
+                        break;
+                    default :
+                        switch (value.value[i])
+                        {
+                            case '0':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '1':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '2':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '3':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '4':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '5':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '6':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '7':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '8':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '9':
+                                flag *= new RCI(true);
+                                goto End;
+                            default:
+                                flag *= new RCI(false);
+                                goto End;
+                        }
 
-                            break;
-                    }
+                        break;
                 }
             }
 
@@ -1845,97 +1848,95 @@ namespace Datatypes.Strings
             {
                 goto Sign;
             }
-            else if (value.value.Length == 1 & (value.value[0] == '+' | value.value[0] == '-'))
+
+            if (value.value.Length == 1 & (value.value[0] == '+' | value.value[0] == '-'))
             {
                 goto Sign;
             }
-            else
+            for (int i = 0; i < value.value.Length; i++)
             {
-                for (int i = 0; i < value.value.Length; i++)
+                switch (i)
                 {
-                    switch (i)
-                    {
-                        case 0 when value.value[i] == '+' | value.value[i] == '-' :
-                            continue;
-                        case 0 :
-                            switch (value.value[i])
-                            {
-                                case '0':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '1':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '2':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '3':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '4':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '5':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '6':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '7':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '8':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '9':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                default:
-                                    flag *= new RCI(false);
-                                    goto End;
-                            }
+                    case 0 when value.value[i] == '+' | value.value[i] == '-' :
+                        continue;
+                    case 0 :
+                        switch (value.value[i])
+                        {
+                            case '0':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '1':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '2':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '3':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '4':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '5':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '6':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '7':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '8':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '9':
+                                flag *= new RCI(true);
+                                goto End;
+                            default:
+                                flag *= new RCI(false);
+                                goto End;
+                        }
 
-                            break;
-                        default :
-                            switch (value.value[i])
-                            {
-                                case '0':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '1':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '2':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '3':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '4':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '5':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '6':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '7':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '8':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '9':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                default:
-                                    flag *= new RCI(false);
-                                    goto End;
-                            }
+                        break;
+                    default :
+                        switch (value.value[i])
+                        {
+                            case '0':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '1':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '2':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '3':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '4':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '5':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '6':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '7':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '8':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '9':
+                                flag *= new RCI(true);
+                                goto End;
+                            default:
+                                flag *= new RCI(false);
+                                goto End;
+                        }
 
-                            break;
-                    }
+                        break;
                 }
             }
 
@@ -1953,97 +1954,95 @@ namespace Datatypes.Strings
             {
                 goto Sign;
             }
-            else if (value.value.Length == 1 & (value.value[0] == '+' | value.value[0] == '-'))
+
+            if (value.value.Length == 1 & (value.value[0] == '+' | value.value[0] == '-'))
             {
                 goto Sign;
             }
-            else
+            for (int i = 0; i < value.value.Length; i++)
             {
-                for (int i = 0; i < value.value.Length; i++)
+                switch (i)
                 {
-                    switch (i)
-                    {
-                        case 0 when value.value[i] == '+' | value.value[i] == '-' :
-                            continue;
-                        case 0 :
-                            switch (value.value[i])
-                            {
-                                case '0':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '1':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '2':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '3':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '4':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '5':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '6':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '7':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '8':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '9':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                default:
-                                    flag *= new RCI(false);
-                                    goto End;
-                            }
+                    case 0 when value.value[i] == '+' | value.value[i] == '-' :
+                        continue;
+                    case 0 :
+                        switch (value.value[i])
+                        {
+                            case '0':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '1':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '2':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '3':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '4':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '5':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '6':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '7':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '8':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '9':
+                                flag *= new RCI(true);
+                                goto End;
+                            default:
+                                flag *= new RCI(false);
+                                goto End;
+                        }
 
-                            break;
-                        default :
-                            switch (value.value[i])
-                            {
-                                case '0':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '1':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '2':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '3':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '4':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '5':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '6':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '7':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '8':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '9':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                default:
-                                    flag *= new RCI(false);
-                                    goto End;
-                            }
+                        break;
+                    default :
+                        switch (value.value[i])
+                        {
+                            case '0':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '1':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '2':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '3':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '4':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '5':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '6':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '7':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '8':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '9':
+                                flag *= new RCI(true);
+                                goto End;
+                            default:
+                                flag *= new RCI(false);
+                                goto End;
+                        }
 
-                            break;
-                    }
+                        break;
                 }
             }
 
@@ -2061,97 +2060,95 @@ namespace Datatypes.Strings
             {
                 goto Sign;
             }
-            else if (value.value.Length == 1 & (value.value[0] == '+' | value.value[0] == '-'))
+
+            if (value.value.Length == 1 & (value.value[0] == '+' | value.value[0] == '-'))
             {
                 goto Sign;
             }
-            else
+            for (int i = 0; i < value.value.Length; i++)
             {
-                for (int i = 0; i < value.value.Length; i++)
+                switch (i)
                 {
-                    switch (i)
-                    {
-                        case 0 when value.value[i] == '+' | value.value[i] == '-' :
-                            continue;
-                        case 0 :
-                            switch (value.value[i])
-                            {
-                                case '0':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '1':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '2':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '3':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '4':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '5':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '6':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '7':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '8':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '9':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                default:
-                                    flag *= new RCI(false);
-                                    goto End;
-                            }
+                    case 0 when value.value[i] == '+' | value.value[i] == '-' :
+                        continue;
+                    case 0 :
+                        switch (value.value[i])
+                        {
+                            case '0':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '1':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '2':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '3':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '4':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '5':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '6':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '7':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '8':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '9':
+                                flag *= new RCI(true);
+                                goto End;
+                            default:
+                                flag *= new RCI(false);
+                                goto End;
+                        }
 
-                            break;
-                        default :
-                            switch (value.value[i])
-                            {
-                                case '0':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '1':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '2':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '3':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '4':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '5':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '6':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '7':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '8':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                case '9':
-                                    flag *= new RCI(true);
-                                    goto End;
-                                default:
-                                    flag *= new RCI(false);
-                                    goto End;
-                            }
+                        break;
+                    default :
+                        switch (value.value[i])
+                        {
+                            case '0':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '1':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '2':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '3':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '4':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '5':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '6':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '7':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '8':
+                                flag *= new RCI(true);
+                                goto End;
+                            case '9':
+                                flag *= new RCI(true);
+                                goto End;
+                            default:
+                                flag *= new RCI(false);
+                                goto End;
+                        }
 
-                            break;
-                    }
+                        break;
                 }
             }
 
@@ -2185,10 +2182,8 @@ namespace Datatypes.Strings
                                 goto End;
                         }
                     }
-                    else
-                    {
-                        goto End;
-                    }
+
+                    goto End;
                 }
                 case 2 :
                     goto End;
@@ -2223,10 +2218,8 @@ namespace Datatypes.Strings
                                 goto End;
                         }
                     }
-                    else
-                    {
-                        goto End;
-                    }
+
+                    goto End;
                 }
                 case 2 :
                     goto End;
@@ -2261,10 +2254,8 @@ namespace Datatypes.Strings
                                 goto End;
                         }
                     }
-                    else
-                    {
-                        goto End;
-                    }
+
+                    goto End;
                 }
                 case 2 :
                     goto End;
@@ -2299,10 +2290,8 @@ namespace Datatypes.Strings
                                 goto End;
                         }
                     }
-                    else
-                    {
-                        goto End;
-                    }
+
+                    goto End;
                 }
                 case 2 :
                     goto End;
@@ -2337,10 +2326,8 @@ namespace Datatypes.Strings
                                 goto End;
                         }
                     }
-                    else
-                    {
-                        goto End;
-                    }
+
+                    goto End;
                 }
                 case 2 :
                     goto End;
@@ -2375,10 +2362,8 @@ namespace Datatypes.Strings
                                 goto End;
                         }
                     }
-                    else
-                    {
-                        goto End;
-                    }
+
+                    goto End;
                 }
                 case 2 :
                     goto End;

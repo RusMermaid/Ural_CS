@@ -1,7 +1,7 @@
 ﻿
 using Sprache;
 using Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree;
-
+using Errors.SyntaxInvalidError.ErrorDatatypes;
 using LambdaExpression = Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree.LambdaExpression;
 namespace Datatypes.Collections.MathCollections.LambdaAnaliz
 {
@@ -17,13 +17,7 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz
 			return Line.Parse(input);
 		}
 
-		public static void ParseDefinition(string input)
-		{
-			if (input != null && input != "")
-			{
-				LDefinition.Parse(input);
-			}
-		}
+		
 
 		/// <summary>
 		/// Parses a lambda expression
@@ -67,10 +61,11 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz
 		//Parse functions and applications by considering them to be operators
 		//Eliminated problems with recursive grammar in a parser-combinator
 		static readonly Parser<LambdaTerm> LTermApplication = Parse.ChainOperator(Parse.Char(' '), LFactor, (op, first, second) => new LambdaApplication(first, second));
-		static readonly Parser<LambdaTerm> LTermFunction = Parse.ChainRightOperator(Parse.Char('.'), LTermApplication, (op, first, second) =>
+
+		private static readonly Parser<LambdaTerm> LTermFunction = Parse.ChainRightOperator(Parse.Char('.'), LTermApplication, (op, first, second) =>
 		{
 			if (first.GetType() == typeof(LambdaVariable)) return new LambdaFunction((first as LambdaVariable), second);
-			else throw new ParseException("Something went funny - first is: " + first.ToString());
+			throw new SyntaxInvalidLambdaDatatypeError(0, 0);
 		});
 
 		//Parses a term into a LambdaExpression object
@@ -84,7 +79,7 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz
 			select new TermDefinition(word, expr);
 
 		//Parses anything! Wow!
-		static readonly Parser<LambdaTerm> Line = LDefinition.Or(LTerm);
+		private static readonly Parser<LambdaTerm> Line = LDefinition.Or(LTerm);
 
 		/// <summary>
 		/// Turns an integer into a Church-encoded number
@@ -105,7 +100,7 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz
 			}
 			lambdaNumber += ")";
 
-			var num = ParseTerm(lambdaNumber).Root;
+			LambdaTerm num = ParseTerm(lambdaNumber).Root;
 			num.Parent = null;
 
 			return num;

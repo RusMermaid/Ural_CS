@@ -14,19 +14,19 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		public LambdaExpression(LambdaTerm root)
 		{
 			root.Parent = this;
-			Root = root;
+            this.Root = root;
 		}
 
 		public override bool BetaReduce()
 		{
-			var toEnd = true;
+			bool toEnd = true;
 
 			//Loop until we can b-reduce no more
 			while (toEnd)
 			{
 				try
 				{
-					toEnd = Root.BetaReduce();
+					toEnd = this.Root.BetaReduce();
 				}
 				catch
 				{
@@ -39,40 +39,40 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 
 		internal override void Replace(LambdaVariable what, LambdaTerm with)
 		{
-			Root.Replace(what, with);
+            this.Root.Replace(what, with);
 		}
 
-        private List<string> FreeVariables = new List<string>();
+        private List<string> FreeVariables = new List<string> { };
 
 		public override int GetDeBruijnIndex(string name = "")
 		{
-			if (!FreeVariables.Contains(name))
+			if (!this.FreeVariables.Contains(name))
 			{
-				FreeVariables.Add(name);
+                this.FreeVariables.Add(name);
 			}
 
-			return -1 - (FreeVariables.IndexOf(name));
+			return -1 - (this.FreeVariables.IndexOf(name));
 		}
 
 		public override string ToString()
 		{
-			return Root.ToString();
+			return this.Root.ToString();
 		}
 
 		public override string PrintDeBruijn()
 		{
-			return Root.PrintDeBruijn();
+			return this.Root.PrintDeBruijn();
 		}
         
         public override string PrintBinary()
         {
-            InnerLambdaTerm print_DeBruijn = InnerParse.ParseStream(new str10(Root.PrintDeBruijn().Replace(@"\.", "λ")));
+            InnerLambdaTerm print_DeBruijn = InnerParse.ParseStream(new str10(this.Root.PrintDeBruijn().Replace(@"\.", "λ")));
             return print_DeBruijn.BruijnBinary();
         }
         
         public override binch ToBinary()
         {
-            return new binch((string)this.PrintBinary());
+            return new binch(this.PrintBinary());
         }
         
         internal class InnerLambdaTerm
@@ -139,7 +139,7 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
                     }
                 }
 
-                return head;
+                return this.head;
             }
 
             internal string Next()

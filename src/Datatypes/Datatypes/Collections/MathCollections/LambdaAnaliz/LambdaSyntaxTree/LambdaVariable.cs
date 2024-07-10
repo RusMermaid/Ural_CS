@@ -10,12 +10,12 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 
         public LambdaVariable(string name)
 		{
-			Name = name;
+			this.Name = name;
 		}
 
         public bool IsBound()
 		{
-			return Parent == null ? false : Parent.IsBound(Name);
+			return this.Parent?.IsBound(this.Name) ?? false;
 		}
 
 		/// <summary>
@@ -25,47 +25,45 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		/// <param name="with">That with which we must replace what</param>
 		internal override void Replace(LambdaVariable what, LambdaTerm with)
 		{
-			if (Name == what.Name && !IsBound())
+			if (this.Name != what.Name || this.IsBound()) return;
+			if (this.Parent.GetType() == typeof(LambdaFunction))
 			{
-				if (Parent.GetType() == typeof(LambdaFunction))
+				(this.Parent as LambdaFunction).Output = with;
+				with.Parent = (this.Parent as LambdaFunction);
+			}
+			else if (this.Parent.GetType() == typeof(LambdaApplication))
+			{
+				if ((this.Parent as LambdaApplication).First == this)
 				{
-					(Parent as LambdaFunction).Output = with;
-					with.Parent = (Parent as LambdaFunction);
+					(this.Parent as LambdaApplication).First = with;
+					with.Parent = (this.Parent as LambdaApplication);
 				}
-				else if (Parent.GetType() == typeof(LambdaApplication))
+				else
 				{
-					if ((Parent as LambdaApplication).First == this)
-					{
-						(Parent as LambdaApplication).First = with;
-						with.Parent = (Parent as LambdaApplication);
-					}
-					else
-					{
-						(Parent as LambdaApplication).Second = with;
-						with.Parent = (Parent as LambdaApplication);
-					}
+					(this.Parent as LambdaApplication).Second = with;
+					with.Parent = (this.Parent as LambdaApplication);
 				}
-				else if (Parent.GetType() == typeof(LambdaExpression))
-				{
-					(Parent as LambdaExpression).Root = with;
-					with.Parent = (Parent as LambdaExpression);
-				}
+			}
+			else if (this.Parent.GetType() == typeof(LambdaExpression))
+			{
+				(this.Parent as LambdaExpression).Root = with;
+				with.Parent = (this.Parent as LambdaExpression);
 			}
 		}
 		
 		public override int GetDeBruijnIndex(string name = "")
 		{
-			return Parent.GetDeBruijnIndex(Name);
+			return this.Parent.GetDeBruijnIndex(this.Name);
 		}
 
         public override string ToString()
 		{
-			return Name;
+			return this.Name;
 		}
 
 		public override string PrintDeBruijn()
 		{
-			return GetDeBruijnIndex().ToString();
+			return this.GetDeBruijnIndex().ToString();
 		}
 	}
 }
