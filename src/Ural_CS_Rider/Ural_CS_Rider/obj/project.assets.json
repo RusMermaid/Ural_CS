@@ -26,7 +26,7 @@
           "lib/netstandard2.0/Colorful.Console.dll": {}
         }
       },
-      "FSharp.Core/7.0.300": {
+      "FSharp.Core/8.0.300": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {
@@ -655,7 +655,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Colorful.Console": "1.2.15",
-          "FSharp.Core": "7.0.300",
+          "FSharp.Core": "8.0.300",
           "MathNet.Numerics": "4.15.0"
         },
         "compile": {
@@ -691,7 +691,7 @@
           "lib/netstandard2.0/Colorful.Console.dll": {}
         }
       },
-      "FSharp.Core/7.0.300": {
+      "FSharp.Core/8.0.300": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {
@@ -1608,7 +1608,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Colorful.Console": "1.2.15",
-          "FSharp.Core": "7.0.300",
+          "FSharp.Core": "8.0.300",
           "MathNet.Numerics": "4.15.0"
         },
         "compile": {
@@ -1639,15 +1639,15 @@
         "lib/netstandard2.0/Colorful.Console.dll"
       ]
     },
-    "FSharp.Core/7.0.300": {
-      "sha512": "8vvItREJ1l5lcp3vBCSJ1mFevVAhR48I34DuF/EoUa7o1KlFpQpagyuZkVYMAsHPIjdp47ZxM9sI4eqeXaeWkA==",
+    "FSharp.Core/8.0.300": {
+      "sha512": "Jv44fV7TNglyMku89lQcA4Q6mFKLyHb2bs1Yb72nvSVc+cHplEnoZ4XQUaaTLJGUTx/iMqcrkYGtaLzkkIhpaA==",
       "type": "package",
-      "path": "fsharp.core/7.0.300",
+      "path": "fsharp.core/8.0.300",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "fsharp.core.7.0.300.nupkg.sha512",
+        "fsharp.core.8.0.300.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -4305,23 +4305,23 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
+            "version": "[6.0.31, 6.0.31]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.osx-arm64",
-            "version": "[6.0.28, 6.0.28]"
+            "version": "[6.0.31, 6.0.31]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.osx-arm64",
-            "version": "[6.0.28, 6.0.28]"
+            "version": "[6.0.31, 6.0.31]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
+            "version": "[6.0.31, 6.0.31]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.osx-arm64",
-            "version": "[6.0.28, 6.0.28]"
+            "version": "[6.0.31, 6.0.31]"
           }
         ],
         "frameworkReferences": {
@@ -4329,7 +4329,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

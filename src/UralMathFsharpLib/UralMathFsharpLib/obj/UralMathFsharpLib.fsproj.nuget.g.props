@@ -13,7 +13,7 @@
     <SourceRoot Include="/Users/rus_mermaid/.nuget/packages/" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/rus_mermaid/.nuget/packages/fsharp.core/7.0.300</PkgFSharp_Core>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/rus_mermaid/.nuget/packages/fsharp.core/8.0.300</PkgFSharp_Core>
     <PkgColorful_Console Condition=" '$(PkgColorful_Console)' == '' ">/Users/rus_mermaid/.nuget/packages/colorful.console/1.2.15</PkgColorful_Console>
   </PropertyGroup>
 </Project>

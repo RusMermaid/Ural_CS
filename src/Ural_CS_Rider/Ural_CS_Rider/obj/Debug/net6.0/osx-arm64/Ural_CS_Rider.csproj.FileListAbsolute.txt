@@ -213,10 +213,11 @@
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.AssemblyInfoInputs.cache
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.AssemblyInfo.cs
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.csproj.CoreCompileInputs.cache
-/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.csproj.CopyComplete
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.dll
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/refint/Ural_CS_Rider.dll
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.pdb
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.genruntimeconfig.cache
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/ref/Ural_CS_Rider.dll
 /Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Sprache.dll
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.sourcelink.json
+/Users/rus_mermaid/Desktop/Hard_Drive_SSD/Macbook_ProM1_2022/CP_projects/Ural_CS/src/Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_.91BFE423.Up2Date
