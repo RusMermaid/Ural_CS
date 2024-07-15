@@ -30,25 +30,25 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz
 		}
 
 		//Parses an integer and returns the Church-encoded term for that integer
-		static readonly Parser<LambdaTerm> LNumber = Parse.Digit.AtLeastOnce().Text().Select(s => GetNumber(Convert.ToInt32(s)));
+		private static readonly Parser<LambdaTerm> LNumber = Parse.Digit.AtLeastOnce().Text().Select(s => GetNumber(Convert.ToInt32(s)));
 
 		//Parses a word (two or more letters), returning that word as a string
-		static readonly Parser<string> LWord =
+		private static readonly Parser<string> LWord =
 			from first in Parse.Letter.Once().Text()
 			from next in Parse.Letter.AtLeastOnce().Text()
 			select first + next;
 
 		//Parses a single letter into a LambdaVariable
-		static readonly Parser<LambdaVariable> LVariable = Parse.Letter.Once().Text().Select(s => new LambdaVariable(s));
+		private static readonly Parser<LambdaVariable> LVariable = Parse.Letter.Once().Text().Select(s => new LambdaVariable(s));
 
 		//Parses the "input" part of a lambda function
-		static readonly Parser<LambdaVariable> LDeclaration =
-			from lam in Parse.Char('\\')
+		private static readonly Parser<LambdaVariable> LDeclaration =
+			from lam in Parse.Char('λ')
 			from lVar in LVariable
 			select new LambdaVariable(lVar.Name);
 
 		//Parses a term in parentheses or several other parsers above
-		static readonly Parser<LambdaTerm> LFactor =
+		private static readonly Parser<LambdaTerm> LFactor =
 		   (from lparen in Parse.Char('(')
 			from term in Parse.Ref(() => LTermFunction)
 			from rparen in Parse.Char(')')
@@ -60,7 +60,7 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz
 
 		//Parse functions and applications by considering them to be operators
 		//Eliminated problems with recursive grammar in a parser-combinator
-		static readonly Parser<LambdaTerm> LTermApplication = Parse.ChainOperator(Parse.Char(' '), LFactor, (op, first, second) => new LambdaApplication(first, second));
+		private static readonly Parser<LambdaTerm> LTermApplication = Parse.ChainOperator(Parse.Char(' '), LFactor, (op, first, second) => new LambdaApplication(first, second));
 
 		private static readonly Parser<LambdaTerm> LTermFunction = Parse.ChainRightOperator(Parse.Char('.'), LTermApplication, (op, first, second) =>
 		{
@@ -69,10 +69,10 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz
 		});
 
 		//Parses a term into a LambdaExpression object
-		static readonly Parser<LambdaTerm> LTerm = LTermFunction.Select(s => new LambdaExpression(s));
+		private static readonly Parser<LambdaTerm> LTerm = LTermFunction.Select(s => new LambdaExpression(s));
 
 		//Parses definitions
-		static readonly Parser<LambdaTerm> LDefinition =
+		private static readonly Parser<LambdaTerm> LDefinition =
 			from word in LWord
 			from sign in Parse.Char('=').Token()
 			from expr in Parse.AnyChar.Many().Text()
@@ -86,9 +86,9 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz
 		/// </summary>
 		/// <param name="toGet">The int to convert</param>
 		/// <returns>The Church-encoded LambdaTerm</returns>
-		static LambdaTerm GetNumber(int toGet)
+		private static LambdaTerm GetNumber(int toGet)
 		{
-			string lambdaNumber = @"(\f.\a.";
+			string lambdaNumber = @"(λf.λa.";
 			for (int i = 1; i <= toGet; i++)
 			{
 				lambdaNumber += "(f ";
@@ -111,26 +111,26 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz
 		/// </summary>
 		/// <param name="word">The name of the term</param>
 		/// <returns>The LambdaTerm you're looking for</returns>
-		static LambdaTerm GetTermFromWord(string word)
+		private static LambdaTerm GetTermFromWord(string word)
 		{
 			string wordOut = @"""
-				                           true = \x.\y.x
-				                           false = \x.\y.y
+				                           true = λx.λy.x
+				                           false = λx.λy.y
 				                           
-				                           and = \a.\b.a b a
-				                           or = \a.\b.a a b
-				                           not = \a.a false true
+				                           and = λa.λb.a b a
+				                           or = λa.λb.a a b
+				                           not = λa.a false true
 				                           
-				                           pair = \a.\b.\f.f a b
-				                           first = \p.p true
-				                           second = \p.p false
+				                           pair = λa.λb.\f.f a b
+				                           first = λp.p true
+				                           second = λp.p false
 				                           
-				                           suc = \n.\f.\a.f (n f a)
-				                           add = \m.\n.\f.\a.m f (n f a)
-				                           mult = \m.\n.\f.m (n f)
-				                           pow = \m.\n.n m
-				                           pred = \n.\f.\a.n (\g.\h.h (g f)) (\u.a) (\u.u)
-				                           sub = \m.\n.n pred m
+				                           suc = λn.λf.λa.f (n f a)
+				                           add = λm.λn.λf.λa.m f (n f a)
+				                           mult = λm.λn.λf.m (n f)
+				                           pow = λm.λn.n m
+				                           pred = λn.λf.λa.n (λg.λh.h (g f)) (λu.a) (λu.u)
+				                           sub = λm.λn.n pred m
 				                           """;
 
 			return LTermFunction.Parse(wordOut);

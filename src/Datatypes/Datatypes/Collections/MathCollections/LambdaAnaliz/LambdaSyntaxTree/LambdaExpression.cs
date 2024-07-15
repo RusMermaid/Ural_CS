@@ -66,7 +66,7 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
         
         public override string PrintBinary()
         {
-            InnerLambdaTerm print_DeBruijn = InnerParse.ParseStream(new str10(this.Root.PrintDeBruijn().Replace(@"\.", "λ")));
+            InnerLambdaTerm print_DeBruijn = InnerParse.ParseStream(new str10(this.Root.PrintDeBruijn().Replace(@".", "")));
             return print_DeBruijn.BruijnBinary();
         }
         

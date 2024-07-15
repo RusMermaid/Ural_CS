@@ -8,7 +8,7 @@
 	public class TermDefinition : LambdaTerm
 	{
 		public string Name;
-		bool isFirstDefinition;
+		private bool isFirstDefinition;
 
 		/// <summary>
 		/// The constructor adds the terms to the runtime environment

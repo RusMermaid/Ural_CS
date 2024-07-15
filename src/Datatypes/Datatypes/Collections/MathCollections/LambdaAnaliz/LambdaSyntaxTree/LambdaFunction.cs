@@ -75,12 +75,12 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 		/// <returns>A nice string representation of the object</returns>
 		public override string ToString()
 		{
-			return "\\" + this.Input.ToString() + "." + this.Output.ToString();
+			return "λ" + this.Input.ToString() + "." + this.Output.ToString();
 		}
 
 		public override string PrintDeBruijn()
 		{
-			return "\\." + this.Output.PrintDeBruijn();
+			return "λ." + this.Output.PrintDeBruijn();
 		}
 	}
 }

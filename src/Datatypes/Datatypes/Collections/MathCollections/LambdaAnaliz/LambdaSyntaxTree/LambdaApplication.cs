@@ -123,7 +123,7 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree
 
 		public override string PrintDeBruijn()
 		{
-			return this.First.PrintDeBruijn() + " " + this.Second.PrintDeBruijn();
+			return this.First.PrintDeBruijn() + " (" + this.Second.PrintDeBruijn() + ")";
 		}
 	}
 }
