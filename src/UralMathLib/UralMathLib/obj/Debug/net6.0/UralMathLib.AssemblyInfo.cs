@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UralMathLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cc194d4b15578004edfa0582490b58460ab526a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d915fe3558728dc05659799c7dcd954973ec9951")]
 [assembly: System.Reflection.AssemblyProductAttribute("UralMathLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UralMathLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

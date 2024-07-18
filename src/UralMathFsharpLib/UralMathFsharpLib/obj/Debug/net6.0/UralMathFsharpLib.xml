@@ -13,7 +13,7 @@
 
      // set fill style to a numbered pattern
      plt.Set(style = Style(fill = Pattern(3)))
-  
+
      // set the X range of the output plot to [-10:]
      plt.Set(range = RangeX.[-10.0 .. ]
 
@@ -26,25 +26,25 @@
 </member>
 <member name="M:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot.Plot(System.Collections.Generic.IEnumerable{Libraries.UralMathFsharpLib.UralPlot.Series},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Style},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRange},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Output},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Titles})">
 <summary>
- Draw a plot consisting of multiple data series. Range and 
+ Draw a plot consisting of multiple data series. Range and
  style can be specified using optional parameters. For example:
 
      // Create a simple line plot
      pltPlot
       [ Series.Lines(title=&quot;Lines&quot;, data=[2.0; 1.0; 2.0; 5.0])
         Series.Histogram(fill=Solid, data=[2.0; 1.0; 2.0; 5.0]) ]
-    
+
 </summary>
 </member>
 <member name="M:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot.Plot(Libraries.UralMathFsharpLib.UralPlot.Series,Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Style},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRange},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Output},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Titles})">
 <summary>
- Draw a plot of a single data series. Range and style can 
+ Draw a plot of a single data series. Range and style can
  be specified using optional parameters. For example:
 
      // Create a simple line plot
      plt.Plot(Series.Lines [2.0; 1.0; 2.0; 5FUralPlot.0],
-             range = RangeY.[-1.0 ..])   
-    
+             range = RangeY.[-1.0 ..])
+
 </summary>
 </member>
 <member name="M:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot.Plot(System.String,Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Style},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Internal.LambdaRange},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Output},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.Titles})">
@@ -66,8 +66,8 @@
 </member>
 <member name="T:Libraries.UralMathFsharpLib.UralPlot.UraFunctionalPlot">
 <summary>
- The main type of the library. It provides a wrapper for calling gnuplot from F#. 
- Plots are drawn using the `Plot` function and can be created using the `Series` type. 
+ The main type of the library. It provides a wrapper for calling gnuplot from F#.
+ Plots are drawn using the `Plot` function and can be created using the `Series` type.
  For example:
 
      // Create gnuplot process
@@ -77,9 +77,9 @@
      plt.Plot(&quot;sin(x)&quot;)
 
      // Create a simple line plot
-     plt.Plot(Series.Lines [2.0; 1.0; 2.0; 5.0])   
+     plt.Plot(Series.Lines [2.0; 1.0; 2.0; 5.0])
 
-     // Create a histogram plot drawn using blue color 
+     // Create a histogram plot drawn using blue color
      plt.Plot(Series.Histogram(lineColor=Color.Blue, data=[2.0; 1.0; 2.0; 5.0]))
 
 </summary>
@@ -88,7 +88,7 @@
 <summary>
  Used to specify titles for the X and Y axes. In addition to the text for the labels,
  you can also specify the rotation of the labels. For example:
- 
+
      // specify rotated titles for x axis
      Titles(x=[&quot;one&quot;; &quot;two&quot;], xrotate=-70)
 
@@ -196,7 +196,7 @@
 </member>
 <member name="M:Libraries.UralMathFsharpLib.UralPlot.Series.Histogram(System.Collections.Generic.IEnumerable{System.Double},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Drawing.Color},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{Libraries.UralMathFsharpLib.UralPlot.UralFillStyle})">
 <summary>
- Creates a histogram data series for a plot  
+ Creates a histogram data series for a plot
 </summary>
 </member>
 <member name="T:Libraries.UralMathFsharpLib.UralPlot.Series">
@@ -234,13 +234,13 @@
 </member>
 <member name="T:Libraries.UralMathFsharpLib.UralPlot.Data.Function">
 <summary>
- A string holding a function of X in the gnuplot format, e.g. `sin(x)`. The range of X comes from the other 
+ A string holding a function of X in the gnuplot format, e.g. `sin(x)`. The range of X comes from the other
  Data series on the plot, or from the optional `Range` object.
 </summary>
 </member>
 <member name="T:Libraries.UralMathFsharpLib.UralPlot.Data.DataTimeY">
 <summary>
- Sequence of X and Y coordinates where the X is `DateTime`. The `DateTime` determines the position on the 
+ Sequence of X and Y coordinates where the X is `DateTime`. The `DateTime` determines the position on the
  X axis. This cannot be mixed with the other Data type options such as DataXY.
 </summary>
 </member>
@@ -273,7 +273,7 @@
 <member name="T:Libraries.UralMathFsharpLib.UralPlot.UralFillStyle">
 <summary>
  Represents possible fill styles of a plot. A plot can be filled using
- a solid fill or using a specified pre-defined pattern (represented by 
+ a solid fill or using a specified pre-defined pattern (represented by
  an integer that `gnuplot` understands)
 </summary>
 </member>

@@ -1,4 +1,6 @@
-﻿global using System;
+﻿#region
+
+global using System;
 global using System.Buffers;
 global using System.Buffers.Binary;
 global using System.Buffers.Text;
@@ -135,3 +137,5 @@ global using System.IO.Pipes;
 global using System.IO.Ports;
 global using System.IO.IsolatedStorage;
 global using System.IO.MemoryMappedFiles;
+
+#endregion

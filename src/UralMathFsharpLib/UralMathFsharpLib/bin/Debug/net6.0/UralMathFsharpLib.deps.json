@@ -9,7 +9,7 @@
       "UralMathFsharpLib/1.0.0": {
         "dependencies": {
           "Colorful.Console": "1.2.15",
-          "FSharp.Core": "7.0.300",
+          "FSharp.Core": "8.0.300",
           "MathNet.Numerics": "4.15.0",
           "Datatypes": "1.0.0.0",
           "Errors": "1.0.0.0"
@@ -41,11 +41,11 @@
           }
         }
       },
-      "FSharp.Core/7.0.300": {
+      "FSharp.Core/8.0.300": {
         "runtime": {
           "lib/netstandard2.1/FSharp.Core.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.3.23.20307"
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.3.24.21101"
           }
         },
         "resources": {
@@ -417,12 +417,12 @@
       "path": "colorful.console/1.2.15",
       "hashPath": "colorful.console.1.2.15.nupkg.sha512"
     },
-    "FSharp.Core/7.0.300": {
+    "FSharp.Core/8.0.300": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8vvItREJ1l5lcp3vBCSJ1mFevVAhR48I34DuF/EoUa7o1KlFpQpagyuZkVYMAsHPIjdp47ZxM9sI4eqeXaeWkA==",
-      "path": "fsharp.core/7.0.300",
-      "hashPath": "fsharp.core.7.0.300.nupkg.sha512"
+      "sha512": "sha512-Jv44fV7TNglyMku89lQcA4Q6mFKLyHb2bs1Yb72nvSVc+cHplEnoZ4XQUaaTLJGUTx/iMqcrkYGtaLzkkIhpaA==",
+      "path": "fsharp.core/8.0.300",
+      "hashPath": "fsharp.core.8.0.300.nupkg.sha512"
     },
     "MathNet.Numerics/4.15.0": {
       "type": "package",
