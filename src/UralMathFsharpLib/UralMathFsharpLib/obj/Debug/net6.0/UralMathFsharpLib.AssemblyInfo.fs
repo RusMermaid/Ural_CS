@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("UralMathFsharpLib")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e4ff1a986da38e46a7cf07acecd5e7d6752b602")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa78995339962f4dc9fde9e2f9ec4928c668ba01")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("UralMathFsharpLib")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("UralMathFsharpLib")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
