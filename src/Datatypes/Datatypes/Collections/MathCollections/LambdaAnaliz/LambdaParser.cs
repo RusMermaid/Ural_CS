@@ -11,20 +11,9 @@ namespace Datatypes.Collections.MathCollections.LambdaAnaliz;
 
 public static class LambdaParser
 {
-    /// <summary>
-    /// Parses any input from the console, a definition or expression
-    /// </summary>
-    /// <param name="input">The line to parse</param>
-    /// <returns>A LambdaTerm object representing the expression or the definition, which can be written out to the console as output</returns>
-    public static LambdaTerm ParseLine(string input) => Line.Parse(input);
+    public static LambdaTerm ParseLine(str10 input) => Line.Parse(input);
 
-
-    /// <summary>
-    /// Parses a lambda expression
-    /// </summary>
-    /// <param name="input">The string to parse</param>
-    /// <returns>A LambdaExpression representing the expression parsed</returns>
-    public static LambdaExpression ParseTerm(string input) => new LambdaExpression(LTermFunction.Parse(input));
+    public static LambdaExpression ParseTerm(str10 input) => new LambdaExpression(LTermFunction.Parse(input));
 
     //Parses an integer and returns the Church-encoded term for that integer
     private static readonly Parser<LambdaTerm> LNumber = Parse.Digit.AtLeastOnce().Text().Select(convert: s => GetNumber(Convert.ToInt32(s)));
@@ -83,11 +72,7 @@ public static class LambdaParser
     //Parses anything! Wow!
     private static readonly Parser<LambdaTerm> Line = LDefinition.Or(LTerm);
 
-    /// <summary>
-    /// Turns an integer into a Church-encoded number
-    /// </summary>
-    /// <param name="toGet">The int to convert</param>
-    /// <returns>The Church-encoded LambdaTerm</returns>
+    
     private static LambdaTerm GetNumber(int toGet)
     {
         string lambdaNumber = @"(λf.λa.";
@@ -104,11 +89,8 @@ public static class LambdaParser
         return num;
     }
 
-    /// <summary>
-    /// Searches the list of defined terms in the interpreter's runtime environment
-    /// </summary>
-    /// <param name="word">The name of the term</param>
-    /// <returns>The LambdaTerm you're looking for</returns>
+    
+    
     private static LambdaTerm GetTermFromWord(string word)
     {
         string wordOut = @"""
