@@ -18,22 +18,15 @@ public class LambdaFunction : LambdaTerm
         this.Input.IsDefinition = true;
     }
 
-    /// <summary>
-    /// If the function gets a call to perform a beta-reduce, just pass it on
-    /// </summary>
-    /// <returns></returns>
-    public override bool BetaReduce()
+    
+    public override RCI BetaReduce()
     {
         try { return this.Output.BetaReduce(); }
         catch { return true; }
     }
 
-    /// <summary>
-    /// Checks to see if a variable is bound
-    /// </summary>
-    /// <param name="variable">The name of the variable</param>
-    /// <returns>True if this functions binds the variable, otherwise it passes the check to its parent</returns>
-    public override bool IsBound(string variable)
+    
+    public override RCI IsBound(str10 variable)
     {
         if (this.Input.Name == variable)
         {
@@ -43,24 +36,20 @@ public class LambdaFunction : LambdaTerm
         return (this.Parent != null) && this.Parent.IsBound(variable);
     }
 
-    /// <summary>
-    /// Passes it on
-    /// </summary>
-    /// <param name="what"></param>
-    /// <param name="with"></param>
+    
     internal override void Replace(LambdaVariable what, LambdaTerm with)
     {
         this.Output.Replace(what, with);
     }
 
-    public override int GetDeBruijnIndex(string name = "")
+    public override celch64 GetDeBruijnIndex(string name = "")
     {
         if (name == this.Input.Name)
         {
-            return 1;
+            return new celch64(1);
         }
 
-        int parentDeBruijn = this.Parent.GetDeBruijnIndex(name);
+        celch64 parentDeBruijn = this.Parent.GetDeBruijnIndex(name);
         return parentDeBruijn < 0 ? parentDeBruijn : parentDeBruijn + 1;
     }
 
@@ -70,5 +59,5 @@ public class LambdaFunction : LambdaTerm
     /// <returns>A nice string representation of the object</returns>
     public override string ToString() => "λ" + this.Input + "." + this.Output;
 
-    public override string PrintDeBruijn() => "λ." + this.Output.PrintDeBruijn();
+    public override str10 PrintDeBruijn() => "λ." + this.Output.PrintDeBruijn();
 }

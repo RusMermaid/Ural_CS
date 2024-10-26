@@ -19,7 +19,7 @@ public class LambdaExpression : LambdaTerm
         this.Root = root;
     }
 
-    public override bool BetaReduce()
+    public override RCI BetaReduce()
     {
         bool toEnd = true;
 
@@ -38,23 +38,23 @@ public class LambdaExpression : LambdaTerm
 
     private List<string> FreeVariables = new List<string>();
 
-    public override int GetDeBruijnIndex(string name = "")
+    public override celch64 GetDeBruijnIndex(string name = "")
     {
         if (!this.FreeVariables.Contains(name))
         {
             this.FreeVariables.Add(name);
         }
 
-        return -1 - this.FreeVariables.IndexOf(name);
+        return new celch64(-1 - this.FreeVariables.IndexOf(name));
     }
 
     public override string ToString() => this.Root.ToString();
 
-    public override string PrintDeBruijn() => this.Root.PrintDeBruijn();
+    public override str10 PrintDeBruijn() => this.Root.PrintDeBruijn();
 
-    public override string PrintBinary()
+    public override str10 PrintBinary()
     {
-        InnerLambdaTerm print_DeBruijn = InnerParse.ParseStream(new str10(this.Root.PrintDeBruijn().Replace(@".", "")));
+        InnerLambdaTerm print_DeBruijn = InnerParse.ParseStream(new str10(this.Root.PrintDeBruijn().value.Replace(@".", "")));
         return print_DeBruijn.BruijnBinary();
     }
 

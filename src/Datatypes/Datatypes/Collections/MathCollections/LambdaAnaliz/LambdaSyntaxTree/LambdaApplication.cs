@@ -17,11 +17,9 @@ public class LambdaApplication : LambdaTerm
         this.Second = second;
     }
 
-    /// <summary>
-    /// Recursively tells First and Second to b-reduce, then beta reduces this application
-    /// </summary>
+    
     /// <returns>True if a beta reduction happened, false if not</returns>
-    public override bool BetaReduce()
+    public override RCI BetaReduce()
     {
         if (this.First.GetType() == typeof(LambdaFunction))
         {
@@ -64,7 +62,7 @@ public class LambdaApplication : LambdaTerm
             }
 
             //We have, indeed, performed a b-reduction
-            return true;
+            return new RCI(true);
         }
 
         bool toReturn;
@@ -74,35 +72,24 @@ public class LambdaApplication : LambdaTerm
             //Tell both sides to b-reduce
             toReturn = this.First.BetaReduce() | this.Second.BetaReduce();
         }
-        catch { return true; }
+        catch { return new RCI(true); }
 
-        return toReturn;
+        return new RCI(toReturn);
     }
 
-    /// <summary>
-    /// Passes it on
-    /// </summary>
-    /// <param name="what"></param>
-    /// <param name="with"></param>
+    
     internal override void Replace(LambdaVariable what, LambdaTerm with)
     {
         this.First.Replace(what, with);
         this.Second.Replace(what, with);
     }
 
-    /// <summary>
-    /// If a variable is bound, we won't be able to tell that from an application (pass it on)
-    /// </summary>
-    /// <param name="variable"></param>
-    /// <returns></returns>
-    public override bool IsBound(string variable) => (this.Parent != null) && this.Parent.IsBound(variable);
+    
+    public override RCI IsBound(str10 variable) => (this.Parent != null) && this.Parent.IsBound(variable);
 
-    public override int GetDeBruijnIndex(string name = "") => this.Parent.GetDeBruijnIndex(name);
+    public override celch64 GetDeBruijnIndex(string name = "") => new celch64(this.Parent.GetDeBruijnIndex(name));
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns>An appropriate string representation of the object</returns>
+    
     public override string ToString()
     {
         string? firstString = this.First.GetType() == typeof(LambdaVariable) ? this.First.ToString() : "(" + this.First + ")";
@@ -111,5 +98,5 @@ public class LambdaApplication : LambdaTerm
         return firstString + " " + secondString;
     }
 
-    public override string PrintDeBruijn() => this.First.PrintDeBruijn() + " (" + this.Second.PrintDeBruijn() + ")";
+    public override str10 PrintDeBruijn() => this.First.PrintDeBruijn() + " (" + this.Second.PrintDeBruijn() + ")";
 }

@@ -3,28 +3,21 @@
 public class LambdaVariable : LambdaTerm
 {
     //The name of the variable, believe it or not
-    public string Name;
-    public bool IsFree = false;
-    public bool IsDefinition = false;
+    public str10 Name;
+    public RCI IsFree = new RCI(false);
+    public RCI IsDefinition = new RCI(false);
 
-    public LambdaVariable(string name)
+    public LambdaVariable(str10 name)
     {
         this.Name = name;
     }
 
-    public bool IsBound() => this.Parent?.IsBound(this.Name) ?? false;
+    public RCI IsBound() => this.Parent?.IsBound(this.Name) ?? new RCI(false);
 
-    /// <summary>
-    /// If this is a variable with ought be replaced with another expression in a b-reduction, do so
-    /// </summary>
-    /// <param name="what">The variable which must be replaced</param>
-    /// <param name="with">That with which we must replace what</param>
+    
     internal override void Replace(LambdaVariable what, LambdaTerm with)
     {
-        if ((this.Name != what.Name) || this.IsBound())
-        {
-            return;
-        }
+        if ((this.Name != what.Name) || this.IsBound()) return;
 
         if (this.Parent.GetType() == typeof(LambdaFunction))
         {
@@ -51,9 +44,9 @@ public class LambdaVariable : LambdaTerm
         }
     }
 
-    public override int GetDeBruijnIndex(string name = "") => this.Parent.GetDeBruijnIndex(this.Name);
+    public override celch64 GetDeBruijnIndex(string name ) => this.Parent.GetDeBruijnIndex(this.Name);
 
-    public override string ToString() => this.Name;
+    public override string ToString() => new str10(this.Name);
 
-    public override string PrintDeBruijn() => this.GetDeBruijnIndex().ToString();
+    public override str10 PrintDeBruijn() => new str10((string)this.GetDeBruijnIndex(this.ToString()));
 }
