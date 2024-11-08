@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0172da7e-a19c-4278-a6c4-d2884fd00de9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.UralLambdaAnaliz/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/Datatypes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/Datatypes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/Datatypes.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/Datatypes.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/Errors.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/UralMathLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../bin/Debug/net6.0/UralMathLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/ref/Datatypes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/ref/Datatypes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/refint/Datatypes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/refint/Datatypes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/bin/Debug/net6.0/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/bin/Debug/net6.0/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/bin/Debug/net6.0/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/bin/Debug/net6.0/Errors.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/ref/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/ref/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/refint/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/refint/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/Datatypes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/Datatypes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/Datatypes.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/Datatypes.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/Errors.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/UralLambdaAnaliz.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/UralLambdaAnaliz.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/UralLambdaAnaliz.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/UralLambdaAnaliz.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/UralMathLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/bin/Debug/net6.0/UralMathLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/ref/UralLambdaAnaliz.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/ref/UralLambdaAnaliz.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/refint/UralLambdaAnaliz.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/Debug/net6.0/refint/UralLambdaAnaliz.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralLambdaAnaliz/UralLambdaAnaliz/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/Datatypes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/Datatypes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/Datatypes.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/Datatypes.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/Errors.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/UralMathLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/bin/Debug/net6.0/UralMathLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.AssemblyInfo.fs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.AssemblyInfo.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/Datatypes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/Datatypes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/Datatypes.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/Datatypes.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/Errors.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/bin/Debug/net6.0/UralMathLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/ref/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/ref/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/refint/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/refint/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Datatypes.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Datatypes.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Datatypes.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Datatypes.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Errors.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Errors.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Errors.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Errors.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/UralLambdaAnaliz.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/UralLambdaAnaliz.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/UralLambdaAnaliz.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/UralLambdaAnaliz.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/UralMathLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/UralMathLib.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/UralMathLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/UralMathLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Ural_CS_Rider.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Ural_CS_Rider.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Ural_CS_Rider.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/bin/Debug/net6.0/osx-arm64/Ural_CS_Rider.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/ref/Ural_CS_Rider.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/ref/Ural_CS_Rider.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/refint/Ural_CS_Rider.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/refint/Ural_CS_Rider.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/rider.project.restore.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/UralLambdaAnaliz/UralCustomDatatypes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UralLambdaAnaliz/UralSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/172bb69f24eef4fdc72cb4247d1cd9a669b43f9f3505e212924bb7179aa3b44/LambdaTerm.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2oYtpflrySye2krApZwZv058qsq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/rus_mermaid/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
+      "/Users/rus_mermaid/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
+      "/Users/rus_mermaid/Library/Application Support/Symbols/src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0172da7e-a19c-4278-a6c4-d2884fd00de9" name="Changes" comment="" />
+      <created>1731058522766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731058522766</updated>
+      <workItem from="1731058523597" duration="2376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
