@@ -1,6 +1,7 @@
 ﻿#region
 
 using Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree;
+using Datatypes.Strings;
 using Errors.SyntaxInvalidError.ErrorDatatypes;
 using Sprache;
 using LambdaExpression = Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree.LambdaExpression;

@@ -18,6 +18,7 @@
         <None Remove="Datatypes" />
         <None Remove="UralMathLib" />
         <None Remove="Datatypes\Collections\MathCollections\" />
+        <None Remove="Datatypes\Collections\MathCollections\LambdaAnaliz\LambdaSyntaxTree\**" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Datatypes\Strings\.idea\.idea.Strings.dir\.idea\indexLayout.xml" />
@@ -33,20 +34,26 @@
         <Reference Include="UralMathFsharpLib">
           <HintPath>..\UralMathFsharpLib\UralMathFsharpLib\bin\Debug\net6.0\UralMathFsharpLib.dll</HintPath>
         </Reference>
+        <Reference Include="UralLambdaAnaliz">
+          <HintPath>Datatypes\Collections\MathCollections\UralLambdaAnaliz\UralLambdaAnaliz\bin\Debug\net6.0\UralLambdaAnaliz.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\Errors\Errors\Errors.csproj" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Datatypes\Collections\MathCollections\" />
-        <Folder Include="Datatypes\Collections\MathCollections\LambdaAnaliz\LambdaSyntaxTree\" />
     </ItemGroup>
     <ItemGroup>
         <Compile Remove="Datatypes\Collections\MathCollections\x.cs" />
+        <Compile Remove="Datatypes\Collections\MathCollections\LambdaAnaliz\LambdaSyntaxTree\**" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Colorful.Console" Version="1.2.15" />
         <PackageReference Include="MathNet.Numerics" Version="4.15.0" />
         <PackageReference Include="Sprache" Version="3.0.0-develop-00049" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Remove="Datatypes\Collections\MathCollections\LambdaAnaliz\LambdaSyntaxTree\**" />
     </ItemGroup>
 </Project>

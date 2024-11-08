@@ -15,6 +15,7 @@
           "UralMathFsharpLib": "1.0.0",
           "Datatypes.Reference": "1.0.0.0",
           "Errors.Reference": "1.0.0.0",
+          "UralLambdaAnaliz": "1.0.0.0",
           "UralMathFsharpLib.Reference": "1.0.0.0",
           "UralMathLib": "1.0.0.0",
           "runtimepack.Microsoft.NETCore.App.Runtime.osx-arm64": "6.0.31"
@@ -1234,6 +1235,14 @@
           }
         }
       },
+      "UralLambdaAnaliz/1.0.0.0": {
+        "runtime": {
+          "UralLambdaAnaliz.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "UralMathFsharpLib.Reference/1.0.0.0": {
         "runtime": {
           "UralMathFsharpLib.dll": {
@@ -1682,6 +1691,11 @@
       "sha512": ""
     },
     "Errors.Reference/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UralLambdaAnaliz/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

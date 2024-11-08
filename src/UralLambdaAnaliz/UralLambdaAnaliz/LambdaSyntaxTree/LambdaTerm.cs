@@ -1,4 +1,9 @@
-﻿namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree;
+﻿using Datatypes.Booleans;
+using Datatypes.Numbers;
+using Datatypes.Numbers.OtherNumbers.Binary;
+using Datatypes.Strings;
+
+namespace Datatypes.Collections.MathCollections.LambdaAnaliz.LambdaSyntaxTree;
 
 public class LambdaTerm
 {

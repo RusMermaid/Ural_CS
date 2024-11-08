@@ -80,6 +80,9 @@
         <Reference Include="Errors">
             <HintPath>..\..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
         </Reference>
+        <Reference Include="UralLambdaAnaliz">
+          <HintPath>..\..\UralLambdaAnaliz\UralLambdaAnaliz\bin\Debug\net6.0\UralLambdaAnaliz.dll</HintPath>
+        </Reference>
         <Reference Include="UralMathLib">
             <HintPath>..\..\UralMathLib\UralMathLib\bin\Debug\net6.0\UralMathLib.dll</HintPath>
         </Reference>

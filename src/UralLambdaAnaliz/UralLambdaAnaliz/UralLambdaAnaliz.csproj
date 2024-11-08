@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Datatypes">
+        <HintPath>..\..\..\..\..\bin\Debug\net6.0\Datatypes.dll</HintPath>
+      </Reference>
+      <Reference Include="Errors">
+        <HintPath>..\..\..\..\..\..\Errors\Errors\bin\Debug\net6.0\Errors.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Sprache" Version="3.0.0-develop-00049" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="UralCustomDatatypes.cs" />
+      <Compile Remove="UralSystem.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Datatypes\Datatypes.csproj" />
+      <ProjectReference Include="..\..\Errors\Errors\Errors.csproj" />
+    </ItemGroup>
+</Project>
