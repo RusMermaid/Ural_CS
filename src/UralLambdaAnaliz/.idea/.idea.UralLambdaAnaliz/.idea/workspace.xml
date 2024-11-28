@@ -5,62 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0172da7e-a19c-4278-a6c4-d2884fd00de9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UralLambdaAnaliz/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UralLambdaAnaliz/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UralLambdaAnaliz/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UralLambdaAnaliz/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UralLambdaAnaliz/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/LambdaParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/LambdaSyntaxTree/LambdaApplication.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/LambdaSyntaxTree/LambdaExpression.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/LambdaSyntaxTree/LambdaFunction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/LambdaSyntaxTree/LambdaTerm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/LambdaSyntaxTree/LambdaVariable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/LambdaSyntaxTree/TermDefinition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/LambdaTerm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/UralCustomDatatypes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/UralLambdaAnaliz.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/UralSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/UralLambdaAnaliz.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/UralLambdaAnaliz.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/UralLambdaAnaliz.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaAnaliz/LambdaParser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaAnaliz/LambdaSyntaxTree/LambdaApplication.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaAnaliz/LambdaSyntaxTree/LambdaExpression.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaAnaliz/LambdaSyntaxTree/LambdaFunction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaAnaliz/LambdaSyntaxTree/LambdaTerm.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaAnaliz/LambdaSyntaxTree/LambdaVariable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaAnaliz/LambdaSyntaxTree/TermDefinition.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LambdaAnaliz/LambdaTerm.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../obj/Debug/net6.0/Datatypes.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Errors/Errors/obj/Debug/net6.0/Errors.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.AssemblyInfo.fs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.AssemblyInfo.fs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathFsharpLib/UralMathFsharpLib/obj/Debug/net6.0/UralMathFsharpLib.fsproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../UralMathLib/UralMathLib/obj/Debug/net6.0/UralMathLib.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Ural_CS_Rider/Ural_CS_Rider/obj/Debug/net6.0/osx-arm64/Ural_CS_Rider.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/Debug/net6.0/UralLambdaAnaliz.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralLambdaAnaliz/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UralLambdaAnaliz/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/UralLambdaAnaliz/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +23,9 @@
     <setting file="file://$PROJECT_DIR$/UralLambdaAnaliz/UralSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/172bb69f24eef4fdc72cb4247d1cd9a669b43f9f3505e212924bb7179aa3b44/LambdaTerm.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2oYtpflrySye2krApZwZv058qsq" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -83,28 +34,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/rus_mermaid/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache",
-      "/Users/rus_mermaid/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache",
-      "/Users/rus_mermaid/Library/Application Support/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/rus_mermaid/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/rus_mermaid/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/rus_mermaid/Library/Application Support/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -114,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731058522766</updated>
       <workItem from="1731058523597" duration="1771000" />
+      <workItem from="1731078656466" duration="2000" />
     </task>
     <servers />
   </component>
