@@ -9,7 +9,6 @@
         <Compile Remove="Cvet_FS.fs" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Library.fs" />
         <Compile Include="LambdaAnaliz.fs" />
         <Compile Include="UraFunctionalPlot.fs" />
     </ItemGroup>
