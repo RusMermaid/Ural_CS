@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ural_CS_Rider")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b47a264e1289a552850b97ea59dfce1db21bf58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+875152079cb93e5892e851c4fff47dea3de7c42d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ural_CS_Rider")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ural_CS_Rider")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
